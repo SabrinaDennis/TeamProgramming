@@ -1,4 +1,3 @@
-<picture>
-	<source srcset="BB-profile-1800px.jpg 2x, BB-profile-800px.jpg 1.5x, BB-profile-400px.jpg />
-	<img src="BB-profile-400px.jpg" alt="A picture of Ben" />
-</picture>
+# Ben Baker
+| Hi!  I'm Ben.  I use he/him.  I've been messing around on computers forever.  I'm coming up on my 10th wedding anniversary, and my little family is my everything.  I really like to test the boundaries and limitations of technologies, and have gotten pretty good at finding the interesting things it can do at the edges.  My current special interests are Japanese home cooking, Unicode/UTF-8, and obscure/unwieldy poetic meters. <br/><br/> Note: If I'm talking too much it super doesn't offend me for you just to make a 'stop' or 'quiet' signal.  In fact I appreciate knowing! | <img src="./BB-profile-1800px.jpg" width="100%" />|
+| --- | --- |
