@@ -1,0 +1,22 @@
+body {
+    color:beige;
+    background-color: indigo;
+
+
+.past {
+    font-family: "Lucida Handwriting", "Times New Roman",  Times, serif;
+  }
+
+.present {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.future {
+    font-family: "Lucida Console", "Courier New", monospace;
+  }
+
+  .carousel-caption {
+   background-color: #000000cc; 
+    border-radius: 5% 5%;
+  }
+}
