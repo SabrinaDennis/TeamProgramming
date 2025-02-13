@@ -1,0 +1,1 @@
+Writer, equestrian, and now, computer science major. Hoping for a desk job, dreaming of making a video game someday.
