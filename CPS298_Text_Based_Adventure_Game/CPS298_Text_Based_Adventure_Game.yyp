@@ -26,7 +26,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"script.json","CopyToMask":-1,"filePath":"datafiles","name":"script.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -34,12 +36,21 @@
   },
   "name":"CPS298_Text_Based_Adventure_Game",
   "resources":[
+    {"id":{"name":"font_small","path":"fonts/font_small/font_small.yy",},},
+    {"id":{"name":"font","path":"fonts/font/font.yy",},},
+    {"id":{"name":"Background","path":"objects/Background/Background.yy",},},
+    {"id":{"name":"Choices","path":"objects/Choices/Choices.yy",},},
+    {"id":{"name":"MainText","path":"objects/MainText/MainText.yy",},},
+    {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
+    {"id":{"name":"sprButton","path":"sprites/sprButton/sprButton.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"Room2","path":"rooms/Room2/Room2.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
