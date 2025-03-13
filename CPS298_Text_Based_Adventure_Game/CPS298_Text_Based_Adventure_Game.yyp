@@ -39,7 +39,6 @@
     {"id":{"name":"font_small","path":"fonts/font_small/font_small.yy",},},
     {"id":{"name":"font","path":"fonts/font/font.yy",},},
     {"id":{"name":"Background","path":"objects/Background/Background.yy",},},
-    {"id":{"name":"Choices","path":"objects/Choices/Choices.yy",},},
     {"id":{"name":"MainText","path":"objects/MainText/MainText.yy",},},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
