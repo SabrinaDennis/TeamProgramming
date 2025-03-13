@@ -14,7 +14,7 @@ var sceneText = scene.sceneText;
 
 show_debug_message(sceneName);
 var choices = scene.choices;
-instance_create_depth(0,0,150,Background, {bgcolor:c_dkgray});
+instance_create_depth(0,0,10,Background, {bgcolor:c_dkgray});
 for(var i=0; i<array_length(choices); i++){
 	instance_create_depth(.3*room_width,.3*room_height+128*i,0, obj_button, {button_choice:i, choiceText:choices[i].choiceText, choiceTarget:choices[i].choiceTarget});
 }
