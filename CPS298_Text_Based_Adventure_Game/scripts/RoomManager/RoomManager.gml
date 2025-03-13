@@ -1,7 +1,10 @@
-
-
 function destroyAllObjects(){
 	with(all){ instance_destroy(); }
+}
+
+function createBackground(bgSprite){
+	global.backgroundLayer = layer_create(2);
+	global.background = layer_background_create(global.backgroundLayer,bgSprite);
 }
 
 
@@ -12,7 +15,7 @@ function populateAllObjects(){
 
 	show_debug_message(sceneName);
 	var choices = scene.choices;
-	instance_create_depth(0,0,150,Background, {bgcolor:c_dkgray});
+	createBackground(spr_Background);
 	for(var i=0; i<array_length(choices); i++){
 		instance_create_depth(.3*room_width,.3*room_height+128*i,0, obj_button, {button_choice:i, choiceText:choices[i].choiceText, choiceTarget:choices[i].choiceTarget});
 	}

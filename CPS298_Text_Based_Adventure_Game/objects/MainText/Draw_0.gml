@@ -1,5 +1,5 @@
 draw_self();
-draw_set_color(c_ltgray);
+draw_set_color(c_black);
 draw_set_font(font);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
