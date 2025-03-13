@@ -2,6 +2,7 @@ function initializePlayer(){
 	global.playerMaxHealth = 100;
 	global.playerHealth = 100;
 	global.playerGold = 0;
+	
 }
 
 function playerAddGold(amount){
