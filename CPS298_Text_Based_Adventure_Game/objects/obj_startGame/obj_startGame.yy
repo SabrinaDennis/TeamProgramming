@@ -1,11 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"Background",
+  "%Name":"obj_startGame",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":4,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Background",
+  "name":"obj_startGame",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -25,13 +25,14 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"bgcolor","filters":[],"listItems":[],"multiselect":false,"name":"bgcolor","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"$FF0000FF","varType":7,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_startGame",
+    "path":"sprites/spr_startGame/spr_startGame.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

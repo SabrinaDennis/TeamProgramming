@@ -3,7 +3,7 @@ function destroyAllObjects(){
 }
 
 function createBackground(bgSprite){
-	global.backgroundLayer = layer_create(1);
+	global.backgroundLayer = layer_create(2);
 	global.background = layer_background_create(global.backgroundLayer,bgSprite);
 }
 
