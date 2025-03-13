@@ -1,7 +1,7 @@
 function loadDialogData(fileName){
 	var file_buffer = buffer_load(fileName);
-	var scriptText = buffer_read(file_buffer, buffer_string);
+	var dialogText = buffer_read(file_buffer, buffer_string);
 	buffer_delete(file_buffer);
 
-	global.scriptJSON = json_parse(scriptText).gameScript;
+	global.dialogJSON = json_parse(dialogText).gameScript;
 }

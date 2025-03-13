@@ -9,13 +9,13 @@ function createBackground(bgSprite){
 
 
 function populateAllObjects(){
-	var scene = global.scriptJSON.scenes[global.currentIndex];
+	var scene = global.dialogJSON.scenes[global.currentIndex];
 	var sceneName = scene.sceneName;
 	var sceneText = scene.sceneText;
 
 	show_debug_message(sceneName);
 	var choices = scene.choices;
-	createBackground(spr_Background);
+	createBackground(spr_background);
 	for(var i=0; i<array_length(choices); i++){
 		instance_create_depth(.3*room_width,.3*room_height+128*i,0, obj_button, {button_choice:i, choiceText:choices[i].choiceText, choiceTarget:choices[i].choiceTarget});
 	}
