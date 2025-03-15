@@ -1,36 +1,16 @@
 {
-  "uuid": "2C41FFEA-EB4C-4C25-AE7F-FDFAB53C6B54",
-  "name": "Text Adventure Game",
+  "uuid": "a0fd2542-f658-4eef-8346-fd34d868cb96",
+  "name": "TextAdventureGame",
   "creator": "Twine",
   "creatorVersion": "2.10.0",
   "schemaName": "Harlowe 3 to JSON",
   "schemaVersion": "0.0.6",
-  "createdAtMs": 1742001453979,
+  "createdAtMs": 1742068343345,
   "passages": [
-    {
-      "name": "0 passage to illustrate",
-      "tags": "",
-      "id": "1",
-      "text": "This is passage text\n\n{this is something that happens because you're in this passage}\n\n[[This is a choice.  It goes to a passage with this title.]]\n[[This is a choice that goes to a passage with a different title|OtherChoice]]",
-      "links": [
-        {
-          "linkText": "This is a choice.  It goes to a passage with this title.",
-          "passageName": "This is a choice.  It goes to a passage with this title.",
-          "original": "[[This is a choice.  It goes to a passage with this title.]]"
-        },
-        {
-          "linkText": "This is a choice that goes to a passage with a different title|OtherChoice",
-          "passageName": "This is a choice that goes to a passage with a different title|OtherChoice",
-          "original": "[[This is a choice that goes to a passage with a different title|OtherChoice]]"
-        }
-      ],
-      "hooks": [],
-      "cleanText": "This is passage text\n\n{this is something that happens because you're in this passage}"
-    },
     {
       "name": "Batbayarii AltanSetseg",
       "tags": "",
-      "id": "2",
+      "id": "1",
       "text": "",
       "links": [],
       "hooks": [],
@@ -39,7 +19,7 @@
     {
       "name": "Fidget for a moment, putting off the tasks of the day",
       "tags": "",
-      "id": "3",
+      "id": "2",
       "text": "",
       "links": [],
       "hooks": [],
@@ -48,7 +28,7 @@
     {
       "name": "Finish getting ready and eat some breakfast",
       "tags": "",
-      "id": "4",
+      "id": "3",
       "text": "You fuel your day, not really paying attention to your nourishment, just mindlessly consuming your morning's energy.  You gulp down a few good mouthfuls of bad coffee and [[head to work.]]",
       "links": [
         {
@@ -63,7 +43,7 @@
     {
       "name": "Focus on getting to the days work.",
       "tags": "",
-      "id": "5",
+      "id": "4",
       "text": "[[Press 13]]",
       "links": [
         {
@@ -78,7 +58,7 @@
     {
       "name": "Go back to bed",
       "tags": "",
-      "id": "6",
+      "id": "5",
       "text": "You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.\n\n[[Your alarm wakes you]]",
       "links": [
         {
@@ -93,7 +73,7 @@
     {
       "name": "Grab a banana",
       "tags": "",
-      "id": "7",
+      "id": "6",
       "text": "{gain a banana} This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana's peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don't.\n\nTake your banana back to the elevator and \n\n[[Press R]]\n\n[[Press 13]]",
       "links": [
         {
@@ -113,7 +93,7 @@
     {
       "name": "Grab a gooey cinnamon bun",
       "tags": "",
-      "id": "8",
+      "id": "7",
       "text": "{gain cinnamon bun}  This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you \n\n[[Press R]]\n\n[[Press 13]]",
       "links": [
         {
@@ -133,16 +113,16 @@
     {
       "name": "Immediately get to work",
       "tags": "",
-      "id": "9",
-      "text": "",
+      "id": "8",
+      "text": "Alright.  The",
       "links": [],
       "hooks": [],
-      "cleanText": ""
+      "cleanText": "Alright.  The"
     },
     {
       "name": "Investigate the shiny object you notice out of the corner of your eye?",
       "tags": "",
-      "id": "10",
+      "id": "9",
       "text": "You pause for a moment, happy for an excuse to put off the day's work.  You reach down for the scuffed metal object, notice it's a large brass key.  The antique object is worn to brushed shininess in two places.  The part where...  Is it suddenly really warm?  The part where it would be held, and the whatever, the blade of the key is old timey and why is it hard to see and think of word for th wher\n\n[[Pass out]]",
       "links": [
         {
@@ -157,7 +137,7 @@
     {
       "name": "Luciana Reyes",
       "tags": "",
-      "id": "11",
+      "id": "10",
       "text": "",
       "links": [],
       "hooks": [],
@@ -166,7 +146,7 @@
     {
       "name": "Margaret Ashford",
       "tags": "",
-      "id": "12",
+      "id": "11",
       "text": "",
       "links": [],
       "hooks": [],
@@ -175,7 +155,7 @@
     {
       "name": "Nicholas Drayton",
       "tags": "",
-      "id": "13",
+      "id": "12",
       "text": "",
       "links": [],
       "hooks": [],
@@ -184,7 +164,7 @@
     {
       "name": "Opening scene",
       "tags": "",
-      "id": "14",
+      "id": "13",
       "text": "It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\n\nToo long.\n\nIt's too early.\n\n[[Go back to bed]]\n\n[[Take advantage of the extra... ugh... hour]]",
       "links": [
         {
@@ -202,24 +182,9 @@
       "cleanText": "It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\n\nToo long.\n\nIt's too early."
     },
     {
-      "name": "OtherChoice",
-      "tags": "",
-      "id": "15",
-      "text": "[[Opening scene]]",
-      "links": [
-        {
-          "linkText": "Opening scene",
-          "passageName": "Opening scene",
-          "original": "[[Opening scene]]"
-        }
-      ],
-      "hooks": [],
-      "cleanText": ""
-    },
-    {
       "name": "Pass out",
       "tags": "",
-      "id": "16",
+      "id": "14",
       "text": "Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with\n\n[[William Redbrook]]\n\n[[Nicholas Drayton]]\n\n[[Margaret Ashford]]\n\n[[Luciana Reyes]]\n\n[[Batbayarii AltanSetseg]]",
       "links": [
         {
@@ -254,7 +219,7 @@
     {
       "name": "Press 13",
       "tags": "",
-      "id": "17",
+      "id": "15",
       "text": "You press the button marked 13, and head to your personal offices.  Hoping to catch up on some paperwork, you continue through the slightly unpleasant smell of carpet adhesive and sit behind your desk.\n\nYou can\n\n[[Immediately get to work]]\n\nor\n\n[[Fidget for a moment, putting off the tasks of the day]]",
       "links": [
         {
@@ -274,7 +239,7 @@
     {
       "name": "Press 4",
       "tags": "",
-      "id": "18",
+      "id": "16",
       "text": "You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.\n\n[[Grab a gooey cinnamon bun]]\n\n[[Grab a banana]]",
       "links": [
         {
@@ -294,7 +259,7 @@
     {
       "name": "Press R",
       "tags": "",
-      "id": "19",
+      "id": "17",
       "text": "You press R on the elevator to get some air.  After a brief existential whirr, the doors open on the roof of the building.  You step out, gulp a few mouthfuls of air and steel your nerves for the day.  As you're about to turn back to the elevators, you notice something.\n\nDo you\n\n[[Investigate the shiny object you notice out of the corner of your eye?]]\n\nor do you\n\n[[Focus on getting to the days work.]]",
       "links": [
         {
@@ -314,7 +279,7 @@
     {
       "name": "Take a cold shower",
       "tags": "",
-      "id": "20",
+      "id": "18",
       "text": "The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masachistic routine.\n\n{gain 1 alertness point}\n\n[[Finish getting ready and eat some breakfast]]",
       "links": [
         {
@@ -329,7 +294,7 @@
     {
       "name": "Take a cold shower-battle",
       "tags": "",
-      "id": "21",
+      "id": "19",
       "text": "{battle cold shower demons}\n\n[[Take a cold shower]]",
       "links": [
         {
@@ -344,7 +309,7 @@
     {
       "name": "Take a hot shower",
       "tags": "",
-      "id": "22",
+      "id": "20",
       "text": "You relax under the calming water, letting your anger at the world for existing melt like ice and flake off of you in layers.  Your jaw ucleanches.  You're not happy with today, but you're a little more ready for it.\n\n{gain a resilience point}\n\nYou towel off and sit on the bed, relaxing for just a moment... stretching out feels... so nice...\n\n[[Your alarm wakes you]]",
       "links": [
         {
@@ -359,7 +324,7 @@
     {
       "name": "Take advantage of the extra... ugh... hour",
       "tags": "",
-      "id": "23",
+      "id": "21",
       "text": "You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your legs out of the bed, hoping peer pressure will rouse the rest of you.  Standing unsteadily, you blear your way to the bathroom, relieve yourself, and attempt to jump start your day.\n\n[[Take a hot shower]]\n\n[[Take a cold shower-battle]]",
       "links": [
         {
@@ -377,24 +342,9 @@
       "cleanText": "You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your legs out of the bed, hoping peer pressure will rouse the rest of you.  Standing unsteadily, you blear your way to the bathroom, relieve yourself, and attempt to jump start your day."
     },
     {
-      "name": "This is a choice.  It goes to a passage with this title.",
-      "tags": "",
-      "id": "24",
-      "text": "[[Opening scene]]",
-      "links": [
-        {
-          "linkText": "Opening scene",
-          "passageName": "Opening scene",
-          "original": "[[Opening scene]]"
-        }
-      ],
-      "hooks": [],
-      "cleanText": ""
-    },
-    {
       "name": "William Redbrook",
       "tags": "",
-      "id": "25",
+      "id": "22",
       "text": "",
       "links": [],
       "hooks": [],
@@ -403,7 +353,7 @@
     {
       "name": "Your alarm wakes you",
       "tags": "",
-      "id": "26",
+      "id": "23",
       "text": "You jolt into reality.  Falling asleep again was a bad idea.\n\n[[shake it off -- spend 1 resilience point]]\n\n[[proceed to \"have a day\"  -- lose one alertness point, gain status 'Having a day.']]",
       "links": [
         {
@@ -423,7 +373,7 @@
     {
       "name": "head to work.",
       "tags": "",
-      "id": "27",
+      "id": "24",
       "text": "Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and...\n\n[[Press 13]]\n\n[[Press 4]]\n\n[[Press R]]",
       "links": [
         {
@@ -448,7 +398,7 @@
     {
       "name": "proceed to \"have a day\"  -- lose one alertness point, gain status 'Having a day.'",
       "tags": "",
-      "id": "28",
+      "id": "25",
       "text": "Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.\n\n[[Finish getting ready and eat some breakfast]]",
       "links": [
         {
@@ -463,7 +413,7 @@
     {
       "name": "shake it off -- spend 1 resilience point",
       "tags": "",
-      "id": "29",
+      "id": "26",
       "text": "You shudder, focus all your mental energy, and just decide to move on.\n\n[[Finish getting ready and eat some breakfast]]",
       "links": [
         {
