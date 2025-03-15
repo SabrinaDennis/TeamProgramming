@@ -1,0 +1,479 @@
+{
+  "uuid": "2C41FFEA-EB4C-4C25-AE7F-FDFAB53C6B54",
+  "name": "Text Adventure Game",
+  "creator": "Twine",
+  "creatorVersion": "2.10.0",
+  "schemaName": "Harlowe 3 to JSON",
+  "schemaVersion": "0.0.6",
+  "createdAtMs": 1742001453979,
+  "passages": [
+    {
+      "name": "0 passage to illustrate",
+      "tags": "",
+      "id": "1",
+      "text": "This is passage text\n\n{this is something that happens because you're in this passage}\n\n[[This is a choice.  It goes to a passage with this title.]]\n[[This is a choice that goes to a passage with a different title|OtherChoice]]",
+      "links": [
+        {
+          "linkText": "This is a choice.  It goes to a passage with this title.",
+          "passageName": "This is a choice.  It goes to a passage with this title.",
+          "original": "[[This is a choice.  It goes to a passage with this title.]]"
+        },
+        {
+          "linkText": "This is a choice that goes to a passage with a different title|OtherChoice",
+          "passageName": "This is a choice that goes to a passage with a different title|OtherChoice",
+          "original": "[[This is a choice that goes to a passage with a different title|OtherChoice]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "This is passage text\n\n{this is something that happens because you're in this passage}"
+    },
+    {
+      "name": "Batbayarii AltanSetseg",
+      "tags": "",
+      "id": "2",
+      "text": "",
+      "links": [],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Fidget for a moment, putting off the tasks of the day",
+      "tags": "",
+      "id": "3",
+      "text": "",
+      "links": [],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Finish getting ready and eat some breakfast",
+      "tags": "",
+      "id": "4",
+      "text": "You fuel your day, not really paying attention to your nourishment, just mindlessly consuming your morning's energy.  You gulp down a few good mouthfuls of bad coffee and [[head to work.]]",
+      "links": [
+        {
+          "linkText": "head to work.",
+          "passageName": "head to work.",
+          "original": "[[head to work.]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You fuel your day, not really paying attention to your nourishment, just mindlessly consuming your morning's energy.  You gulp down a few good mouthfuls of bad coffee and"
+    },
+    {
+      "name": "Focus on getting to the days work.",
+      "tags": "",
+      "id": "5",
+      "text": "[[Press 13]]",
+      "links": [
+        {
+          "linkText": "Press 13",
+          "passageName": "Press 13",
+          "original": "[[Press 13]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Go back to bed",
+      "tags": "",
+      "id": "6",
+      "text": "You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.\n\n[[Your alarm wakes you]]",
+      "links": [
+        {
+          "linkText": "Your alarm wakes you",
+          "passageName": "Your alarm wakes you",
+          "original": "[[Your alarm wakes you]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING."
+    },
+    {
+      "name": "Grab a banana",
+      "tags": "",
+      "id": "7",
+      "text": "{gain a banana} This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana's peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don't.\n\nTake your banana back to the elevator and \n\n[[Press R]]\n\n[[Press 13]]",
+      "links": [
+        {
+          "linkText": "Press R",
+          "passageName": "Press R",
+          "original": "[[Press R]]"
+        },
+        {
+          "linkText": "Press 13",
+          "passageName": "Press 13",
+          "original": "[[Press 13]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "{gain a banana} This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana's peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don't.\n\nTake your banana back to the elevator and"
+    },
+    {
+      "name": "Grab a gooey cinnamon bun",
+      "tags": "",
+      "id": "8",
+      "text": "{gain cinnamon bun}  This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you \n\n[[Press R]]\n\n[[Press 13]]",
+      "links": [
+        {
+          "linkText": "Press R",
+          "passageName": "Press R",
+          "original": "[[Press R]]"
+        },
+        {
+          "linkText": "Press 13",
+          "passageName": "Press 13",
+          "original": "[[Press 13]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "{gain cinnamon bun}  This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you"
+    },
+    {
+      "name": "Immediately get to work",
+      "tags": "",
+      "id": "9",
+      "text": "",
+      "links": [],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Investigate the shiny object you notice out of the corner of your eye?",
+      "tags": "",
+      "id": "10",
+      "text": "You pause for a moment, happy for an excuse to put off the day's work.  You reach down for the scuffed metal object, notice it's a large brass key.  The antique object is worn to brushed shininess in two places.  The part where...  Is it suddenly really warm?  The part where it would be held, and the whatever, the blade of the key is old timey and why is it hard to see and think of word for th wher\n\n[[Pass out]]",
+      "links": [
+        {
+          "linkText": "Pass out",
+          "passageName": "Pass out",
+          "original": "[[Pass out]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You pause for a moment, happy for an excuse to put off the day's work.  You reach down for the scuffed metal object, notice it's a large brass key.  The antique object is worn to brushed shininess in two places.  The part where...  Is it suddenly really warm?  The part where it would be held, and the whatever, the blade of the key is old timey and why is it hard to see and think of word for th wher"
+    },
+    {
+      "name": "Luciana Reyes",
+      "tags": "",
+      "id": "11",
+      "text": "",
+      "links": [],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Margaret Ashford",
+      "tags": "",
+      "id": "12",
+      "text": "",
+      "links": [],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Nicholas Drayton",
+      "tags": "",
+      "id": "13",
+      "text": "",
+      "links": [],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Opening scene",
+      "tags": "",
+      "id": "14",
+      "text": "It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\n\nToo long.\n\nIt's too early.\n\n[[Go back to bed]]\n\n[[Take advantage of the extra... ugh... hour]]",
+      "links": [
+        {
+          "linkText": "Go back to bed",
+          "passageName": "Go back to bed",
+          "original": "[[Go back to bed]]"
+        },
+        {
+          "linkText": "Take advantage of the extra... ugh... hour",
+          "passageName": "Take advantage of the extra... ugh... hour",
+          "original": "[[Take advantage of the extra... ugh... hour]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\n\nToo long.\n\nIt's too early."
+    },
+    {
+      "name": "OtherChoice",
+      "tags": "",
+      "id": "15",
+      "text": "[[Opening scene]]",
+      "links": [
+        {
+          "linkText": "Opening scene",
+          "passageName": "Opening scene",
+          "original": "[[Opening scene]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Pass out",
+      "tags": "",
+      "id": "16",
+      "text": "Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with\n\n[[William Redbrook]]\n\n[[Nicholas Drayton]]\n\n[[Margaret Ashford]]\n\n[[Luciana Reyes]]\n\n[[Batbayarii AltanSetseg]]",
+      "links": [
+        {
+          "linkText": "William Redbrook",
+          "passageName": "William Redbrook",
+          "original": "[[William Redbrook]]"
+        },
+        {
+          "linkText": "Nicholas Drayton",
+          "passageName": "Nicholas Drayton",
+          "original": "[[Nicholas Drayton]]"
+        },
+        {
+          "linkText": "Margaret Ashford",
+          "passageName": "Margaret Ashford",
+          "original": "[[Margaret Ashford]]"
+        },
+        {
+          "linkText": "Luciana Reyes",
+          "passageName": "Luciana Reyes",
+          "original": "[[Luciana Reyes]]"
+        },
+        {
+          "linkText": "Batbayarii AltanSetseg",
+          "passageName": "Batbayarii AltanSetseg",
+          "original": "[[Batbayarii AltanSetseg]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with"
+    },
+    {
+      "name": "Press 13",
+      "tags": "",
+      "id": "17",
+      "text": "You press the button marked 13, and head to your personal offices.  Hoping to catch up on some paperwork, you continue through the slightly unpleasant smell of carpet adhesive and sit behind your desk.\n\nYou can\n\n[[Immediately get to work]]\n\nor\n\n[[Fidget for a moment, putting off the tasks of the day]]",
+      "links": [
+        {
+          "linkText": "Immediately get to work",
+          "passageName": "Immediately get to work",
+          "original": "[[Immediately get to work]]"
+        },
+        {
+          "linkText": "Fidget for a moment, putting off the tasks of the day",
+          "passageName": "Fidget for a moment, putting off the tasks of the day",
+          "original": "[[Fidget for a moment, putting off the tasks of the day]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You press the button marked 13, and head to your personal offices.  Hoping to catch up on some paperwork, you continue through the slightly unpleasant smell of carpet adhesive and sit behind your desk.\n\nYou can\n\n\n\nor"
+    },
+    {
+      "name": "Press 4",
+      "tags": "",
+      "id": "18",
+      "text": "You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.\n\n[[Grab a gooey cinnamon bun]]\n\n[[Grab a banana]]",
+      "links": [
+        {
+          "linkText": "Grab a gooey cinnamon bun",
+          "passageName": "Grab a gooey cinnamon bun",
+          "original": "[[Grab a gooey cinnamon bun]]"
+        },
+        {
+          "linkText": "Grab a banana",
+          "passageName": "Grab a banana",
+          "original": "[[Grab a banana]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something."
+    },
+    {
+      "name": "Press R",
+      "tags": "",
+      "id": "19",
+      "text": "You press R on the elevator to get some air.  After a brief existential whirr, the doors open on the roof of the building.  You step out, gulp a few mouthfuls of air and steel your nerves for the day.  As you're about to turn back to the elevators, you notice something.\n\nDo you\n\n[[Investigate the shiny object you notice out of the corner of your eye?]]\n\nor do you\n\n[[Focus on getting to the days work.]]",
+      "links": [
+        {
+          "linkText": "Investigate the shiny object you notice out of the corner of your eye?",
+          "passageName": "Investigate the shiny object you notice out of the corner of your eye?",
+          "original": "[[Investigate the shiny object you notice out of the corner of your eye?]]"
+        },
+        {
+          "linkText": "Focus on getting to the days work.",
+          "passageName": "Focus on getting to the days work.",
+          "original": "[[Focus on getting to the days work.]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You press R on the elevator to get some air.  After a brief existential whirr, the doors open on the roof of the building.  You step out, gulp a few mouthfuls of air and steel your nerves for the day.  As you're about to turn back to the elevators, you notice something.\n\nDo you\n\n\n\nor do you"
+    },
+    {
+      "name": "Take a cold shower",
+      "tags": "",
+      "id": "20",
+      "text": "The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masachistic routine.\n\n{gain 1 alertness point}\n\n[[Finish getting ready and eat some breakfast]]",
+      "links": [
+        {
+          "linkText": "Finish getting ready and eat some breakfast",
+          "passageName": "Finish getting ready and eat some breakfast",
+          "original": "[[Finish getting ready and eat some breakfast]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masachistic routine.\n\n{gain 1 alertness point}"
+    },
+    {
+      "name": "Take a cold shower-battle",
+      "tags": "",
+      "id": "21",
+      "text": "{battle cold shower demons}\n\n[[Take a cold shower]]",
+      "links": [
+        {
+          "linkText": "Take a cold shower",
+          "passageName": "Take a cold shower",
+          "original": "[[Take a cold shower]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "{battle cold shower demons}"
+    },
+    {
+      "name": "Take a hot shower",
+      "tags": "",
+      "id": "22",
+      "text": "You relax under the calming water, letting your anger at the world for existing melt like ice and flake off of you in layers.  Your jaw ucleanches.  You're not happy with today, but you're a little more ready for it.\n\n{gain a resilience point}\n\nYou towel off and sit on the bed, relaxing for just a moment... stretching out feels... so nice...\n\n[[Your alarm wakes you]]",
+      "links": [
+        {
+          "linkText": "Your alarm wakes you",
+          "passageName": "Your alarm wakes you",
+          "original": "[[Your alarm wakes you]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You relax under the calming water, letting your anger at the world for existing melt like ice and flake off of you in layers.  Your jaw ucleanches.  You're not happy with today, but you're a little more ready for it.\n\n{gain a resilience point}\n\nYou towel off and sit on the bed, relaxing for just a moment... stretching out feels... so nice..."
+    },
+    {
+      "name": "Take advantage of the extra... ugh... hour",
+      "tags": "",
+      "id": "23",
+      "text": "You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your legs out of the bed, hoping peer pressure will rouse the rest of you.  Standing unsteadily, you blear your way to the bathroom, relieve yourself, and attempt to jump start your day.\n\n[[Take a hot shower]]\n\n[[Take a cold shower-battle]]",
+      "links": [
+        {
+          "linkText": "Take a hot shower",
+          "passageName": "Take a hot shower",
+          "original": "[[Take a hot shower]]"
+        },
+        {
+          "linkText": "Take a cold shower-battle",
+          "passageName": "Take a cold shower-battle",
+          "original": "[[Take a cold shower-battle]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your legs out of the bed, hoping peer pressure will rouse the rest of you.  Standing unsteadily, you blear your way to the bathroom, relieve yourself, and attempt to jump start your day."
+    },
+    {
+      "name": "This is a choice.  It goes to a passage with this title.",
+      "tags": "",
+      "id": "24",
+      "text": "[[Opening scene]]",
+      "links": [
+        {
+          "linkText": "Opening scene",
+          "passageName": "Opening scene",
+          "original": "[[Opening scene]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "William Redbrook",
+      "tags": "",
+      "id": "25",
+      "text": "",
+      "links": [],
+      "hooks": [],
+      "cleanText": ""
+    },
+    {
+      "name": "Your alarm wakes you",
+      "tags": "",
+      "id": "26",
+      "text": "You jolt into reality.  Falling asleep again was a bad idea.\n\n[[shake it off -- spend 1 resilience point]]\n\n[[proceed to \"have a day\"  -- lose one alertness point, gain status 'Having a day.']]",
+      "links": [
+        {
+          "linkText": "shake it off -- spend 1 resilience point",
+          "passageName": "shake it off -- spend 1 resilience point",
+          "original": "[[shake it off -- spend 1 resilience point]]"
+        },
+        {
+          "linkText": "proceed to \"have a day\"  -- lose one alertness point, gain status 'Having a day.'",
+          "passageName": "proceed to \"have a day\"  -- lose one alertness point, gain status 'Having a day.'",
+          "original": "[[proceed to \"have a day\"  -- lose one alertness point, gain status 'Having a day.']]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You jolt into reality.  Falling asleep again was a bad idea."
+    },
+    {
+      "name": "head to work.",
+      "tags": "",
+      "id": "27",
+      "text": "Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and...\n\n[[Press 13]]\n\n[[Press 4]]\n\n[[Press R]]",
+      "links": [
+        {
+          "linkText": "Press 13",
+          "passageName": "Press 13",
+          "original": "[[Press 13]]"
+        },
+        {
+          "linkText": "Press 4",
+          "passageName": "Press 4",
+          "original": "[[Press 4]]"
+        },
+        {
+          "linkText": "Press R",
+          "passageName": "Press R",
+          "original": "[[Press R]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and..."
+    },
+    {
+      "name": "proceed to \"have a day\"  -- lose one alertness point, gain status 'Having a day.'",
+      "tags": "",
+      "id": "28",
+      "text": "Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.\n\n[[Finish getting ready and eat some breakfast]]",
+      "links": [
+        {
+          "linkText": "Finish getting ready and eat some breakfast",
+          "passageName": "Finish getting ready and eat some breakfast",
+          "original": "[[Finish getting ready and eat some breakfast]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a."
+    },
+    {
+      "name": "shake it off -- spend 1 resilience point",
+      "tags": "",
+      "id": "29",
+      "text": "You shudder, focus all your mental energy, and just decide to move on.\n\n[[Finish getting ready and eat some breakfast]]",
+      "links": [
+        {
+          "linkText": "Finish getting ready and eat some breakfast",
+          "passageName": "Finish getting ready and eat some breakfast",
+          "original": "[[Finish getting ready and eat some breakfast]]"
+        }
+      ],
+      "hooks": [],
+      "cleanText": "You shudder, focus all your mental energy, and just decide to move on."
+    }
+  ]
+}
