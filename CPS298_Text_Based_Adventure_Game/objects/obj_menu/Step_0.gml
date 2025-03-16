@@ -25,6 +25,7 @@ if (hover < 0) hover = optionsCount-1;
 if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter)){
 	if(array_length(options[hover]) == 2){
 		var _func = options[hover][1];
+		// If a function reference exist, run the function	
 		if (_func != -1) _func();
 	}
 	instance_destroy();

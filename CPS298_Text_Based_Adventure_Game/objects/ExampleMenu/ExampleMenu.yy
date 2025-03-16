@@ -8,8 +8,8 @@
   "name":"ExampleMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Menu System",
+    "path":"folders/Objects/Menu System.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -8,8 +8,8 @@
   "name":"obj_mainMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Premade Menus",
+    "path":"folders/Objects/Menu System/Premade Menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,

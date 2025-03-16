@@ -15,6 +15,8 @@
     {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Menu System","folderPath":"folders/Objects/Menu System.yy","name":"Menu System","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Premade Menus","folderPath":"folders/Objects/Menu System/Premade Menus.yy","name":"Premade Menus","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -44,8 +46,8 @@
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},},
     {"id":{"name":"obj_mainMenu","path":"objects/obj_mainMenu/obj_mainMenu.yy",},},
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
+    {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"rm_MainMenu","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"DataManager","path":"scripts/DataManager/DataManager.yy",},},
     {"id":{"name":"MenuManager","path":"scripts/MenuManager/MenuManager.yy",},},
     {"id":{"name":"PlayerManager","path":"scripts/PlayerManager/PlayerManager.yy",},},
@@ -58,7 +60,7 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rm_MainMenu","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},},
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
