@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oGame",
+  "%Name":"obj_mainMenu",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":54,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oGame",
+  "name":"obj_mainMenu",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Premade Menus",
+    "path":"folders/Objects/Menu System/Premade Menus.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -10,7 +10,7 @@ This also means if we run one function, at the end of it we can populate another
 thus how we can do dialog while making the gameplay adjustable
 */
 
-
+// Our x & y positions are the center point of the menu
 function Menu(_x,_y,_options,_description = -1){
 	with(instance_create_depth(_x,_y,-999,obj_menu)){
 		options = _options;
@@ -18,8 +18,8 @@ function Menu(_x,_y,_options,_description = -1){
 		optionsCount = array_length(_options);
 		hovermarker = "* ";
 		
-		// Set up size
-		margin = 8;
+		// Border Margin around text for the sprite
+		margin = 8; 
 		draw_set_font(PressStart2P);
 		
 		width = 1;
