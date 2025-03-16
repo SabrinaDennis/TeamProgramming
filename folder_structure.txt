@@ -1,0 +1,141 @@
+.
+├── BB-profile-1800px.jpg
+├── BenBaker.md
+├── Brainstorm_dump
+│   ├── GAME BEATS
+│   │   ├── 8 bit density.mp3
+│   │   ├── Sky falling.mp3
+│   │   ├── Where am i.mp3
+│   │   ├── blowing up the town.mp3
+│   │   ├── my love.mp3
+│   │   ├── rainbow road.mp3
+│   │   └── rock world.mp3
+│   ├── README.txt
+│   ├── characters
+│   │   ├── BA.png
+│   │   ├── LR.png
+│   │   ├── MT.png
+│   │   ├── ND.png
+│   │   ├── WR.png
+│   │   ├── animate.css
+│   │   ├── index.html
+│   │   └── style.css
+│   └── story
+│       ├── readme.md
+│       └── story_files
+│           ├── TextAdventureGame.html
+│           ├── TextAdventureGame.json
+│           └── TextAdventureGame.twee
+├── CPS298_Text_Based_Adventure_Game
+│   ├── CPS298_Text_Based_Adventure_Game.resource_order
+│   ├── CPS298_Text_Based_Adventure_Game.yyp
+│   ├── datafiles
+│   │   └── dialog.json
+│   ├── fonts
+│   │   ├── PressStart2P
+│   │   │   ├── PressStart2P-Regular.ttf
+│   │   │   ├── PressStart2P.old.png
+│   │   │   ├── PressStart2P.old.yy
+│   │   │   ├── PressStart2P.png
+│   │   │   └── PressStart2P.yy
+│   │   ├── font
+│   │   │   ├── cmunbmr.ttf
+│   │   │   ├── font.old.png
+│   │   │   ├── font.old.yy
+│   │   │   ├── font.png
+│   │   │   └── font.yy
+│   │   └── font_small
+│   │       ├── cmunbmr.ttf
+│   │       ├── font_small.old.png
+│   │       ├── font_small.old.yy
+│   │       ├── font_small.png
+│   │       └── font_small.yy
+│   ├── objects
+│   │   ├── ExampleMenu
+│   │   │   ├── ExampleMenu.yy
+│   │   │   └── Mouse_54.gml
+│   │   ├── MainText
+│   │   │   ├── Draw_0.gml
+│   │   │   └── MainText.yy
+│   │   ├── obj_button
+│   │   │   ├── Create_0.gml
+│   │   │   ├── Draw_0.gml
+│   │   │   ├── Mouse_4.gml
+│   │   │   └── obj_button.yy
+│   │   ├── obj_mainMenu
+│   │   │   ├── Create_0.gml
+│   │   │   └── obj_mainMenu.yy
+│   │   └── obj_menu
+│   │       ├── Create_0.gml
+│   │       ├── Draw_0.gml
+│   │       ├── Step_0.gml
+│   │       └── obj_menu.yy
+│   ├── options
+│   │   ├── android
+│   │   │   └── options_android.yy
+│   │   ├── html5
+│   │   │   └── options_html5.yy
+│   │   ├── ios
+│   │   │   └── options_ios.yy
+│   │   ├── linux
+│   │   │   └── options_linux.yy
+│   │   ├── mac
+│   │   │   └── options_mac.yy
+│   │   ├── main
+│   │   │   └── options_main.yy
+│   │   ├── operagx
+│   │   │   └── options_operagx.yy
+│   │   ├── tvos
+│   │   │   └── options_tvos.yy
+│   │   └── windows
+│   │       └── options_windows.yy
+│   ├── rooms
+│   │   ├── rm_Game
+│   │   │   ├── RoomCreationCode.gml
+│   │   │   └── rm_Game.yy
+│   │   └── rm_MainMenu
+│   │       ├── RoomCreationCode.gml
+│   │       └── rm_MainMenu.yy
+│   ├── scripts
+│   │   ├── ChoiceManager
+│   │   │   ├── ChoiceManager.gml
+│   │   │   └── ChoiceManager.yy
+│   │   ├── DataManager
+│   │   │   ├── DataManager.gml
+│   │   │   └── DataManager.yy
+│   │   ├── MenuManager
+│   │   │   ├── MenuManager.gml
+│   │   │   └── MenuManager.yy
+│   │   ├── PlayerManager
+│   │   │   ├── PlayerManager.gml
+│   │   │   └── PlayerManager.yy
+│   │   └── RoomManager
+│   │       ├── RoomManager.gml
+│   │       └── RoomManager.yy
+│   └── sprites
+│       ├── spr_Background
+│       │   ├── ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
+│       │   ├── layers
+│       │   │   └── ace3d77e-c106-47d5-ad27-2a69b0b56be6
+│       │   │       └── 458c13b6-4fb1-406c-b609-28c2aa3a6853.png
+│       │   └── spr_Background.yy
+│       ├── spr_Button
+│       │   ├── 1c678b0e-d0f2-4a9b-ac53-bff98c365034.png
+│       │   ├── layers
+│       │   │   └── 1c678b0e-d0f2-4a9b-ac53-bff98c365034
+│       │   │       └── 5f66077f-d78e-46a0-9804-599fba16ca20.png
+│       │   └── spr_Button.yy
+│       └── spr_menuBox
+│           ├── 38dd2a43-c6dc-46fa-a525-374cb5f6738d.png
+│           ├── layers
+│           │   └── 38dd2a43-c6dc-46fa-a525-374cb5f6738d
+│           │       └── efc5e6fe-027f-4dec-a199-71e9098bf7bd.png
+│           └── spr_menuBox.yy
+├── Class 2.5
+├── IjeomaOnuosa.md
+├── JamesByrnes.md
+├── KatherineNymshack.md
+├── KhouriFountain.txt
+└── folder_structure.txt
+
+46 directories, 92 files

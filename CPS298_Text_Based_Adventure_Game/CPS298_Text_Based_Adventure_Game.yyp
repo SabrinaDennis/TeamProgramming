@@ -29,7 +29,7 @@
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"script.json","CopyToMask":-1,"filePath":"datafiles","name":"script.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"dialog.json","CopyToMask":-1,"filePath":"datafiles","name":"dialog.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -48,6 +48,7 @@
     {"id":{"name":"obj_menu","path":"objects/obj_menu/obj_menu.yy",},},
     {"id":{"name":"rm_Game","path":"rooms/rm_Game/rm_Game.yy",},},
     {"id":{"name":"rm_MainMenu","path":"rooms/rm_MainMenu/rm_MainMenu.yy",},},
+    {"id":{"name":"ChoiceManager","path":"scripts/ChoiceManager/ChoiceManager.yy",},},
     {"id":{"name":"DataManager","path":"scripts/DataManager/DataManager.yy",},},
     {"id":{"name":"MenuManager","path":"scripts/MenuManager/MenuManager.yy",},},
     {"id":{"name":"PlayerManager","path":"scripts/PlayerManager/PlayerManager.yy",},},
