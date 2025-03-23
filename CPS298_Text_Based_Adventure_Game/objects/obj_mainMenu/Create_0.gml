@@ -2,8 +2,11 @@ Menu(
 	room_width/2,
 	room_height/2,
 	[
-		["Start Game",room_goto_next],
-		["Settings",-1]
+		 // option        function ref     parameters
+		["Start Game",    room_goto_next,  -1],
+		["Settings",      -1,              -1]
 	],
-	"Text Adventure's of Argothon"
+	"Text Adventure's of Argothon",
+	true // Centered or not 
 )
+

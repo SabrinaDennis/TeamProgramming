@@ -1,10 +1,11 @@
 // Adjust the cordinates to make it easier to center the text box.
-var xCentered = x - (widthFull/2);
-var yCentered = y - (heightFull/2);
-
+if(centered != false){
+	xPosition = x - (widthFull/2);
+	yPosition = y - (heightFull/2);
+}
 
 // Draw our box sprite (nine sliced)
-draw_sprite_stretched(spr_menuBox,0,xCentered-margin,yCentered-margin,widthFull,heightFull)
+draw_sprite_stretched(spr_menuBox,0,xPosition-margin,yPosition-margin,widthFull,heightFull)
 
 // Text Colors
 var highlightedTextColor = c_yellow;
@@ -26,7 +27,7 @@ for(var l = 0; l < (optionsCount + _desc); l++){
 	draw_set_colour(normalTextColor);
 	
 	if(l == 0) && (_desc){
-		draw_text(x-(widthFull/2),y-(heightFull/2),description);
+		draw_text(xPosition,yPosition,description);
 	} else{
 		var _str = options[l-_desc][0]
 		
@@ -35,7 +36,6 @@ for(var l = 0; l < (optionsCount + _desc); l++){
 			_str = hovermarker + _str;
 		}
 		
-		draw_text(x-(widthFull/2),y-(heightFull/2) + l * heightLine, _str);
+		draw_text(xPosition,yPosition + l * heightLine, _str);
 	}
-
 }
