@@ -11,13 +11,14 @@ thus how we can do dialog while making the gameplay adjustable
 */
 
 // Our x & y positions are the center point of the menu
-function Menu(_x,_y,_options,_description = -1){
+function Menu(_x,_y,_options,_description = -1,_centered = false){
 	with(instance_create_depth(_x,_y,-999,obj_menu)){
 		options = _options;
 		description = _description;
 		optionsCount = array_length(_options);
 		hovermarker = "* ";
-		
+		centered = _centered;
+
 		// Border Margin around text for the sprite
 		margin = 8; 
 		draw_set_font(PressStart2P);

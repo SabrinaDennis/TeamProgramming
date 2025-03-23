@@ -53,6 +53,7 @@
     {"id":{"name":"MenuManager","path":"scripts/MenuManager/MenuManager.yy",},},
     {"id":{"name":"PlayerManager","path":"scripts/PlayerManager/PlayerManager.yy",},},
     {"id":{"name":"RoomManager","path":"scripts/RoomManager/RoomManager.yy",},},
+    {"id":{"name":"TestManager","path":"scripts/TestManager/TestManager.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_menuBox","path":"sprites/spr_menuBox/spr_menuBox.yy",},},
