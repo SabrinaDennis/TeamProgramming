@@ -6,7 +6,7 @@ function destroyAllObjects(){
 
 /// @function createBackground
 /// @description Display background
-/// @param {sprite} _bgSprite Background Sprite Reference
+/// @param {any} _bgSprite Background Sprite Reference
 function createBackground(_bgSprite){
 	global.backgroundLayer = layer_create(2);
 	global.background = layer_background_create(global.backgroundLayer,_bgSprite);
