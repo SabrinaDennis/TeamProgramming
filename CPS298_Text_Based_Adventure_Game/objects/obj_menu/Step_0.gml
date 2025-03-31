@@ -27,6 +27,16 @@ if (hover > optionsCount-1) hover = 0;
 if (hover < 0) hover = optionsCount-1;
 
 
+
+// Play Audio if key pressed
+if(keyboard_check_pressed(vk_down)){
+	audio_play_sound(snd_menuDown,0,false)
+}
+
+if(keyboard_check_pressed(vk_up)){
+	audio_play_sound(snd_menuUp,0,false)
+}
+
 // Make the functions actually work, allow the player to activate an option
 if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter)){
 	if(array_length(options[hover]) == 3){
