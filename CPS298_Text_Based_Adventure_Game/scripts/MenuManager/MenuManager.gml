@@ -11,6 +11,16 @@ thus how we can do dialog while making the gameplay adjustable
 */
 
 // Our x & y positions are the center point of the menu
+
+
+/// @function Menu
+/// @description Creates a menu
+/// @param {real} _x X position
+/// @param {real} _y Y position
+/// @param {array} _options Array of Arrays Including [String Option Text, Function Reference or -1, [Array of Function Parameters or -1]] 
+/// @param {real} _description Title of the menu when it opens. (-1 for no text)
+/// @param {Bool} _centered Do you want the X/Y to be the center of the menu? (True/False) 
+
 function Menu(_x,_y,_options,_description = -1,_centered = false){
 	with(instance_create_depth(_x,_y,-999,obj_menu)){
 		options = _options;

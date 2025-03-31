@@ -1,13 +1,19 @@
+/// @function destroyAllObjects
+/// @description Destroys all objects in the room (Literally everything)
 function destroyAllObjects(){
 	with(all){ instance_destroy(); }
 }
 
-function createBackground(bgSprite){
+/// @function createBackground
+/// @description Display background
+/// @param {sprite} _bgSprite Background Sprite Reference
+function createBackground(_bgSprite){
 	global.backgroundLayer = layer_create(2);
-	global.background = layer_background_create(global.backgroundLayer,bgSprite);
+	global.background = layer_background_create(global.backgroundLayer,_bgSprite);
 }
 
-
+/// @function populateAllObjects
+/// @description Populates the objects in the room (bg, buttons)
 function populateAllObjects(){
 	var scene = global.dialogJSON.scenes[global.currentIndex];
 	var sceneName = scene.sceneName;
