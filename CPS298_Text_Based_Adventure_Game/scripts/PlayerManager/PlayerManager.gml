@@ -9,7 +9,9 @@ function playerAddGold(amount){
 	global.playerGold += amount;
 }
 
-function playerTakeDamage(damageTaken){
+function playerTakeDamage(_parameters){
+	var damageTaken = _parameters[0]
+	
 	if(!global.playerHealth - damageTaken >= 0){
 		global.playerHealth -= damageTaken;
 	}else{
@@ -18,7 +20,10 @@ function playerTakeDamage(damageTaken){
 	}
 }
 
-function playerAddHealth(healthToAdd){
+function playerAddHealth(_parameters){
+	var healthToAdd = _parameters[0]
+	
+	
 	if(!global.playerHealth + healthToAdd > global.playerMaxHealth){
 		global.playerHealth += healthToAdd;
 	}else{
