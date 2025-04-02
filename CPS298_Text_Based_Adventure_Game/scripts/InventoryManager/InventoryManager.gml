@@ -4,7 +4,7 @@
 /// @param {real} _description Description of item
 /// @param {any} _sprite Sprite Reference
 function createNewItem(_name,_description,_sprite){
-	return item = {name:name, sprite: _sprite, description: _description}
+	return item = {name:_name, sprite: _sprite, description: _description}
 }
 
 
