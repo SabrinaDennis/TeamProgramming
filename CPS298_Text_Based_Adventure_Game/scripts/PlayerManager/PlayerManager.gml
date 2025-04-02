@@ -1,5 +1,5 @@
 /// @function initializePlayer
-/// @description Initializes the player variables (Health,Gold)
+/// @description Initializes the player variables (Health,Gold,Inventory)
 function initializePlayer(){
 	global.player = {
 		health: 100,
