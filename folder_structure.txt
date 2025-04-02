@@ -2,6 +2,28 @@
 ├── BB-profile-1800px.jpg
 ├── BenBaker.md
 ├── Brainstorm_dump
+│   ├── CharacterSprites
+│   │   ├── MSprites
+│   │   │   ├── MFutureNeutral.webp
+│   │   │   ├── MFutureSmile.webp
+│   │   │   ├── MPastNeutral.webp
+│   │   │   ├── MPastSmile.webp
+│   │   │   ├── MPresentNeutral.webp
+│   │   │   └── MPresentSmile.webp
+│   │   ├── NDSprites
+│   │   │   ├── NDfutureNeutral.webp
+│   │   │   ├── NDfutureSmile.webp
+│   │   │   ├── NDpastNeutral.webp
+│   │   │   ├── NDpastSmile.webp
+│   │   │   ├── NDpresentNeutral.webp
+│   │   │   └── NDpresentSmile.webp
+│   │   └── WBSprites
+│   │       ├── WBfutureNeutral.webp
+│   │       ├── WBfutureSmile.webp
+│   │       ├── WBpastNeutral.webp
+│   │       ├── WBpastSmile.webp
+│   │       ├── WBpresentNeutral.webp
+│   │       └── WBpresentSmile.webp
 │   ├── GAME BEATS
 │   │   ├── 8 bit density.mp3
 │   │   ├── Sky falling.mp3
@@ -10,6 +32,10 @@
 │   │   ├── my love.mp3
 │   │   ├── rainbow road.mp3
 │   │   └── rock world.mp3
+│   ├── Menu Clicks ( SFX )
+│   │   ├── Menu clicks.wav
+│   │   ├── Menu_down.mp3
+│   │   └── Menu_up.mp3
 │   ├── README.txt
 │   ├── characters
 │   │   ├── BA.png
@@ -62,6 +88,12 @@
 │   │   │   ├── Draw_0.gml
 │   │   │   ├── Mouse_4.gml
 │   │   │   └── obj_button.yy
+│   │   ├── obj_enemy
+│   │   │   ├── Create_0.gml
+│   │   │   ├── Draw_0.gml
+│   │   │   └── obj_enemy.yy
+│   │   ├── obj_healthbar
+│   │   │   └── obj_healthbar.yy
 │   │   ├── obj_mainMenu
 │   │   │   ├── Create_0.gml
 │   │   │   └── obj_mainMenu.yy
@@ -103,15 +135,34 @@
 │   │   ├── DataManager
 │   │   │   ├── DataManager.gml
 │   │   │   └── DataManager.yy
+│   │   ├── EnemyManager
+│   │   │   ├── EnemyManager.gml
+│   │   │   └── EnemyManager.yy
+│   │   ├── InventoryManager
+│   │   │   ├── InventoryManager.gml
+│   │   │   └── InventoryManager.yy
 │   │   ├── MenuManager
 │   │   │   ├── MenuManager.gml
 │   │   │   └── MenuManager.yy
+│   │   ├── MusicManager
+│   │   │   ├── MusicManager.gml
+│   │   │   └── MusicManager.yy
 │   │   ├── PlayerManager
 │   │   │   ├── PlayerManager.gml
 │   │   │   └── PlayerManager.yy
-│   │   └── RoomManager
-│   │       ├── RoomManager.gml
-│   │       └── RoomManager.yy
+│   │   ├── RoomManager
+│   │   │   ├── RoomManager.gml
+│   │   │   └── RoomManager.yy
+│   │   └── TestManager
+│   │       ├── TestManager.gml
+│   │       └── TestManager.yy
+│   ├── sounds
+│   │   ├── snd_menuDown
+│   │   │   ├── snd_menuDown.mp3
+│   │   │   └── snd_menuDown.yy
+│   │   └── snd_menuUp
+│   │       ├── snd_menuUp.mp3
+│   │       └── snd_menuUp.yy
 │   └── sprites
 │       ├── spr_Background
 │       │   ├── ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
@@ -125,6 +176,18 @@
 │       │   │   └── 1c678b0e-d0f2-4a9b-ac53-bff98c365034
 │       │   │       └── 5f66077f-d78e-46a0-9804-599fba16ca20.png
 │       │   └── spr_Button.yy
+│       ├── spr_enemy
+│       │   ├── 0c44e8c4-06c7-40c8-a790-8e7284917a81.png
+│       │   ├── layers
+│       │   │   └── 0c44e8c4-06c7-40c8-a790-8e7284917a81
+│       │   │       └── 1694d07d-c98b-4920-9651-0860f6594778.png
+│       │   └── spr_enemy.yy
+│       ├── spr_key
+│       │   ├── 2db225aa-4580-4fdd-81d9-6543a58660e0.png
+│       │   ├── layers
+│       │   │   └── 2db225aa-4580-4fdd-81d9-6543a58660e0
+│       │   │       └── 57377398-8e52-4443-9807-3207fed457ef.png
+│       │   └── spr_key.yy
 │       └── spr_menuBox
 │           ├── 38dd2a43-c6dc-46fa-a525-374cb5f6738d.png
 │           ├── layers
@@ -138,4 +201,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-46 directories, 92 files
+67 directories, 135 files
