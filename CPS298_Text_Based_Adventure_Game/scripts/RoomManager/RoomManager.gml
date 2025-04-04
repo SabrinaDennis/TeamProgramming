@@ -15,17 +15,13 @@ function createBackground(_bgSprite){
 /// @function populateAllObjects
 /// @description Populates the objects in the room (bg, buttons)
 function populateAllObjects(){
-	var scene = global.dialogJSON.scenes[global.currentIndex];
+	var scene = global.dialog.scenes[global.currentIndex];
 	var sceneName = scene.sceneName;
 	var sceneText = scene.sceneText;
 
 	show_debug_message(sceneName);
-	var choices = scene.options;
 	createBackground(spr_background);
-	
-	Menu(200,200,scene.options)
-	//for(var i=0; i<array_length(choices); i++){
-	//	instance_create_depth(.3*room_width,.3*room_height+128*i,0, obj_button, {button_choice:i, choiceText:choices[i].choiceText, choiceTarget:choices[i].choiceTarget, choiceFunc:choices[i].choiceFunc, choiceFuncParameters:choices[i].choiceFuncParameters});
-	//}
+	draw_set_font(font_small);
+	Menu(200,200+string_height(sceneText)*1.5,scene.options);
 	instance_create_depth(.28*room_width, .1*room_height, 1, MainText, {mainName:sceneName, mainText:sceneText});
 }
