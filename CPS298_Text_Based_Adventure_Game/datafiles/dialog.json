@@ -1,1 +1,239 @@
-{"gameDialog": {"scenes": [{"sceneIndex": 0, "sceneName": "Opening Scene", "character": "", "background": "", "sceneText": "You see a maze all around you", "choices": [{"choiceNeeds": "", "choiceText": "Go West.", "choiceReceive": "", "choiceTarget": 1, "enemies": [{}], "choiceFunc": "lose", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Go East.", "choiceReceive": "", "choiceTarget": 2, "enemies": [{}], "choiceFunc": "fight", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Go North.", "choiceReceive": "", "choiceTarget": 3, "enemies": [{}], "choiceFunc": "nothing", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Stay there.", "choiceReceive": "", "choiceTarget": 4, "enemies": [{}], "choiceFunc": "shop", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 1, "sceneName": "West of Opening Scene", "sceneText": "You see a maze all around you, but the start is behind you to the East.", "character": "", "background": "", "choices": [{"choiceNeeds": "", "choiceText": "Go West again.", "choiceReceive": "", "choiceTarget": 5, "enemies": [{}], "choiceFunc": "lose", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Go East.", "choiceReceive": "", "choiceTarget": 0, "enemies": [{}], "choiceFunc": "fight", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Go North.", "choiceReceive": "", "choiceTarget": 6, "enemies": [{}], "choiceFunc": "nothing", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 2, "sceneName": "Opening Scene, but you went East", "sceneText": "You see a maze all around you, and a bit of dust in the corner.  The entrance is to the West.", "character": "", "background": "", "choices": [{"choiceNeeds": "", "choiceText": "Go West.", "choiceReceive": "", "choiceTarget": 0, "enemies": [{"enemy1": 0.2}, {"enemy2": 0.01}], "choiceFunc": "shop", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "key", "choiceText": "You notice a locked door that almost certainly wasn't there before...", "choiceReceive": "win", "choiceTarget": 8, "enemies": [], "choiceFunc": "nothing", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 3, "sceneName": "Opening Scene, but you went North", "sceneText": "You see a maze all around you, and the sun shines through a hole in the ceiling.  The entrance is to the South.  This is a dead end.", "character": "", "background": "", "choices": [{"choiceNeeds": "", "choiceText": "Go South.", "choiceReceive": "", "choiceTarget": 7, "enemies": [{"enemy1": 0.9}, {"enemy2": 0.1}], "choiceFunc": "nothing", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 4, "sceneName": "Opening Scene, still", "sceneText": "You twiddle your thumbs.", "character": "", "background": "", "choices": [{"choiceNeeds": "", "choiceText": "Continue.", "choiceReceive": "", "choiceTarget": 0, "enemies": [], "choiceFunc": "blocked", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 5, "sceneName": "Ruined Room", "sceneText": "You stop short to avoid falling off the edge of a cliff.  The only ways to leave this room are back the way you came, and a small tunnel in one corner.", "character": "", "background": "", "choices": [{"choiceNeeds": "", "choiceText": "Go East.", "choiceReceive": "", "choiceTarget": 1, "enemies": [], "choiceFunc": "nothing", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Crawl through the cramped tunnel.", "choiceReceive": "key", "choiceTarget": 6, "enemies": [], "choiceFunc": "find", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 6, "sceneName": "Dead End", "sceneText": "This room is similar to the others, however you notice a small tunnel in one corner.", "character": "", "background": "", "choices": [{"choiceNeeds": "", "choiceText": "Go South.", "choiceReceive": "", "choiceTarget": 1, "enemies": [], "choiceFunc": "find", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Go East.", "choiceReceive": "", "choiceTarget": 3, "enemies": [], "choiceFunc": "shop", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}, {"choiceNeeds": "", "choiceText": "Enter the dark and twisting tunnel.", "choiceReceive": "key", "choiceTarget": 5, "enemies": [], "choiceFunc": "lose", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 7, "sceneName": "On your way back to the entrance.", "sceneText": "As you turn to go back to the start you are surprised by an enemy.", "character": "Enemy", "background": "", "choices": [{"choiceNeeds": "", "choiceText": "Fight!", "choiceReceive": "key", "choiceTarget": 0, "enemies": [{"enemy1": 1.0}], "choiceFunc": "blocked", "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]}]}, {"sceneIndex": 8, "sceneName": "You WIN!", "sceneText": "You've made an amazing journey and learned so much along the way.  Mostly about your own complexities as a human.  You find your way home and live a fulfilling life, dieing in your sleep at the age of 115.", "character": "player", "background": "", "choices": []}]}}
+{
+  "gameDialog": {
+    "scenes": [
+      {
+        "sceneIndex": 0,
+        "sceneName": "Opening Scene",
+        "character": "",
+        "background": "",
+        "sceneText": "You see a maze all around you",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go West.",
+            "choiceReceive": "",
+            "choiceTarget": 1,
+            "enemies": [{}],
+            "choiceFunc": "lose",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go East.",
+            "choiceReceive": "",
+            "choiceTarget": 2,
+            "enemies": [{}],
+            "choiceFunc": "fight",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go North.",
+            "choiceReceive": "",
+            "choiceTarget": 3,
+            "enemies": [{}],
+            "choiceFunc": "nothing",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Stay there.",
+            "choiceReceive": "",
+            "choiceTarget": 4,
+            "enemies": [{}],
+            "choiceFunc": "shop",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 1,
+        "sceneName": "West of Opening Scene",
+        "sceneText": "You see a maze all around you, but the start is behind you to the East.",
+        "character": "",
+        "background": "",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go West again.",
+            "choiceReceive": "",
+            "choiceTarget": 5,
+            "enemies": [{}],
+            "choiceFunc": "lose",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go East.",
+            "choiceReceive": "",
+            "choiceTarget": 0,
+            "enemies": [{}],
+            "choiceFunc": "fight",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go North.",
+            "choiceReceive": "",
+            "choiceTarget": 6,
+            "enemies": [{}],
+            "choiceFunc": "nothing",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 2,
+        "sceneName": "Opening Scene, but you went East",
+        "sceneText": "You see a maze all around you, and a bit of dust in the corner.  The entrance is to the West.",
+        "character": "",
+        "background": "",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go West.",
+            "choiceReceive": "",
+            "choiceTarget": 0,
+            "enemies": [{ "enemy1": 0.2 }, { "enemy2": 0.01 }],
+            "choiceFunc": "shop",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "key",
+            "choiceText": "You notice a locked door that almost certainly wasn't there before...",
+            "choiceReceive": "win",
+            "choiceTarget": 8,
+            "enemies": [],
+            "choiceFunc": "nothing",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 3,
+        "sceneName": "Opening Scene, but you went North",
+        "sceneText": "You see a maze all around you, and the sun shines through a hole in the ceiling.  The entrance is to the South.  This is a dead end.",
+        "character": "",
+        "background": "",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go South.",
+            "choiceReceive": "",
+            "choiceTarget": 7,
+            "enemies": [{ "enemy1": 0.9 }, { "enemy2": 0.1 }],
+            "choiceFunc": "nothing",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 4,
+        "sceneName": "Opening Scene, still",
+        "sceneText": "You twiddle your thumbs.",
+        "character": "",
+        "background": "",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Continue.",
+            "choiceReceive": "",
+            "choiceTarget": 0,
+            "enemies": [],
+            "choiceFunc": "blocked",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 5,
+        "sceneName": "Ruined Room",
+        "sceneText": "You stop short to avoid falling off the edge of a cliff.  The only ways to leave this room are back the way you came, and a small tunnel in one corner.",
+        "character": "",
+        "background": "",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go East.",
+            "choiceReceive": "",
+            "choiceTarget": 1,
+            "enemies": [],
+            "choiceFunc": "nothing",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Crawl through the cramped tunnel.",
+            "choiceReceive": "key",
+            "choiceTarget": 6,
+            "enemies": [],
+            "choiceFunc": "find",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 6,
+        "sceneName": "Dead End",
+        "sceneText": "This room is similar to the others, however you notice a small tunnel in one corner.",
+        "character": "",
+        "background": "",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go South.",
+            "choiceReceive": "",
+            "choiceTarget": 1,
+            "enemies": [],
+            "choiceFunc": "find",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Go East.",
+            "choiceReceive": "",
+            "choiceTarget": 3,
+            "enemies": [],
+            "choiceFunc": "shop",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          },
+          {
+            "choiceNeeds": "",
+            "choiceText": "Enter the dark and twisting tunnel.",
+            "choiceReceive": "key",
+            "choiceTarget": 5,
+            "enemies": [],
+            "choiceFunc": "lose",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 7,
+        "sceneName": "On your way back to the entrance.",
+        "sceneText": "As you turn to go back to the start you are surprised by an enemy.",
+        "character": "Enemy",
+        "background": "",
+        "choices": [
+          {
+            "choiceNeeds": "",
+            "choiceText": "Fight!",
+            "choiceReceive": "key",
+            "choiceTarget": 0,
+            "enemies": [{ "enemy1": 1.0 }],
+            "choiceFunc": "blocked",
+            "choiceFuncParameters": ["firstParam", "secondParam", "thirdParam"]
+          }
+        ]
+      },
+      {
+        "sceneIndex": 8,
+        "sceneName": "You WIN!",
+        "sceneText": "You've made an amazing journey and learned so much along the way.  Mostly about your own complexities as a human.  You find your way home and live a fulfilling life, dieing in your sleep at the age of 115.",
+        "character": "player",
+        "background": "",
+        "choices": []
+      }
+    ]
+  }
+}

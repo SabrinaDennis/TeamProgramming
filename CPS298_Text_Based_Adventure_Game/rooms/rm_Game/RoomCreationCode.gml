@@ -1,3 +1,5 @@
+initializePlayer();
+
 loadDialogData("dialog.json");
 
 global.currentIndex = 0;

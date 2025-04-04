@@ -15,15 +15,61 @@ function createBackground(_bgSprite){
 /// @function populateAllObjects
 /// @description Populates the objects in the room (bg, buttons)
 function populateAllObjects(){
-	var scene = global.dialogJSON.scenes[global.currentIndex];
-	var sceneName = scene.sceneName;
-	var sceneText = scene.sceneText;
+    var scene = global.dialog.scenes[global.currentIndex];
+    var sceneName = scene.sceneName;
+    var sceneText = scene.sceneText;
 
-	show_debug_message(sceneName);
-	var choices = scene.choices;
-	createBackground(spr_background);
-	for(var i=0; i<array_length(choices); i++){
-		instance_create_depth(.3*room_width,.3*room_height+128*i,0, obj_button, {button_choice:i, choiceText:choices[i].choiceText, choiceTarget:choices[i].choiceTarget, choiceFunc:choices[i].choiceFunc, choiceFuncParameters:choices[i].choiceFuncParameters});
-	}
-	instance_create_depth(.28*room_width, .1*room_height, 1, MainText, {mainName:sceneName, mainText:sceneText});
+    show_debug_message(sceneName);
+    createBackground(spr_background);
+    
+    // Create buttons for each choice
+    var buttonOptions = [];
+    
+    // Check which source we're using (JSON or struct)
+    if (variable_struct_exists(scene, "choices")) {
+        // Using JSON format
+        var buttonCount = array_length(scene.choices);
+        var buttonSpacing = 40; // Space between buttons
+        var startY = room_height * 0.4; // Start position for buttons
+        
+        for (var i = 0; i < buttonCount; i++) {
+            var choice = scene.choices[i];
+            var btn = instance_create_depth(room_width * 0.3, // X position - more centered
+                                           startY + (buttonSpacing * i), // Y position with spacing
+                                           -100, 
+                                           obj_button);
+            
+            btn.choiceText = choice.choiceText;
+            btn.choiceTarget = choice.choiceTarget;
+            btn.choiceFunc = choice.choiceFunc;
+            btn.choiceFuncParameters = choice.choiceFuncParameters;
+            
+            // Add the item requirement and reward properties
+            if (variable_struct_exists(choice, "choiceNeeds")) {
+                btn.choiceNeeds = choice.choiceNeeds;
+            } else {
+                btn.choiceNeeds = "";
+            }
+            
+            if (variable_struct_exists(choice, "choiceReceive")) {
+                btn.choiceReceive = choice.choiceReceive;
+            } else {
+                btn.choiceReceive = "";
+            }
+        }
+    } else if (variable_struct_exists(scene, "options")) {
+        // Using DialogStructManager format
+        var options = [];
+        for (var i = 0; i < array_length(scene.options); i++) {
+            array_push(options, scene.options[i]);
+        }
+        // Create menu with options
+        Menu(200, 200 + string_height(sceneText) * 1.5, options);
+    }
+    
+    // Create the text display
+    instance_create_depth(.28 * room_width, .1 * room_height, 1, MainText, {
+        mainName: sceneName, 
+        mainText: sceneText
+    });
 }

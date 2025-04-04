@@ -52,6 +52,7 @@
 │           ├── TextAdventureGame.html
 │           ├── TextAdventureGame.json
 │           └── TextAdventureGame.twee
+├── CONTRIBUTING.md
 ├── CPS298_Text_Based_Adventure_Game
 │   ├── CPS298_Text_Based_Adventure_Game.resource_order
 │   ├── CPS298_Text_Based_Adventure_Game.yyp
@@ -83,25 +84,35 @@
 │   │   ├── MainText
 │   │   │   ├── Draw_0.gml
 │   │   │   └── MainText.yy
+│   │   ├── obj_battle_controller
+│   │   │   ├── Alarm_0.gml
+│   │   │   └── obj_battle_controller.yy
 │   │   ├── obj_button
 │   │   │   ├── Create_0.gml
 │   │   │   ├── Draw_0.gml
 │   │   │   ├── Mouse_4.gml
+│   │   │   ├── Step_0.gml
 │   │   │   └── obj_button.yy
 │   │   ├── obj_enemy
 │   │   │   ├── Create_0.gml
 │   │   │   ├── Draw_0.gml
 │   │   │   └── obj_enemy.yy
+│   │   ├── obj_gameController
+│   │   │   ├── Step_0.gml
+│   │   │   └── obj_gameController.yy
 │   │   ├── obj_healthbar
 │   │   │   └── obj_healthbar.yy
 │   │   ├── obj_mainMenu
 │   │   │   ├── Create_0.gml
 │   │   │   └── obj_mainMenu.yy
-│   │   └── obj_menu
+│   │   ├── obj_menu
+│   │   │   ├── Create_0.gml
+│   │   │   ├── Draw_0.gml
+│   │   │   ├── Step_0.gml
+│   │   │   └── obj_menu.yy
+│   │   └── obj_pauseMenu
 │   │       ├── Create_0.gml
-│   │       ├── Draw_0.gml
-│   │       ├── Step_0.gml
-│   │       └── obj_menu.yy
+│   │       └── obj_pauseMenu.yy
 │   ├── options
 │   │   ├── android
 │   │   │   └── options_android.yy
@@ -153,6 +164,9 @@
 │   │   ├── RoomManager
 │   │   │   ├── RoomManager.gml
 │   │   │   └── RoomManager.yy
+│   │   ├── SaveLoadManager
+│   │   │   ├── SaveLoadManager.gml
+│   │   │   └── SaveLoadManager.yy
 │   │   └── TestManager
 │   │       ├── TestManager.gml
 │   │       └── TestManager.yy
@@ -199,6 +213,7 @@
 ├── JamesByrnes.md
 ├── KatherineNymshack.md
 ├── KhouriFountain.txt
+├── README.md
 └── folder_structure.txt
 
-67 directories, 135 files
+71 directories, 146 files
