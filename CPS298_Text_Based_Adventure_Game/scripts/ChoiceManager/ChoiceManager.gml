@@ -1,5 +1,12 @@
 function ChoiceManager(funcName, parameters){
     //TODO add obvious checks here
+    
+    // Add type checking to safely handle parameters
+    var params = parameters;
+    if (!is_array(parameters)) {
+        params = [parameters]; // Convert to array if not already
+    }
+    
     switch(funcName) {
         case "fight":
             // Get button that was clicked
@@ -35,15 +42,15 @@ function ChoiceManager(funcName, parameters){
             break;
             
         case "shop":
-            var itemsForSale = (parameters.length > 0) ? parameters[0] : "no items";
-            show_debug_message("The shopkeeper offers you " + itemsForSale);
+            var itemsForSale = (array_length(params) > 0) ? params[0] : "no items";
+            show_debug_message("The shopkeeper offers you " + string(itemsForSale));
             
             // Create shop interface with available items
-            createShopInterface(parameters);
+            createShopInterface(params);
             break;
             
         case "find":
-            var foundItem = (parameters.length > 0) ? parameters[0] : "unknown item";
+            var foundItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
             show_debug_message("You find a " + foundItem + "!");
             
             // Add item to inventory if it exists in global.itemList
@@ -54,14 +61,43 @@ function ChoiceManager(funcName, parameters){
             break;
             
         case "lose":
-            var requiredItem = (parameters.length > 0) ? parameters[0] : "unknown item";
+            var requiredItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
             show_debug_message("You need a " + requiredItem + " but don't have it.");
             break;
             
         case "blocked":
-            var requiredItem = (parameters.length > 0) ? parameters[0] : "unknown item";
-            var failTarget = (parameters.length > 1) ? parameters[1] : global.currentIndex;
-            var successTarget = (parameters.length > 2) ? parameters[2] : global.currentIndex;
+            var requiredItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
+            
+            // Handle numeric conversion safely - use default values if conversion fails
+            var failTarget = global.currentIndex;
+            var successTarget = global.currentIndex;
+            
+            // Try to convert the parameters to scene indices
+            if (array_length(params) > 1) {
+                try {
+                    // Only try to convert if it seems to be a number
+                    if (string_digits(string(params[1])) == string(params[1])) {
+                        failTarget = real(params[1]);
+                    } else {
+                        show_debug_message("Warning: Could not convert " + string(params[1]) + " to a number, using current index");
+                    }
+                } catch (e) {
+                    show_debug_message("Error converting failTarget: " + string(e));
+                }
+            }
+            
+            if (array_length(params) > 2) {
+                try {
+                    // Only try to convert if it seems to be a number
+                    if (string_digits(string(params[2])) == string(params[2])) {
+                        successTarget = real(params[2]);
+                    } else {
+                        show_debug_message("Warning: Could not convert " + string(params[2]) + " to a number, using current index");
+                    }
+                } catch (e) {
+                    show_debug_message("Error converting successTarget: " + string(e));
+                }
+            }
             
             // Check if player has the required item
             var hasItem = false;
@@ -98,7 +134,7 @@ function createShopInterface(items) {
     var shopItems = [];
     
     // Default items if none specified
-    if (items.length == 0) {
+    if (array_length(items) == 0) {
         array_push(shopItems, ["Health Potion - 10 gold", purchaseItem, ["healthPotion", 10]]);
         array_push(shopItems, ["Wooden Shield - 25 gold", purchaseItem, ["woodenShield", 25]]);
     } else {
@@ -111,7 +147,7 @@ function createShopInterface(items) {
             } else if (is_array(itemInfo)) {
                 // Array format: [name, price]
                 var name = itemInfo[0];
-                var price = (itemInfo.length > 1) ? itemInfo[1] : 10;
+                var price = (array_length(itemInfo) > 1) ? itemInfo[1] : 10;
                 array_push(shopItems, [name + " - " + string(price) + " gold", purchaseItem, [name, price]]);
             }
         }
