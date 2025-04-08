@@ -1,66 +1,161 @@
 function ChoiceManager(funcName, parameters){
     //TODO add obvious checks here
-    switch(funcName){
+    switch(funcName) {
         case "fight":
-            // Check if there are enemies in the current scene choice
-            var currentScene = global.dialog.scenes[global.currentIndex];
-            var hasEnemies = false;
+            // Get button that was clicked
+            var btn = instance_nearest(mouse_x, mouse_y, obj_button);
             
-            // Find the selected choice
-            for (var i = 0; i < array_length(currentScene.choices); i++) {
-                var choice = currentScene.choices[i];
-                if (choice.choiceFunc == "fight" && array_length(choice.enemies) > 0) {
-                    hasEnemies = true;
+            if (variable_instance_exists(btn, "enemyData") && array_length(btn.enemyData) > 0) {
+                // Get first enemy from the data
+                var enemyData = btn.enemyData[0];
+                var enemyKeys = variable_struct_get_names(enemyData);
+                
+                if (array_length(enemyKeys) > 0) {
+                    var enemyName = enemyKeys[0];
+                    var enemyChance = variable_struct_get(enemyData, enemyName);
                     
-                    // Select an enemy based on probability
-                    var enemyKeys = variable_struct_get_names(choice.enemies[0]);
-                    if (array_length(enemyKeys) > 0) {
-                        var enemyName = enemyKeys[0]; // Default to first enemy
-                        
-                        // Create enemy and start battle
+                    // Only spawn enemy if random chance succeeds
+                    if (random(1) < enemyChance) {
                         show_debug_message("Starting battle with: " + enemyName);
-                        createEnemy(enemyName, spr_enemy, 100); // Using default health of 100
-                        
-                        // Create battle UI elements - buttons for attack, defend, etc.
+                        createEnemy(enemyName, spr_enemy, 100);
                         createBattleInterface();
-                        
-                        break;
+                    } else {
+                        show_debug_message("Lucky! No enemy encountered.");
+                        // Continue to next scene without battle
+                        destroyAllObjects();
+                        populateAllObjects();
                     }
                 }
-            }
-            
-            if (!hasEnemies) {
+            } else {
                 show_debug_message("Fight function called but no enemies defined.");
+                // Just continue to next scene
+                destroyAllObjects();
+                populateAllObjects();
             }
             break;
             
         case "shop":
-            show_debug_message(string_concat("The shopkeeper nods at you and offers you ", parameters[0], " but like as an array of items and prices."));
+            var itemsForSale = (parameters.length > 0) ? parameters[0] : "no items";
+            show_debug_message("The shopkeeper offers you " + itemsForSale);
+            
+            // Create shop interface with available items
+            createShopInterface(parameters);
             break;
             
         case "find":
-            show_debug_message(string_concat("You find a shiny ", parameters[0], "! how nice."));
+            var foundItem = (parameters.length > 0) ? parameters[0] : "unknown item";
+            show_debug_message("You find a " + foundItem + "!");
+            
+            // Add item to inventory if it exists in global.itemList
+            if (variable_struct_exists(global.itemList, foundItem)) {
+                playerAddItem(variable_struct_get(global.itemList, foundItem));
+                show_debug_message("Added " + foundItem + " to inventory");
+            }
             break;
             
         case "lose":
-            show_debug_message(string_concat("check if you have ", parameters[0], " and if you do?  You don't."));
+            var requiredItem = (parameters.length > 0) ? parameters[0] : "unknown item";
+            show_debug_message("You need a " + requiredItem + " but don't have it.");
             break;
             
         case "blocked":
-            show_debug_message(string_concat("If you don't have a ", parameters[0], " you go to index ", parameters[1], ", but if you do have it, you go to ", parameters[2],"."));
+            var requiredItem = (parameters.length > 0) ? parameters[0] : "unknown item";
+            var failTarget = (parameters.length > 1) ? parameters[1] : global.currentIndex;
+            var successTarget = (parameters.length > 2) ? parameters[2] : global.currentIndex;
+            
+            // Check if player has the required item
+            var hasItem = false;
+            for (var i = 0; i < array_length(global.player.inventory); i++) {
+                if (global.player.inventory[i].name == requiredItem) {
+                    hasItem = true;
+                    break;
+                }
+            }
+            
+            // Go to appropriate scene based on item check
+            if (hasItem) {
+                global.currentIndex = successTarget;
+                show_debug_message("You have the " + requiredItem + ", proceeding to scene " + string(successTarget));
+            } else {
+                global.currentIndex = failTarget;
+                show_debug_message("You don't have the " + requiredItem + ", going to scene " + string(failTarget));
+            }
             break;
             
         case "nothing":
-            show_debug_message(string_concat("You just go to the next part."));
+            show_debug_message("Just continuing to the next part.");
             break;
             
         default:
-            show_debug_message(string_concat("funcName not in list"));
+            show_debug_message("Function name not recognized: " + funcName);
             break;
     }
 }
 
-// New function to create battle interface
+// New helper function for shop interface
+function createShopInterface(items) {
+    // Create a menu with items for sale
+    var shopItems = [];
+    
+    // Default items if none specified
+    if (items.length == 0) {
+        array_push(shopItems, ["Health Potion - 10 gold", purchaseItem, ["healthPotion", 10]]);
+        array_push(shopItems, ["Wooden Shield - 25 gold", purchaseItem, ["woodenShield", 25]]);
+    } else {
+        // Parse items from parameters
+        for (var i = 0; i < array_length(items); i++) {
+            var itemInfo = items[i];
+            if (typeof(itemInfo) == "string") {
+                // Simple format: just item name
+                array_push(shopItems, [itemInfo + " - 10 gold", purchaseItem, [itemInfo, 10]]);
+            } else if (is_array(itemInfo)) {
+                // Array format: [name, price]
+                var name = itemInfo[0];
+                var price = (itemInfo.length > 1) ? itemInfo[1] : 10;
+                array_push(shopItems, [name + " - " + string(price) + " gold", purchaseItem, [name, price]]);
+            }
+        }
+    }
+    
+    // Add exit option
+    array_push(shopItems, ["Exit Shop", continueDialog, -1]);
+    
+    // Create the shop menu
+    Menu(room_width/2, room_height/2, shopItems, "Shop", true);
+}
+
+// Function for purchasing items
+function purchaseItem(params) {
+    var itemName = params[0];
+    var itemPrice = params[1];
+    
+    // Check if player has enough gold
+    if (global.player.gold >= itemPrice) {
+        global.player.gold -= itemPrice;
+        
+        // Add item to inventory if it exists in global.itemList
+        if (variable_struct_exists(global.itemList, itemName)) {
+            playerAddItem(variable_struct_get(global.itemList, itemName));
+            show_debug_message("Purchased " + itemName + " for " + string(itemPrice) + " gold");
+        } else {
+            show_debug_message("Item " + itemName + " not found in global.itemList");
+        }
+    } else {
+        show_debug_message("Not enough gold to purchase " + itemName);
+    }
+    
+    // Return to dialog
+    destroyAllObjects();
+    populateAllObjects();
+}
+
+// Function to continue dialog after shop
+function continueDialog() {
+    destroyAllObjects();
+    populateAllObjects();
+}
+
+// Function to create battle interface
 function createBattleInterface() {
     // Play battle music
     playSceneMusic("battle");

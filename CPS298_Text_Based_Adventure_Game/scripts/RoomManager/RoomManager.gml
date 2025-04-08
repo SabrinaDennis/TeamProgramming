@@ -56,6 +56,13 @@ function populateAllObjects(){
             } else {
                 btn.choiceReceive = "";
             }
+            
+            // Store enemy data in button for battle system
+            if (variable_struct_exists(choice, "enemies") && array_length(choice.enemies) > 0) {
+                btn.enemyData = choice.enemies;
+            } else {
+                btn.enemyData = [];
+            }
         }
     } else if (variable_struct_exists(scene, "options")) {
         // Using DialogStructManager format

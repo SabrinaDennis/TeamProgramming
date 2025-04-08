@@ -1,5 +1,5 @@
 // Return to dialog after victory
-playSceneMusic("default");
+playSceneMusic("defaultMusic");
 destroyAllObjects();
 populateAllObjects();
 instance_destroy();

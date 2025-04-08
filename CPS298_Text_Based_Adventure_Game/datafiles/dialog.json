@@ -85,7 +85,7 @@
       {
         "sceneIndex": 2,
         "sceneName": "Opening Scene, but you went East",
-        "sceneText": "You see a maze all around you, and a bit of dust in the corner.  The entrance is to the West.",
+        "sceneText": "You see a maze all around you, and a bit of dust in the corner. The entrance is to the West. You notice a locked door, but you'll need to find a key somewhere else in the maze.",
         "character": "",
         "background": "",
         "choices": [
