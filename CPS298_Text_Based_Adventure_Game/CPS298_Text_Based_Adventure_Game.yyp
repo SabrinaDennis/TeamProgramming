@@ -68,6 +68,7 @@
     {"id":{"name":"PlayerManager","path":"scripts/PlayerManager/PlayerManager.yy",},},
     {"id":{"name":"RoomManager","path":"scripts/RoomManager/RoomManager.yy",},},
     {"id":{"name":"TestManager","path":"scripts/TestManager/TestManager.yy",},},
+    {"id":{"name":"TextBoxManager","path":"scripts/TextBoxManager/TextBoxManager.yy",},},
     {"id":{"name":"snd_menuDown","path":"sounds/snd_menuDown/snd_menuDown.yy",},},
     {"id":{"name":"snd_menuUp","path":"sounds/snd_menuUp/snd_menuUp.yy",},},
     {"id":{"name":"house_past","path":"sprites/house_past/house_past.yy",},},

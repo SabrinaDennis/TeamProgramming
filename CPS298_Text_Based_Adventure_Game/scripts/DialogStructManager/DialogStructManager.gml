@@ -6,6 +6,7 @@ function DialogStructManager(){
 
 			{
 				sceneIndex: 0,
+				background: spr_background,
 				sceneName: "0 passage to illustrate",
 				sceneText: "This is passage text\n{this is something that happens because you're in this passage}\n[[This is a choice.  It goes to a passage with this title.]]\nThis is a choice that goes to a passage with a different title\n[[OtherChoice]]",
 				options: [
@@ -15,6 +16,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 1,
+				background: street_past,
 				sceneName: "Immediately get to work",
 				sceneText: "",
 				options: [
@@ -123,6 +125,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 14,
+				background: spr_background,
 				sceneName: "This is a choice.  It goes to a passage with this title.",
 				sceneText: "[[Opening scene]]",
 				options: [
@@ -139,6 +142,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 16,
+				background: theater_past,
 				sceneName: "Opening scene",
 				sceneText: "It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\nToo long.\nIt's too early.\n[[Go back to bed]]\n[[Take advantage of the extra... ugh... hour]]",
 				options: [
@@ -195,6 +199,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 23,
+				background: street_past,
 				sceneName: "OtherChoice",
 				sceneText: "[[Opening scene]]",
 				options: [
@@ -256,5 +261,4 @@ function goToSceneIndex(parameters){
 	global.currentIndex=parameters[0];
 	destroyAllObjects();
 	populateAllObjects();
-	
 }
