@@ -1,4 +1,4 @@
-loadDialogData("dialog.json");
+loadDialogData();
 
 global.currentIndex = 0;
 
