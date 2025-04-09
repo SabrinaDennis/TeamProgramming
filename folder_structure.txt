@@ -113,8 +113,6 @@
 │   │       ├── Step_0.gml
 │   │       └── obj_menu.yy
 │   ├── options
-│   │   ├── android
-│   │   │   └── options_android.yy
 │   │   ├── html5
 │   │   │   └── options_html5.yy
 │   │   ├── ios
@@ -177,6 +175,120 @@
 │   │       ├── snd_menuUp.mp3
 │   │       └── snd_menuUp.yy
 │   └── sprites
+│       ├── MT_future_neutral
+│       │   ├── 359d18c8-242f-4367-98a8-678d3a53d465.png
+│       │   ├── MT_future_neutral.yy
+│       │   └── layers
+│       │       └── 359d18c8-242f-4367-98a8-678d3a53d465
+│       │           └── 8cff194b-3685-42ee-9d4a-fda4579099a4.png
+│       ├── MT_future_smile
+│       │   ├── 06436051-7ce5-4a68-bee9-5341740ddc44.png
+│       │   ├── MT_future_smile.yy
+│       │   └── layers
+│       │       └── 06436051-7ce5-4a68-bee9-5341740ddc44
+│       │           └── 5787dddf-86b7-4655-ab73-5839e6e6bf8a.png
+│       ├── MT_past_neutral
+│       │   ├── 6e0b6054-0501-4f4e-9321-758dc2848e20.png
+│       │   ├── MT_past_neutral.yy
+│       │   └── layers
+│       │       └── 6e0b6054-0501-4f4e-9321-758dc2848e20
+│       │           └── 0e8879e6-abad-431b-a41e-b9d217b5ab8b.png
+│       ├── MT_past_smile
+│       │   ├── 7489a3be-3962-4ef1-a8f2-56f7c0f59bf6.png
+│       │   ├── MT_past_smile.yy
+│       │   └── layers
+│       │       └── 7489a3be-3962-4ef1-a8f2-56f7c0f59bf6
+│       │           └── 09b606e3-6b93-496c-a6fa-faaade48d457.png
+│       ├── MT_present_neutral
+│       │   ├── MT_present_neutral.yy
+│       │   ├── d227ad3b-b95e-4fcf-b234-ed40a72bf64e.png
+│       │   └── layers
+│       │       └── d227ad3b-b95e-4fcf-b234-ed40a72bf64e
+│       │           └── 44ec06c6-c640-4e1b-8c17-a9060b3ded81.png
+│       ├── MT_present_smile
+│       │   ├── MT_present_smile.yy
+│       │   ├── d4d8d8bb-b5df-4a14-b465-d55d4bdb8915.png
+│       │   └── layers
+│       │       └── d4d8d8bb-b5df-4a14-b465-d55d4bdb8915
+│       │           └── c335289b-38a6-4d0f-aab5-22576dd21735.png
+│       ├── ND_future_neutral
+│       │   ├── ND_future_neutral.yy
+│       │   ├── c4cc8e9f-7108-4b35-88a9-7dbd6ab00282.png
+│       │   └── layers
+│       │       └── c4cc8e9f-7108-4b35-88a9-7dbd6ab00282
+│       │           └── e0607512-b2f0-461c-8791-086ef62ed177.png
+│       ├── ND_future_smile
+│       │   ├── 1677fadd-d2e1-4965-8650-c702c6a21783.png
+│       │   ├── ND_future_smile.yy
+│       │   └── layers
+│       │       └── 1677fadd-d2e1-4965-8650-c702c6a21783
+│       │           └── 8979c1c0-9755-4e05-a420-79b167626796.png
+│       ├── ND_past_neutral
+│       │   ├── ND_past_neutral.yy
+│       │   ├── bac1c403-b49a-4435-acb6-50d76ee5687d.png
+│       │   └── layers
+│       │       └── bac1c403-b49a-4435-acb6-50d76ee5687d
+│       │           └── 5390d9d8-c0e1-4f7d-999c-bfdc80d7c889.png
+│       ├── ND_past_smile
+│       │   ├── 3d8a8ee2-1748-4072-babb-d6b1d5fd2080.png
+│       │   ├── ND_past_smile.yy
+│       │   └── layers
+│       │       └── 3d8a8ee2-1748-4072-babb-d6b1d5fd2080
+│       │           └── 9127f43d-987b-4567-bf50-fe99ad7267c1.png
+│       ├── ND_present_neutral
+│       │   ├── 036d1e6f-33ee-4655-8188-73cc3ef1b8be.png
+│       │   ├── ND_present_neutral.yy
+│       │   └── layers
+│       │       └── 036d1e6f-33ee-4655-8188-73cc3ef1b8be
+│       │           └── 5a59fa36-cf4c-48da-9f4c-2669526ef597.png
+│       ├── ND_present_smile
+│       │   ├── ND_present_smile.yy
+│       │   ├── d775aed5-d1f0-4a78-a1ea-92048ef8a7c9.png
+│       │   └── layers
+│       │       └── d775aed5-d1f0-4a78-a1ea-92048ef8a7c9
+│       │           └── 95f0d14a-b588-475a-9572-e49a4a601d7d.png
+│       ├── WB_future_neutral
+│       │   ├── 9405df99-5b2c-474c-994c-60e28396f504.png
+│       │   ├── WB_future_neutral.yy
+│       │   └── layers
+│       │       └── 9405df99-5b2c-474c-994c-60e28396f504
+│       │           └── d4b35851-f640-4ba7-b0ad-fa5a0050a058.png
+│       ├── WB_future_smile
+│       │   ├── WB_future_smile.yy
+│       │   ├── d9056d8b-71bf-4e11-8747-8630505d063c.png
+│       │   └── layers
+│       │       └── d9056d8b-71bf-4e11-8747-8630505d063c
+│       │           └── 714030eb-4959-455a-9fe6-f820b18067e1.png
+│       ├── WB_past_neutral
+│       │   ├── 2b0882b1-c200-4810-bfe4-193d1a3875b7.png
+│       │   ├── WB_past_neutral.yy
+│       │   └── layers
+│       │       └── 2b0882b1-c200-4810-bfe4-193d1a3875b7
+│       │           └── 0edb01a0-c4fd-4e44-a779-9208d51a17e2.png
+│       ├── WB_past_smile
+│       │   ├── 0baaed1e-4265-45c7-8b93-362942fe0a77.png
+│       │   ├── WB_past_smile.yy
+│       │   └── layers
+│       │       └── 0baaed1e-4265-45c7-8b93-362942fe0a77
+│       │           └── 69a8f3ad-1d06-4ae5-bda8-457999d4fc87.png
+│       ├── WB_present_neutral
+│       │   ├── WB_present_neutral.yy
+│       │   ├── b8b09e61-91fd-4dc7-9b90-246d0bc963cf.png
+│       │   └── layers
+│       │       └── b8b09e61-91fd-4dc7-9b90-246d0bc963cf
+│       │           └── 17a7209a-86db-4728-936f-eb8405ff15cc.png
+│       ├── WB_present_smile
+│       │   ├── WB_present_smile.yy
+│       │   ├── a8c07506-391f-4c3b-af0d-86b1ffeaeda4.png
+│       │   └── layers
+│       │       └── a8c07506-391f-4c3b-af0d-86b1ffeaeda4
+│       │           └── 50821304-6167-48e6-bd3b-4e35b6783e0b.png
+│       ├── house_past
+│       │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│       │   ├── house_past.yy
+│       │   └── layers
+│       │       └── f8a746be-7171-4526-ac7e-ab3356d44252
+│       │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
 │       ├── spr_Background
 │       │   ├── ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
 │       │   ├── layers
@@ -201,12 +313,24 @@
 │       │   │   └── 2db225aa-4580-4fdd-81d9-6543a58660e0
 │       │   │       └── 57377398-8e52-4443-9807-3207fed457ef.png
 │       │   └── spr_key.yy
-│       └── spr_menuBox
-│           ├── 38dd2a43-c6dc-46fa-a525-374cb5f6738d.png
+│       ├── spr_menuBox
+│       │   ├── 38dd2a43-c6dc-46fa-a525-374cb5f6738d.png
+│       │   ├── layers
+│       │   │   └── 38dd2a43-c6dc-46fa-a525-374cb5f6738d
+│       │   │       └── efc5e6fe-027f-4dec-a199-71e9098bf7bd.png
+│       │   └── spr_menuBox.yy
+│       ├── street_past
+│       │   ├── 3c942277-170d-44a9-be89-59dabae84ec5.png
+│       │   ├── layers
+│       │   │   └── 3c942277-170d-44a9-be89-59dabae84ec5
+│       │   │       └── 5ad62bea-1454-472a-a851-bc4e8accba19.png
+│       │   └── street_past.yy
+│       └── theater_past
+│           ├── e5d762a1-6679-4d47-afaa-d16e611efed4.png
 │           ├── layers
-│           │   └── 38dd2a43-c6dc-46fa-a525-374cb5f6738d
-│           │       └── efc5e6fe-027f-4dec-a199-71e9098bf7bd.png
-│           └── spr_menuBox.yy
+│           │   └── e5d762a1-6679-4d47-afaa-d16e611efed4
+│           │       └── 6c38f19e-a607-4a18-90a7-5f8f307e280c.png
+│           └── theater_past.yy
 ├── Class 2.5
 ├── IjeomaOnuosa.md
 ├── JamesByrnes.md
@@ -214,4 +338,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-70 directories, 144 files
+132 directories, 206 files
