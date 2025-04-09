@@ -21,29 +21,28 @@ This is passage text
 
 This is a choice that goes to a passage with a different title
 [[OtherChoice]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Fidget for a moment, putting off the tasks of the day {"position":"1000,1100","size":"100,100"}
-
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Finish getting ready and eat some breakfast {"position":"500,750","size":"100,100"}
 You fuel your day, not really paying attention to your nourishment, just mindlessly consuming your morning's energy.  You gulp down a few good mouthfuls of bad coffee and [[head to work.]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Focus on getting to the days work. {"position":"675,1000","size":"100,100"}
 [[Press 13]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Go back to bed {"position":"300,350","size":"100,100"}
 You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.
 
 [[Your alarm wakes you]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Grab a banana {"position":"325,1225","size":"100,100"}
@@ -54,7 +53,7 @@ Take your banana back to the elevator and
 [[Press R]]
 
 [[Press 13]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Grab a gooey cinnamon bun {"position":"450,1325","size":"100,100"}
@@ -63,29 +62,26 @@ background: spr_background
 [[Press R]]
 
 [[Press 13]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Immediately get to work {"position":"1000,950","size":"100,100"}
-
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Investigate the shiny object you notice out of the corner of your eye? {"position":"950,750","size":"100,100"}
 You pause for a moment, happy for an excuse to put off the day's work.  You reach down for the scuffed metal object, notice it's a large brass key.  The antique object is worn to brushed shininess in two places.  The part where...  Is it suddenly really warm?  The part where it would be held, and the whatever, the blade of the key is old timey and why is it hard to see and think of word for th wher
 
 [[Pass out]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Margaret Ashford {"position":"1500,700","size":"100,100"}
-
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Nicholas Drayton {"position":"1500,600","size":"100,100"}
-
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Opening scene {"position":"300,200","size":"100,100"}
@@ -98,12 +94,12 @@ It's too early.
 [[Go back to bed]]
 
 [[Take advantage of the extra... ugh... hour]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: OtherChoice {"position":"175,200","size":"100,100"}
 [[Opening scene]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Pass out {"position":"1300,625","size":"100,100"}
@@ -114,7 +110,7 @@ Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind
 [[Nicholas Drayton]]
 
 [[Margaret Ashford]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Press 13 {"position":"800,1100","size":"100,100"}
@@ -127,7 +123,7 @@ You can
 or
 
 [[Fidget for a moment, putting off the tasks of the day]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Press 4 {"position":"800,1325","size":"100,100"}
@@ -136,7 +132,7 @@ You head through the canteen on your way up to level 13 where your offices await
 [[Grab a gooey cinnamon bun]]
 
 [[Grab a banana]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Press R {"position":"800,875","size":"100,100"}
@@ -149,7 +145,7 @@ Do you
 or do you
 
 [[Focus on getting to the days work.]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Take a cold shower {"position":"625,600","size":"100,100"}
@@ -158,14 +154,14 @@ The ice in your veins meets the steely sting of the water.  You feel the adrenal
 {gain 1 alertness point}
 
 [[Finish getting ready and eat some breakfast]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Take a cold shower-battle {"position":"600,350","size":"100,100"}
 {battle cold shower demons}
 
 [[Take a cold shower]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Take a hot shower {"position":"450,350","size":"100,100"}
@@ -176,7 +172,7 @@ You relax under the calming water, letting your anger at the world for existing 
 You towel off and sit on the bed, relaxing for just a moment... stretching out feels... so nice...
 
 [[Your alarm wakes you]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Take advantage of the extra... ugh... hour {"position":"450,200","size":"100,100"}
@@ -185,17 +181,16 @@ You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your le
 [[Take a hot shower]]
 
 [[Take a cold shower-battle]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: This is a choice.  It goes to a passage with this title. {"position":"300,0","size":"100,100"}
 [[Opening scene]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: William Redbrook {"position":"1500,500","size":"100,100"}
-
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: Your alarm wakes you {"position":"375,475","size":"100,100"}
@@ -203,8 +198,8 @@ You jolt into reality.  Falling asleep again was a bad idea.
 
 [[shake it off -- spend 1 resilience point]]
 
-[[proceed to "have a day"  -- lose one alertness point, gain status 'Having a day.']]
-background: spr_background
+[[proceed to 'have a day'  -- lose one alertness point, gain status 'Having a day.']]
+/* rawContent */background: spr_background
 
 
 :: head to work. {"position":"500,900","size":"100,100"}
@@ -215,18 +210,18 @@ Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads t
 [[Press 4]]
 
 [[Press R]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
-:: proceed to "have a day"  -- lose one alertness point, gain status 'Having a day.' {"position":"500,600","size":"100,100"}
+:: proceed to 'have a day'  -- lose one alertness point, gain status 'Having a day.' {"position":"500,600","size":"100,100"}
 Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.
 
 [[Finish getting ready and eat some breakfast]]
-background: spr_background
+/* rawContent */background: spr_background
 
 
 :: shake it off -- spend 1 resilience point {"position":"375,600","size":"100,100"}
 You shudder, focus all your mental energy, and just decide to move on.
 
 [[Finish getting ready and eat some breakfast]]
-background: spr_background
+/* rawContent */background: spr_background

@@ -2,7 +2,7 @@ function TextBoxManager(){
 
 }
 
-function textBox(text, pos_x, pos_y, _height=-1, _width=-1, centered, size){
+function textBox(text, pos_x, pos_y, _height=-1, _width=-1, centered=true, size="big"){
 	var thisFont = PressStart2P;
 	draw_set_font(thisFont);
 	var _letterHeight = string_height("O");
