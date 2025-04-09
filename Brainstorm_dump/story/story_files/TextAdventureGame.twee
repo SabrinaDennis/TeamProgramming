@@ -18,7 +18,9 @@ This is passage text
 {this is something that happens because you're in this passage}
 
 [[This is a choice.  It goes to a passage with this title.]]
-[[This is a choice that goes to a passage with a different title|OtherChoice]]
+
+This is a choice that goes to a passage with a different title
+[[OtherChoice]]
 
 
 :: Batbayarii AltanSetseg {"position":"1500,900","size":"100,100"}
@@ -95,7 +97,7 @@ It's too early.
 [[Take advantage of the extra... ugh... hour]]
 
 
-:: OtherChoice {"position":"175,100","size":"100,100"}
+:: OtherChoice {"position":"175,200","size":"100,100"}
 [[Opening scene]]
 
 
@@ -177,7 +179,7 @@ You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your le
 [[Take a cold shower-battle]]
 
 
-:: This is a choice.  It goes to a passage with this title. {"position":"275,0","size":"100,100"}
+:: This is a choice.  It goes to a passage with this title. {"position":"300,0","size":"100,100"}
 [[Opening scene]]
 
 
