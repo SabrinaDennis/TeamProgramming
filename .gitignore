@@ -1,0 +1,60 @@
+# GameMaker Studio 2 specific
+#*.yy
+#*.yyp
+#*.yyz
+#*.yydebug
+#*.yycache
+#*.yyc
+#*.yymps
+#*.yysave
+#*.yysave.bak
+
+# Temporary files
+#*.tmp
+#*.temp
+
+# Log files
+#*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+#._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE specific files (if you're using an external IDE)
+#.vscode/
+#.idea/
+
+# Compiled output
+#/export/
+
+# Asset source files (if you're using external tools to create assets)
+#*.psd
+#*.ai
+#*.fla
+
+# Audio source files
+#*.aup
+#*.reapeaks
+
+# Backup files
+#*.bak
+#*~
+
+# GameMaker Studio 2 cache and temporary files
+#/cache/
+#/temp/
+
+# Local configuration file
+#config.local.txt
+
+# Ignore all files in the datafiles directory except .json files
+#/CPS298_Text_Based_Adventure_Game/datafiles/*
+#!/CPS298_Text_Based_Adventure_Game/datafiles/*.json
+
+# Ignore compiled JavaScript files if you're exporting to HTML5
+#*.js
