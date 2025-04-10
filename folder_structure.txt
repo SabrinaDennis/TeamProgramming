@@ -316,6 +316,12 @@
 │       │   └── layers
 │       │       └── f8a746be-7171-4526-ac7e-ab3356d44252
 │       │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│       ├── spr_BG_error
+│       │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│       │   ├── layers
+│       │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
+│       │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│       │   └── spr_BG_error.yy
 │       ├── spr_Background
 │       │   ├── ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
 │       │   ├── layers
@@ -365,4 +371,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-141 directories, 224 files
+144 directories, 227 files

@@ -8,7 +8,7 @@ function destroyAllObjects(){
 /// @description Display background
 /// @param {any} _bgSprite Background Sprite Reference
 function createBackground(_bgSprite){
-	global.backgroundLayer = layer_create(2);
+	global.backgroundLayer = layer_create(2, "bg");
 	global.background = layer_background_create(global.backgroundLayer,_bgSprite);
 }
 
@@ -18,15 +18,24 @@ function populateAllObjects(){
     var scene = global.dialog.scenes[global.currentIndex];
     var sceneName = scene.sceneName;
     var sceneText = scene.sceneText;
-
+	var _background;
+	try {
+		_background = scene.background
+	}
+	catch(error){
+			_background = spr_BG_error;
+	}
+	layer_background_change( global.background, _background);
+	draw_set_font(font_small);
+	//Menu(200,200+string_height(sceneText)*1.5,scene.options);
+	instance_create_depth(.28*room_width, .1*room_height, 1, MainText, {mainName:sceneName, mainText:sceneText});
     show_debug_message(sceneName);
-    createBackground(spr_background);
     
     // Create buttons for each choice
     var buttonOptions = [];
     
     // Check which source we're using (JSON or struct)
-    if (variable_struct_exists(scene, "choices")) {
+/*    if (variable_struct_exists(scene, "choices")) {
         // Using JSON format
         var buttonCount = array_length(scene.choices);
         var buttonSpacing = 40; // Space between buttons
@@ -64,7 +73,7 @@ function populateAllObjects(){
                 btn.enemyData = [];
             }
         }
-    } else if (variable_struct_exists(scene, "options")) {
+    } else if (variable_struct_exists(scene, "options")) {  */
         // Using DialogStructManager format
         var options = [];
         for (var i = 0; i < array_length(scene.options); i++) {
@@ -72,7 +81,7 @@ function populateAllObjects(){
         }
         // Create menu with options
         Menu(200, 200 + string_height(sceneText) * 1.5, options);
-    }
+    //}
     
     // Create the text display
     instance_create_depth(.28 * room_width, .1 * room_height, 1, MainText, {

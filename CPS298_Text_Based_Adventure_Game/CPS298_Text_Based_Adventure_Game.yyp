@@ -89,6 +89,7 @@
     {"id":{"name":"ND_present_neutral","path":"sprites/ND_present_neutral/ND_present_neutral.yy",},},
     {"id":{"name":"ND_present_smile","path":"sprites/ND_present_smile/ND_present_smile.yy",},},
     {"id":{"name":"spr_background","path":"sprites/spr_background/spr_background.yy",},},
+    {"id":{"name":"spr_BG_error","path":"sprites/spr_BG_error/spr_BG_error.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},

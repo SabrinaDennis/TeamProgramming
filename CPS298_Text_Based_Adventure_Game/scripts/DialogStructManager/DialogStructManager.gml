@@ -6,7 +6,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 0,
 				sceneName: "0 passage to illustrate",
-				background: street_past,
+				background: house_past,
 				sceneText: "This is passage text\n{this is something that happens because you're in this passage}\n[[This is a choice.  It goes to a passage with this title.]]\nThis is a choice that goes to a passage with a different title\n[[OtherChoice]]",
 				options: [
 					["This is a choice.  It goes to a passage with this title.", goToSceneIndex, [13]],
@@ -248,7 +248,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 26,
 				sceneName: "Go back to bed",
-				background: spr_background,
+				background: street_past,
 				sceneText: "You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.\n[[Your alarm wakes you]]",
 				options: [
 					["Your alarm wakes you", goToSceneIndex, [25]],
