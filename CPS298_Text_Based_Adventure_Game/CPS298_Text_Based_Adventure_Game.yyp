@@ -36,7 +36,7 @@
   ],
   "ForcedPrefabProjectReferences":[],
   "IncludedFiles":[
-    {"$GMIncludedFile":"","%Name":"dialog.json","CopyToMask":-1,"filePath":"datafiles","name":"dialog.json","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"We are using the Struct in DialogStructManager now.md","CopyToMask":-1,"filePath":"datafiles","name":"We are using the Struct in DialogStructManager now.md","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],

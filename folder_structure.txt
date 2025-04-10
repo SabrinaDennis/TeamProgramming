@@ -28,6 +28,18 @@
 │   │   └── ENTER SFX.mp3
 │   ├── GAME BEATS
 │   │   ├── 8 bit density.mp3
+│   │   ├── Calm
+│   │   │   ├── Future Bikini Bottom.mp3
+│   │   │   └── where are you baby.mp3
+│   │   ├── Dangerous
+│   │   │   ├── Dark space.mp3
+│   │   │   └── SPEAKING IN TOUNGE.mp3
+│   │   ├── Mysterious
+│   │   │   ├── call me when you need it.mp3
+│   │   │   └── where she at.mp3
+│   │   ├── Nice
+│   │   │   ├── alien smoke.mp3
+│   │   │   └── jumped out the clown house.mp3
 │   │   ├── Sky falling.mp3
 │   │   ├── Where am i.mp3
 │   │   ├── blowing up the town.mp3
@@ -63,7 +75,7 @@
 │   ├── CPS298_Text_Based_Adventure_Game.resource_order
 │   ├── CPS298_Text_Based_Adventure_Game.yyp
 │   ├── datafiles
-│   │   └── dialog.json
+│   │   └── We are using the Struct in DialogStructManager now.md
 │   ├── fonts
 │   │   ├── PressStart2P
 │   │   │   ├── PressStart2P-Regular.ttf
@@ -341,4 +353,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-133 directories, 208 files
+137 directories, 216 files
