@@ -102,6 +102,9 @@
 │   │   ├── MainText
 │   │   │   ├── Draw_0.gml
 │   │   │   └── MainText.yy
+│   │   ├── obj_battle_controller
+│   │   │   ├── Alarm_0.gml
+│   │   │   └── obj_battle_controller.yy
 │   │   ├── obj_button
 │   │   │   ├── Create_0.gml
 │   │   │   ├── Draw_0.gml
@@ -111,6 +114,9 @@
 │   │   │   ├── Create_0.gml
 │   │   │   ├── Draw_0.gml
 │   │   │   └── obj_enemy.yy
+│   │   ├── obj_gameController
+│   │   │   ├── Step_0.gml
+│   │   │   └── obj_gameController.yy
 │   │   ├── obj_healthbar
 │   │   │   └── obj_healthbar.yy
 │   │   ├── obj_inventory
@@ -119,11 +125,14 @@
 │   │   ├── obj_mainMenu
 │   │   │   ├── Create_0.gml
 │   │   │   └── obj_mainMenu.yy
-│   │   └── obj_menu
+│   │   ├── obj_menu
+│   │   │   ├── Create_0.gml
+│   │   │   ├── Draw_0.gml
+│   │   │   ├── Step_0.gml
+│   │   │   └── obj_menu.yy
+│   │   └── obj_pauseMenu
 │   │       ├── Create_0.gml
-│   │       ├── Draw_0.gml
-│   │       ├── Step_0.gml
-│   │       └── obj_menu.yy
+│   │       └── obj_pauseMenu.yy
 │   ├── options
 │   │   ├── html5
 │   │   │   └── options_html5.yy
@@ -176,6 +185,9 @@
 │   │   ├── RoomManager
 │   │   │   ├── RoomManager.gml
 │   │   │   └── RoomManager.yy
+│   │   ├── SaveLoadManager
+│   │   │   ├── SaveLoadManager.gml
+│   │   │   └── SaveLoadManager.yy
 │   │   ├── TestManager
 │   │   │   ├── TestManager.gml
 │   │   │   └── TestManager.yy
@@ -353,4 +365,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-137 directories, 216 files
+141 directories, 224 files
