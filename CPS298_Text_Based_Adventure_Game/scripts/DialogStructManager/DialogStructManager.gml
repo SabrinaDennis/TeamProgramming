@@ -6,7 +6,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 0,
 				sceneName: "0 passage to illustrate",
-				background: spr_background,
+				background: street_past,
 				sceneText: "This is passage text\n{this is something that happens because you're in this passage}\n[[This is a choice.  It goes to a passage with this title.]]\nThis is a choice that goes to a passage with a different title\n[[OtherChoice]]",
 				options: [
 					["This is a choice.  It goes to a passage with this title.", goToSceneIndex, [13]],
@@ -137,7 +137,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 14,
 				sceneName: "Opening scene",
-				background: spr_background,
+				background: theater_past,
 				sceneText: "It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\nToo long.\nIt's too early.\n[[Go back to bed]]\n[[Take advantage of the extra... ugh... hour]]",
 				options: [
 					["Go back to bed", goToSceneIndex, [26]],
@@ -200,7 +200,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 21,
 				sceneName: "OtherChoice",
-				background: spr_background,
+				background: street_past,
 				sceneText: "[[Opening scene]]",
 				options: [
 					["Opening scene", goToSceneIndex, [14]],
