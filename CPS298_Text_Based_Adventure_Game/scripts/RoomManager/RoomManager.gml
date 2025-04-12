@@ -12,23 +12,42 @@ function createBackground(_bgSprite){
 	global.background = layer_background_create(global.backgroundLayer,_bgSprite);
 }
 
+/// @function createCharacter
+/// @description Display character
+/// @param {Asset.GMSprite} _character Character Sprite Reference
+function createCharacter(_character){
+	var character_layer = layer_create(0, "ch");
+	var character_instance = instance_create_layer(0,0,character_layer, obj_scene_character, {character: _character});
+	
+}
+
 /// @function populateAllObjects
 /// @description Populates the objects in the room (bg, buttons)
 function populateAllObjects(){
     var scene = global.dialog.scenes[global.currentIndex];
     var sceneName = scene.sceneName;
     var sceneText = scene.sceneText;
-	var _background;
-	try {
-		_background = scene.background
+	var _background=-1;
+	var _character=-1;
+	
+	if(struct_exists(scene, "background")){
+		_background = scene.background;
+	} else {
+		_background = spr_BG_error;
 	}
-	catch(error){
-			_background = spr_BG_error;
+	if(_background>0){
+		layer_background_change( global.background, _background);
 	}
-	layer_background_change( global.background, _background);
-	draw_set_font(font_small);
+	
+	if(struct_exists(scene, "character")){
+		_character = scene.character;
+	}
+    if(_character>0){
+		createCharacter(_character);
+	}
+	//draw_set_font(font_small);
 	//Menu(200,200+string_height(sceneText)*1.5,scene.options);
-	instance_create_depth(.28*room_width, .1*room_height, 1, MainText, {mainName:sceneName, mainText:sceneText});
+	//instance_create_depth(.28*room_width, .1*room_height, 1, MainText, {mainName:sceneName, mainText:sceneText});
     show_debug_message(sceneName);
     
     // Create buttons for each choice
@@ -80,9 +99,8 @@ function populateAllObjects(){
             array_push(options, scene.options[i]);
         }
         // Create menu with options
-        Menu(200, 200 + string_height(sceneText) * 1.5, options);
+        Menu(room_width*0.75, room_height*0.75, options,-1,true);
     //}
-    
     // Create the text display
     instance_create_depth(.28 * room_width, .1 * room_height, 1, MainText, {
         mainName: sceneName, 

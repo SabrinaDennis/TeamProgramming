@@ -5,8 +5,7 @@ initializePlayer();
 loadDialogData();
 
 global.currentIndex = 0;
-global.backgroundLayer = layer_create(2, "bg");
-global.background = layer_background_create("bg", theater_past);
+createBackground(theater_past);
 // Room Manager Script
 populateAllObjects();
 

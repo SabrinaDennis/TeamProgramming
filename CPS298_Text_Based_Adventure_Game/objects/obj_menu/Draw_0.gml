@@ -22,6 +22,7 @@ draw_set_valign(fa_top);
 var _desc = !(description == -1);
 
 
+var _extraLines = 0
 // Loop through the options, draw them.
 for(var l = 0; l < (optionsCount + _desc); l++){
 	draw_set_colour(normalTextColor);
@@ -34,8 +35,12 @@ for(var l = 0; l < (optionsCount + _desc); l++){
 		if(hover == l - _desc){
 			draw_set_colour(highlightedTextColor);
 			_str = hovermarker + _str;
+			_str = string_replace_all(_str, "\n", "\n ");
 		}
 		
-		draw_text(xPosition,yPosition + l * heightLine, _str);
+		draw_text(xPosition,yPosition + (l+_extraLines) * heightLine, _str);
+		_extraLines += string_count("\n", _str);
 	}
+	
+	
 }
