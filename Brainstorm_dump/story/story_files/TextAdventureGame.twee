@@ -7,24 +7,14 @@ TextAdventureGame
   "ifid": "2C41FFEA-EB4C-4C25-AE7F-FDFAB53C6B54",
   "format": "Harlowe",
   "format-version": "3.3.9",
-  "start": "0 passage to illustrate",
-  "zoom": 1
+  "start": "Opening scene",
+  "zoom": 0.6
 }
 
 
-:: 0 passage to illustrate {"position":"175,0","size":"100,100"}
-This is passage text
-
-{this is something that happens because you're in this passage}
-
-[[This is a choice.  It goes to a passage with this title.]]
-
-This is a choice that goes to a passage with a different title
-[[OtherChoice]]
-/* rawContent */background: spr_background
-
-
 :: Fidget for a moment, putting off the tasks of the day {"position":"1000,1100","size":"100,100"}
+
+
 /* rawContent */background: spr_background
 
 
@@ -77,11 +67,18 @@ You pause for a moment, happy for an excuse to put off the day's work.  You reac
 
 
 :: Margaret Ashford {"position":"1500,700","size":"100,100"}
-/* rawContent */background: spr_background
+
+
+[[Run Away!]]
+
+/* rawContent */background: house_past, character: MT_past_neutral, onOpen: {setFriend: ["Margaret"]}
 
 
 :: Nicholas Drayton {"position":"1500,600","size":"100,100"}
-/* rawContent */background: spr_background
+
+[[Run Away!]]
+
+/* rawContent */background: house_past, character:ND_past_neutral, onOpen: {setFriend: ["Nicholas"]}
 
 
 :: Opening scene {"position":"300,200","size":"100,100"}
@@ -94,11 +91,6 @@ It's too early.
 [[Go back to bed]]
 
 [[Take advantage of the extra... ugh... hour]]
-/* rawContent */background: spr_background
-
-
-:: OtherChoice {"position":"175,200","size":"100,100"}
-[[Opening scene]]
 /* rawContent */background: spr_background
 
 
@@ -148,6 +140,14 @@ or do you
 /* rawContent */background: spr_background
 
 
+:: Run Away! {"position":"1700,500","size":"100,100"}
+You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.
+
+You die as you lived.  Utterly accidentally.
+
+/* rawContent */onOpen: {theEnd, ["sad"]}
+
+
 :: Take a cold shower {"position":"625,600","size":"100,100"}
 The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masachistic routine.
 
@@ -184,13 +184,13 @@ You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your le
 /* rawContent */background: spr_background
 
 
-:: This is a choice.  It goes to a passage with this title. {"position":"300,0","size":"100,100"}
-[[Opening scene]]
-/* rawContent */background: spr_background
-
-
 :: William Redbrook {"position":"1500,500","size":"100,100"}
-/* rawContent */background: spr_background
+
+
+
+[[Run Away!]]
+
+/* rawContent */character: WB_past_smile, background: house_past, onOpen: {setFriend: ["William"]}
 
 
 :: Your alarm wakes you {"position":"375,475","size":"100,100"}

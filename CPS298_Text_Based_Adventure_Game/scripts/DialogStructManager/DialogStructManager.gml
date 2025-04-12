@@ -211,7 +211,7 @@ function DialogStructManager(){
 				sceneIndex: 22,
 				sceneName: "Press 4",
 				background: spr_background,
-				sceneText: "You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.\n[[Grab a gooey cinnamon bun]]\n[[Grab a banana]]",
+				sceneText: "You head through the canteen on your way up to level 13 where your offices await you.  Your breakfast dulled the edge of hunger but you're still craving something.\n[[Grab a gooey cinnamon bun]]\n[[Grab a banana]]",
 				options: [
 					["Grab a gooey cinnamon bun", goToSceneIndex, [11]],
 					["Grab a banana", goToSceneIndex, [9]],

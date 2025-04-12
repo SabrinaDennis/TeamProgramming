@@ -3,6 +3,7 @@ function TextBoxManager(){
 }
 
 function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _size="big"){
+	if(_text == "") return;
 	_text = string_trim(_text);
 	var thisFont = draw_get_font();
 	var letterHeight = string_height("O");
@@ -30,14 +31,13 @@ function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _
 			}
 		}
 		
-			result = "";
+			var result = "";
 		for(var i=0; i< array_length(displayArray);i++){
 			result+=string_trim(displayArray[i])+"\n";
-			show_debug_message(result);
 		}
 		result = string_trim(result);
-		textHeight = string_height_ext(result,-1,-1);
-		textWidth=string_width(result);
+		var textHeight = string_height_ext(result,-1,-1);
+		var textWidth=string_width(result);
 		draw_set_color(c_ltgray);
 		draw_roundrect(_pos_x-10-(_centered?textWidth*0.5:0), _pos_y-10-(_centered?textHeight*0.5:0),_pos_x+10+textWidth*(_centered?0.5:1.0), _pos_y+10+textHeight*(_centered?0.5:1.0),false)
 		draw_set_color(c_black);
