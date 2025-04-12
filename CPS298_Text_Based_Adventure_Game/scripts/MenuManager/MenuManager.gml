@@ -34,14 +34,22 @@ function Menu(_x,_y,_options,_description = -1,_centered = false){
 		draw_set_font(PressStart2P);
 		
 		width = 1;
+		
 		if(_description != -1) width = max(width,string_width(_description));
+		var _extraLines = 0;
 		for(var i=0; i < optionsCount; i++){
+			// quick and dirty linewrap
+			if(string_width(_options[i][0])>room_width*.4){
+				position = string_pos_ext(" ", _options[i][0], string_length(_options[i][0])/2-4)
+				options[i][0] = string_insert("\n  ", _options[i][0], position);
+				_extraLines++;
+			}
 			width = max(width, string_width(_options[i][0]));
 		}
 		
 		width += string_width(hovermarker);
 		heightLine = 20;
-		height = heightLine * (optionsCount + !(description == -1));
+		height = heightLine * (optionsCount + _extraLines + !(description == -1));
 		
 		widthFull  = width  + margin * 2;
 		heightFull = height + margin * 2;

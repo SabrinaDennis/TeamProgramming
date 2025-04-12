@@ -2,35 +2,46 @@ function TextBoxManager(){
 
 }
 
-function textBox(text, pos_x, pos_y, _height=-1, _width=-1, centered=true, size="big"){
-	var thisFont = PressStart2P;
-	draw_set_font(thisFont);
-	var _letterHeight = string_height("O");
-	var _letterWidth = string_width("O");
+function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _size="big"){
+	_text = string_trim(_text);
+	var thisFont = draw_get_font();
+	var letterHeight = string_height("O");
+	var letterWidth = string_width("O");
+	var rawWidth = 4*string_width(_text);
+	var textArray = string_split_ext(_text,[" ","\n"], true);
 	
-	var textArray = string_split_ext(text,[" ","\n"], true);
-	var rawWidth = string_length(text)*_letterWidth;
-	var displayArray= [];
+	var displayArray= [""];
 	if(_height<0 && _width<0){
-		_height=ceil(sqrt(array_length(textArray)*letterWidth));
-		_width=ceil((array_length(textArray)*letterWidth)/_height)
 		var line=0;
 		var word=0;
-		_maxWidth = 0;
-		_maxHeight = 0;
-		while(array_length(textArray)>0){
-			while(_letterWidth*(string_length(displayArray[line])+string_length(array_last(textArray))+1)<_width){
-				displayArray[line] = string_concat(displayArray[line], string_concat(array_pop(textArray)," "));
+		var maxWidth = 0;
+		var maxHeight = 0;
+		var height = 3*sqrt(rawWidth);
+		var width = 5*sqrt(rawWidth);
+		for(var i=0; i<array_length(textArray); i++){
+			if(string_width(displayArray[line]+" "+array_first(textArray))>width){
+				if(displayArray[line]!=""){
+					displayArray[line]= string_trim(displayArray[line]);
+				}
+				array_push(displayArray, textArray[i]);
+				line++;
+			} else {
+				displayArray[line]+= " "+textArray[i];
 			}
-			displayArray[line]=string_concat(displayArray[line], "\n");
-			_maxWidth = max(string_width(displayArray[line]), _maxWidth);
-			line++;
 		}
-		_width = maxWidth;
-		while(array_length(displayArray)>1){displayArray[0] = string_concat(displayArray[0], displayArray[1])}
-			
-		_height = string_height(displayArray[0]);
 		
+			result = "";
+		for(var i=0; i< array_length(displayArray);i++){
+			result+=string_trim(displayArray[i])+"\n";
+			show_debug_message(result);
+		}
+		result = string_trim(result);
+		textHeight = string_height_ext(result,-1,-1);
+		textWidth=string_width(result);
+		draw_set_color(c_ltgray);
+		draw_roundrect(_pos_x-10-(_centered?textWidth*0.5:0), _pos_y-10-(_centered?textHeight*0.5:0),_pos_x+10+textWidth*(_centered?0.5:1.0), _pos_y+10+textHeight*(_centered?0.5:1.0),false)
+		draw_set_color(c_black);
+		draw_text(_pos_x-(_centered?textWidth/2:0), _pos_y-(_centered?textHeight/2:0), result);
 		//DRAWTEXT displayArray[0]
 		//square
 	} else if(_height<0){
@@ -41,5 +52,4 @@ function textBox(text, pos_x, pos_y, _height=-1, _width=-1, centered=true, size=
 		//straight
 	}
 	
-	draw_text(0,0,text);
 }

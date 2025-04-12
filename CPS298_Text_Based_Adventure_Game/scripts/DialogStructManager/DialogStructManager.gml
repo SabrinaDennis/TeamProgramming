@@ -7,6 +7,7 @@ function DialogStructManager(){
 				sceneIndex: 0,
 				sceneName: "0 passage to illustrate",
 				background: house_past,
+				character: WB_past_neutral,
 				sceneText: "This is passage text\n{this is something that happens because you're in this passage}\n[[This is a choice.  It goes to a passage with this title.]]\nThis is a choice that goes to a passage with a different title\n[[OtherChoice]]",
 				options: [
 					["This is a choice.  It goes to a passage with this title.", goToSceneIndex, [13]],
@@ -16,7 +17,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 1,
 				sceneName: "Immediately get to work",
-				background: spr_background,
+				background: spr_background, character: WB_past_smile,
 				sceneText: "",
 				options: [
 					]
@@ -34,7 +35,7 @@ function DialogStructManager(){
 				sceneIndex: 3,
 				sceneName: "Take a cold shower",
 				background: spr_background,
-				sceneText: "The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masachistic routine.\n{gain 1 alertness point}\n[[Finish getting ready and eat some breakfast]]",
+				sceneText: "The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masochistic routine.\n{gain 1 alertness point}\n[[Finish getting ready and eat some breakfast]]",
 				options: [
 					["Finish getting ready and eat some breakfast", goToSceneIndex, [19]],
 					]
@@ -128,7 +129,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 13,
 				sceneName: "This is a choice.  It goes to a passage with this title.",
-				background: spr_background,
+				background: spr_background, character: WB_past_neutral,
 				sceneText: "[[Opening scene]]",
 				options: [
 					["Opening scene", goToSceneIndex, [14]],

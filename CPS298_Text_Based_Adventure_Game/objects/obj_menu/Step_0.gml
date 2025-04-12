@@ -1,4 +1,5 @@
 var mouseOver = false;
+var firstStep = true;
 
  if(centered != false){
 	xPosition = x - (widthFull/2);
@@ -10,7 +11,8 @@ var mouseOver = false;
 if (point_in_rectangle(mouse_x,mouse_y,xPosition,yPosition,xPosition+width,yPosition+height)){
 	mouseOver = true;
 	// Which menu option is closest to the cursor if its also in the rectangle(above if statement)
-	if(mxPrev != mouse_x) || (myPrev != mouse_y){
+	if(mxPrev != mouse_x) || (myPrev != mouse_y || firstStep){
+		firstStep=false;
 		var _mouseHoverLine = (mouse_y-yPosition) div heightLine; // div divides the numbers but only in whole numbers 9 / 10 = 0, 10/10 = 1, 15 / 10 = 1, 20 / 10 = 2
 		if !(description == -1) _mouseHoverLine -=1;
 		if (_mouseHoverLine < 0) _mouseHoverLine = 0;
