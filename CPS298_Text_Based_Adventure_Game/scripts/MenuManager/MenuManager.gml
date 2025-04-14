@@ -39,10 +39,15 @@ function Menu(_x,_y,_options,_description = -1,_centered = false){
 		var _extraLines = 0;
 		for(var i=0; i < optionsCount; i++){
 			// quick and dirty linewrap
-			if(string_width(_options[i][0])>room_width*.4){
-				position = string_pos_ext(" ", _options[i][0], string_length(_options[i][0])/2-4)
-				options[i][0] = string_insert("\n  ", _options[i][0], position);
-				_extraLines++;
+			if(string_count("\n", _options[i][0])==0){
+				if(string_width(_options[i][0])>room_width*.4){
+					position = string_pos_ext(" ", _options[i][0], string_length(_options[i][0])/2-4)
+					options[i][0] = string_insert("\n  ", _options[i][0], position);
+					_extraLines++;
+				}
+			}
+			else {
+				_extraLines++
 			}
 			width = max(width, string_width(_options[i][0]));
 		}

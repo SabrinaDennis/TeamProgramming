@@ -72,8 +72,8 @@ function find(_parameters){
 
 
 ///@function	blocked([item, destinationIfNot, destinationIfDo])
-///@param {Array}	parameters
-function blocked(parameters){
+///@param {Array}	params
+function blocked(params){
             var requiredItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
             var description = "";
 			var target = 0;
@@ -84,7 +84,8 @@ function blocked(parameters){
             // Try to convert the parameters to scene indices
             if (array_length(params) > 1) {
                 try {
-                    // Only try to convert if it seems to be a number
+                    // Only try to convert if it seems to be a number\
+					if(is_array(params[1])) params[1] = params[1][0];
                     if (string_digits(string(params[1])) == string(params[1])) {
                         failTarget = real(params[1]);
                     } else {
@@ -98,6 +99,8 @@ function blocked(parameters){
             if (array_length(params) > 2) {
                 try {
                     // Only try to convert if it seems to be a number
+					
+					if(is_array(params[2])) params[2] = params[2][0];
                     if (string_digits(string(params[2])) == string(params[2])) {
                         successTarget = real(params[2]);
                     } else {
@@ -111,11 +114,11 @@ function blocked(parameters){
             // Go to appropriate scene based on item check
             if (array_contains(global.player.inventory, requiredItem)) {
                target = successTarget;
-                show_debug_message("You have the " + requiredItem + ", you may proceed to scene " + string(successTarget));
+                description = ("You have the " + requiredItem + ", "+ global.dialog.scenes[successTarget].sceneName);
 				
             } else {
                 global.currentIndex = failTarget;
-                show_debug_message("You don't have the " + requiredItem + ", you must proceed to scene " + string(failTarget));
+                description = ("You don't have the " + requiredItem + ", you must proceed to " +  global.dialog.scenes[failTarget].sceneName);
             }
 			
 			return [description, goToSceneIndex, [target]];
@@ -280,6 +283,13 @@ function attemptFlee() {
 }
 
 function addFriend(_parameters){
-	var friend = (array_length(params) > 0) ? string(params[0]) : "unknown friend";
-	array_push(global.player.friendlist, friend);
+	var friend = "";
+	if(is_array(_parameters)){
+		friend = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown friend";
+	} else if(is_string(_parameters)){
+		friend = _parameters
+	}
+	if(string_length(friend)>0){
+		array_push(global.player.friendlist, friend);
+	}
 }

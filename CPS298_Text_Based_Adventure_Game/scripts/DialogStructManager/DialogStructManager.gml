@@ -2,7 +2,7 @@ function DialogStructManager(){
 	return {
 		scenes:
 		[
-
+			
 			{
 				sceneIndex: 0,
 				sceneName: "Opening scene",
@@ -16,12 +16,12 @@ function DialogStructManager(){
 			{
 				sceneIndex: 1,
 				sceneName: "Approach and introduce yourself",
-				background: spr_background, character: WB_future_confused,
+				background: spr_background, character: WB_future_neutral,
 				sceneText: "'Can I help you?' William asks without looking up, then freezes when he sees your face. Recognition flickers in his eyes, though you've never met in this time.\n'I... do I know you?' he asks, voice uncertain.\nWhen you introduce yourself, he sets down his tools with careful precision. 'Strange. I feel like we've met.' He laughs nervously. 'Been having the oddest dreams lately. About a house that stood here, long ago.'\nHis eyes search yours. 'You were in them.'\nShow him the brass key\nAsk about his dreams\nMention the others",
 				options: [
 					["Show him the brass key", goToSceneIndex, [27]],
-					["Ask about his dreams", goToSceneIndex, [-1]],
-					["Mention the others", goToSceneIndex, [-1]],
+					["Ask about his dreams", goToSceneIndex, [52]],
+					["Mention the others", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -31,8 +31,8 @@ function DialogStructManager(){
 				sceneText: "You make your way back to your office, the brass key heavy in your pocket. The familiar surroundings feel somehow different nowâ€”as if you're seeing the hidden layers beneath ordinary reality.\nYour computer screen shows several urgent emails. Work continues, oblivious to your temporal adventure.\nBut something catches your eyeâ€”a notification about a building-wide systems test scheduled for today. Something about it feels significant.\nCheck the notification details\nLook for William Beck\nLook for Nichole\nHead to the roof",
 				options: [
 					["Check the notification details", goToSceneIndex, [22]],
-					["Look for William Beck", goToSceneIndex, [-1]],
-					["Look for Nichole", goToSceneIndex, [-1]],
+					["Look for William Beck", goToSceneIndex, [52]],
+					["Look for Nichole", goToSceneIndex, [52]],
 					["Head to the roof", goToSceneIndex, [39]],
 					]
 				},
@@ -57,23 +57,23 @@ function DialogStructManager(){
 			{
 				sceneIndex: 5,
 				sceneName: "Meet William Beck",
-				background: spr_background, character: WB_future_focused,
+				background: spr_background, character: WB_future_neutral,
 				sceneText: "You spot him in the maintenance areaâ€”a man with a familiar face, though dressed in modern clothes and lacking the confident posture of his historical counterpart.\nWilliam Beck works methodically on an electrical panel, muttering to himself. He hasn't noticed you yet.\nThere's something about himâ€”an echo of the man you met in another time. The same features arranged in a more uncertain expression.\nApproach and introduce yourself\nObserve him a moment longer\nWalk away",
 				options: [
 					["Approach and introduce yourself", goToSceneIndex, [1]],
-					["Observe him a moment longer", goToSceneIndex, [-1]],
-					["Walk away", goToSceneIndex, [-1]],
+					["Observe him a moment longer", goToSceneIndex, [52]],
+					["Walk away", goToSceneIndex, [52]],
 					]
 				},
 			{
 				sceneIndex: 6,
 				sceneName: "Threaten him for straight answers",
-				character: WB_past_mischievous, background: house_past,
+				character: WB_past_smile, background: house_past,
 				sceneText: "William's laugh is bright and genuine in response to your threats.\n'Oh, I like you! Such spirit!' He circles you with casual disregard for personal space. 'Threats won't get you anywhere useful, but they certainly make things interesting.'\nHe plucks an apple from a bowl and tosses it to you. 'Let's make a game of it instead. For every question you ask, I'll give one honest answer and one lie.'\nHis eyes sparkle. 'Your challenge is figuring out which is which.'\nReluctantly agree to his game\nDemand to meet someone else\nTry to use the key to leave",
 				options: [
 					["Reluctantly agree to his game", goToSceneIndex, [38]],
 					["Demand to meet someone else", goToSceneIndex, [37]],
-					["Try to use the key to leave", goToSceneIndex, [-1]],
+					["Try to use the key to leave", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -82,9 +82,9 @@ function DialogStructManager(){
 				background: house_past, character: MT_past_neutral, onOpen: {addFriend: ["Margaret"]},
 				sceneText: "...a woman standing on the other side of a workbench, hammering what appears to be a brass mechanism with surprising force. Without turning, she speaks: 'William's found another one, has he?'\nShe pivots suddenly, eyes flashing with intelligence and barely-contained energy. Her sleeves are rolled up, hands stained with various substances, a leather apron protecting clothes that seem designed for movement rather than fashion.\n'Margaret Ashford. You're displaced. Temporally.' She states this as fact, not question. 'Interesting. You're different from the others.'\nAsk how you're different\nAsk about her work\nAsk how to get home\nRun Away!",
 				options: [
-					["Ask how you're different", goToSceneIndex, [-1]],
-					["Ask about her work", goToSceneIndex, [-1]],
-					["Ask how to get home", goToSceneIndex, [-1]],
+					["Ask how you're different", goToSceneIndex, [52]],
+					["Ask about her work", goToSceneIndex, [52]],
+					["Ask how to get home", goToSceneIndex, [52]],
 					["Run Away!", goToSceneIndex, [47]],
 					]
 				},
@@ -101,12 +101,12 @@ function DialogStructManager(){
 			{
 				sceneIndex: 9,
 				sceneName: "Ask about the key",
-				character: WB_past_curious, background: house_past,
+				character: WB_past_smile, background: house_past,
 				sceneText: "'Ah, the key!' William snags it from your hand with nimble fingers before you can protest. 'One of many such objects that... bend certain rules.'\nHe flips it casually, catching it without looking. 'Found it, did you? Or perhaps it found you.'\nHe returns it with unexpected gentleness. 'These objects appear to those standing at crossroads. People whose choices matter more than most.'\nHe winks. 'Make of that what you will.'\nAsk why you're here\nAsk to meet the others\nTry to use the key to return",
 				options: [
-					["Ask why you're here", goToSceneIndex, [-1]],
-					["Ask to meet the others", goToSceneIndex, [-1]],
-					["Try to use the key to return", goToSceneIndex, [-1]],
+					["Ask why you're here", goToSceneIndex, [52]],
+					["Ask to meet the others", goToSceneIndex, [52]],
+					["Try to use the key to return", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -125,18 +125,18 @@ function DialogStructManager(){
 				sceneName: "Immediately get to work",
 				background: spr_background, blocked:["strange brass key",[32], [19] ],
 				sceneText: "You turn your attention to the day's work.  More than most days it pulls at your soul, having to be soullessly chummy with the representatives of the universe that keeps your research empire afloat.  A handshake agreement here, a conspiratorial gesture of goodwill there...  It kills the soul for a prize you won 20 years ago and will never win.  Suddenly, and without warning you have the ability to comprehend, temporal fracture death takes you.",
-				options: [
+				options: [["Go back to bed", goToSceneIndex, [51]]
 					]
 				},
 			{
 				sceneIndex: 12,
 				sceneName: "Meet Nichole",
-				background: spr_background, character: ND_future_curious,
+				background: spr_background, character: ND_future_smile,
 				sceneText: "The elevator doors open at the 13th floor, and you nearly collide with someone exiting.\n'Oh! Sorry about that,' says a voice that sounds oddly familiar.\nYou find yourself face to face with Nichole Draytone. Something about her strikes you as familiar beyond just working in the same building. Her careful movements, the organized stack of files she carries, the thoughtful look in her eyes that seems to recognize you more than a casual colleague should.\n'Have we...met before?' she asks, tilting her head slightly.\nSay you're not sure\nMention dÃ©jÃ  vu\nAsk about her work",
 				options: [
-					["Say you're not sure", goToSceneIndex, [-1]],
-					["Mention dÃ©jÃ  vu", goToSceneIndex, [-1]],
-					["Ask about her work", goToSceneIndex, [-1]],
+					["Say you're not sure", goToSceneIndex, [52]],
+					["Mention dÃ©jÃ  vu", goToSceneIndex, [52]],
+					["Ask about her work", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -145,15 +145,15 @@ function DialogStructManager(){
 				background: spr_background,
 				sceneText: "You follow the directions in the email to the basement level. In a room normally restricted to authorized personnel, you find a device that looks like nothing you've ever seenâ€”part quantum computer, part antique clockwork.\nIt hums with increasing intensity. Near it stands a clipboard with a countdown: 15 minutes until activation.\nLooking closer, you notice familiar symbols etched into its frameâ€”the same patterns you saw on Margaret's workbench in 1847.\nLook for modern Margaret/Margueritte\nTry to disable the device\nWait and observe what happens",
 				options: [
-					["Look for modern Margaret/Margueritte", goToSceneIndex, [-1]],
-					["Try to disable the device", goToSceneIndex, [-1]],
-					["Wait and observe what happens", goToSceneIndex, [-1]],
+					["Look for modern Margaret/Margueritte", goToSceneIndex, [52]],
+					["Try to disable the device", goToSceneIndex, [52]],
+					["Wait and observe what happens", goToSceneIndex, [52]],
 					]
 				},
 			{
 				sceneIndex: 14,
 				sceneName: "William Redbrook",
-				character: WB_past_smile, background: house_past, onLoad: {func: addFriend, param: ["William"]},
+				character: WB_past_smile, background: house_past, onLoad: {func: addFriend, params: ["William"]},
 				sceneText: "'And who are you?'\nA smirking voice opens your eyes, and you're faced with a stranger.\nYou look around and realize, not only is the person you're looking at a complete unknown to you, but your surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!\nAsk questions\nRun Away!\nDemand answers immediately",
 				options: [
 					["Ask questions", goToSceneIndex, [31]],
@@ -164,12 +164,12 @@ function DialogStructManager(){
 			{
 				sceneIndex: 15,
 				sceneName: "Nicholas Drayton",
-				background: house_past, character:ND_past_neutral, onOpen: {addFriend: ["Nicholas"]},
+				background: house_past, character: ND_past_neutral, onOpen: {addFriend: ["Nicholas"]},
 				sceneText: "'Well, well,' the figure says, leaning against a well-worn desk, eyes bright with curiosity rather than alarm at your sudden appearance. 'Another unexpected visitor. William does have a habit of collecting strays.'\nNicholas Drayton stands before you, immaculately dressed yet comfortable, with a gentle smile that invites confidence. \n'You seem disoriented. Tea helps with that, in my experience. Or perhaps something stronger?'\nAsk Nicholas about this place\nAsk Nicholas about himself\nAsk about William Redbrook\nRun Away!",
 				options: [
-					["Ask Nicholas about this place", goToSceneIndex, [-1]],
-					["Ask Nicholas about himself", goToSceneIndex, [-1]],
-					["Ask about William Redbrook", goToSceneIndex, [-1]],
+					["Ask Nicholas about this place", goToSceneIndex, [52]],
+					["Ask Nicholas about himself", goToSceneIndex, [52]],
+					["Ask about William Redbrook", goToSceneIndex, [52]],
 					["Run Away!", goToSceneIndex, [47]],
 					]
 				},
@@ -198,9 +198,9 @@ function DialogStructManager(){
 				background: spr_background,
 				sceneText: "You realize you need help from all three of your time-displaced friends and their modern counterparts. With determined speed, you track down:\nWilliam Beck in maintenance, who grins with unexpected recognition when you mention temporal boundaries.\nNichole Draytone from accounting, whose organizational mind quickly grasps the patterns you describe.\nMargueritte Travers from R&D, who seems to have been waiting for this moment all along.\nTogether, you formulate a plan to address whatever is about to happen at 3:00 PM.\nConfront Dr. Fracture as a group\nSplit up to cover more ground\nUse the brass key with your allies",
 				options: [
-					["Confront Dr. Fracture as a group", goToSceneIndex, [-1]],
-					["Split up to cover more ground", goToSceneIndex, [-1]],
-					["Use the brass key with your allies", goToSceneIndex, [-1]],
+					["Confront Dr. Fracture as a group", goToSceneIndex, [52]],
+					["Split up to cover more ground", goToSceneIndex, [52]],
+					["Use the brass key with your allies", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -215,11 +215,11 @@ function DialogStructManager(){
 			{
 				sceneIndex: 20,
 				sceneName: "Demand answers immediately",
-				character: WB_past_mischievous, background: house_past,
+				character: WB_past_smile, background: house_past,
 				sceneText: "'Demanding, aren't we? I do appreciate directness.' William's grin widens rather than diminishes at your outburst.\n'Short version? You've stumbled across times. This is London, 1647. That brass key you found? Quite the peculiar object.' He flourishes dramatically. 'And I'm the son of Eris tasked to help you make sense of it all.'\nHe leans closer. 'Or perhaps lead you further into delightful trouble. I haven't decided which yet.'\nAsk about the key\nAsk to meet the others\nThreaten him for straight answers",
 				options: [
 					["Ask about the key", goToSceneIndex, [9]],
-					["Ask to meet the others", goToSceneIndex, [-1]],
+					["Ask to meet the others", goToSceneIndex, [52]],
 					["Threaten him for straight answers", goToSceneIndex, [6]],
 					]
 				},
@@ -250,9 +250,9 @@ function DialogStructManager(){
 				background: spr_background, character: MT_future_smile,
 				sceneText: "The roof garden is quiet this early. As you step from the elevator, you notice a woman standing at the edge, looking out over the city.\nShe turns at your approachâ€”tall, confident, wearing practical clothes that somehow look perfectly professional. Her eyes widen slightly at the sight of you.\n'Well,' she says, voice rich with amusement. 'I was wondering when you'd find your way here.'\nMargueritte Travers extends her hand. 'But you don't remember meeting me yet, do you? How interesting.'\nShow her Margaret's symbol\nAsk how she knows you\nAsk about the brass key",
 				options: [
-					["Show her Margaret's symbol", goToSceneIndex, [-1]],
-					["Ask how she knows you", goToSceneIndex, [-1]],
-					["Ask about the brass key", goToSceneIndex, [-1]],
+					["Show her Margaret's symbol", goToSceneIndex, [52]],
+					["Ask how she knows you", goToSceneIndex, [52]],
+					["Ask about the brass key", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -279,16 +279,17 @@ function DialogStructManager(){
 				onOpen: {theEnd: ["tragic"]},
 				sceneText: "Something goes wrong during the crisis. The key slips from your grasp at the crucial moment.\nYou find yourself drifting, untethered from time. Moments flow around youâ€”snippets of lives, fragments of history, glimpses of futures that may never come to pass.\nYou try to scream, but sound requires time to travel. You try to move, but motion requires time to occur.\nYou exist everywhere and nowhere, watching the world but unable to touch it. Occasionally, you glimpse familiar facesâ€”William, Nicholas, Margaretâ€”searching for you across centuries.\nBut they cannot reach you in this timeless void.",
 				options: [
+				["Go back to bed", goToSceneIndex, [51]],
 					]
 				},
 			{
 				sceneIndex: 27,
 				sceneName: "Show him the brass key",
-				background: spr_background, character: WB_future_intense,
+				background: spr_background, character: WB_future_neutral,
 				sceneText: "The moment you produce the key, William Beck's eyes widen. His hand trembles slightly as he reaches toward it, stopping just short of touching.\n'I've been drawing this,' he whispers. 'Over and over. Couldn't understand why.'\nHis gaze shifts from the key to your face. 'You know what this means, don't you? You've been there.'\nSomething changes in his postureâ€”a shadow of his counterpart's confidence emerging. 'The othersâ€”have you found them too? We don't have much time.'\nAsk what he means by 'not much time'\nTell him about meeting his past self\nSuggest finding the others",
 				options: [
-					["Ask what he means by 'not much time'", goToSceneIndex, [-1]],
-					["Tell him about meeting his past self", goToSceneIndex, [-1]],
+					["Ask what he means by 'not much time'", goToSceneIndex, [52]],
+					["Tell him about meeting his past self", goToSceneIndex, [52]],
 					["Suggest finding the others", goToSceneIndex, [28]],
 					]
 				},
@@ -297,7 +298,7 @@ function DialogStructManager(){
 				sceneName: "Suggest finding the others",
 				sceneText: "You suggest that reuniting with the others might be key; he agrees with a slight nod.\nFinal Resolution",
 				options: [
-					["Final Resolution", goToSceneIndex, [-1]],
+					["Final Resolution", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -335,6 +336,7 @@ function DialogStructManager(){
 				onOpen: {theEnd: ["tragic"]},
 				sceneText: "The experimental device activates before you can reach it. Reality seems to fold in on itself around you.\nYou try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if existing in multiple places at once.\nThrough the haze of agony, you catch glimpsesâ€”London streets, your office, places you've never seenâ€”all superimposed like multiple exposures on a single photograph.\nWith terrible clarity, you realize: you're being pulled apart across time itself.",
 				options: [
+				["Go back to bed", goToSceneIndex, [51]],
 					]
 				},
 			{
@@ -363,15 +365,15 @@ function DialogStructManager(){
 				background: spr_background,
 				sceneText: "You reach Dr. Fracture's office just before the test. The scientist who greets you seems ordinary enough, but something about their eyes reminds you of the void between times.\n'You feel it too, don't you?' they ask without preamble. 'The thinning of boundaries.'\nThey gesture to a device humming in the corner. 'This will either seal the breaches permanently or...' they hesitate, '...accelerate the process. I'm not entirely sure which.'\nThe clock reads 2:55 PM.\nTry to stop the experiment\nOffer to help refine the experiment\nUse the brass key on the device",
 				options: [
-					["Try to stop the experiment", goToSceneIndex, [-1]],
-					["Offer to help refine the experiment", goToSceneIndex, [-1]],
-					["Use the brass key on the device", goToSceneIndex, [-1]],
+					["Try to stop the experiment", goToSceneIndex, [52]],
+					["Offer to help refine the experiment", goToSceneIndex, [52]],
+					["Use the brass key on the device", goToSceneIndex, [52]],
 					]
 				},
 			{
 				sceneIndex: 36,
 				sceneName: "Pass out",
-				background: spr_background, gain: key,
+				background: spr_background, gain: "brassKey",
 				sceneText: "Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with\nWilliam Redbrook\nNicholas Drayton\nMargaret Ashford",
 				options: [
 					["William Redbrook", goToSceneIndex, [14]],
@@ -384,7 +386,7 @@ function DialogStructManager(){
 				sceneName: "Demand to meet someone else",
 				sceneText: "You insist on meeting someone else; your request is acknowledged briefly.\nFinal Resolution",
 				options: [
-					["Final Resolution", goToSceneIndex, [-1]],
+					["Final Resolution", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -392,7 +394,7 @@ function DialogStructManager(){
 				sceneName: "Reluctantly agree to his game",
 				sceneText: "Reluctantly, you agree to his proposed game of truths and lies.\nFinal Resolution",
 				options: [
-					["Final Resolution", goToSceneIndex, [-1]],
+					["Final Resolution", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -400,7 +402,7 @@ function DialogStructManager(){
 				sceneName: "Head to the roof",
 				sceneText: "Stepping onto the roof, you take a quiet moment to view the city before proceeding.\nFinal Resolution",
 				options: [
-					["Final Resolution", goToSceneIndex, [-1]],
+					["Final Resolution", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -418,6 +420,7 @@ function DialogStructManager(){
 				background: spr_background,
 				sceneText: "",
 				options: [
+				["Go back to bed", goToSceneIndex, [51]],
 					]
 				},
 			{
@@ -426,6 +429,7 @@ function DialogStructManager(){
 				onOpen: {theEnd: ["peaceful"]},
 				sceneText: "Together with your newfound allies across time, you identify the source of the temporal disturbance: Dr. Fracture's experimental device in your company's research lab.\nWhen the moment of crisis arrives, you're prepared. With William's courage, Nicholas's knowledge, and Margaret's ingenuityâ€”multiplied across their various incarnationsâ€”you stabilize the fracture.\nAs the boundaries between times heal, you feel your connections to the past growing fainter. Your memories of your adventures begin to fade.\nBut something remainsâ€”friendships forged across centuries, and the quiet knowledge that together, you saved more than one world.\nYour brass key turns to dust, its purpose fulfilled.",
 				options: [
+				["Go back to bed", goToSceneIndex, [51]],
 					]
 				},
 			{
@@ -434,9 +438,9 @@ function DialogStructManager(){
 				background: spr_background, character: WB_future_smile,
 				sceneText: "You find her in the company cafÃ©, holding court among a cluster of fascinated colleagues. Even in modern business attire, Billie Rochelle-Ross radiates the same chaotic energy as her historical counterpart.\nWhen she spots you, she abruptly abandons her audience mid-story, making a beeline toward you.\n'Finally!' she says, as if continuing a conversation. 'I've been waiting for someone interesting to show up.'\nHer grin is eerily familiar. 'You've got that look. Like you've seen the impossible.'\nAsk if she remembers you\nShow her the brass key\nAsk about the building",
 				options: [
-					["Ask if she remembers you", goToSceneIndex, [-1]],
-					["Show her the brass key", goToSceneIndex, [-1]],
-					["Ask about the building", goToSceneIndex, [-1]],
+					["Ask if she remembers you", goToSceneIndex, [52]],
+					["Show her the brass key", goToSceneIndex, [52]],
+					["Ask about the building", goToSceneIndex, [52]],
 					]
 				},
 			{
@@ -475,6 +479,7 @@ function DialogStructManager(){
 				onOpen: {theEnd: ["sad"]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.\nYou die as you lived.  Utterly accidentally.",
 				options: [
+				["Go back to bed", goToSceneIndex, [51]],
 					]
 				},
 			{
@@ -493,6 +498,7 @@ function DialogStructManager(){
 				 background: street_past, onOpen: {theEnd: ["neutral"]},
 				sceneText: "Your new ... friend? introduces himself as Rebrook, called William.  He brings you to a theater where you are introduced with much more dignity and ettiquete to a band of actors.  You find yourself put at ease, lulled by their strange accents into a relaxed state.  After their day's rehearsal for some new theatrical work of locally existential importance, your thoughts turn to returning ... somewhere?\nOver the years the past fades.  You die a few years after the love of your life.  A life obscured by time and forgotten by everything but decay.\nNot bad.",
 				options: [
+				["Go back to bed", goToSceneIndex, [51]],
 					]
 				},
 			{
@@ -501,6 +507,7 @@ function DialogStructManager(){
 				onOpen: {theEnd: ["heroic"]},
 				sceneText: "The building shakes. Emergency alarms blare. You understand nowâ€”this is the moment William spoke of.\nAs others flee, you move against the tide, toward the source of the disturbance. The brass key burns hot in your pocket.\nYou find the temporal fracture in the basementâ€”reality itself tearing open, past and future bleeding together.\nYou know what must be done. Using the key as William showed you, you seal the breach with yourself inside.\nYour body disintegrates across a thousand years, but time stabilizes.\nIn three different centuries, three friends raise a glass to your memory.",
 				options: [
+				["Go back to bed", goToSceneIndex, [51]],
 					]
 				},
 			{
@@ -511,8 +518,15 @@ function DialogStructManager(){
 				options: [
 					["Your alarm wakes you", goToSceneIndex, [21]],
 					]
-				},
-		]
+				},{ sceneIndex:52,
+				sceneName: "Behind the Arras",
+				background: spr_background,
+				sceneText: "Wait.. you're not supposed to be here!",
+				options: [
+					["Opening scene", goToSceneIndex, [51]],
+					]
+			},
+	]
 	}
 }
 

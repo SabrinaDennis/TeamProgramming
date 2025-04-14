@@ -40,6 +40,14 @@ function populateAllObjects(){
 	if(struct_exists(scene, "character")){
 		createCharacter(scene.character);
 	}
+	if(struct_exists(scene, "onLoad")){
+		var _onLoad = scene.onLoad;
+		if(is_array(_onLoad)){
+			array_foreach(_onLoad, script_execute_ext(_onLoad.func, _onLoad.params));
+		} else {
+			script_execute_ext(_onLoad.func, _onLoad.params);
+		}
+	}
 	//draw_set_font(font_small);
 	//Menu(200,200+string_height(sceneText)*1.5,scene.options);
 	//instance_create_depth(.28*room_width, .1*room_height, 1, MainText, {mainName:sceneName, mainText:sceneText});
