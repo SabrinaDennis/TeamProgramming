@@ -24,6 +24,7 @@ var _desc = !(description == -1);
 
 var _extraLines = 0
 // Loop through the options, draw them.
+
 for(var l = 0; l < (optionsCount + _desc); l++){
 	draw_set_colour(normalTextColor);
 	

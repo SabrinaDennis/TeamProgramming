@@ -35,26 +35,21 @@ function populateAllObjects(){
 	} else {
 		_background = spr_BG_error;
 	}
-	if(_background>0){
-		layer_background_change( global.background, _background);
-	}
+	layer_background_change( global.background, _background);
 	
 	if(struct_exists(scene, "character")){
-		_character = scene.character;
-	}
-    if(_character>0){
-		createCharacter(_character);
+		createCharacter(scene.character);
 	}
 	//draw_set_font(font_small);
 	//Menu(200,200+string_height(sceneText)*1.5,scene.options);
 	//instance_create_depth(.28*room_width, .1*room_height, 1, MainText, {mainName:sceneName, mainText:sceneText});
     show_debug_message(sceneName);
-    
+ /*    
     // Create buttons for each choice
     var buttonOptions = [];
     
     // Check which source we're using (JSON or struct)
-/*    if (variable_struct_exists(scene, "choices")) {
+   if (variable_struct_exists(scene, "choices")) {
         // Using JSON format
         var buttonCount = array_length(scene.choices);
         var buttonSpacing = 40; // Space between buttons
@@ -98,6 +93,14 @@ function populateAllObjects(){
         for (var i = 0; i < array_length(scene.options); i++) {
             array_push(options, scene.options[i]);
         }
+		if(struct_exists(scene, "blocked")){
+			array_push(options, blocked(scene.blocked));
+		}
+		if(struct_exists(scene, "onLoad")){
+			if(is_array(scene.onLoad)){
+				array_foreach(scene.onLoad, script_execute_ext(value.func,value.param));
+			}
+		}
         // Create menu with options
         Menu(room_width*0.75, room_height*0.75, options,-1,true);
     //}

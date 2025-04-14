@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"ChoiceManager",
+  "%Name":"FuncManager",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"ChoiceManager",
+  "name":"FuncManager",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
