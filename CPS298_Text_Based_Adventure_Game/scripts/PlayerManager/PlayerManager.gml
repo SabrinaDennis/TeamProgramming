@@ -5,7 +5,8 @@ function initializePlayer(){
 		health: 100,
 		maxHealth: 100,
 		gold: 0,
-		inventory: []
+		inventory: [],
+		friendlist: []
 	}
 }
 

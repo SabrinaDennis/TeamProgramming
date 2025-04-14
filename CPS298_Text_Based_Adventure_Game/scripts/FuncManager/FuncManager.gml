@@ -6,68 +6,77 @@ function ChoiceManager(funcName, parameters){
     if (!is_array(parameters)) {
         params = [parameters]; // Convert to array if not already
     }
-    
-    switch(funcName) {
-        case "fight":
-            // Get button that was clicked
-            var btn = instance_nearest(mouse_x, mouse_y, obj_button);
+}
+
+
+function fight(_parameters){
+    // Get button that was clicked
+    var btn = instance_nearest(mouse_x, mouse_y, obj_button);
             
-            if (variable_instance_exists(btn, "enemyData") && array_length(btn.enemyData) > 0) {
-                // Get first enemy from the data
-                var enemyData = btn.enemyData[0];
-                var enemyKeys = variable_struct_get_names(enemyData);
+    if (variable_instance_exists(btn, "enemyData") && array_length(btn.enemyData) > 0) {
+        // Get first enemy from the data
+        var enemyData = btn.enemyData[0];
+        var enemyKeys = variable_struct_get_names(enemyData);
                 
-                if (array_length(enemyKeys) > 0) {
-                    var enemyName = enemyKeys[0];
-                    var enemyChance = variable_struct_get(enemyData, enemyName);
+        if (array_length(enemyKeys) > 0) {
+            var enemyName = enemyKeys[0];
+            var enemyChance = variable_struct_get(enemyData, enemyName);
                     
-                    // Only spawn enemy if random chance succeeds
-                    if (random(1) < enemyChance) {
-                        show_debug_message("Starting battle with: " + enemyName);
-                        createEnemy(enemyName, spr_enemy, 100);
-                        createBattleInterface();
-                    } else {
-                        show_debug_message("Lucky! No enemy encountered.");
-                        // Continue to next scene without battle
-                        destroyAllObjects();
-                        populateAllObjects();
-                    }
-                }
+            // Only spawn enemy if random chance succeeds
+            if (random(1) < enemyChance) {
+                show_debug_message("Starting battle with: " + enemyName);
+                createEnemy(enemyName, spr_enemy, 100);
+                createBattleInterface();
             } else {
-                show_debug_message("Fight function called but no enemies defined.");
-                // Just continue to next scene
+                show_debug_message("Lucky! No enemy encountered.");
+                // Continue to next scene without battle
                 destroyAllObjects();
                 populateAllObjects();
             }
-            break;
+        }
+    } else {
+        show_debug_message("Fight function called but no enemies defined.");
+        // Just continue to next scene
+        destroyAllObjects();
+        populateAllObjects();
+    }
+}
             
-        case "shop":
-            var itemsForSale = (array_length(params) > 0) ? params[0] : "no items";
-            show_debug_message("The shopkeeper offers you " + string(itemsForSale));
-            
-            // Create shop interface with available items
-            createShopInterface(params);
-            break;
-            
-        case "find":
-            var foundItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
-            show_debug_message("You find a " + foundItem + "!");
-            
-            // Add item to inventory if it exists in global.itemList
-            if (variable_struct_exists(global.itemList, foundItem)) {
-                playerAddItem(variable_struct_get(global.itemList, foundItem));
-                show_debug_message("Added " + foundItem + " to inventory");
-            }
-            break;
-            
-        case "lose":
+///@function lose(_parameters)
+///@param _parameters String
+function lose(_parameters){
+	var foundItem = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown item";
+    if(array_contains(global.player.inventory, foundItem)){
+		array_delete(global.player.inventory, array_get_index(global.player.inventory, foundItem),1);
+	}
+}
+
+///@function goToSceneIndex(_parameters)
+///@param {array} _parameters  holds the index of the scene at _parameters[0]
+function goToSceneIndex(_parameters){
+	global.currentIndex=_parameters[0];
+	destroyAllObjects();
+	populateAllObjects();
+}
+
+function find(_parameters){
+	var foundItem = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown item";
+	//show_debug_message("You find a " + foundItem + "!");
+    
+	// Add item to inventory if it exists in global.itemList
+    if (variable_struct_exists(global.itemList, foundItem)) {
+		playerAddItem(variable_struct_get(global.itemList, foundItem));
+        //show_debug_message("Added " + foundItem + " to inventory");
+    }
+}
+
+
+///@function	blocked([item, destinationIfNot, destinationIfDo])
+///@param {Array}	params
+function blocked(params){
             var requiredItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
-            show_debug_message("You need a " + requiredItem + " but don't have it.");
-            break;
-            
-        case "blocked":
-            var requiredItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
-            
+            var description = "";
+			var target = 0;
             // Handle numeric conversion safely - use default values if conversion fails
             var failTarget = global.currentIndex;
             var successTarget = global.currentIndex;
@@ -75,7 +84,8 @@ function ChoiceManager(funcName, parameters){
             // Try to convert the parameters to scene indices
             if (array_length(params) > 1) {
                 try {
-                    // Only try to convert if it seems to be a number
+                    // Only try to convert if it seems to be a number\
+					if(is_array(params[1])) params[1] = params[1][0];
                     if (string_digits(string(params[1])) == string(params[1])) {
                         failTarget = real(params[1]);
                     } else {
@@ -89,6 +99,8 @@ function ChoiceManager(funcName, parameters){
             if (array_length(params) > 2) {
                 try {
                     // Only try to convert if it seems to be a number
+					
+					if(is_array(params[2])) params[2] = params[2][0];
                     if (string_digits(string(params[2])) == string(params[2])) {
                         successTarget = real(params[2]);
                     } else {
@@ -98,35 +110,20 @@ function ChoiceManager(funcName, parameters){
                     show_debug_message("Error converting successTarget: " + string(e));
                 }
             }
-            
-            // Check if player has the required item
-            var hasItem = false;
-            for (var i = 0; i < array_length(global.player.inventory); i++) {
-                if (global.player.inventory[i].name == requiredItem) {
-                    hasItem = true;
-                    break;
-                }
-            }
-            
+                        
             // Go to appropriate scene based on item check
-            if (hasItem) {
-                global.currentIndex = successTarget;
-                show_debug_message("You have the " + requiredItem + ", proceeding to scene " + string(successTarget));
+            if (array_contains(global.player.inventory, requiredItem)) {
+               target = successTarget;
+                description = ("You have the " + requiredItem + ", "+ global.dialog.scenes[successTarget].sceneName);
+				
             } else {
                 global.currentIndex = failTarget;
-                show_debug_message("You don't have the " + requiredItem + ", going to scene " + string(failTarget));
+                description = ("You don't have the " + requiredItem + ", you must proceed to " +  global.dialog.scenes[failTarget].sceneName);
             }
-            break;
-            
-        case "nothing":
-            show_debug_message("Just continuing to the next part.");
-            break;
-            
-        default:
-            show_debug_message("Function name not recognized: " + funcName);
-            break;
-    }
+			
+			return [description, goToSceneIndex, [target]];
 }
+
 
 // New helper function for shop interface
 function createShopInterface(items) {
@@ -283,4 +280,16 @@ function attemptFlee() {
         // Recreate battle interface
         createBattleInterface();
     }
+}
+
+function addFriend(_parameters){
+	var friend = "";
+	if(is_array(_parameters)){
+		friend = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown friend";
+	} else if(is_string(_parameters)){
+		friend = _parameters
+	}
+	if(string_length(friend)>0){
+		array_push(global.player.friendlist, friend);
+	}
 }

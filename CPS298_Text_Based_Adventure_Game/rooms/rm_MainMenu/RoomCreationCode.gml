@@ -1,1 +1,1 @@
-createBackground(street_past);
+createBackground(spr_background);

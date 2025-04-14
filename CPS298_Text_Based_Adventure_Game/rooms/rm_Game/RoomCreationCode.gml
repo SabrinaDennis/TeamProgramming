@@ -5,7 +5,7 @@ initializePlayer();
 loadDialogData();
 
 global.currentIndex = 0;
-createBackground(theater_past);
+createBackground(street_past);
 // Room Manager Script
 populateAllObjects();
 

@@ -1,0 +1,568 @@
+:: StoryTitle
+TextAdventureGameClaude
+
+
+:: StoryData
+{
+  "ifid": "2C41FFEA-EB4C-4C25-AE7F-FDFAB53C6B54",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "Opening scene",
+  "zoom": 0.6
+}
+
+
+:: "Where am I?" {"position":"2250,325","size":"100,100"}
+"You sit 'pon the floor, stranger.  The floor of a modest home in Southwark.  Southwark being a dot on a map of England.  England being a nation in the temporal world, and the temporal world being a location you must yourself interpret the nature of.  I find your accent unplaceable, and I, being a listener by virtue and trade, am implaccable when it comes to the unexpected and the new.  Of which you number both.  Enrobe thyself and I shall impose you upon my brothers, who shall upbraid me for being untimely anon."
+
+[[Run Away!]] 
+
+[["Who are you?"]]
+
+[[Put on a few layers of wool and follow him to adventure]]
+
+/* rawContent */character: WB_past_smile, background: house_past
+
+
+:: "Who are you?" {"position":"2000,0","size":"100,100"}
+"Forgive my boldness an I answer, but I am Redbrook, called William.  You seem to have wandered into my home, and what curiosity hath struck me as I noticed your form owns a familiar echo to the beginnings adventure.  Let us tarry not.  Don this costume and we shall visit you upon my brothers."
+
+[[Run Away!]] 
+
+[["Where am I?"]] 
+
+[[Put on a few layers of wool and follow him to adventure]]
+
+/* rawContent */character: WB_past_smile, background: house_past
+
+
+:: Approach and introduce yourself {"position":"1375,1725","size":"100,100"}
+"Can I help you?" William asks without looking up, then freezes when he sees your face. Recognition flickers in his eyes, though you've never met in this time.
+
+"I... do I know you?" he asks, voice uncertain.
+
+When you introduce yourself, he sets down his tools with careful precision. "Strange. I feel like we've met." He laughs nervously. "Been having the oddest dreams lately. About a house that stood here, long ago."
+
+His eyes search yours. "You were in them."
+
+[[Show him the brass key]]
+[[Ask about his dreams]]
+[[Mention the others]]
+
+/* rawContent */background: spr_background, character: WB_future_confused
+
+
+:: Ask about the key {"position":"2175,500","size":"100,100"}
+"Ah, the key!" William snags it from your hand with nimble fingers before you can protest. "One of many such objects that... bend certain rules."
+
+He flips it casually, catching it without looking. "Found it, did you? Or perhaps it found you."
+
+He returns it with unexpected gentleness. "These objects appear to those standing at crossroads. People whose choices matter more than most."
+
+He winks. "Make of that what you will."
+
+[[Ask why you're here]]
+[[Ask to meet the others]]
+[[Try to use the key to return]]
+
+/* rawContent */character: WB_past_curious, background: house_past
+
+
+:: Ask questions {"position":"1925,250","size":"100,100"}
+You ask your ersatz host five questions at the same time, but all that surfaces is a hoarsely muttered "gruuhhhmuhhh." --"Here, strange being.  You look parched." --The owner of the smirking voice hands you a glass of water and you gulp it down with as much dignity as you can muster.  It's not much.
+
+[["Where am I?"]]
+
+[["Who are you?"]]
+
+/* rawContent */character: WB_past_smile, background: house_past
+
+
+:: Check the notification details {"position":"1075,1275","size":"100,100"}
+The notification mentions a "comprehensive systems diagnostic" scheduled for 3:00 PM today, focusing on the building's experimental energy management system.
+
+The message is signed by the head of Research & Development, Dr. T. Fracture.
+
+A strange chill runs through you as you read the name. Something about this test feels connected to what William told you about temporal boundaries weakening.
+
+The clock reads 2:30 PM.
+
+[[Contact Dr. Fracture immediately]]
+[[Gather your temporal allies first]]
+[[Investigate the test location]]
+
+/* rawContent */background: spr_background
+
+
+:: Contact Dr. Fracture immediately {"position":"1375,1450","size":"100,100"}
+You reach Dr. Fracture's office just before the test. The scientist who greets you seems ordinary enough, but something about their eyes reminds you of the void between times.
+
+"You feel it too, don't you?" they ask without preamble. "The thinning of boundaries."
+
+They gesture to a device humming in the corner. "This will either seal the breaches permanently or..." they hesitate, "...accelerate the process. I'm not entirely sure which."
+
+The clock reads 2:55 PM.
+
+[[Try to stop the experiment]]
+[[Offer to help refine the experiment]]
+[[Use the brass key on the device]]
+
+/* rawContent */background: spr_background
+
+
+:: Demand answers immediately {"position":"2050,925","size":"100,100"}
+"Demanding, aren't we? I do appreciate directness." William's grin widens rather than diminishes at your outburst.
+
+"Short version? You've stumbled across times. This is London, 1647. That brass key you found? Quite the peculiar object." He flourishes dramatically. "And I'm the son of Eris tasked to help you make sense of it all."
+
+He leans closer. "Or perhaps lead you further into delightful trouble. I haven't decided which yet."
+
+[[Ask about the key]]
+[[Ask to meet the others]]
+[[Threaten him for straight answers]]
+
+/* rawContent */character: WB_past_mischievous, background: house_past
+
+
+:: Fidget for a moment, putting off the tasks of the day {"position":"1000,1100","size":"100,100"}
+/* rawContent */background: spr_background
+
+
+:: Finish getting ready and eat some breakfast {"position":"500,750","size":"100,100"}
+You fuel your day, not really paying attention to your nourishment, just mindlessly consuming your morning's energy.  You gulp down a few good mouthfuls of bad coffee and [[head to work.]]
+/* rawContent */background: spr_background
+
+
+:: Focus on getting to the days work. {"position":"675,1000","size":"100,100"}
+[[Press 13]]
+/* rawContent */background: spr_background
+
+
+:: Gather your temporal allies first {"position":"1550,1400","size":"100,100"}
+You realize you need help from all three of your time-displaced friends and their modern counterparts. With determined speed, you track down:
+
+William Beck in maintenance, who grins with unexpected recognition when you mention temporal boundaries.
+
+Nichole Draytone from accounting, whose organizational mind quickly grasps the patterns you describe.
+
+Margueritte Travers from R&D, who seems to have been waiting for this moment all along.
+
+Together, you formulate a plan to address whatever is about to happen at 3:00 PM.
+
+[[Confront Dr. Fracture as a group]]
+[[Split up to cover more ground]]
+[[Use the brass key with your allies]]
+
+/* rawContent */background: spr_background
+
+
+:: Go back to bed {"position":"300,350","size":"100,100"}
+You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.
+
+[[Your alarm wakes you]]
+/* rawContent */background: house_past, character: ND_future_neutral
+
+
+:: Grab a banana {"position":"325,1225","size":"100,100"}
+{gain a banana} This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana's peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don't.
+
+Take your banana back to the elevator and 
+
+[[Press R]]
+
+[[Press 13]]
+/* rawContent */background: spr_background
+
+
+:: Grab a gooey cinnamon bun {"position":"450,1325","size":"100,100"}
+{gain cinnamon bun}  This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you 
+
+[[Press R]]
+
+[[Press 13]]
+/* rawContent */background: spr_background
+
+
+:: Heroic sacrifice {"position":"1400,2000","size":"100,100"}
+The building shakes. Emergency alarms blare. You understand now—this is the moment William spoke of.
+
+As others flee, you move against the tide, toward the source of the disturbance. The brass key burns hot in your pocket.
+
+You find the temporal fracture in the basement—reality itself tearing open, past and future bleeding together.
+
+You know what must be done. Using the key as William showed you, you seal the breach with yourself inside.
+
+Your body disintegrates across a thousand years, but time stabilizes.
+
+In three different centuries, three friends raise a glass to your memory.
+
+/* rawContent */onOpen: {theEnd: ["heroic"]}
+
+
+:: Immediately get to work {"position":"1000,950","size":"100,100"}
+/* rawContent */background: spr_background
+
+
+:: Investigate the shiny object you notice out of the corner of your eye? {"position":"950,750","size":"100,100"}
+You pause for a moment, happy for an excuse to put off the day's work.  You reach down for the scuffed metal object, notice it's a large brass key.  The antique object is worn to brushed shininess in two places.  The part where...  Is it suddenly really warm?  The part where it would be held, and the whatever, the blade of the key is old timey and why is it hard to see and think of word for th wher
+
+[[Pass out]]
+/* rawContent */background: spr_background
+
+
+:: Investigate the test location {"position":"1075,1550","size":"100,100"}
+You follow the directions in the email to the basement level. In a room normally restricted to authorized personnel, you find a device that looks like nothing you've ever seen—part quantum computer, part antique clockwork.
+
+It hums with increasing intensity. Near it stands a clipboard with a countdown: 15 minutes until activation.
+
+Looking closer, you notice familiar symbols etched into its frame—the same patterns you saw on Margaret's workbench in 1847.
+
+[[Look for modern Margaret/Margueritte]]
+[[Try to disable the device]]
+[[Wait and observe what happens]]
+
+/* rawContent */background: spr_background
+
+
+:: Lost between times {"position":"1600,2000","size":"100,100"}
+Something goes wrong during the crisis. The key slips from your grasp at the crucial moment.
+
+You find yourself drifting, untethered from time. Moments flow around you—snippets of lives, fragments of history, glimpses of futures that may never come to pass.
+
+You try to scream, but sound requires time to travel. You try to move, but motion requires time to occur.
+
+You exist everywhere and nowhere, watching the world but unable to touch it. Occasionally, you glimpse familiar faces—William, Nicholas, Margaret—searching for you across centuries.
+
+But they cannot reach you in this timeless void.
+
+/* rawContent */onOpen: {theEnd: ["tragic"]}
+
+
+:: Margaret Ashford {"position":"1900,675","size":"100,100"}
+A woman stands at a workbench, hammering what appears to be a brass mechanism with surprising force. Without turning, she speaks: "William's found another one, has he?"
+
+She pivots suddenly, eyes flashing with intelligence and barely-contained energy. Her sleeves are rolled up, hands stained with various substances, a leather apron protecting clothes that seem designed for movement rather than fashion.
+
+"Margaret Ashford. You're displaced. Temporally." She states this as fact, not question. "Interesting. You're different from the others."
+
+[[Ask how you're different]]
+[[Ask about her work]]
+[[Ask how to get home]]
+[[Run Away!]]
+
+/* rawContent */background: house_past, character: MT_past_neutral, onOpen: {addFriend: ["Margaret"]}
+
+
+:: Meet Billie {"position":"1975,1550","size":"100,100"}
+You find her in the company café, holding court among a cluster of fascinated colleagues. Even in modern business attire, Billie Rochelle-Ross radiates the same chaotic energy as her historical counterpart.
+
+When she spots you, she abruptly abandons her audience mid-story, making a beeline toward you.
+
+"Finally!" she says, as if continuing a conversation. "I've been waiting for someone interesting to show up."
+
+Her grin is eerily familiar. "You've got that look. Like you've seen the impossible."
+
+[[Ask if she remembers you]]
+[[Show her the brass key]]
+[[Ask about the building]]
+
+/* rawContent */background: spr_background, character: WB_future_smile
+
+
+:: Meet Margueritte {"position":"1925,1700","size":"100,100"}
+The roof garden is quiet this early. As you step from the elevator, you notice a woman standing at the edge, looking out over the city.
+
+She turns at your approach—tall, confident, wearing practical clothes that somehow look perfectly professional. Her eyes widen slightly at the sight of you.
+
+"Well," she says, voice rich with amusement. "I was wondering when you'd find your way here."
+
+Margueritte Travers extends her hand. "But you don't remember meeting me yet, do you? How interesting."
+
+[[Show her Margaret's symbol]]
+[[Ask how she knows you]]
+[[Ask about the brass key]]
+
+/* rawContent */background: spr_background, character: MT_future_smile
+
+
+:: Meet Nichole {"position":"1975,1350","size":"100,100"}
+The elevator doors open at the 13th floor, and you nearly collide with someone exiting.
+
+"Oh! Sorry about that," says a voice that sounds oddly familiar.
+
+You find yourself face to face with Nichole Draytone. Something about her strikes you as familiar beyond just working in the same building. Her careful movements, the organized stack of files she carries, the thoughtful look in her eyes that seems to recognize you more than a casual colleague should.
+
+"Have we...met before?" she asks, tilting her head slightly.
+
+[[Say you're not sure]]
+[[Mention déjà vu]]
+[[Ask about her work]]
+
+/* rawContent */background: spr_background, character: ND_future_curious
+
+
+:: Meet William Beck {"position":"1100,1750","size":"100,100"}
+You spot him in the maintenance area—a man with a familiar face, though dressed in modern clothes and lacking the confident posture of his historical counterpart.
+
+William Beck works methodically on an electrical panel, muttering to himself. He hasn't noticed you yet.
+
+There's something about him—an echo of the man you met in another time. The same features arranged in a more uncertain expression.
+
+[[Approach and introduce yourself]]
+[[Observe him a moment longer]]
+[[Walk away]]
+
+/* rawContent */background: spr_background, character: WB_future_focused
+
+
+:: Nicholas Drayton {"position":"1850,825","size":"100,100"}
+"Well, well," the figure says, leaning against a well-worn desk, eyes bright with curiosity rather than alarm at your sudden appearance. "Another unexpected visitor. William does have a habit of collecting strays."
+
+Nicholas Drayton stands before you, immaculately dressed yet comfortable, with a gentle smile that invites confidence. 
+
+"You seem disoriented. Tea helps with that, in my experience. Or perhaps something stronger?"
+
+[[Ask Nicholas about this place]]
+[[Ask Nicholas about himself]]
+[[Ask about William Redbrook]]
+[[Run Away!]]
+
+/* rawContent */background: house_past, character:ND_past_neutral, onOpen: {addFriend: ["Nicholas"]}
+
+
+:: Opening scene {"position":"300,200","size":"100,100"}
+It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.
+
+Too long.
+
+It's too early.
+
+[[Go back to bed]]
+
+[[Take advantage of the extra... ugh... hour]]
+/* rawContent */background: spr_background, character: WB_future_neutral
+
+
+:: Pass out {"position":"1300,625","size":"100,100"}
+Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with
+
+[[William Redbrook]]
+
+[[Nicholas Drayton]]
+
+[[Margaret Ashford]]
+/* rawContent */background: spr_background
+
+
+:: Peaceful resolution {"position":"1800,2000","size":"100,100"}
+Together with your newfound allies across time, you identify the source of the temporal disturbance: Dr. Fracture's experimental device in your company's research lab.
+
+When the moment of crisis arrives, you're prepared. With William's courage, Nicholas's knowledge, and Margaret's ingenuity—multiplied across their various incarnations—you stabilize the fracture.
+
+As the boundaries between times heal, you feel your connections to the past growing fainter. Your memories of your adventures begin to fade.
+
+But something remains—friendships forged across centuries, and the quiet knowledge that together, you saved more than one world.
+
+Your brass key turns to dust, its purpose fulfilled.
+
+/* rawContent */onOpen: {theEnd: ["peaceful"]}
+
+
+:: Press 13 {"position":"800,1100","size":"100,100"}
+You press the button marked 13, and head to your personal offices.  Hoping to catch up on some paperwork, you continue through the slightly unpleasant smell of carpet adhesive and sit behind your desk.
+
+You can
+
+[[Immediately get to work]]
+
+or
+
+[[Fidget for a moment, putting off the tasks of the day]]
+/* rawContent */background: spr_background
+
+
+:: Press 4 {"position":"800,1325","size":"100,100"}
+You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.
+
+[[Grab a gooey cinnamon bun]]
+
+[[Grab a banana]]
+/* rawContent */background: spr_background
+
+
+:: Press R {"position":"800,875","size":"100,100"}
+You press R on the elevator to get some air.  After a brief existential whirr, the doors open on the roof of the building.  You step out, gulp a few mouthfuls of air and steel your nerves for the day.  As you're about to turn back to the elevators, you notice something.
+
+Do you
+
+[[Investigate the shiny object you notice out of the corner of your eye?]]
+
+or do you
+
+[[Focus on getting to the days work.]]
+/* rawContent */background: spr_background
+
+
+:: Put on a few layers of wool and follow him to adventure {"position":"2275,25","size":"100,100"}
+Your new ... friend?  brings you to a theater where you are introduced with much more dignity and ettiquete to a band of actors.  You find yourself put at ease, lulled by their strange accents into a relaxed state.  After their day's rehearsal for some new theatrical work of locally existential importance, your thoughts turn to returning to ... somewhere?
+
+Over the years the past fades.  You die a few years after the love of your life.  A life obscured by time and forgotten by everything but decay.
+
+Not bad.
+
+/* rawContent */ background: street_past, onOpen: {theEnd: ["neutral"]}
+
+
+:: Return to your office {"position":"575,1550","size":"100,100"}
+You make your way back to your office, the brass key heavy in your pocket. The familiar surroundings feel somehow different now—as if you're seeing the hidden layers beneath ordinary reality.
+
+Your computer screen shows several urgent emails. Work continues, oblivious to your temporal adventure.
+
+But something catches your eye—a notification about a building-wide systems test scheduled for today. Something about it feels significant.
+
+[[Check the notification details]]
+[[Look for William Beck]]
+[[Look for Nichole]]
+[[Head to the roof]]
+
+/* rawContent */background: spr_background
+
+
+:: Run Away! {"position":"1425,1000","size":"100,100"}
+You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.
+
+You die as you lived.  Utterly accidentally.
+
+/* rawContent */onOpen: {theEnd: ["sad"]}
+
+
+:: Show him the brass key {"position":"800,1800","size":"100,100"}
+The moment you produce the key, William Beck's eyes widen. His hand trembles slightly as he reaches toward it, stopping just short of touching.
+
+"I've been drawing this," he whispers. "Over and over. Couldn't understand why."
+
+His gaze shifts from the key to your face. "You know what this means, don't you? You've been there."
+
+Something changes in his posture—a shadow of his counterpart's confidence emerging. "The others—have you found them too? We don't have much time."
+
+[[Ask what he means by "not much time"]]
+[[Tell him about meeting his past self]]
+[[Suggest finding the others]]
+
+/* rawContent */background: spr_background, character: WB_future_intense
+
+
+:: Take a cold shower {"position":"625,600","size":"100,100"}
+The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masachistic routine.
+
+{gain 1 alertness point}
+
+[[Finish getting ready and eat some breakfast]]
+/* rawContent */background: spr_background
+
+
+:: Take a cold shower-battle {"position":"600,350","size":"100,100"}
+{battle cold shower demons}
+
+[[Take a cold shower]]
+/* rawContent */background: spr_background
+
+
+:: Take a hot shower {"position":"450,350","size":"100,100"}
+You relax under the calming water, letting your anger at the world for existing melt like ice and flake off of you in layers.  Your jaw ucleanches.  You're not happy with today, but you're a little more ready for it.
+
+{gain a resilience point}
+
+You towel off and sit on the bed, relaxing for just a moment... stretching out feels... so nice...
+
+[[Your alarm wakes you]]
+/* rawContent */background: spr_background
+
+
+:: Take advantage of the extra... ugh... hour {"position":"450,200","size":"100,100"}
+You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your legs out of the bed, hoping peer pressure will rouse the rest of you.  Standing unsteadily, you blear your way to the bathroom, relieve yourself, and attempt to jump start your day.
+
+[[Take a hot shower]]
+
+[[Take a cold shower-battle]]
+/* rawContent */background: spr_background
+
+
+:: Temporal fracture death {"position":"1200,2000","size":"100,100"}
+The experimental device activates before you can reach it. Reality seems to fold in on itself around you.
+
+The key grows hot in your palm—too hot. The air thickens and tears.
+
+You try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if existing in multiple places at once.
+
+Through the haze of agony, you catch glimpses—London streets, your office, places you've never seen—all superimposed like multiple exposures on a single photograph.
+
+With terrible clarity, you realize: you're being pulled apart across time itself.
+
+/* rawContent */onOpen: {theEnd: ["tragic"]}
+
+
+:: Threaten him for straight answers {"position":"2325,900","size":"100,100"}
+William's laugh is bright and genuine in response to your threats.
+
+"Oh, I like you! Such spirit!" He circles you with casual disregard for personal space. "Threats won't get you anywhere useful, but they certainly make things interesting."
+
+He plucks an apple from a bowl and tosses it to you. "Let's make a game of it instead. For every question you ask, I'll give one honest answer and one lie."
+
+His eyes sparkle. "Your challenge is figuring out which is which."
+
+[[Reluctantly agree to his game]]
+[[Demand to meet someone else]]
+[[Try to use the key to leave]]
+
+/* rawContent */character: WB_past_mischievous, background: house_past
+
+
+:: William Redbrook {"position":"1700,950","size":"100,100"}
+"And who are you?"
+
+A smirking voice opens your eyes, and you're faced with a stranger.
+
+You look around and realize, not only is the person you're looking at a complete unknown to you, but your surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!
+
+[[Ask questions]]
+
+[[Run Away!]]
+
+[[Demand answers immediately]]
+
+/* rawContent */character: WB_past_smile, background: house_past, onOpen: {addFriend: ["William"]}
+
+
+:: Your alarm wakes you {"position":"375,475","size":"100,100"}
+You jolt into reality.  Falling asleep again was a bad idea.
+
+[[shake it off -- spend 1 resilience point]]
+
+[[proceed to 'have a day'  -- lose one alertness point, gain status 'Having a day.']]
+/* rawContent */background: street_past, character: MT_future_neutral
+
+
+:: head to work. {"position":"500,900","size":"100,100"}
+Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and...
+
+[[Press 13]]
+
+[[Press 4]]
+
+[[Press R]]
+/* rawContent */background: spr_background
+
+
+:: proceed to 'have a day'  -- lose one alertness point, gain status 'Having a day.' {"position":"500,600","size":"100,100"}
+Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.
+
+[[Finish getting ready and eat some breakfast]]
+/* rawContent */background: spr_background
+
+
+:: shake it off -- spend 1 resilience point {"position":"375,600","size":"100,100"}
+You shudder, focus all your mental energy, and just decide to move on.
+
+[[Finish getting ready and eat some breakfast]]
+/* rawContent */background: theater_past

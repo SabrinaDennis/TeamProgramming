@@ -65,8 +65,15 @@
 │   └── story
 │       ├── readme.md
 │       ├── story_files
+│       │   ├── Text Adventures of Argothon.html
 │       │   ├── TextAdventureGame.html
-│       │   └── TextAdventureGame.twee
+│       │   ├── TextAdventureGame.twee
+│       │   ├── TextAdventureGameClaude.html
+│       │   ├── TextAdventureGameClaude.twee
+│       │   ├── TextAdventureGameClaude.txt
+│       │   ├── TextAdventureGameClaude2.html
+│       │   ├── TextAdventureGameClaude2.twee
+│       │   └── TextAdventureGameClaude2.txt
 │       └── twee_file_digester.zip
 ├── CPS298_Text_Based_Adventure_Game
 │   ├── CPS298_Text_Based_Adventure_Game.resource_order
@@ -158,9 +165,6 @@
 │   │       ├── RoomCreationCode.gml
 │   │       └── rm_MainMenu.yy
 │   ├── scripts
-│   │   ├── ChoiceManager
-│   │   │   ├── ChoiceManager.gml
-│   │   │   └── ChoiceManager.yy
 │   │   ├── DataManager
 │   │   │   ├── DataManager.gml
 │   │   │   └── DataManager.yy
@@ -170,6 +174,9 @@
 │   │   ├── EnemyManager
 │   │   │   ├── EnemyManager.gml
 │   │   │   └── EnemyManager.yy
+│   │   ├── FuncManager
+│   │   │   ├── FuncManager.gml
+│   │   │   └── FuncManager.yy
 │   │   ├── InventoryManager
 │   │   │   ├── InventoryManager.gml
 │   │   │   └── InventoryManager.yy
@@ -475,4 +482,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-160 directories, 315 files
+160 directories, 322 files
