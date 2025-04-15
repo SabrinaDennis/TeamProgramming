@@ -1,0 +1,190 @@
+:: StoryTitle
+Text Adventures of Argothon
+
+
+:: StoryData
+{
+  "ifid": "F178878C-385A-42DE-8889-5F82751CEA46",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "It's too early.",
+  "zoom": 1
+}
+
+
+:: 'Have a day' {"position":"575,675","size":"100,100"}
+Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.
+
+[[Finish getting ready and eat some breakfast]]
+/* rawContent */background: house_present, onLoad:{ func:find, params: "a day"}
+
+
+:: Fidget for a moment, putting off the tasks of the day {"position":"850,1525","size":"100,100"}
+TODO
+
+[[Temporal Storm]]
+
+/* rawContent */background: office_present
+
+
+:: Finish getting ready and eat some breakfast {"position":"700,800","size":"100,100"}
+You fuel your day, not really paying attention to your nourishment, just mindlessly consuming your morning's energy.  You gulp down a few good mouthfuls of bad coffee and [[head to work.]]
+/* rawContent */background: house_present
+
+
+:: Focus on getting to the days work. {"position":"1100,1225","size":"100,100"}
+[[Press 13]]
+/* rawContent */background: elevator_present
+
+
+:: Go back to bed {"position":"700,425","size":"100,100"}
+You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.
+
+[[Your alarm wakes you]]
+/* rawContent */background: house_present
+
+
+:: Grab a banana {"position":"875,1225","size":"100,100"}
+This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana's peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don't. Take your banana back to the elevator and ...
+
+[[Press R]]
+[[Press 13]]
+/* rawContent */background: office_present,  onLoad: {func: find, params: ["banana"]}
+
+
+:: Grab a gooey cinnamon bun {"position":"825,1075","size":"100,100"}
+This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you ... 
+
+[[Press R]]
+[[Press 13]]
+/* rawContent */background: office_present,  onLoad: {func: find, params: ["cinnamonBun"]}
+
+
+:: Head to the roof {"position":"1000,800","size":"100,100"}
+
+[[Press R]] 
+
+/* rawContent */background: elevator_present
+
+
+:: Head to your offices {"position":"575,1300","size":"100,100"}
+[[Press 13]] 
+
+/* rawContent */background: office_present, onLoad:{func: applyElevatorEffectsToBus, params:[]}
+
+
+:: Immediately get to work {"position":"725,1525","size":"100,100"}
+TODO
+
+[[Temporal Storm]]
+
+/* rawContent */background: office_present
+
+
+:: Investigate the shiny object you notice out of the corner of your eye? {"position":"1012.5,1100","size":"100,100"}
+
+
+
+:: It's too early. {"position":"700,300","size":"100,100"}
+The palm trees abruptly dim. It's too early. It's dark and it's quiet and it's warm but it's too early. Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.
+Too long.
+It's too early.
+[[Go back to bed]]
+[[Take advantage of the extra... ugh... hour.]]
+/* rawContent */background: spr_background, onLoad:{func: function test(_str){show_debug_message(_str)}, ["test"]
+
+
+:: Press 13 {"position":"725,1400","size":"100,100"}
+You press the button marked 13, and head to your personal offices.  Hoping to catch up on some paperwork, you continue through the offensive smell of carpet adhesive and sit behind your desk.
+[[Immediately get to work]]
+[[Fidget for a moment, putting off the tasks of the day]]
+/* rawContent */background: office_present
+
+
+:: Press 4 {"position":"900,975","size":"100,100"}
+You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.
+
+[[Grab a gooey cinnamon bun]]
+
+[[Grab a banana]]
+/* rawContent */background: office_present
+
+
+:: Press R {"position":"1075,925","size":"100,100"}
+You press R on the elevator to get some air.  After a brief existential whirr, the doors open on the roof of the building.  You step out, gulp a few mouthfuls of air and steel your nerves for the day.  As you're about to turn back to the elevators, you notice something.  Do you  [[Investigate the shiny object you notice out of the corner of your eye?]]  or do you  [[Focus on getting to the days work.]]
+
+/* rawContent */background: outside_present
+
+
+:: Shake it off. {"position":"700,675","size":"100,100"}
+You shudder, focus all your mental energy, and just decide to move on.
+[[Finish getting ready and eat some breakfast]]
+/* rawContent */background: house_present, onLoad:{playerTakeDamage(10)}
+
+
+:: Take a cold shower {"position":"975,325","size":"100,100"}
+Battle the your demons
+
+[[Take a cold shower, continued]]
+/* rawContent */background: house_present, onLoad:{func: fight, params: "coldDemons'}
+
+
+:: Take a cold shower, continued {"position":"975,500","size":"100,100"}
+The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masochistic routine.
+
+[[Finish getting ready and eat some breakfast]] 
+
+/* rawContent */background: house_present, onLoad:{func: find, params:["resolve"]}
+
+
+:: Take a hot shower {"position":"825,425","size":"100,100"}
+You relax under the calming water, letting your anger at the world for existing melt like ice and flake off of you in layers.  Your jaw ucleanches.  You're not happy with today, but you're a little more ready for it.
+You towel off and sit on the bed, relaxing for just a moment... stretching out feels... so nice...
+
+[[Your alarm wakes you]]
+/* rawContent */background: house_present, onLoad:{func: find, params:["resilience"]}
+
+
+:: Take advantage of the extra... ugh... hour. {"position":"825,300","size":"100,100"}
+You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your legs out of the bed, hoping peer pressure will rouse the rest of you.  Standing unsteadily, you blear your way to the bathroom, relieve yourself, and attempt to jump start your day.
+
+[[Take a hot shower]]
+
+[[Take a cold shower]]
+/* rawContent */background: house_present
+
+
+:: Temporal Storm {"position":"725,1650","size":"100,100"}
+Reality seems to fold in on itself around you.
+
+You try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if existing in multiple places at once.
+
+Through the haze of agony, you catch glimpses—London streets, your office, places you've never seen—all superimposed like multiple exposures on a single photograph.
+
+With terrible clarity, you realize: you're being pulled apart across time itself.
+
+/* rawContent */onLoad: {func: theEnd, params: ["tragic"]}
+
+
+:: Visit the canteen {"position":"725,1100","size":"100,100"}
+[[Press 4]] 
+
+/* rawContent */background: elevator_present
+
+
+:: Your alarm wakes you {"position":"700,550","size":"100,100"}
+You jolt into reality.  Falling asleep again was a bad idea.
+[[Shake it off.]]
+[['Have a day']]
+/* rawContent */background: house_present
+
+
+:: head to work. {"position":"700,925","size":"100,100"}
+Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and...
+
+[[Head to your offices]]
+
+[[Visit the canteen]] or 
+
+[[Head to the roof]]
+/* rawContent */background: office_present

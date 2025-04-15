@@ -68,7 +68,8 @@
 │   └── story
 │       ├── readme.md
 │       ├── story_files
-│       │   └── Text Adventures of Argothon.html
+│       │   ├── Text Adventures of Argothon.html
+│       │   └── Text Adventures of Argothon.twee
 │       └── twee_file_digester.zip
 ├── CPS298_Text_Based_Adventure_Game
 │   ├── CPS298_Text_Based_Adventure_Game.resource_order
@@ -175,6 +176,9 @@
 │   │   ├── InventoryManager
 │   │   │   ├── InventoryManager.gml
 │   │   │   └── InventoryManager.yy
+│   │   ├── LogManager
+│   │   │   ├── LogManager.gml
+│   │   │   └── LogManager.yy
 │   │   ├── MenuManager
 │   │   │   ├── MenuManager.gml
 │   │   │   └── MenuManager.yy
@@ -193,9 +197,12 @@
 │   │   ├── TestManager
 │   │   │   ├── TestManager.gml
 │   │   │   └── TestManager.yy
-│   │   └── TextBoxManager
-│   │       ├── TextBoxManager.gml
-│   │       └── TextBoxManager.yy
+│   │   ├── TextBoxManager
+│   │   │   ├── TextBoxManager.gml
+│   │   │   └── TextBoxManager.yy
+│   │   └── ValidationUtility
+│   │       ├── ValidationUtility.gml
+│   │       └── ValidationUtility.yy
 │   ├── sounds
 │   │   ├── snd_menuDown
 │   │   │   ├── snd_menuDown.mp3
@@ -477,4 +484,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-161 directories, 316 files
+163 directories, 321 files
