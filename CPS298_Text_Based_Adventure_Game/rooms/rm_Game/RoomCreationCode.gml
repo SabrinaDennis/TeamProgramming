@@ -1,6 +1,9 @@
 // Make sure player is initialized first
 initializePlayer();
 
+// Initialize logging system after player
+init_logging();
+
 // Then load dialog data
 loadDialogData();
 

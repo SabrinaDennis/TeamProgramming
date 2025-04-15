@@ -53,10 +53,33 @@ function lose(_parameters){
 
 ///@function goToSceneIndex(_parameters)
 ///@param {array} _parameters  holds the index of the scene at _parameters[0]
-function goToSceneIndex(_parameters){
-	global.currentIndex=_parameters[0];
-	destroyAllObjects();
-	populateAllObjects();
+function goToSceneIndex(_parameters) {
+    if (!validate_not_undefined(_parameters, "_parameters")) {
+        log_error("Parameters for goToSceneIndex are undefined", true);
+        return;
+    }
+    
+    if (!validate_array_length(_parameters, 1, "_parameters")) {
+        log_error("Parameters array for goToSceneIndex is empty", true);
+        return;
+    }
+    
+    var targetIndex = _parameters[0];
+    
+    if (!validate_is_number(targetIndex, "scene index")) {
+        log_error("Scene index must be a number, got: " + string(targetIndex), true);
+        return;
+    }
+    
+    if (!validate_scene_exists(targetIndex)) {
+        log_error("Invalid target scene index: " + string(targetIndex), true);
+        return;
+    }
+    
+    log_info("Transitioning from scene " + string(global.currentIndex) + " to " + string(targetIndex));
+    global.currentIndex = targetIndex;
+    destroyAllObjects();
+    populateAllObjects();
 }
 
 function find(_parameters){
