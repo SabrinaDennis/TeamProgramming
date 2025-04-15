@@ -68,15 +68,7 @@
 │   └── story
 │       ├── readme.md
 │       ├── story_files
-│       │   ├── Text Adventures of Argothon.html
-│       │   ├── TextAdventureGame.html
-│       │   ├── TextAdventureGame.twee
-│       │   ├── TextAdventureGameClaude.html
-│       │   ├── TextAdventureGameClaude.twee
-│       │   ├── TextAdventureGameClaude.txt
-│       │   ├── TextAdventureGameClaude2.html
-│       │   ├── TextAdventureGameClaude2.twee
-│       │   └── TextAdventureGameClaude2.txt
+│       │   └── Text Adventures of Argothon.html
 │       └── twee_file_digester.zip
 ├── CPS298_Text_Based_Adventure_Game
 │   ├── CPS298_Text_Based_Adventure_Game.resource_order
@@ -485,4 +477,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-161 directories, 324 files
+161 directories, 316 files
