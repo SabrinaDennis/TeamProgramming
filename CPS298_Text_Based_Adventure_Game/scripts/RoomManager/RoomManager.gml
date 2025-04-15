@@ -41,12 +41,9 @@ function populateAllObjects(){
 		createCharacter(scene.character);
 	}
 	if(struct_exists(scene, "onLoad")){
+		show_debug_message("at least here?");
 		var _onLoad = scene.onLoad;
-		if(is_array(_onLoad)){
-			array_foreach(_onLoad, script_execute_ext(_onLoad.func, _onLoad.params));
-		} else {
-			script_execute_ext(_onLoad.func, _onLoad.params);
-		}
+		_onLoad.func(_onLoad.params);
 	}
 	//draw_set_font(font_small);
 	//Menu(200,200+string_height(sceneText)*1.5,scene.options);

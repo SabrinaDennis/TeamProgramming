@@ -1,4 +1,4 @@
-function ChoiceManager(funcName, parameters){
+function FuncManager(funcName, parameters){
     //TODO add obvious checks here
     
     // Add type checking to safely handle parameters
