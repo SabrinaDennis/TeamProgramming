@@ -86,19 +86,15 @@ function populateAllObjects() {
         }
     }
     
-    if (struct_exists(scene, "onLoad")) {
-        try {
-            var _onLoad = scene.onLoad;
-            if (is_array(_onLoad)) {
-                array_foreach(_onLoad, script_execute_ext(_onLoad.func, _onLoad.params));
-            } else if (is_struct(_onLoad)) {
-                script_execute_ext(_onLoad.func, _onLoad.params);
-            } else {
-                log_warning("Invalid onLoad data in scene " + string(global.currentIndex));
-            }
-        } catch (error) {
-            log_error("Error executing onLoad function: " + string(error));
+    try {
+        if (struct_exists(scene, "onLoad")) {
+		        var _onLoad = scene.onLoad;
+		        _onLoad.func(_onLoad.params);
+	      } else {
+            log_warning("Invalid or no onLoad data in scene " + string(global.currentIndex));
         }
+    } catch (error) {
+        log_error("Error executing onLoad function: " + string(error));
     }
     
     log_info("Populating scene: " + sceneName + " (index: " + string(global.currentIndex) + ")");

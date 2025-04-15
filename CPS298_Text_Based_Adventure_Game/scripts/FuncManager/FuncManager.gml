@@ -1,4 +1,4 @@
-function ChoiceManager(funcName, parameters){
+function FuncManager(funcName, parameters){
     //TODO add obvious checks here
     
     // Add type checking to safely handle parameters
@@ -110,7 +110,7 @@ function blocked(params){
                     // Only try to convert if it seems to be a number\
 					if(is_array(params[1])) params[1] = params[1][0];
                     if (string_digits(string(params[1])) == string(params[1])) {
-                        failTarget = real(params[1]);
+                        failTarget =real(params[1]);
                     } else {
                         show_debug_message("Warning: Could not convert " + string(params[1]) + " to a number, using current index");
                     }
@@ -310,9 +310,12 @@ function addFriend(_parameters){
 	if(is_array(_parameters)){
 		friend = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown friend";
 	} else if(is_string(_parameters)){
-		friend = _parameters
+		friend = _parameters;
+	} else {
+		friend="unknown friend";
 	}
-	if(string_length(friend)>0){
-		array_push(global.player.friendlist, friend);
-	}
+	
+
+	array_push(global.player.friendlist, friend);
+	show_debug_message(friend + " is now a friend");
 }
