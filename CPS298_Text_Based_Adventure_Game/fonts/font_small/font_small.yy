@@ -134,10 +134,7 @@
   "sdfSpread":8,
   "size":24.0,
   "styleName":"Roman",
-  "textureGroupId":{
-    "name":"Default",
-    "path":"texturegroups/Default",
-  },
+  "textureGroupId":null,
   "TTFName":"C:\\Users\\benja\\CPS298\\repo\\TeamProgramming\\CPS298_Text_Based_Adventure_Game\\fonts\\font_small\\cmunbmr.ttf",
   "usesSDF":true,
 }
