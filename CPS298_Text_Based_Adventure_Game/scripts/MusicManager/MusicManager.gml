@@ -9,7 +9,12 @@ function playSong(_parameters){
 	audio_play_sound(song,priority,loop)
 }
 
-
+function menuMusic(){
+	global.musicBus = audio_bus_create();
+	global.musicEmitter = audio_emitter_create();
+	audio_emitter_bus(global.musicEmitter, global.musicBus);
+	audio_play_sound_on(global.musicEmitter, snd_menuMusic1, true,10);
+}
 
 // Global variables to store specific effect IDs
 global.highpass_filter = undefined;
@@ -20,23 +25,22 @@ global.volume_effect = undefined;
  * Stores references to the specific effects in global variables for future removal.
  * 
  * @function applyElevatorEffectsToBus
- * @param {string} [audioBusName="master"] - The name of the audio bus to apply effects to. Defaults to the "master" bus.
- * @param {number} [cutoffFrequency=200] - The cutoff frequency for the high-pass filter, in Hz. Defaults to 200 Hz.
- * @param {number} [volumeLevel=0.4] - The desired volume level for the audio bus. Defaults to 0.4 (40% of full volume).
+ * @param {struct.AudioBus} [audioBus=audio_bus_main] - The name of the audio bus to apply effects to. Defaults to the "master" bus.
+ * @param {real} [cutoffFrequency=5000] - The cutoff frequency for the high-pass filter, in Hz. Defaults to 200 Hz.
+ * @param {real} [volumeLevel=0.4] - The desired volume level for the audio bus. Defaults to 0.4 (40% of full volume).
  */
-function applyElevatorEffectsToBus(audioBusName = "master", cutoffFrequency = 200, volumeLevel = 0.4) {
-    var bus_id = audio_bus_get(audioBusName);
-    
-    if (bus_id != -1) {
-        global.highpass_filter = audio_effect_create_filter(audio_filter_highpass);
-        audio_effect_filter_set_parameters(global.highpass_filter, cutoffFrequency, 1.0);
-        audio_bus_effect_attach(bus_id, global.highpass_filter);
-
-        global.volume_effect = audio_effect_create_volume();
-        audio_effect_volume_set(global.volume_effect, volumeLevel);
-        audio_bus_effect_attach(bus_id, global.volume_effect);
+function applyElevatorEffectsToBus(audioBus = audio_bus_main, cutoffFrequency = 2000, volumeLevel = 0.2) {
+    if (is_struct(audioBus)) {
+        var filter = audio_effect_create(AudioEffectType.LPF2);
+		filter.cutoff=cutoffFrequency;
+        audioBus.effects[0]=filter;
+		filter = audio_effect_create(AudioEffectType.HPF2);
+		filter.cutoff=1500.0;
+		audioBus.effects[1]=filter;
+		global.volume_effect = audio_bus_main.gain;
+        audioBus.gain=volumeLevel;
     } else {
-        show_error("Audio bus not found: " + string(audioBusName), true);
+        show_error("Audio bus not found: " + string(audioBus), true);
     }
 }
 
@@ -45,26 +49,20 @@ function applyElevatorEffectsToBus(audioBusName = "master", cutoffFrequency = 20
  * Utilizes global variables to detach only the exact instances of the effects that were previously applied.
  * 
  * @function removeElevatorEffectsFromBus
- * @param {string} [audioBusName="master"] - The name of the audio bus to remove effects from. Defaults to the "master" bus.
+ * @param {struct.AudioBus} [audioBus=audio_bus_main] - The name of the audio bus to remove effects from. Defaults to the "master" bus.
  */
-function removeElevatorEffectsFromBus(audioBusName = "master") {
-    var bus_id = audio_bus_get(audioBusName);
-
-    if (bus_id != -1) {
+function removeElevatorEffectsFromBus(audioBus = audio_bus_main) {
+    if (is_struct(audioBus)){
         // Detach the high-pass filter if it exists
-        if (global.highpass_filter != undefined) {
-            audio_bus_effect_detach(bus_id, global.highpass_filter);
-            audio_effect_destroy(global.highpass_filter); // Clean up
-            global.highpass_filter = undefined;
-        }
-
+        if (is_array(audioBus.effects)){
+			audioBus.effects[0].bypass=true;
+			audioBus.effects[1].bypass=true;
+		}
         // Detach the volume effect if it exists
         if (global.volume_effect != undefined) {
-            audio_bus_effect_detach(bus_id, global.volume_effect);
-            audio_effect_destroy(global.volume_effect); // Clean up
-            global.volume_effect = undefined;
+            audioBus.gain = global.volume_effect;
         }
     } else {
-        show_error("Audio bus not found: " + string(audioBusName), true);
+        show_error("Audio bus not found: " + string(audioBus), true);
     }
 }

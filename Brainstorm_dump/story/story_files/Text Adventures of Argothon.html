@@ -16,7 +16,7 @@
 
 /* rawContent */background: office_present</tw-passagedata><tw-passagedata pid="3" name="Finish getting ready and eat some breakfast" tags="" position="700,800" size="100,100">You fuel your day, not really paying attention to your nourishment, just mindlessly consuming your morning&#39;s energy.  You gulp down a few good mouthfuls of bad coffee and [[head to work.]]
 /* rawContent */background: house_present</tw-passagedata><tw-passagedata pid="4" name="Focus on getting to the days work." tags="" position="1125,775" size="100,100">[[Press 13]]
-/* rawContent */background: elevator_present,onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)},</tw-passagedata><tw-passagedata pid="5" name="Go back to bed" tags="" position="700,425" size="100,100">You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.
+/* rawContent */background: elevator_present,onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},</tw-passagedata><tw-passagedata pid="5" name="Go back to bed" tags="" position="700,425" size="100,100">You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.
 
 [[Your alarm wakes you]]
 /* rawContent */background: house_present</tw-passagedata><tw-passagedata pid="6" name="Grab a banana" tags="" position="450,1100" size="100,100">This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana&#39;s peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don&#39;t. Take your banana back to the elevator and ...
@@ -77,10 +77,10 @@ With terrible clarity, you realize you&#39;re being pulled apart across time its
 [[Head to the roof]]
 /* rawContent */background: office_present</tw-passagedata><tw-passagedata pid="19" name="Visit the canteen" tags="" position="850,750" size="100,100">[[Press 4]] 
 
-/* rawContent */background: elevator_present, onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)}</tw-passagedata><tw-passagedata pid="20" name="Head to the roof" tags="" position="1000,775" size="100,100">
+/* rawContent */background: elevator_present, onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)}</tw-passagedata><tw-passagedata pid="20" name="Head to the roof" tags="" position="1000,775" size="100,100">
 [[Press R]] 
 
-/* rawContent */background: elevator_present,onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)}</tw-passagedata><tw-passagedata pid="21" name="Take a hot shower" tags="" position="825,425" size="100,100">You relax under the calming water, letting your anger at the world for existing melt like ice and flake off of you in layers.  Your jaw ucleanches.  You&#39;re not happy with today, but you&#39;re a little more ready for it.
+/* rawContent */background: elevator_present,onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)}</tw-passagedata><tw-passagedata pid="21" name="Take a hot shower" tags="" position="825,425" size="100,100">You relax under the calming water, letting your anger at the world for existing melt like ice and flake off of you in layers.  Your jaw ucleanches.  You&#39;re not happy with today, but you&#39;re a little more ready for it.
 You towel off and sit on the bed, relaxing for just a moment... stretching out feels... so nice...
 
 [[Your alarm wakes you]]
@@ -95,7 +95,7 @@ You towel off and sit on the bed, relaxing for just a moment... stretching out f
 
 /* rawContent */background: office_present, onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)},</tw-passagedata><tw-passagedata pid="25" name="Untitled Passage" tags="" position="1050,650" size="100,100">onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)},
 
-onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)},</tw-passagedata><tw-passagedata pid="26" name="Pass out" tags="" position="1125,1275" size="100,100"></tw-passagedata></tw-storydata>
+onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},</tw-passagedata><tw-passagedata pid="26" name="Pass out" tags="" position="1125,1275" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim

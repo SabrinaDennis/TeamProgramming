@@ -78,6 +78,7 @@
     {"id":{"name":"TextBoxManager","path":"scripts/TextBoxManager/TextBoxManager.yy",},},
     {"id":{"name":"ValidationUtility","path":"scripts/ValidationUtility/ValidationUtility.yy",},},
     {"id":{"name":"snd_menuDown","path":"sounds/snd_menuDown/snd_menuDown.yy",},},
+    {"id":{"name":"snd_menuMusic1","path":"sounds/snd_menuMusic1/snd_menuMusic1.yy",},},
     {"id":{"name":"snd_menuUp","path":"sounds/snd_menuUp/snd_menuUp.yy",},},
     {"id":{"name":"house_past","path":"sprites/house_past/house_past.yy",},},
     {"id":{"name":"MT_future_neutral","path":"sprites/MT_future_neutral/MT_future_neutral.yy",},},
