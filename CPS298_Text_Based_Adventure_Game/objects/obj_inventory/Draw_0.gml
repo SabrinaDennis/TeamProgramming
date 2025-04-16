@@ -6,7 +6,7 @@ draw_set_valign(fa_top);
 // Just testing, this probably wont be how this is displayed...
 var temp_inventory = [];
 
-for(i = 0; i < array_length(global.player.inventory); ++i) {
+for(var i = 0; i < array_length(global.player.inventory); ++i) {
 	array_push(temp_inventory,[global.player.inventory[i].name,-1,-1])
 }
 
