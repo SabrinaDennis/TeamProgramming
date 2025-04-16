@@ -8,6 +8,7 @@ function DialogStructManager(){
 				sceneName: "Opening scene",
 				background: spr_background, character: WB_future_neutral, blocked:["brassKey", [0], [15]],
 				sceneText: "It's too early.  It's dark and it's quiet and it's warm but it's too early.  Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\nToo long.\nIt's too early.\nGo back to bed\nTake advantage of the extra... ugh... hour",
+				onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
 				options: [
 					["Go back to bed", goToSceneIndex, [51]],
 					["Take advantage of the extra... ugh... hour", goToSceneIndex, [33]],
@@ -125,6 +126,7 @@ function DialogStructManager(){
 				sceneName: "Immediately get to work",
 				background: spr_background, blocked:["strange brass key",[32], [19] ],
 				sceneText: "You turn your attention to the day's work.  More than most days it pulls at your soul, having to be soullessly chummy with the representatives of the universe that keeps your research empire afloat.  A handshake agreement here, a conspiratorial gesture of goodwill there...  It kills the soul for a prize you won 20 years ago and will never win.  Suddenly, and without warning you have the ability to comprehend, temporal fracture death takes you.",
+				onLoad: {func: removeElevatorEffectsFromBus,params:(global.musicBus)},
 				options: [["Go back to bed", goToSceneIndex, [51]]
 					]
 				},
@@ -515,6 +517,7 @@ function DialogStructManager(){
 				sceneName: "Go back to bed",
 				background: house_past, character: ND_future_neutral,
 				sceneText: "You roll over, fold your pillow in half, hunker under your blanket, and try to recapture the magic of unconciousness.  Your fear begins to rise as you breathe slowly for an eternal five minutes, but you realize your thoughts are wandering.  You dream of a party you never attended.  Unfamiliar faces loom in and out of shadow, costumed waitstaff bringing drinks or food depending on when you look at them.  A celebra-- JANGLEJANGLEJANGLEDING.  JANGLEJANGLEJANGLEDING.\nYour alarm wakes you",
+				onLoad: {func: removeElevatorEffectsFromBus,params:(global.musicBus)},
 				options: [
 					["Your alarm wakes you", goToSceneIndex, [21]],
 					]
