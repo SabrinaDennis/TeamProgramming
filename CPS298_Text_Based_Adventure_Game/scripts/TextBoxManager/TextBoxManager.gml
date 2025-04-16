@@ -14,7 +14,7 @@ function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _
 	// Text Config
 	var lineSeperation = 10;
 	var maximumLineWidth = 500;
-	
+	draw_set_color(c_white);
 	
 	
 	var displayArray= [""];
@@ -71,8 +71,7 @@ function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _
 	
 	
 		//draw_text(text_xposition, text_yposition, result); // Remove if ext textboxes work properly
-		// Set Color & Draw Text
-		draw_set_color(c_white);
+
 		draw_text_ext(text_xposition,text_yposition,result,10,500)
 		
 		//DRAWTEXT displayArray[0]
