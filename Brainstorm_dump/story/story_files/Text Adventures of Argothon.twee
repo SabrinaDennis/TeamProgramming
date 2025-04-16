@@ -68,7 +68,7 @@ This gets you brief but scouring eye contact.  Your host cracks a small smile.
 :: "Just tell me what the heck is going on!" {"position":"2100,1125","size":"100,100"}
 The tinkering stops.  The tinkerer looks at you.
 
-"You're mad."
+"You're angry."
 
 [["Yes!"]]
 
@@ -442,7 +442,7 @@ You die as you lived.  Utterly accidentally.
 /* rawContent */background: present_street, onLoad: {theEnd: ["sad"]}
 
 
-:: Run Away! {"position":"1400,1900","size":"100,100"}
+:: Run Away! {"position":"1425,1900","size":"100,100"}
 You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...
 
 You die as you lived.  Utterly accidentally.

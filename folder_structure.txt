@@ -68,7 +68,6 @@
 │   └── story
 │       ├── readme.md
 │       ├── story_files
-│       │   ├── Text Adventures of Argothon - Copy.html
 │       │   ├── Text Adventures of Argothon.html
 │       │   └── Text Adventures of Argothon.twee
 │       └── twee_file_digester.zip
@@ -488,4 +487,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-164 directories, 324 files
+164 directories, 323 files
