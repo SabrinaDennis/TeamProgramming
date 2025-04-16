@@ -13,16 +13,18 @@ if (point_in_rectangle(mouse_x,mouse_y,xPosition,yPosition,xPosition+width,yPosi
 }
 
 // Which menu option is closest to the cursor if its also in the rectangle(above if statement)
-if(mxPrev != mouse_x) || (myPrev != mouse_y || firstStep){
-	firstStep=false;
-	var _mouseHoverLine = (mouse_y-yPosition) div (height/optionsCount); // div divides the numbers but only in whole numbers 9 / 10 = 0, 10/10 = 1, 15 / 10 = 1, 20 / 10 = 2
-	//if !(description == -1) _mouseHoverLine -=1;
-	if (_mouseHoverLine < 0) _mouseHoverLine = 0;
-	if(_mouseHoverLine > optionsCount-1) _mouseHoverLine = optionsCount-1;
-	hover = _mouseHoverLine;
+if(mouseOver = true){ // Do not remove this, This makes it so the arrow keys work for selecting options...
+	if(mxPrev != mouse_x) || (myPrev != mouse_y || firstStep){
+		firstStep=false;
+		var _mouseHoverLine = (mouse_y-yPosition) div (height/optionsCount); // div divides the numbers but only in whole numbers 9 / 10 = 0, 10/10 = 1, 15 / 10 = 1, 20 / 10 = 2
+		//if !(description == -1) _mouseHoverLine -=1;
+		if (_mouseHoverLine < 0) _mouseHoverLine = 0;
+		if(_mouseHoverLine > optionsCount-1) _mouseHoverLine = optionsCount-1;
+		hover = _mouseHoverLine;
 	
-	mxPrev = mouse_x;
-	myPrev = mouse_y;
+		mxPrev = mouse_x;
+		myPrev = mouse_y;
+	}
 }
 
 
