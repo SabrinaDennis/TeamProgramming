@@ -12,6 +12,183 @@ Text Adventures of Argothon
 }
 
 
+:: "A table?" {"position":"1450,975","size":"100,100"}
+"Sturdy but hard to motivate to do anything.  Understood."
+
+You stare wide eyed at your surroundings, assessing how safe you are.  This appears to be a workshop?  smithy?  Jewelry store?  Every surface has an crafting tool on it, or many in small piles stacked here or there.  There are no machines, but something whirs or hums in the background.
+
+
+[[Ask your precise host some questions]]
+[[Run Away!]] 
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: "A toe?" {"position":"1450,875","size":"100,100"}
+"Toes are useful.  But toes are soft.  They need protecting to be of much use at all.  Understood."
+
+You stare wide eyed at your surroundings, assessing how safe you are.  This appears to be a workshop?  smithy?  Jewelry store?  Every surface has an crafting tool on it, or many in small piles stacked here or there.  There are no machines, but something whirs or hums in the background.
+
+
+[[Ask your precise host some questions]]
+[[Run Away!]] 
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: "Can.. can you help me? {"position":"1700,1250","size":"100,100"}
+"Yes."
+
+Another moment passes.  For someone so impatient for you to make sense, your host is rather quiet.  They continue to rythmicly saw through some sort of metal contraption, yellowish dust collecting in a gentle pile under the flickering candles.
+
+[["Please tell me what I'm supposed to do."]]
+[[Run Away!]]
+
+/* rawContent */character: ND_past_smile, background: house_past
+
+
+:: "How can I help?" {"position":"1475,1500","size":"100,100"}
+"Oh I'm sure I have no idea!  But there are those who do.  Here.  Put these on so we don't get arrested for being uncomfortable to look at."
+
+[[Put on a few layers of wool and follow William to information.]]
+
+[[Run Away!]] 
+
+
+:: "I'm sorry.  It sounds like this is difficult for you.  Please.  I just want to make things good." {"position":"2200,1275","size":"100,100"}
+This gets you brief but scouring eye contact.  Your host cracks a small smile.
+
+"I'll help you more than make things good.  Together let's make good things.  Follow me please."
+
+[[Follow]]
+
+/* rawContent */character: ND_past_smile, background: house_past
+
+
+:: "Just tell me what the heck is going on!" {"position":"2100,1125","size":"100,100"}
+The tinkering stops.  The tinkerer looks at you.
+
+"You're mad."
+
+[["Yes!"]]
+
+[["Scared."]]
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: "Please tell me what I'm supposed to do." {"position":"2050,1325","size":"100,100"}
+"You are supposed to come here, now, moved by the weaving of unseeing uncaring hands.  You are supposed to bring a device back to me...  It is very hard to explain these things.  I make.  I don't explain.  I just make things from things and the things do things, and most people suffer a little and love a lot and that's okay and..."
+
+[["I'm sorry.  It sounds like this is difficult for you.  Please.  I just want to make things good."]]
+
+[["Just tell me what the heck is going on!"]]
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: "Scared." {"position":"2225,1125","size":"100,100"}
+"Mmmm, most mad people are scared.  It's helpful to notice the scared.  You can be scared something you don't know about is hurting you, or you can be mad that you hurt.  Similar, but one is easier to build off of."
+
+"So is it both?"
+
+[["Yes!"]] 
+[[Run Away!]] 
+
+
+:: "Wait, where am I!?" {"position":"1575,1150","size":"100,100"}
+"That's not the right question.  Don't ask extra questions.  Ask me why everything looks strange and there is no electricity, or why I'm working by candlelight."
+
+[["Wh..When? When are we?"]]
+[["Wh... who are you?"]]
+[["What is this place?"]]
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: "Wh... who are you?" {"position":"1575,1000","size":"100,100"}
+"That's not the right question.  Don't ask extra questions.  Ask me why everything looks strange and there is no electricity, or why I'm working by candlelight."
+
+[["Wh..When? When are we?"]]
+[["What is this place?"]]
+[["Wait, where am I!?"]]
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: "Wh..When? When are we?" {"position":"1700,1125","size":"100,100"}
+"OH!  excellently seen and important.  You're in the mid 1600s and since that's before you were born, you must have time travelled."
+
+You both wait in silence for a moment.  Rancifying oils on brass and bronze seep into your nostrils.  A small high pitched bell rings.  And rings again.
+
+[["Can.. can you help me?]]
+
+/* rawContent */character: ND_past_smile, background: house_past
+
+
+:: "What is this place?" {"position":"1700,1000","size":"100,100"}
+"That's not the right question.  Don't ask extra questions.  Ask me why everything looks strange and there is no electricity, or why I'm working by candlelight."
+
+[["Wh..When? When are we?"]]
+[["Wh... who are you?"]]
+[["Wait, where am I!?"]]
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: "Where am I?" {"position":"1000,1575","size":"100,100"}
+"You sit 'pon the floor, stranger.  The floor of a modest home in Southwark.  Southwark being a dot on a map of England.  England being a nation in the temporal world, and the temporal world being a location you must yourself interpret the nature of.  I find your accent unplaceable, and I, being a listener by virtue and trade, am implaccable when it comes to the unexpected and the new.  Of which you number both.  I am Redbrook, called William.  Enrobe thyself and I shall impose you upon my brothers, who shall upbraid me for being untimely anon."
+
+[[Run Away!]] 
+
+[["Who are you?"]]
+
+[["Why am I here?"]]
+
+[[Put on a few layers of wool and follow him to adventure]]
+
+/* rawContent */character: WB_past_smile, background: house_past
+
+
+:: "Who are you?" {"position":"1025,1375","size":"100,100"}
+"Forgive my boldness in ignoring your question... You seem to have wandered into my home, and what a curiosity hath struck me as I noticed your form owns a familiar echo to the beginnings of adventure.  Let us tarry not.  Don this costume and William Redbrook shall visit you upon my brothers."
+
+[[Run Away!]] 
+
+[["Where am I?"]] 
+
+[[Put on a few layers of wool and follow him to adventure]]
+
+/* rawContent */character: WB_past_neutral, background: house_past
+
+
+:: "Why am I here?" {"position":"1300,1500","size":"100,100"}
+William's expression sobers slightly. "Why are you here? A rather large question asked by wise to wiser."
+
+He drums his fingers against his thigh, considering.  Suddenly, Elizabethan pretense drops.  "The boundaries that hold our story together.  They're not strong enough for... something...  We don't know what.  You're caught in the fracture.  Not falling, but being swept along, like an ant caught in the tiny folds of a twisted handkerchief."
+
+His eyes meet yours, warm but worried and serious. "Something's coming. Something that will require people who can twist themselves free."
+
+He leans forward. "The question isn't why you're here. It's what you can do."
+
+[[Ask about the key]]
+[[Ask what you can do to help]]
+[[Try to use the key to return]]
+
+/* rawContent */character: WB_past_neutral, background: house_past
+
+
+:: "Yes!" {"position":"2225,950","size":"100,100"}
+"That's okay.  You can be mad.  You still have to help and hurt and live and love.  But you can be mad while you do it.  Sometimes that helps."
+
+They turn, take a small bag from the wall, open door to the stinging sunlight, and step out.
+
+[[Follow]]
+[[Run Away!]]
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
 :: 'Have a day' {"position":"575,675","size":"100,100"}
 Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.
 
@@ -19,10 +196,80 @@ Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.
 /* rawContent */background: house_present, onLoad:{ func:find, params: "a day"}
 
 
-:: Fidget for a moment, putting off the tasks of the day {"position":"850,1525","size":"100,100"}
-TODO
+:: Ask about the key {"position":"1150,1575","size":"100,100"}
+"Ah, the key!" William brightens and snags it from your hand with nimble fingers before you can protest. "One of many such objects that bend certain rules."
 
-[[Temporal Storm]]
+He flips it casually, catching it while looking you dead in the eye. "Found it, did you? Or perhaps it found you."
+
+He returns it with unexpected gentleness. "These appear to those at crossroads. Those weary souls whose choices matter more than most."
+
+
+[[Try to use the key to return]]
+[["How can I help?"]]
+
+/* rawContent */character: WB_past_neutral, background: house_past
+
+
+:: Ask questions {"position":"1150,1375","size":"100,100"}
+You ask your ersatz host five questions at the same time, but all that surfaces is a hoarsely muttered "gruuhhhmuhhh." --"Here, strange being.  You look parched." --The owner of the smirking voice hands you a glass of water and you gulp it down with as much dignity as you can muster.  It's not much.
+
+[["Where am I?"]]
+
+[["Who are you?"]]
+
+/* rawContent */character: WB_past_smile, background: house_past
+
+
+:: Ask what you can do to help {"position":"1325,1600","size":"100,100"}
+William laughs, a bright sound in a strange world.
+
+"If we all knew the answer to such questions... What a world that would be."
+
+He gestures vaguely to everything.
+
+"There are bits and pieces of reality that are unstuck.  The respond more to need than anything else, but they are hard to come by and nearly impossible to recognize."
+
+You remember a shining object, distracting you when you wanted most to be distracted.
+
+[[Ask about the key]] 
+
+/* rawContent */character: WB_past_smile, background: house_past
+
+
+:: Ask your precise host some questions {"position":"1400,1200","size":"100,100"}
+
+
+
+[["Wh... who are you?"]]
+[["What is this place?"]]
+[["Wait, where am I!?"]]
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: Check the notification details {"position":"400,1200","size":"100,100"}
+The notification mentions a "comprehensive systems diagnostic" scheduled for 3:00 PM today, focusing on the building's experimental energy management system.
+
+The message is signed by the head of Research & Development, Dr. Brotin-Dawr.
+
+The clock reads 2:30 PM.
+
+[[Contact Dr. Brotin-Dawr immediately]]
+
+[[Investigate the test location]]
+
+/* rawContent */background: office_present, inFriends:[["William", "Nichole", "Margaret"], Gather your temporal allies]
+//inFriends should check if you're friends with everyone in the first array, and add the scene to options if they are.
+
+
+:: Contact Dr. Brotin-Dawr immediately {"position":"400,1600","size":"100,100"}
+You grab the phone and call your former colleague.  It seems somehow fitting that you should be the one to stop him from making a terrible mistake once again.  In grad school you were always saving him from himself.
+
+These self congratulatory thoughts ripple through existence as you enter the [[Temporal Storm]].
+
+
+:: Fidget for a moment, putting off the tasks of the day {"position":"600,1600","size":"100,100"}
+You arrange your desk, half convincing yourself you'll be more productive if everything is just so.  You haven't been productive in years.  So when the building shudders slightly, as though a truck was rumbling past your 13th story window, you notice immediately.  Maybe a quick phonecall down to ops to see if they want your in person input.  The phone rings twice before the building, and reality itself, fall apart in a [[Temporal Storm]].
 
 /* rawContent */background: office_present
 
@@ -32,9 +279,17 @@ You fuel your day, not really paying attention to your nourishment, just mindles
 /* rawContent */background: house_present
 
 
-:: Focus on getting to the days work. {"position":"1100,1225","size":"100,100"}
+:: Focus on getting to the days work. {"position":"1125,775","size":"100,100"}
 [[Press 13]]
-/* rawContent */background: elevator_present
+/* rawContent */background: elevator_present,onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
+
+
+:: Follow {"position":"2400,1300","size":"100,100"}
+"Also my name is Nicholas.  Please don't call me Nick, I don't like it.."
+
+
+
+/* rawContent */character: ND_past_neutral, background: house_past, addFriend:"Nicholas"
 
 
 :: Go back to bed {"position":"700,425","size":"100,100"}
@@ -44,76 +299,155 @@ You roll over, fold your pillow in half, hunker under your blanket, and try to r
 /* rawContent */background: house_present
 
 
-:: Grab a banana {"position":"875,1225","size":"100,100"}
+:: Grab a banana {"position":"575,1075","size":"100,100"}
 This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana's peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don't. Take your banana back to the elevator and ...
 
 [[Press R]]
 [[Press 13]]
-/* rawContent */background: office_present,  onLoad: {func: find, params: ["banana"]}
+/* rawContent */background: office_present,  find: "banana"}
 
 
-:: Grab a gooey cinnamon bun {"position":"825,1075","size":"100,100"}
+:: Grab a gooey cinnamon bun {"position":"725,1075","size":"100,100"}
 This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you ... 
 
-[[Press R]]
-[[Press 13]]
-/* rawContent */background: office_present,  onLoad: {func: find, params: ["cinnamonBun"]}
+[[Head to the roof]]
+[[Head to your offices]]
+/* rawContent */background: office_present,  find:"cinnamonBun"}
 
 
-:: Head to the roof {"position":"1000,800","size":"100,100"}
-
+:: Head to the roof {"position":"1000,775","size":"100,100"}
 [[Press R]] 
 
-/* rawContent */background: elevator_present
+/* rawContent */background: elevator_present,onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)}
 
 
-:: Head to your offices {"position":"575,1300","size":"100,100"}
+:: Head to your offices {"position":"875,1075","size":"100,100"}
 [[Press 13]] 
 
-/* rawContent */background: office_present, onLoad:{func: applyElevatorEffectsToBus, params:[]}
+/* rawContent */background: office_present, onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)}
 
 
-:: Immediately get to work {"position":"725,1525","size":"100,100"}
-TODO
-
-[[Temporal Storm]]
+:: Immediately get to work {"position":"500,1600","size":"100,100"}
+You open your email and sigh deeply.  You used to be an inspired researcher.  Now you're just the top of a beuraucratic heap.  Highest view from a mountain of dirt.  You connect people who need to connect.  You give your vision of what direction the organization should take.
+You nearly sigh with relief when you're suddenly torn apart by an afternoon [[Temporal Storm]].
 
 /* rawContent */background: office_present
 
 
-:: Investigate the shiny object you notice out of the corner of your eye? {"position":"1012.5,1100","size":"100,100"}
+:: Investigate the shiny object you notice out of the corner of your eye? {"position":"1150,1050","size":"100,100"}
+You pause for a moment, happy for an excuse to put off the day's work.  You reach down for the scuffed metal object, notice it's a large brass key.  The antique object is worn to brushed shininess in two places.  The part where...  Is it suddenly really warm?  The part where it would be held, and the whatever, the the the thing the blade of the key is old timey and why is it hard to see and think of word for th wher
 
+[[Pass out]]
+/* rawContent */background: outside_present
+
+
+:: Investigate the test location {"position":"550,1300","size":"100,100"}
+You scurry down to the lab, expecting to find the worst.  You hope there's time.
+
+[[Take the elevator]]
+[[Take the stairs]]
 
 
 :: It's too early. {"position":"700,300","size":"100,100"}
-The palm trees abruptly dim. It's too early. It's dark and it's quiet and it's warm but it's too early. Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.
+The palm trees abruptly dim.
+
+It's too early. It's dark and it's quiet and it's warm but it's too early. Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.
 Too long.
 It's too early.
 [[Go back to bed]]
 [[Take advantage of the extra... ugh... hour.]]
-/* rawContent */background: spr_background, onLoad:{func: function test(_str){show_debug_message(_str)}, ["test"]
+/* rawContent */background: spr_background, onLoad:{func: function test(_str){show_debug_message(_str)}, ["test"]}
 
 
-:: Press 13 {"position":"725,1400","size":"100,100"}
+:: Margaret Ashford {"position":"1375,625","size":"100,100"}
+
+
+
+:: Nicholas Drayton {"position":"1300,1050","size":"100,100"}
+"Wake up then.  We haven't got all the time in the world.  Yet."
+You blearily open half an eyelid and percieve a frustrated sideways person.
+
+You sit up.
+
+You recognize the clothing as very old, and the wearer as a tall lanky teenager.  They remind you of your grad school cohort.  All knowledge and no sleep.
+
+"I am Nicholas.  You have stumbled upon something.  Or something has stumbled on you.  No one ever asks the leg of the table what a toe stubbing feels like.  Are you a table or a toe?"
+
+[["A table?"]]
+[["A toe?"]]
+[["Wait, where am I!?"]]
+[[Run Away!]]
+
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: Pass out {"position":"1150,1150","size":"100,100"}
+Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with mischevious and adventurous [[William Redbrook]],
+
+Careful and curious [[Nicholas Drayton]], or
+
+Earnest and wise [[Margaret Ashford]]
+
+/* rawContent */background: spr_background, find: "key"
+
+
+:: Press 13 {"position":"1150,925","size":"100,100"}
 You press the button marked 13, and head to your personal offices.  Hoping to catch up on some paperwork, you continue through the offensive smell of carpet adhesive and sit behind your desk.
 [[Immediately get to work]]
 [[Fidget for a moment, putting off the tasks of the day]]
-/* rawContent */background: office_present
+/* rawContent */background: office_present,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)}
 
 
-:: Press 4 {"position":"900,975","size":"100,100"}
+:: Press 4 {"position":"875,925","size":"100,100"}
 You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.
 
 [[Grab a gooey cinnamon bun]]
 
 [[Grab a banana]]
-/* rawContent */background: office_present
+/* rawContent */background: office_present,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)}
 
 
-:: Press R {"position":"1075,925","size":"100,100"}
+:: Press B {"position":"200,1425","size":"100,100"}
+The elevator dings down a few floors.  The muzak plays softly.  You pick a piece of lint from your sleeve.  All of existence is torn by the relentless eddies of a [[Temporal Storm]]
+
+/* rawContent */background: office_present,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)}
+
+
+:: Press R {"position":"1025,925","size":"100,100"}
 You press R on the elevator to get some air.  After a brief existential whirr, the doors open on the roof of the building.  You step out, gulp a few mouthfuls of air and steel your nerves for the day.  As you're about to turn back to the elevators, you notice something.  Do you  [[Investigate the shiny object you notice out of the corner of your eye?]]  or do you  [[Focus on getting to the days work.]]
 
-/* rawContent */background: outside_present
+/* rawContent */background: outside_present,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)}
+
+
+:: Put on a few layers of wool and follow William to information. {"position":"2400,1425","size":"100,100"}
+
+
+
+:: Put on a few layers of wool and follow him to adventure {"position":"1000,1900","size":"100,100"}
+Your new ... friend? introduces himself as Redbrook, called William.  He brings you to a theater where you are introduced with much more dignity and ettiquete to a band of actors.  You find yourself put at ease, lulled by their strange accents into a relaxed state.  After their day's rehearsal for some new theatrical work of locally existential importance, your thoughts turn to returning ... somewhere?
+
+Over the years the past fades utterly.  You die painfully but quickly a few years after the love of your life.  A life obscured by time and forgotten by everything but decay.
+
+Not bad.
+
+/* rawContent */ background: street_past, onLoad: {theEnd: ["neutral"]}
+
+
+:: Run Away from the Office! {"position":"1300,1900","size":"100,100"}
+You dash, screaming with indignity, and find yourself in a busy street.  A pickup truck attempts to avoid your sudden appearance, but swerving only serves to topple the bed's contents on top of you at speed.  You are crushed by several bicycles, a snow shovel, two cinder blocks, and a broken down washing machine.  The truck is fine.  You, however...
+
+You die as you lived.  Utterly accidentally.
+
+/* rawContent */background: present_street, onLoad: {theEnd: ["sad"]}
+
+
+:: Run Away! {"position":"1400,1900","size":"100,100"}
+You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...
+
+You die as you lived.  Utterly accidentally.
+
+/* rawContent */background: past_street, onLoad: {theEnd: ["sad"]}
 
 
 :: Shake it off. {"position":"700,675","size":"100,100"}
@@ -129,7 +463,7 @@ Battle the your demons
 /* rawContent */background: house_present, onLoad:{func: fight, params: "coldDemons'}
 
 
-:: Take a cold shower, continued {"position":"975,500","size":"100,100"}
+:: Take a cold shower, continued {"position":"975,525","size":"100,100"}
 The ice in your veins meets the steely sting of the water.  You feel the adrenaline course its way into your limbs.  Your mind begins to wake up, shocked into resourcefulness by your masochistic routine.
 
 [[Finish getting ready and eat some breakfast]] 
@@ -154,22 +488,69 @@ You groan, perhaps a bit dramatically, for no one's benefit.  You tumble your le
 /* rawContent */background: house_present
 
 
-:: Temporal Storm {"position":"725,1650","size":"100,100"}
+:: Take the elevator {"position":"200,1300","size":"100,100"}
+[[Press B]] 
+
+/* rawContent */background: office_present, onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)}
+
+
+:: Take the stairs {"position":"350,1400","size":"100,100"}
+You... take the... stairs?  You're in an incredible hurry, so you breeze past the opening elevator doors to take... the stairs.  You make it a floor and a half before everyone (like Everyone everyone) dies in a [[Temporal Storm]].
+
+
+:: Temporal Storm {"position":"500,1900","size":"100,100"}
 Reality seems to fold in on itself around you.
 
-You try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if existing in multiple places at once.
+You try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if every cell is suddenly being pulled in every direction.
 
 Through the haze of agony, you catch glimpses—London streets, your office, places you've never seen—all superimposed like multiple exposures on a single photograph.
 
-With terrible clarity, you realize: you're being pulled apart across time itself.
+With terrible clarity, you realize you're being pulled apart across time itself.
 
-/* rawContent */onLoad: {func: theEnd, params: ["tragic"]}
+/* rawContent */background: spr_chaos, onLoad: {func: theEnd, params: ["tragic"]}
 
 
-:: Visit the canteen {"position":"725,1100","size":"100,100"}
+:: Try to use the key to return {"position":"600,1700","size":"100,100"}
+You focus on the key, willing yourself to return to some recognizable reality.
+
+Something goes wrong.  Very wrong.
+
+Your friend screams in surprised anguish as each measurement of them is pulled into the future and/or past according to unknowable vortices.
+
+You brace yourself in the [[Temporal Storm]]
+
+
+:: Untitled Passage {"position":"1075,650","size":"100,100"}
+onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)},
+
+onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
+
+
+:: Untitled Passage 1 {"position":"300,1000","size":"100,100"}
+You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.
+
+[[Check the notification details]]
+[[Focus on getting to the days work.]] 
+[[Run Away from the Office!]]
+
+
+:: Visit the canteen {"position":"850,750","size":"100,100"}
 [[Press 4]] 
 
-/* rawContent */background: elevator_present
+/* rawContent */background: elevator_present, onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)}
+
+
+:: William Redbrook {"position":"1275,1375","size":"100,100"}
+"And who are you?"
+A smirking voice opens your eyes, and you're faced with a stranger.
+The smell of an unwashed world attacks your nostrils.
+You look around and realize, not only is the person you're looking at a complete unknown,  but your very surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!
+
+[[Ask questions]]
+
+[[Run Away!]]
+
+/* rawContent */background: house_past, character: WB_past_smile, onLoad: {addFriend: ["William"]}
 
 
 :: Your alarm wakes you {"position":"700,550","size":"100,100"}
@@ -179,7 +560,7 @@ You jolt into reality.  Falling asleep again was a bad idea.
 /* rawContent */background: house_present
 
 
-:: head to work. {"position":"700,925","size":"100,100"}
+:: head to work. {"position":"525,950","size":"100,100"}
 Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and...
 
 [[Head to your offices]]
