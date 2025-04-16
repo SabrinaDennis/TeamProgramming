@@ -6,7 +6,7 @@ Menu(
 		["Start Game",    room_goto_next,  -1],
 		["Settings",      -1,              -1]
 	],
-	"Text Adventure's of....",
+	"Text Adventures of Argathon",
 	true // Centered or not 
 )
 
