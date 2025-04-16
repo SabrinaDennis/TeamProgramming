@@ -16,12 +16,15 @@ Menu(
 function showOptions() {
     instance_destroy();
     
+	var musicVolumeText = "Music Volume: " + string(round(global.musicVolume * 100)) + "%";
+	var soundVolumeText = "Sound Volume: " + string(round(global.soundVolume * 100)) + "%";
+	
     Menu(
         room_width/2,
         room_height/2,
         [
-            ["Music Volume: " + string(round(global.musicVolume * 100)) + "%", adjustMusicVolume, 0.1],
-            ["Sound Volume: " + string(round(global.soundVolume * 100)) + "%", adjustSoundVolume, 0.1],
+            [musicVolumeText, adjustMusicVolume, [0.1]],
+            [soundVolumeText, adjustSoundVolume, [0.1]],
             ["Back", createPauseMenu, -1]
         ],
         "Options",
@@ -30,13 +33,15 @@ function showOptions() {
 }
 
 // Function to adjust music volume
-function adjustMusicVolume(amount) {
+function adjustMusicVolume(_amount) {
+	var amount = _amount[0];
     setMusicVolume(global.musicVolume + amount);
     showOptions();
 }
 
 // Function to adjust sound volume
-function adjustSoundVolume(amount) {
+function adjustSoundVolume(_amount) {
+	var amount = _amount[0];
     setSoundVolume(global.soundVolume + amount);
     showOptions();
 }
@@ -48,5 +53,6 @@ function createPauseMenu() {
 
 // Function to quit to main menu
 function quitToMainMenu() {
+	audio_stop_all();
     room_goto(rm_MainMenu);
 }
