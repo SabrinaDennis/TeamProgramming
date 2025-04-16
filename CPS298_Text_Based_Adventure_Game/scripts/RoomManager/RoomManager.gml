@@ -47,6 +47,9 @@ function createCharacter(_character) {
 /// @function populateAllObjects
 /// @description Populates the objects in the room (bg, buttons)
 function populateAllObjects() {
+	
+	instance_create_depth(0,0,0,obj_gameController);
+	
     if (!variable_global_exists("currentIndex")) {
         log_error("global.currentIndex is not initialized", true);
         return;

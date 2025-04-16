@@ -67,6 +67,7 @@
     {"id":{"name":"DialogStructManager","path":"scripts/DialogStructManager/DialogStructManager.yy",},},
     {"id":{"name":"EnemyManager","path":"scripts/EnemyManager/EnemyManager.yy",},},
     {"id":{"name":"FuncManager","path":"scripts/FuncManager/FuncManager.yy",},},
+    {"id":{"name":"InitVariables","path":"scripts/InitVariables/InitVariables.yy",},},
     {"id":{"name":"InventoryManager","path":"scripts/InventoryManager/InventoryManager.yy",},},
     {"id":{"name":"LogManager","path":"scripts/LogManager/LogManager.yy",},},
     {"id":{"name":"MenuManager","path":"scripts/MenuManager/MenuManager.yy",},},
