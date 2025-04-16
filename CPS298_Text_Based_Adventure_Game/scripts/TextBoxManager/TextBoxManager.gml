@@ -11,6 +11,12 @@ function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _
 	var rawWidth = 4*string_width(_text);
 	var textArray = string_split_ext(_text,[" ","\n"], true);
 	
+	// Text Config
+	var lineSeperation = 10;
+	var maximumLineWidth = 500;
+	
+	
+	
 	var displayArray= [""];
 	if(_height<0 && _width<0){
 		var line=0;
@@ -36,10 +42,11 @@ function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _
 			result+=string_trim(displayArray[i])+"\n";
 		}
 		result = string_trim(result);
-		var textHeight = string_height_ext(result,-1,-1);
-		var textWidth=string_width(result);
-		//draw_set_color(c_ltgray);
 		
+		// Grab Text Height/Width (With Line Seperation)
+		var textHeight = string_height_ext(result,lineSeperation,maximumLineWidth);
+		var textWidth = string_width_ext(result,lineSeperation,maximumLineWidth)
+
 		
 		// Text box variables
 		var box_xposition = _pos_x-10-(_centered?textWidth*0.5:0);
@@ -57,14 +64,16 @@ function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _
 		// 9 Slice menu box
 		draw_sprite_stretched(spr_menuBox,0,box_xposition,box_yposition,box_width,box_height)
 		
-
 		
 		// Text Positions
 		var text_xposition = _pos_x-(_centered?textWidth/2:0);
 		var text_yposition = _pos_y-(_centered?textHeight/2:0);
-		
+	
+	
+		//draw_text(text_xposition, text_yposition, result); // Remove if ext textboxes work properly
+		// Set Color & Draw Text
 		draw_set_color(c_white);
-		draw_text(text_xposition, text_yposition, result);
+		draw_text_ext(text_xposition,text_yposition,result,10,500)
 		
 		//DRAWTEXT displayArray[0]
 		//square
