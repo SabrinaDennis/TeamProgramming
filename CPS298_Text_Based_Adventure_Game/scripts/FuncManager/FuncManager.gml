@@ -7,7 +7,9 @@ function FuncManager(funcName, parameters){
         params = [parameters]; // Convert to array if not already
     }
 }
-
+function theEnd(_parameters){
+	show_debug_message(_parameters)
+}
 
 function fight(_parameters){
     // Get button that was clicked

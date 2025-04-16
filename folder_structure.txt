@@ -322,12 +322,42 @@
 │   │   │   └── layers
 │   │   │       └── a8c07506-391f-4c3b-af0d-86b1ffeaeda4
 │   │   │           └── 50821304-6167-48e6-bd3b-4e35b6783e0b.png
+│   │   ├── elevator_present
+│   │   │   ├── elevator_present.yy
+│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   └── layers
+│   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
+│   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
 │   │   ├── house_past
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
 │   │   │   ├── house_past.yy
 │   │   │   └── layers
 │   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
 │   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   ├── house_present
+│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   ├── house_present.yy
+│   │   │   └── layers
+│   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
+│   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   ├── office_present
+│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   ├── layers
+│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
+│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   │   └── office_present.yy
+│   │   ├── outside
+│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   ├── layers
+│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
+│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   │   └── outside.yy
+│   │   ├── present_street
+│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   ├── layers
+│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
+│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   │   └── present_street.yy
 │   │   ├── spr_BG_error
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
 │   │   │   ├── layers
@@ -346,6 +376,12 @@
 │   │   │   │   └── 1c678b0e-d0f2-4a9b-ac53-bff98c365034
 │   │   │   │       └── 5f66077f-d78e-46a0-9804-599fba16ca20.png
 │   │   │   └── spr_button.yy
+│   │   ├── spr_chaos
+│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   ├── layers
+│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
+│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   │   └── spr_chaos.yy
 │   │   ├── spr_enemy
 │   │   │   ├── 0c44e8c4-06c7-40c8-a790-8e7284917a81.png
 │   │   │   ├── layers
@@ -487,4 +523,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-164 directories, 323 files
+182 directories, 341 files
