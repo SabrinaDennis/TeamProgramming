@@ -46,10 +46,11 @@ if(keyboard_check_pressed(vk_up)){
 	audio_play_sound(snd_menuUp,0,false)
 }
 
+var _func = -1;
 // Make the functions actually work, allow the player to activate an option
 if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter)){
 	if(array_length(options[hover]) == 3){
-		var _func = options[hover][1];
+		_func = options[hover][1];
 		var _parameters = options[hover][2]
 		
 		// If a function reference exist, run the function	(check for parameters, if so pass them)

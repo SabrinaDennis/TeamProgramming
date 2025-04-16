@@ -127,10 +127,14 @@ function populateAllObjects() {
     
     // Create the text display
     try {
-        instance_create_depth(.28 * room_width, .1 * room_height, 1, MainText, {
+		var xposition = room_width * .28;
+		var yposition = room_height * .1;
+		
+        instance_create_depth(xposition, yposition, 1, MainText, {
             mainName: sceneName, 
             mainText: sceneText
         });
+		
         log_info("Created MainText for scene: " + sceneName);
     } catch (error) {
         log_error("Failed to create MainText: " + string(error));
