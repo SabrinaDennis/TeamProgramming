@@ -2,5 +2,5 @@
 init_logging();
 
 // Set up the main menu room
-createBackground(spr_background);
+createBackground(theater_past);
 menuMusic();

@@ -102,6 +102,8 @@ function blocked(params){
             var requiredItem = (array_length(params) > 0) ? string(params[0]) : "unknown item";
             var description = "";
 			var target = 0;
+			
+			
             // Handle numeric conversion safely - use default values if conversion fails
             var failTarget = global.currentIndex;
             var successTarget = global.currentIndex;

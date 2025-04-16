@@ -120,17 +120,21 @@ function populateAllObjects() {
     
     // Create menu with options if we have any
     if (array_length(options) > 0) {
-        Menu(room_width * 0.75, room_height * 0.75, options, -1, true);
+        Menu(room_width * 0.65, room_height * 0.75, options, -1, true);
     } else {
         log_warning("No menu options created for scene: " + sceneName);
     }
     
     // Create the text display
     try {
-        instance_create_depth(.28 * room_width, .1 * room_height, 1, MainText, {
+		var xposition = room_width * .28;
+		var yposition = room_height * .1;
+		
+        instance_create_depth(xposition, yposition, 1, MainText, {
             mainName: sceneName, 
             mainText: sceneText
         });
+		
         log_info("Created MainText for scene: " + sceneName);
     } catch (error) {
         log_error("Failed to create MainText: " + string(error));
