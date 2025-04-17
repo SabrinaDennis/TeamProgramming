@@ -10,7 +10,6 @@ function textBox(_text, _pos_x, _pos_y, _height=-1, _width=-1, _centered=true, _
 	var maximumLineWidth = 500;
 	draw_set_color(c_white);
 
-	var displayArray= [""];
 	if(_height<0 && _width<0){
 		
 		// Grab Text Height/Width (With Line Seperation)
