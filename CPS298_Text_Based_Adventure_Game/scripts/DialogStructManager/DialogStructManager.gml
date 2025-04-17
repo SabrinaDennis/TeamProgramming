@@ -206,7 +206,7 @@ function DialogStructManager(){
 				sceneIndex: 21,
 				sceneName: "Press 4",
 				background: office_present,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)},
-				sceneText: "You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.\nGrab a gooey cinnamon bun\nGrab a banana",
+				sceneText: "You head through the canteen on your way up to level 13 where your offices await you.  Your breakfast dulled the edge of hunger but you're still craving something.\nGrab a gooey cinnamon bun\nGrab a banana",
 				options: [
 					["Grab a gooey cinnamon bun", goToSceneIndex, [42]],
 					["Grab a banana", goToSceneIndex, [8]],

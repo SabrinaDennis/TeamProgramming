@@ -173,6 +173,9 @@
 │   │   ├── FuncManager
 │   │   │   ├── FuncManager.gml
 │   │   │   └── FuncManager.yy
+│   │   ├── InitVariables
+│   │   │   ├── InitVariables.gml
+│   │   │   └── InitVariables.yy
 │   │   ├── InventoryManager
 │   │   │   ├── InventoryManager.gml
 │   │   │   └── InventoryManager.yy
@@ -523,4 +526,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-182 directories, 341 files
+183 directories, 343 files
