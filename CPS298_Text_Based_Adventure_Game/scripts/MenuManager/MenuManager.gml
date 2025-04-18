@@ -23,6 +23,12 @@ thus how we can do dialog while making the gameplay adjustable
 
 function Menu(_x,_y,_options,_description = -1,_centered = false){
 	with(instance_create_depth(_x,_y,-999,obj_menu)){
+		draw_set_color(c_white);
+		draw_set_font(PressStart2P);
+		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+	
+	
 		options = _options;
 		description = _description;
 		optionsCount = array_length(_options);
@@ -31,12 +37,12 @@ function Menu(_x,_y,_options,_description = -1,_centered = false){
 
 		// Border Margin around text for the sprite
 		margin = 8; 
-		draw_set_font(PressStart2P);
-		
+
 		width = 1;
 		
 		if(_description != -1) width = max(width,string_width(_description));
 		var _extraLines = 0;
+		
 		for(var i=0; i < optionsCount; i++){
 			// quick and dirty linewrap
 			if(string_count("\n", _options[i][0])==0){

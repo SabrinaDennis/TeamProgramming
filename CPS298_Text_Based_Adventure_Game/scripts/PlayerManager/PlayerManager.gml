@@ -49,9 +49,12 @@ function playerAddItem(_item){
 
 
 function playerDeath(_parameters){
-	destroyAllObjects();
+	//destroyAllObjects();
 	var _text = _parameters[0];
 	log_error("Player Death Attempted...")
 	textBox(_text, 20, 20);
+	
+	// This should be drawing the player but it doesn't seem to be working
+	
 }
 
