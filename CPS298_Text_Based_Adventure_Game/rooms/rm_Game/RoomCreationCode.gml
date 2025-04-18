@@ -9,8 +9,10 @@ loadDialogData();
 
 global.currentIndex = 0;
 createBackground(street_past);
+
 // Room Manager Script
 populateAllObjects();
+
 
 /*
 - How to add items to the players inventory

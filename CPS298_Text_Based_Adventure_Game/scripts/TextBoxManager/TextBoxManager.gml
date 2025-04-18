@@ -10,16 +10,17 @@ function textBox(_text, _pos_x, _pos_y, _centered=true, _size="big"){
 	draw_set_valign(fa_top);
 
 	// Grab Text Height/Width (With Line Seperation)
-	var textHeight = string_height_ext(_text,lineSeperation,maximumLineWidth);
-	var textWidth = string_width_ext(_text,lineSeperation,maximumLineWidth)
+	var textBoxMargin = 20;
+	var textHeight    = round(string_height_ext(_text,lineSeperation,maximumLineWidth) + textBoxMargin);
+	var textWidth     = round(string_width_ext(_text,lineSeperation,maximumLineWidth) + textBoxMargin);
 
 	// Text box variables
-	var box_xposition  = _pos_x - 10 - textWidth  * (_centered ? 0.5 : 0);
-	var box_yposition  = _pos_y - 10 - textHeight * (_centered ? 0.5 : 0);
+	var box_xposition  = round(_pos_x - 10 - textWidth  * (_centered ? 0.5 : 0));
+	var box_yposition  = round(_pos_y - 10 - textHeight * (_centered ? 0.5 : 0));
 
 	// 9 Slice menu box
-	draw_sprite_stretched(spr_menuBox,0,box_xposition,box_yposition,textWidth+20,textHeight+20)
-				
+	draw_sprite_stretched(spr_menuBox,0,box_xposition,box_yposition,textWidth,textHeight)
+	
 	// Text Positions
 	var text_xposition = _pos_x - textWidth  * (_centered?0.5:0);
 	var text_yposition = _pos_y - textHeight * (_centered?0.5:0);

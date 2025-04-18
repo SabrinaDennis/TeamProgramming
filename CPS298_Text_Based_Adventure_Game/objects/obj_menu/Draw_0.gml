@@ -29,6 +29,7 @@ for(var l = 0; l < (optionsCount + _desc); l++){
 	draw_set_colour(normalTextColor);
 	
 	if(l == 0) && (_desc){
+		//draw_text_ext(xPosition,yPosition,description,10,500);
 		draw_text(xPosition,yPosition,description);
 	} else{
 		var _str = options[l-_desc][0]
