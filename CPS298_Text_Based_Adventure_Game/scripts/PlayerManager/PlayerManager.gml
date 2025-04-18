@@ -46,3 +46,12 @@ function playerAddHealth(_healthToAdd){
 function playerAddItem(_item){
 	array_push(global.player.inventory , _item)
 }
+
+
+function playerDeath(_parameters){
+	destroyAllObjects();
+	var _text = _parameters[0];
+	log_error("Player Death Attempted...")
+	textBox(_text, 20, 20);
+}
+

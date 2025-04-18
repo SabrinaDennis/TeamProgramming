@@ -13,8 +13,11 @@ function initEnemy(_name,_sprite,_health){
 /// @param {any} _sprite Reference to sprite
 /// @param {real} _health Full Enemy Health
 function createEnemy(_name, _sprite,_health){
-	initEnemy(_name,_sprite,_health)
-	instance_create_depth(room_width/1.2,room_height/2,-1,obj_enemy,global.enemy)
+	// Conceptual Enemy (Just a global Struct)
+	initEnemy(_name,_sprite,_health) 
+	
+	// Actual Enemy Object Instance
+	instance_create_depth(room_width/1.2,room_height/2,-1,obj_enemy,global.enemy) 
 }
 
 /// @function enemyTakeDamage
