@@ -253,10 +253,10 @@ function attackEnemy(damageAmount) {
         show_debug_message("Enemy defeated!");
         
         // Return to dialog after a short delay
-        alarm[0] = room_speed * 2; // 2 second delay
+        alarm[0] = game_get_speed(gamespeed_fps) * 2; // 2 second delay
         // Create a temporary object to handle the delay
         with (instance_create_depth(0, 0, 0, obj_battle_controller)) {
-            alarm[0] = room_speed * 2;
+            alarm[0] = game_get_speed(gamespeed_fps) * 2;
         }
     } else {
         // Enemy attacks back (simple version)
