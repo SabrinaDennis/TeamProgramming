@@ -42,12 +42,10 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"CPS298_Text_Based_Adventure_Game",
   "resources":[
-    {"id":{"name":"font_small","path":"fonts/font_small/font_small.yy",},},
-    {"id":{"name":"font","path":"fonts/font/font.yy",},},
     {"id":{"name":"PressStart2P","path":"fonts/PressStart2P/PressStart2P.yy",},},
     {"id":{"name":"ExampleMenu","path":"objects/ExampleMenu/ExampleMenu.yy",},},
     {"id":{"name":"MainText","path":"objects/MainText/MainText.yy",},},

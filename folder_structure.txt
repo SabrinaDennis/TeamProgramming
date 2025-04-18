@@ -77,24 +77,12 @@
 │   ├── datafiles
 │   │   └── We are using the Struct in DialogStructManager now.md
 │   ├── fonts
-│   │   ├── PressStart2P
-│   │   │   ├── PressStart2P-Regular.ttf
-│   │   │   ├── PressStart2P.old.png
-│   │   │   ├── PressStart2P.old.yy
-│   │   │   ├── PressStart2P.png
-│   │   │   └── PressStart2P.yy
-│   │   ├── font
-│   │   │   ├── cmunbmr.ttf
-│   │   │   ├── font.old.png
-│   │   │   ├── font.old.yy
-│   │   │   ├── font.png
-│   │   │   └── font.yy
-│   │   └── font_small
-│   │       ├── cmunbmr.ttf
-│   │       ├── font_small.old.png
-│   │       ├── font_small.old.yy
-│   │       ├── font_small.png
-│   │       └── font_small.yy
+│   │   └── PressStart2P
+│   │       ├── PressStart2P-Regular.ttf
+│   │       ├── PressStart2P.old.png
+│   │       ├── PressStart2P.old.yy
+│   │       ├── PressStart2P.png
+│   │       └── PressStart2P.yy
 │   ├── objects
 │   │   ├── ExampleMenu
 │   │   │   ├── ExampleMenu.yy
@@ -133,10 +121,15 @@
 │   │   ├── obj_pauseMenu
 │   │   │   ├── Create_0.gml
 │   │   │   └── obj_pauseMenu.yy
-│   │   └── obj_scene_character
-│   │       ├── Draw_0.gml
-│   │       └── obj_scene_character.yy
+│   │   ├── obj_scene_character
+│   │   │   ├── Draw_0.gml
+│   │   │   └── obj_scene_character.yy
+│   │   └── obj_test
+│   │       ├── Create_0.gml
+│   │       └── obj_test.yy
 │   ├── options
+│   │   ├── android
+│   │   │   └── options_android.yy
 │   │   ├── html5
 │   │   │   └── options_html5.yy
 │   │   ├── ios
@@ -213,6 +206,9 @@
 │   │   ├── snd_menuMusic1
 │   │   │   ├── snd_menuMusic1.mp3
 │   │   │   └── snd_menuMusic1.yy
+│   │   ├── snd_menuSelect
+│   │   │   ├── snd_menuSelect.mp3
+│   │   │   └── snd_menuSelect.yy
 │   │   └── snd_menuUp
 │   │       ├── snd_menuUp.mp3
 │   │       └── snd_menuUp.yy
@@ -526,4 +522,4 @@
 ├── KhouriFountain.txt
 └── folder_structure.txt
 
-183 directories, 343 files
+184 directories, 338 files

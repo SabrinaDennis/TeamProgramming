@@ -236,7 +236,7 @@ function DialogStructManager(){
 				sceneIndex: 24,
 				sceneName: "Temporal Storm",
 				background: spr_chaos, onLoad: {func: theEnd, params: ["tragic"]},
-				sceneText: "Reality seems to fold in on itself around you.\nYou try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if every cell is suddenly being pulled in every direction.\nThrough the haze of agony, you catch glimpsesâ€”London streets, your office, places you've never seenâ€”all superimposed like multiple exposures on a single photograph.\nWith terrible clarity, you realize you're being pulled apart across time itself.",
+				sceneText: "Reality seems to fold in on itself around you.\nYou try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if every cell is suddenly being pulled in every direction.\nThrough the haze of agony, you catch glimpses... London streets, your office, places you've never seen... all superimposed like multiple exposures on a single photograph.\nWith terrible clarity, you realize you're being pulled apart across time itself.",
 				options: [
 					]
 				},

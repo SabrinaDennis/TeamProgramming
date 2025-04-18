@@ -46,22 +46,21 @@ if(keyboard_check_pressed(vk_up)){
 	audio_play_sound(snd_menuUp,0,false)
 }
 
-var _func = -1;
+// Function initialize to do nothing
+var _func = function (){;;};
 // Make the functions actually work, allow the player to activate an option
 if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter)){
 	audio_play_sound(snd_menuSelect,0,false)
 	if(array_length(options[hover]) == 3){
 		_func = options[hover][1];
-		var _parameters = options[hover][2]
+		var _params = options[hover][2]
 		
-		// If a function reference exist, run the function	(check for parameters, if so pass them)
-		if (_func != -1){
-			if(_parameters != -1){
-				_func(_parameters);
-			}else{
-				_func();
-			}			
-		}
+		// check for parameters. if so, pass them.
+		if(_params != -1){
+			_func(_params);
+		}else{
+			_func();
+		}			
 	}
 	// Destroy menu instance, after option is picked.
 	instance_destroy();
