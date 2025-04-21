@@ -517,7 +517,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 54,
 				sceneName: "Take a cold shower",
-				background: house_present, onLoad:{func: fight, params: "coldDemons'},
+				background: house_present, 
+				onLoad:{func: fight, params: "coldDemons"},
 				sceneText: "Battle the your demons\nTake a cold shower, continued",
 				options: [
 					["Take a cold shower, continued", goToSceneIndex, [45]],
@@ -617,8 +618,9 @@ function DialogStructManager(){
 			{
 				sceneIndex: 65,
 				sceneName: "Grab a gooey cinnamon bun",
-				background: office_present,  find:"cinnamonBun"},
-				sceneText: "This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you ... \nHead to the roof\nHead to your offices",
+				background: office_present,  
+				find:"cinnamonBun",
+				sceneText: "This treat will serve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you ... \nHead to the roof\nHead to your offices",
 				options: [
 					["Head to the roof", goToSceneIndex, [69]],
 					["Head to your offices", goToSceneIndex, [42]],
