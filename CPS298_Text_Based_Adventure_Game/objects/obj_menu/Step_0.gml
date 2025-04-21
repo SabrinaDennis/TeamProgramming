@@ -47,7 +47,7 @@ if(keyboard_check_pressed(vk_up)){
 }
 
 // Function initialize to do nothing
-var _func = function (){;;};
+var _func = function (){;};
 // Make the functions actually work, allow the player to activate an option
 if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter)){
 	audio_play_sound(snd_menuSelect,0,false)

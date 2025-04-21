@@ -214,6 +214,12 @@
 │   │       ├── snd_menuUp.mp3
 │   │       └── snd_menuUp.yy
 │   ├── sprites
+│   │   ├── black
+│   │   │   ├── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9.png
+│   │   │   ├── black.yy
+│   │   │   └── layers
+│   │   │       └── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9
+│   │   │           └── 4610fec8-0919-4806-b68b-91b06eec5a7c.png
 │   │   ├── elevator_present
 │   │   │   ├── elevator_present.yy
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
@@ -522,4 +528,4 @@
 ├── KatherineNymshack.md
 └── KhouriFountain.txt
 
-185 directories, 338 files
+188 directories, 341 files

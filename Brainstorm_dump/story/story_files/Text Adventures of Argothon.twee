@@ -94,7 +94,7 @@ The tinkering stops.  The tinkerer looks at you.
 [[Run Away!]] 
 
 
-:: "There was a weird brass ke... Wait!  Who are you!? {"position":"1925,375","size":"100,100"}
+:: "There was a weird brass ke... Wait!  Who are you!? {"position":"2000,525","size":"100,100"}
 "Ah yes, one of Nicholas's nets.  I'm sorry it found you.  Well, I'm sorry you're the sort of person that thing was likely to find.  I'm called Margaret by those who deserve to address me at all.  You are a stranger, stranger than most, in a strange land, stranger than most, so I suggest you stay curious while I find out our next steps.  Now tell me.  Anything else out of the ordinary for you today?"
 
 [[Well, the random little demons...]]
@@ -205,26 +205,26 @@ Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.
 /* rawContent */background: house_present, onLoad:{ func:find, params: "a day"}
 
 
-:: ... {"position":"600,150","size":"100,100"}
+:: ... {"position":"500,300","size":"100,100"}
 The palm trees abruptly dim.
 
 [[It's too early.]]
 /* rawContent */background: spr_background
 
 
-:: ...Well, I seem to have been captured... {"position":"2000,525","size":"100,100"}
+:: ...Well, I seem to have been captured... {"position":"2075,675","size":"100,100"}
 [[...by a magical key and sent to the ...]]
 
 
-:: ...by a magical key and sent to the ... {"position":"2125,525","size":"100,100"}
+:: ...by a magical key and sent to the ... {"position":"2200,675","size":"100,100"}
 [[...home of a woman who knows...]]
 
 
-:: ...home of a woman who knows... {"position":"2250,525","size":"100,100"}
+:: ...home of a woman who knows... {"position":"2325,675","size":"100,100"}
 [[...way more than I do...]]
 
 
-:: ...way more than I do... {"position":"2500,325","size":"100,100"}
+:: ...way more than I do... {"position":"2575,475","size":"100,100"}
 "Hmm." She seems to come to a conclusion you couldn't hope to understand. "I suppose you're right.  Come along then, we have a few people to meet, and you seem cooperative enough considering your situation.
 
 [[Trust Margaret]]
@@ -233,7 +233,7 @@ The palm trees abruptly dim.
 /* rawContent */character: MT_past_neutral, background: house_past
 
 
-:: A bizarre sense of deja vu. {"position":"2675,375","size":"100,100"}
+:: A bizarre sense of deja vu. {"position":"2750,525","size":"100,100"}
 "Hmmm.  Yes.  Now that you mention it...  Oh dear."
 
 [[Temporal Storm]]
@@ -241,7 +241,7 @@ The palm trees abruptly dim.
 /* rawContent */character: MT_past_neutral, background: house_past
 
 
-:: A slight headache. {"position":"2300,325","size":"100,100"}
+:: A slight headache. {"position":"2375,475","size":"100,100"}
 Margaret, with no pen or paper, holds herself and holds your gaze in a way that somehow reassures you she'll remember every word you tell her and more.
 
 She hands you a wooden cup of water from a nearby pitcher and continues her... interview?
@@ -255,7 +255,7 @@ She hands you a wooden cup of water from a nearby pitcher and continues her... i
 /* rawContent */character: MT_past_neutral, background: house_past
 
 
-:: Actually, I feel better than I have in years. {"position":"2175,325","size":"100,100"}
+:: Actually, I feel better than I have in years. {"position":"2250,475","size":"100,100"}
 She laughs, and it only just manages to reach her eyes.  You assess this person:  She seems intelligent.  She seems self possessed.  Above all, she has an assured sense of calm confidence surrounding her.  Though not bulging with muscle or regailing you with various sesquipedalia, you perceive that she is smart, and strong, and quite dangerous.
 
 "Glad to hear. The net can sometimes jolt its passenger.  You seem to have a knack for travel by mystery.  Any allergies?  Do you take anything daily?
@@ -322,6 +322,10 @@ You remember a shining object, distracting you when you wanted most to be distra
 /* rawContent */character: ND_past_neutral, background: house_past
 
 
+:: Bring the key to the roof {"position":"1300,600","size":"100,100"}
+[[you press R]]
+
+
 :: Check the notification details {"position":"400,1200","size":"100,100"}
 The notification mentions a "comprehensive systems diagnostic" scheduled for 3:00 PM today, focusing on the building's experimental energy management system.
 
@@ -333,7 +337,7 @@ The clock reads 2:30 PM.
 
 [[Investigate the test location]]
 
-/* rawContent */background: office_present, inFriends:[["William", "Nichole", "Margaret"], Gather your temporal allies]
+/* rawContent */background: office_present, inFriends:["William", "Nichole", "Margaret"], [[Gather your temporal allies]]
 //inFriends should check if you're friends with everyone in the first array, and add the scene to options if they are.
 
 
@@ -364,12 +368,19 @@ You pop into a larger building hoping for a place to hide, and find yourself in 
 [[Run Away!]]
 
 
-:: Enter the strange door {"position":"3300,1200","size":"100,100"}
-You are introduced to two other souls who also seem to know much more than you.  
+:: Enter the strange door {"position":"3150,200","size":"100,100"}
+You are introduced to two more souls who also seem to know much more than you do.  There's not much to do but launch into an explanation of your current situation.  Part way into your description of your morning, reality suddenly starts to sort of... fold in... toward itself.  The world seems to tilt dangerously while holding completely still.  As the clamor of eternity rises in your ears, a friend bumps you at an odd angle.  A very odd angle.  Somehow orthogonal to existence, and you feel yourself unstick and return to
+
+[[The Beginning]]
+
+if friends with all [[Get back to work.]]
 
 
-:: Fidget for a moment, putting off the tasks of the day {"position":"600,1600","size":"100,100"}
-You arrange your desk, half convincing yourself you'll be more productive if everything is just so.  You haven't been productive in years.  So when the building shudders slightly, as though a truck was rumbling past your 13th story window, you notice immediately.  Maybe a quick phonecall down to ops to see if they want your in person input.  The phone rings twice before the building, and reality itself, fall apart in a [[Temporal Storm]].
+:: Fidget for a moment, putting off the tasks of the day {"position":"275,625","size":"100,100"}
+You arrange your desk, half convincing yourself you'll be more productive if everything is just so.  You haven't been productive in years.  So when the building shudders slightly, as though a truck was rumbling past your 13th story window, you notice immediately.  Maybe an earthquake?  You check your phone, but there's nothing seismic in the area.
+
+[[Get back to work.]] 
+[[Run Away from the Office!]]
 
 /* rawContent */background: office_present
 
@@ -379,7 +390,7 @@ You fuel your day, not really paying attention to your nourishment, just mindles
 /* rawContent */background: house_present
 
 
-:: Focus on getting to the days work. {"position":"1125,775","size":"100,100"}
+:: Focus on getting to the days work. {"position":"1150,775","size":"100,100"}
 [[Press 13]]
 /* rawContent */background: elevator_present,onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
 
@@ -396,6 +407,22 @@ You fuel your day, not really paying attention to your nourishment, just mindles
 Until at once they laugh and tell you how terrified you looked and roast your inability to take a joke.  They invite you to stay and rest your feet as long as you can withstand their clamorous din.
 
 [[Meet the Dramatis Personea]]
+
+
+:: Gather your temporal allies {"position":"850,1275","size":"100,100"}
+You realize now what you were always meant to do.  There are things beyond our understanding that we always reach for.  A child pulling at ice cream with their mind.  A fervent prayer for the health of loved one delerious with fever.  Even a futile attempt to stretch out some mysterious muscle.  We always want to effect the world in ways we know aren't tied down to reality.
+
+[[Bring the key to the roof]]
+
+
+
+
+:: Get back to work. {"position":"225,825","size":"100,100"}
+You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.
+
+[[Check the notification details]]
+[[Focus on getting to the days work.]] 
+[[Run Away from the Office!]]
 
 
 :: Go back to bed {"position":"700,425","size":"100,100"}
@@ -433,18 +460,44 @@ This treat will hserve as external courage to face the day's work tasks.  You si
 /* rawContent */background: office_present, onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)}
 
 
-:: I sneeze uncontrollably when jazz music plays, and I take powdered mandrake root. {"position":"2225,725","size":"100,100"}
+:: I am ready. {"position":"2600,2100","size":"100,100"}
+"I know.  Just remember, opening can feel like breaking."
+
+REDD steps back and Drait NIKI introduces herself, terse but not unfriendly:
+
+"Will you take responsibility for what you have to do?"
+
+[[I will]]
+
+[[I... What?]]
+
+
+:: I sneeze uncontrollably when jazz music plays, and I take powdered mandrake root. {"position":"2300,875","size":"100,100"}
 She glares.
 
 [[Daily.  You know, for the anti-oxidants.]]
 
 
-:: I'm allergic to flowers and I take a multivitamin. {"position":"2350,675","size":"100,100"}
+:: I will {"position":"2800,2100","size":"100,100"}
+NIKI steps back satisfied, and M.A.Sh.T steps forward, holding a small device.
+
+"And will you remember all this when the world is crumpling, loud like tin, all around you?"
+
+[[Of course]]
+
+[[Think it over before answering]]
+
+
+:: I'm allergic to flowers and I take a multivitamin. {"position":"2425,825","size":"100,100"}
 "I see.  Anything else you think I should know?"
 
 [[Are you a doctor?]]
 [[A slight headache.]]
 [[No.]]
+
+
+:: I... What? {"position":"2375,2350","size":"100,100"}
+They shudder, and the world folds in half everywhere.  Your confusion
 
 
 :: Immediately get to work {"position":"500,1600","size":"100,100"}
@@ -477,7 +530,7 @@ It's too early.
 /* rawContent */background: house_present, onLoad:{func: function test(_str){show_debug_message(_str)}, ["test"]}
 
 
-:: Leave calmly {"position":"2600,675","size":"100,100"}
+:: Leave calmly {"position":"2675,825","size":"100,100"}
 You gather what little dignity you have left, and exit the home of Margaret Ashford as gracefully as you can.  You are immediately arrested for, well: "Just look at ye!" utters the constable as they grab you.
 
 [[Die alone in a cell]]
@@ -494,18 +547,6 @@ Your host brings you through the labarynthine streets until you are quite confus
 [[Enter the strange door]]
 
 
-:: Margaret Ashford {"position":"1775,525","size":"100,100"}
-"What is it now?!"
-You hear someone bounding down a very old, no, very new? hmm.  a staircase.
-You open your eyes to behold the form of a dsiquietingly familiar stranger.  They look you up and down... Well, they look your supine form left and right, and begin to ask you questions for the rest of your time together.
-"What is the last thing you remember?"
-
-[["There was a weird brass ke... Wait!  Who are you!?]]
-[[Run Away!]]
-
-/* rawContent */character: MT_past_neutral, background: house_past
-
-
 :: Meet the Dramatis Personea {"position":"1000,2025","size":"100,100"}
 You find yourself put at ease, lulled by their strange accents into a relaxed state.  After their day's rehearsal for some new theatrical work of locally existential importance, your thoughts turn to returning ... somewhere?
 
@@ -516,26 +557,7 @@ Not bad.
 /* rawContent */ background: street_past, onLoad: {theEnd: ["neutral"]}
 
 
-:: Nicholas Drayton {"position":"1300,1050","size":"100,100"}
-"Wake up then.  We haven't got all the time in the world.  Yet."
-You blearily open half an eyelid and percieve a frustrated sideways person.
-
-You sit up.
-
-You recognize the clothing as very old, and the wearer as a tall lanky teenager.  They remind you of your grad school cohort.  All knowledge and no sleep.
-
-"I am Nicholas.  You have stumbled upon something.  Or something has stumbled on you.  No one ever asks the leg of the table what a toe stubbing feels like.  Are you a table or a toe?"
-
-[["A table?"]]
-[["A toe?"]]
-[["Wait, where am I!?"]]
-[[Run Away!]]
-
-
-/* rawContent */character: ND_past_neutral, background: house_past
-
-
-:: No. {"position":"2400,125","size":"100,100"}
+:: No. {"position":"2475,275","size":"100,100"}
 She considers for a moment.  You feel yourself blanche as she tells you "No. I don't think this time.  You may go."
 
 [[She shows you the door.]] 
@@ -543,7 +565,7 @@ She considers for a moment.  You feel yourself blanche as she tells you "No. I d
 /* rawContent */character: MT_past_neutral, background: house_past
 
 
-:: None that I can think of. {"position":"2225,50","size":"100,100"}
+:: None that I can think of. {"position":"2300,200","size":"100,100"}
 "mhmm.  Any physical symptoms?  ringing ears, vision problems, headache, strange sense of deja vu?"
 
 [[ha. ha.]]
@@ -551,17 +573,26 @@ She considers for a moment.  You feel yourself blanche as she tells you "No. I d
 /* rawContent */character: MT_past_smile, background: house_past
 
 
+:: Of course {"position":"2650,2325","size":"100,100"}
+Her eyes grow sad and she steps back.
+"Confidence unearned is a hole in the universe."
+
+The device drops from her hands as you're taken by the
+
+[[Temporal Storm]]
+
+
 :: Pass out {"position":"1150,1150","size":"100,100"}
-Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with mischevious and adventurous [[William Redbrook]],
+Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with mischevious and adventurous [[listen for  the echo of laughter]],
 
-careful and curious [[Nicholas Drayton]], or
+careful and curious [[think.  Think!  THINK.]], or
 
-earnest and wise [[Margaret Ashford]]
+earnest and wise [[follow intelligent eyes]]
 
 /* rawContent */background: spr_background, find: "key"
 
 
-:: Press 13 {"position":"1150,925","size":"100,100"}
+:: Press 13 {"position":"1225,900","size":"100,100"}
 You press the button marked 13, and head to your personal offices.  Hoping to catch up on some paperwork, you continue through the offensive smell of carpet adhesive and sit behind your desk.
 [[Immediately get to work]]
 [[Fidget for a moment, putting off the tasks of the day]]
@@ -621,7 +652,7 @@ You shudder, focus all your mental energy, and just decide to move on.
 /* rawContent */background: house_present, onLoad:{playerTakeDamage(10)}
 
 
-:: She shows you the door. {"position":"2475,750","size":"100,100"}
+:: She shows you the door. {"position":"2550,900","size":"100,100"}
 As you're moved toward the door, the primary panic of being faced with the unknown floods your system and you begin to beg wildly for another chance.  You claim that you'll tell her anything.  She merely shakes her head, tight lipped, and sends your toward the cobbled and feces strewn streets outside.
 
 [[Leave calmly]]
@@ -690,12 +721,18 @@ With terrible clarity, you realize you're being pulled apart across time itself.
 /* rawContent */background: spr_chaos, onLoad: {func: theEnd, params: ["tragic"]}
 
 
-:: The Beginning {"position":"425,150","size":"100,100"}
+:: The Beginning {"position":"450,25","size":"100,100"}
 ...hm?
 ...
 
 [[...]]
 /* rawContent */background: spr_background
+
+
+:: Think it over before answering {"position":"2925,2225","size":"100,100"}
+She grins at your hesitation and offers you the small trinket in her hand.
+
+"Introspection is important.  But, you're ready.  Take our strength and [[stop him."]]
 
 
 :: Trust Margaret {"position":"2650,1150","size":"100,100"}
@@ -722,21 +759,23 @@ onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)},
 onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
 
 
-:: Untitled Passage 1 {"position":"225,825","size":"100,100"}
-You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.
-
-[[Check the notification details]]
-[[Focus on getting to the days work.]] 
-[[Run Away from the Office!]]
-
-
 :: Visit the canteen {"position":"850,750","size":"100,100"}
 [[Press 4]] 
 
 /* rawContent */background: elevator_present, onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)}
 
 
-:: Well, I dreamt about an island last night... {"position":"2625,225","size":"100,100"}
+:: Welcome to the future {"position":"2400,2100","size":"100,100"}
+A young man steps toward you, giggling slightly, and presents himself as Will REDD, an echo here at the end of your friend William Redbrook.
+
+"Are you ready to open what must be opened?"
+
+[[I am ready.]]
+
+[[I... What?]]
+
+
+:: Well, I dreamt about an island last night... {"position":"2700,375","size":"100,100"}
 "Hm.  That is to be expected.  What else?"
 
 [[...Well, I seem to have been captured...]] 
@@ -747,7 +786,7 @@ You shake in your chair with a start.  Time travel feels an awful lot like a dre
 /* rawContent */character: MT_past_neutral, background: house_past
 
 
-:: Well, the random little demons... {"position":"2075,125","size":"100,100"}
+:: Well, the random little demons... {"position":"2150,275","size":"100,100"}
 "Oh yes.  They slip out.  Like sentient drops of dirty water as the rag is squeezed.  Any physical symptoms?  ringing ears, vision problems, headache, strange sense of deja vu?"
 
 [[None that I can think of.]]
@@ -757,19 +796,6 @@ You shake in your chair with a start.  Time travel feels an awful lot like a dre
 /* rawContent */character: MT_past_neutral, background: house_past
 
 
-:: William Redbrook {"position":"1525,1475","size":"100,100"}
-"And who are you?"
-A smirking voice opens your eyes, and you're faced with a stranger.
-The smell of an unwashed world attacks your nostrils.
-You look around and realize, not only is the person you're looking at a complete unknown,  but your very surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!
-
-[[Ask questions]]
-
-[[Run Away!]]
-
-/* rawContent */background: house_past, character: WB_past_smile, onLoad: {addFriend: ["William"]}
-
-
 :: Your alarm wakes you {"position":"700,550","size":"100,100"}
 You jolt into reality.  Falling asleep again was a bad idea.
 [[Shake it off.]]
@@ -777,7 +803,19 @@ You jolt into reality.  Falling asleep again was a bad idea.
 /* rawContent */background: house_present
 
 
-:: ha. ha. {"position":"2625,525","size":"100,100"}
+:: follow intelligent eyes {"position":"1850,675","size":"100,100"}
+"What is it now?!"
+You hear someone bounding down a very old, no, very new? hmm.  a staircase.
+You open your eyes to behold the form of a dsiquietingly familiar stranger.  They look you up and down... Well, they look your supine form left and right, and begin to ask you questions for the rest of your time together.
+"What is the last thing you remember?"
+
+[["There was a weird brass ke... Wait!  Who are you!?]]
+[[Run Away!]]
+
+/* rawContent */character: MT_past_neutral, background: house_past
+
+
+:: ha. ha. {"position":"2700,675","size":"100,100"}
 "Yes.  I suppose you're right.  Well.  I have all the information I need.  Shall we?"
 
 [[Trust Margaret]] 
@@ -797,14 +835,77 @@ Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads t
 /* rawContent */background: office_present
 
 
+:: here if you lose {"position":"3000,2475","size":"100,100"}
+It was never going to have been enough.  This is the direction the world was fated toward, always.
+
+Let that be a comfort as time sorts and arranges your molecules by size.
+
+
+:: here if you win {"position":"2862.5,2475","size":"100,100"}
+You float, strong, so strong now, but unable to effect anything.  With no wall to push off of, with nothing to grab on to, you have no way of pulling yourself back into reality.  And so you float.  Your body wastes away.  The small eddies and vortices of time ripple through you as they find realignment, aging and delaying you to a suffering death.  But you saved everyone else.  You saved everyone and everything else.  Right?  Defeating the monster was enough, right?  One monster?  Was enough?
+
+You die, hoping, in agony.
+
+
+:: listen for  the echo of laughter {"position":"1525,1475","size":"100,100"}
+"And who are you?"
+A smirking voice opens your eyes, and you're faced with a stranger.
+The smell of an unwashed world attacks your nostrils.
+You look around and realize, not only is the person you're looking at a complete unknown,  but your very surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!
+
+[[Ask questions]]
+
+[[Run Away!]]
+
+/* rawContent */background: house_past, character: WB_past_smile, onLoad: {addFriend: ["William"]}
+
+
 :: offer the banana {"position":"2200,1700","size":"100,100"}
 They laugh.  You laugh.  All in great fun and an opportunity.  You're invited to stay, and embarrass yourself hilariously filling in for one of their troupe gone missing that day.  After, you just stand back to watch the evening unfold.
 
 [[Meet the Dramatis Personea]] 
 
 
-:: offer the cinnamon roll {"position":"2075,1475","size":"100,100"}
+:: offer the cinnamon roll {"position":"2000,1375","size":"100,100"}
 The gooey confection and its processed sugar are a treat so rare in this world the group audibly considers accusing you of witchcraft.  They fall silent and stare at you for a moment...
 
 [[Freeze]]
 [[Run Away!]]
+
+
+:: stop him." {"position":"2925,2350","size":"100,100"}
+The end of everything is swallowed up, but you see each of your friends "turn" and feel a push from an unknown and unknowable direction.  You blink hard, fight disorientation, and face Dr. Brotin-Dawr, your old school chum.  He looks at you, and immediately drops all pretense.  Like an origami flower being undone, he unflexes in a handful of unseeable dimension, and becomes a writhing mass of tentacles and evil.
+
+And you fight the last battle anyone ever could.
+
+[[here if you win]]
+
+[[here if you lose]]
+
+
+:: think.  Think!  THINK. {"position":"1300,1050","size":"100,100"}
+"Wake up then.  We haven't got all the time in the world.  Yet."
+You blearily open half an eyelid and percieve a frustrated sideways person.
+
+You sit up.
+
+You recognize the clothing as very old, and the wearer as a tall lanky teenager.  They remind you of your grad school cohort.  All knowledge and no sleep.
+
+"I am Nicholas.  You have stumbled upon something.  Or something has stumbled on you.  No one ever asks the leg of the table what a toe stubbing feels like.  Are you a table or a toe?"
+
+[["A table?"]]
+[["A toe?"]]
+[["Wait, where am I!?"]]
+[[Run Away!]]
+
+
+/* rawContent */character: ND_past_neutral, background: house_past
+
+
+:: you press R {"position":"1300,475","size":"100,100"}
+The doors open up and you walk out, heading straight to where the brass device waits on the ground.  You lock them together in a way that seems obvious now.  Once you make your cyclic device, you focus, and push it...  Not up. Not down.  Not left or right, or forward or backward.  You push it in a direction somehow at a right angle to reality, and your surroundings slide at right angles to every direction.  You then pull opposite to your first push, and confidently break the connection.
+
+You nod at each of the strangers before you, placing each one mentally in place of your newly made friends.
+
+[[Welcome to the future]]
+

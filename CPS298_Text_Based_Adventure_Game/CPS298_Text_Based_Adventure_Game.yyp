@@ -81,6 +81,7 @@
     {"id":{"name":"snd_menuMusic1","path":"sounds/snd_menuMusic1/snd_menuMusic1.yy",},},
     {"id":{"name":"snd_menuSelect","path":"sounds/snd_menuSelect/snd_menuSelect.yy",},},
     {"id":{"name":"snd_menuUp","path":"sounds/snd_menuUp/snd_menuUp.yy",},},
+    {"id":{"name":"black","path":"sprites/black/black.yy",},},
     {"id":{"name":"elevator_present","path":"sprites/elevator_present/elevator_present.yy",},},
     {"id":{"name":"house_past","path":"sprites/house_past/house_past.yy",},},
     {"id":{"name":"house_present","path":"sprites/house_present/house_present.yy",},},
