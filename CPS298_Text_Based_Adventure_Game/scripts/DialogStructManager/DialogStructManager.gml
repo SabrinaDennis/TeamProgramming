@@ -65,7 +65,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 7,
 				sceneName: "Take the elevator",
-				background: office_present, onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)},
+				background: office_present, onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
 				sceneText: "Press B",
 				options: [
 					["Press B", goToSceneIndex, [76]],
@@ -142,7 +142,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 15,
 				sceneName: "It's too early.",
-				background: house_present, onLoad:{func: function test(_str){show_debug_message(_str)}, ["test"]},
+				background: house_present, 
+				onLoad:{func: function test(_str){show_debug_message(_str)}, params: ["test"]},
 				sceneText: "It's too early. It's dark and it's quiet and it's warm but it's too early. Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\nToo long.\nIt's too early.\nGo back to bed\nTake advantage of the extra... ugh... hour.",
 				options: [
 					["Go back to bed", goToSceneIndex, [104]],
@@ -232,7 +233,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 25,
 				sceneName: "Head to your offices",
-				background: office_present, onLoad:{func: addElevatorEffectsToBus,params:(global.musicBus)},
+				background: office_present, onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
 				sceneText: "Press 13",
 				options: [
 					["Press 13", goToSceneIndex, [101]],
@@ -289,7 +290,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 31,
 				sceneName: "Shake it off.",
-				background: house_present, onLoad:{playerTakeDamage(10)},
+				background: house_present, 
+				onLoad:{func: playerTakeDamage, params: [(10)]},
 				sceneText: "You shudder, focus all your mental energy, and just decide to move on.\nFinish getting ready and eat some breakfast",
 				options: [
 					["Finish getting ready and eat some breakfast", goToSceneIndex, [97]],
@@ -298,7 +300,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 32,
 				sceneName: "Take a cold shower",
-				background: house_present, onLoad:{func: fight, params: "coldDemons'},
+				background: house_present, onLoad:{func: fight, params: "coldDemons"},
 				sceneText: "Battle the your demons\nTake a cold shower, continued",
 				options: [
 					["Take a cold shower, continued", goToSceneIndex, [73]],
@@ -526,7 +528,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 57,
 				sceneName: "Focus on getting to the days work.",
-				background: elevator_present,onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},,
+				background: elevator_present,onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
 				sceneText: "Press 13",
 				options: [
 					["Press 13", goToSceneIndex, [101]],
@@ -565,7 +567,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 61,
 				sceneName: "Grab a banana",
-				background: office_present,  find: "banana"},
+				background: office_present,  
+				find: "banana",
 				sceneText: "This will bring a longing no food could fill closer to comfort.  You make a mental note to wrap the banana's peel in newspaper before throwing it out.  Your keen nose will be distracted all day if you don't. Take your banana back to the elevator and ...\nPress R\nPress 13",
 				options: [
 					["Press R", goToSceneIndex, [82]],
@@ -585,7 +588,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 63,
 				sceneName: "Struggle",
-				background: past_street, onLoad: {theEnd: ["sad"]},
+				background: street_past, onLoad: {theEnd: ["sad"]},
 				sceneText: "You attempt to use physical force, and fail. Screaming with indignity, you find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 				options: [
 					]
@@ -690,7 +693,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 74,
 				sceneName: "Check the notification details",
-				background: office_present, inFriends:["William", "Nichole", "Margaret"], [37],
+				background: office_present, 
+				inFriends:[["William", "Nichole", "Margaret"], [37]],
 				sceneText: "The notification mentions a 'comprehensive systems diagnostic' scheduled for 3:00 PM today, focusing on the building's experimental energy management system.\nThe message is signed by the head of Research & Development, Dr. Brotin-Dawr.\nThe clock reads 2:30 PM.\nContact Dr. Brotin-Dawr immediately\nInvestigate the test location\n//inFriends should check if you're friends with everyone in the first array, and add the scene to options if they are.",
 				options: [
 					["Contact Dr. Brotin-Dawr immediately", goToSceneIndex, [50]],
@@ -737,7 +741,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 79,
 				sceneName: "Investigate the shiny object you notice out of the corner of your eye?",
-				background: outside_present,
+				background: outside,
 				sceneText: "You pause for a moment, happy for an excuse to put off the day's work.  You reach down for the scuffed metal object, notice it's a large brass key.  The antique object is worn to brushed shininess in two places.  The part where...  Is it suddenly really warm?  The part where it would be held, and the whatever, the the the thing the blade of the key is old timey and why is it hard to see and think of word for th wher\nPass out",
 				options: [
 					["Pass out", goToSceneIndex, [89]],
@@ -763,7 +767,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 82,
 				sceneName: "Press R",
-				background: outside_present,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)},
+				background: outside,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)},
 				sceneText: "You press R on the elevator to get some air.  After a brief existential whirr, the doors open on the roof of the building.  You step out, gulp a few mouthfuls of air and steel your nerves for the day.  As you're about to turn back to the elevators, you notice something.  Do you  Investigate the shiny object you notice out of the corner of your eye?  or do you  Focus on getting to the days work.",
 				options: [
 					["Investigate the shiny object you notice out of the corner of your eye?", goToSceneIndex, [79]],
@@ -818,7 +822,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 88,
 				sceneName: "Grab a gooey cinnamon bun",
-				background: office_present,  find:"cinnamonBun"},
+				background: office_present,  
+				find:"cinnamonBun",
 				sceneText: "This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you ... \nHead to the roof\nHead to your offices",
 				options: [
 					["Head to the roof", goToSceneIndex, [92]],
@@ -933,7 +938,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 100,
 				sceneName: "Run Away!",
-				background: past_street, onLoad: {theEnd: ["sad"]},
+				background: street_past, onLoad: {theEnd: ["sad"]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 				options: [
 					]

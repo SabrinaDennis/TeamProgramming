@@ -14,8 +14,8 @@ function theEnd(_parameters){
 function fight(_parameters){
     // Get button that was clicked
     var btn = instance_nearest(mouse_x, mouse_y, obj_button);
-            
-    if (variable_instance_exists(btn, "enemyData") && array_length(btn.enemyData) > 0) {
+    
+    if (btn!=noone && variable_instance_exists(btn, "enemyData") && array_length(btn.enemyData) > 0) {
         // Get first enemy from the data
         var enemyData = btn.enemyData[0];
         var enemyKeys = variable_struct_get_names(enemyData);
@@ -38,9 +38,10 @@ function fight(_parameters){
         }
     } else {
         show_debug_message("Fight function called but no enemies defined.");
-        // Just continue to next scene
-        destroyAllObjects();
-        populateAllObjects();
+        // Just continue to next scene 
+			// Actually, at this point that just causes an infinite loop.
+	    // destroyAllObjects();
+        // populateAllObjects();
     }
 }
             
