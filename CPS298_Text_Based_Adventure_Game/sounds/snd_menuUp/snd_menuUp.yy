@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":1.848,
+  "duration":1.8480046,
   "name":"snd_menuUp",
   "parent":{
     "name":"Sounds",

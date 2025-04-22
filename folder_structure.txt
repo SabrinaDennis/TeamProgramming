@@ -65,6 +65,11 @@
 │   │   ├── MENU SONG #2.mp3
 │   │   └── MENU SONG #3.mp3
 │   ├── README.txt
+│   ├── splashscreenandicon
+│   │   ├── 2.ico
+│   │   ├── icon.ico
+│   │   ├── icon.png
+│   │   └── splash.png
 │   └── story
 │       ├── readme.md
 │       ├── story_files
@@ -146,7 +151,11 @@
 │   │   ├── tvos
 │   │   │   └── options_tvos.yy
 │   │   └── windows
-│   │       └── options_windows.yy
+│   │       ├── icons
+│   │       │   └── icon.ico
+│   │       ├── options_windows.yy
+│   │       └── splash
+│   │           └── splash.png
 │   ├── rooms
 │   │   ├── rm_Game
 │   │   │   ├── rm_Game.yy
@@ -214,12 +223,6 @@
 │   │       ├── snd_menuUp.mp3
 │   │       └── snd_menuUp.yy
 │   ├── sprites
-│   │   ├── black
-│   │   │   ├── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9.png
-│   │   │   ├── black.yy
-│   │   │   └── layers
-│   │   │       └── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9
-│   │   │           └── 4610fec8-0919-4806-b68b-91b06eec5a7c.png
 │   │   ├── elevator_present
 │   │   │   ├── elevator_present.yy
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
@@ -340,6 +343,12 @@
 │   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
 │   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
 │   │   │   └── spr_BG_error.yy
+│   │   ├── spr_black
+│   │   │   ├── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9.png
+│   │   │   ├── layers
+│   │   │   │   └── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9
+│   │   │   │       └── 4610fec8-0919-4806-b68b-91b06eec5a7c.png
+│   │   │   └── spr_black.yy
 │   │   ├── spr_Button
 │   │   │   ├── 1c678b0e-d0f2-4a9b-ac53-bff98c365034.png
 │   │   │   ├── layers
@@ -528,4 +537,4 @@
 ├── KatherineNymshack.md
 └── KhouriFountain.txt
 
-188 directories, 341 files
+191 directories, 347 files

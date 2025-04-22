@@ -55,13 +55,16 @@ if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(
 		_func = options[hover][1];
 		var _params = options[hover][2]
 		
-		// check for parameters. if so, pass them.
-		if(_params != -1){
-			_func(_params);
-		}else{
-			_func();
-		}			
+		// check for _func
+		if(_func!=-1){
+			// check for parameters. if so, pass them.
+			if(_params != -1){
+				_func(_params);
+			}else{
+				_func();
+			}	
+			// Destroy menu instance, after option is picked, but only if option was not -1
+			instance_destroy();
+		}
 	}
-	// Destroy menu instance, after option is picked.
-	instance_destroy();
 }

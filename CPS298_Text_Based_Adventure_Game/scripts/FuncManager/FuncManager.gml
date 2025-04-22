@@ -8,7 +8,7 @@ function FuncManager(funcName, parameters){
     }
 }
 function theEnd(_parameters){
-	show_debug_message(_parameters)
+	show_message_async(_parameters);
 }
 
 function fight(_parameters){
