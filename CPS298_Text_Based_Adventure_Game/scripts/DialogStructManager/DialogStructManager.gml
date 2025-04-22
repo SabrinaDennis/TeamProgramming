@@ -74,7 +74,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 8,
 				sceneName: "listen for  the echo of laughter",
-				background: house_past, character: WB_past_smile, onLoad: {addFriend: ["William"]},
+				background: house_past, character: WB_past_smile, onLoad: {func: addFriend, params: ["William"]},
 				sceneText: "'And who are you?'\nA smirking voice opens your eyes, and you're faced with a stranger.\nThe smell of an unwashed world attacks your nostrils.\nYou look around and realize, not only is the person you're looking at a complete unknown,  but your very surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!\nAsk questions\nRun Away!",
 				options: [
 					["Ask questions", goToSceneIndex, [86]],
@@ -394,7 +394,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 42,
 				sceneName: "...",
-				background: spr_background,
+				background: spr_black,
 				sceneText: "The palm trees abruptly dim.\nIt's too early.",
 				options: [
 					["It's too early.", goToSceneIndex, [15]],
@@ -461,7 +461,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 49,
 				sceneName: "Die alone in a cell",
-				background: black, onLoad: {theEnd: ["sad"]},
+				background: spr_black, onLoad: {func: theEnd, params: ["sad"]},
 				sceneText: "The rank insanitation of 1600s city life, amplified by the dank and sunless gaol you are kept in, makes quick work of your immune system, and you die before they figure out how they want to kill you.  Small victories are still victories.",
 				options: [
 					]
@@ -588,7 +588,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 63,
 				sceneName: "Struggle",
-				background: street_past, onLoad: {theEnd: ["sad"]},
+				background: street_past, onLoad: {func: theEnd, params: ["sad"]},
 				sceneText: "You attempt to use physical force, and fail. Screaming with indignity, you find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 				options: [
 					]
@@ -605,7 +605,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 65,
 				sceneName: "'Have a day'",
-				background: house_present, onLoad:{ func:find, params: "a day"},
+				background: house_present, onLoad:{func: find, params: "a day"},
 				sceneText: "Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.\nFinish getting ready and eat some breakfast",
 				options: [
 					["Finish getting ready and eat some breakfast", goToSceneIndex, [97]],
@@ -777,7 +777,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 83,
 				sceneName: "Meet the Dramatis Personea",
-				 background: street_past, onLoad: {theEnd: ["neutral"]},
+				 background: theater_past, onLoad: {func : theEnd, params:["neutral"]},
 				sceneText: "You find yourself put at ease, lulled by their strange accents into a relaxed state.  After their day's rehearsal for some new theatrical work of locally existential importance, your thoughts turn to returning ... somewhere?\nOver the years the past fades utterly.  You die painfully but quickly a few years after the love of your life.  A life obscured by time and forgotten by everything but decay.\nNot bad.",
 				options: [
 					]
@@ -938,7 +938,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 100,
 				sceneName: "Run Away!",
-				background: street_past, onLoad: {theEnd: ["sad"]},
+				background: street_past, onLoad: {func: theEnd, params: ["sad"]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 				options: [
 					]
@@ -964,7 +964,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 103,
 				sceneName: "Run Away from the Office!",
-				background: present_street, onLoad: {theEnd: ["sad"]},
+				background: present_street, onLoad: {func: theEnd, params: ["sad"]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A pickup truck attempts to avoid your sudden appearance, but swerving only serves to topple the bed's contents on top of you at speed.  You are crushed by several bicycles, a snow shovel, two cinder blocks, and a broken down washing machine.  The truck is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 				options: [
 					]
