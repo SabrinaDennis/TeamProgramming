@@ -56,6 +56,14 @@
 │   │   │   ├── CONGRATS.mp3
 │   │   │   └── shake it fast .mp3
 │   │   └── Where am i.mp3
+│   ├── General SFX
+│   │   ├── door close.mp3
+│   │   ├── door open.mp3
+│   │   ├── hitting.mp3
+│   │   ├── new select
+│   │   │   └── menu_select.mp3
+│   │   ├── POWER UP.mp3
+│   │   └── walking.mp3
 │   ├── Menu Clicks ( SFX )
 │   │   ├── Menu clicks.wav
 │   │   ├── Menu_down.mp3
@@ -64,6 +72,11 @@
 │   │   ├── MENU SONG #1.mp3
 │   │   ├── MENU SONG #2.mp3
 │   │   └── MENU SONG #3.mp3
+│   ├── new music
+│   │   ├── am i coming bacK.mp3
+│   │   ├── glitch factory.mp3
+│   │   ├── six million ways to die.mp3
+│   │   └──  stepping up the bricks.mp3
 │   ├── README.txt
 │   ├── splashscreenandicon
 │   │   ├── 2.ico
@@ -224,11 +237,11 @@
 │   │       └── snd_menuUp.yy
 │   ├── sprites
 │   │   ├── elevator_present
+│   │   │   ├── 1386aa93-225f-41fa-a3fc-df3847ac0558.png
 │   │   │   ├── elevator_present.yy
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
 │   │   │   └── layers
-│   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   │       └── 1386aa93-225f-41fa-a3fc-df3847ac0558
+│   │   │           └── 61ba35b9-bbf3-4e57-a299-1266452fc6e7.png
 │   │   ├── house_past
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
 │   │   │   ├── house_past.yy
@@ -314,10 +327,10 @@
 │   │   │   │       └── 95f0d14a-b588-475a-9572-e49a4a601d7d.png
 │   │   │   └── ND_present_smile.yy
 │   │   ├── office_present
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   ├── f164bea7-86a9-41fe-9a9d-15bf5acf10f9.png
 │   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   │   │   └── f164bea7-86a9-41fe-9a9d-15bf5acf10f9
+│   │   │   │       └── ab6164ae-2867-406b-aa66-b2d769bf1c75.png
 │   │   │   └── office_present.yy
 │   │   ├── outside
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
@@ -361,6 +374,18 @@
 │   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
 │   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
 │   │   │   └── spr_chaos.yy
+│   │   ├── spr_demon_blue
+│   │   │   ├── 1f211d4b-e82d-4ee7-b5d2-0dc5748a2c74.png
+│   │   │   ├── layers
+│   │   │   │   └── 1f211d4b-e82d-4ee7-b5d2-0dc5748a2c74
+│   │   │   │       └── d8e7f7a2-3154-46ba-a043-aa240c1d543b.png
+│   │   │   └── spr_demon_blue.yy
+│   │   ├── spr_demon_red
+│   │   │   ├── 734b16a3-7a51-4c9b-a044-824e4235bd30.png
+│   │   │   ├── layers
+│   │   │   │   └── 734b16a3-7a51-4c9b-a044-824e4235bd30
+│   │   │   │       └── c1c36eb8-be4d-409b-8e1e-9f5fa8dbd985.png
+│   │   │   └── spr_demon_red.yy
 │   │   ├── spr_enemy
 │   │   │   ├── 0c44e8c4-06c7-40c8-a790-8e7284917a81.png
 │   │   │   ├── layers
@@ -540,4 +565,4 @@
 ├── KatherineNymshack.md
 └── KhouriFountain.txt
 
-192 directories, 349 files
+201 directories, 365 files
