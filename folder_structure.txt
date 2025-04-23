@@ -531,10 +531,13 @@
 │               ├── CPS298_Text_Based_Adventure_Game.yydebug
 │               ├── options.ini
 │               └── We are using the Struct in DialogStructManager now.md
+├── documents
+│   ├── SRS1.4.pdf
+│   └── SRS2.2.pdf
 ├── folder_structure.txt
 ├── IjeomaOnuosa.md
 ├── JamesByrnes.md
 ├── KatherineNymshack.md
 └── KhouriFountain.txt
 
-191 directories, 347 files
+192 directories, 349 files
