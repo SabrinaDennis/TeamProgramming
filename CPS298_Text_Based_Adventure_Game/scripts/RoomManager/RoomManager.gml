@@ -123,7 +123,7 @@ function populateAllObjects() {
     
     // Create menu with options if we have any
     if (array_length(options) > 0) {
-        Menu(room_width * 0.65, room_height * 0.75, options, -1, true);
+        Menu(global.optionMenuX,global.optionMenuY, options, -1, true);
     } else {
         log_warning("No menu options created for scene: " + sceneName);
     }
