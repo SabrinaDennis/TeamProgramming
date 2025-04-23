@@ -42,7 +42,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.0.190",
+    "IDEVersion":"2024.13.1.193",
   },
   "name":"CPS298_Text_Based_Adventure_Game",
   "resources":[
@@ -104,6 +104,8 @@
     {"id":{"name":"spr_black","path":"sprites/spr_black/spr_black.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_chaos","path":"sprites/spr_chaos/spr_chaos.yy",},},
+    {"id":{"name":"spr_demon_blue","path":"sprites/spr_demon_blue/spr_demon_blue.yy",},},
+    {"id":{"name":"spr_demon_red","path":"sprites/spr_demon_red/spr_demon_red.yy",},},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},},
     {"id":{"name":"spr_key","path":"sprites/spr_key/spr_key.yy",},},
     {"id":{"name":"spr_menuBox","path":"sprites/spr_menuBox/spr_menuBox.yy",},},
