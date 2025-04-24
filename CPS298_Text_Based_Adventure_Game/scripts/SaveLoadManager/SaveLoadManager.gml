@@ -166,5 +166,5 @@ function createSaveMenu(isSaving) {
     array_push(options, ["Back", -1, -1]);
     
     // Create the menu
-    Menu(room_width/2, room_height/2, options, menuTitle, true);
+    Menu(room_width/2, room_height/2, options, menuTitle, true, true);
 }

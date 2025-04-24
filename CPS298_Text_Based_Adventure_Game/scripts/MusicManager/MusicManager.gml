@@ -9,12 +9,8 @@ function playSong(_parameters){
 	audio_play_sound(song,priority,loop)
 }
 
-
- /* 
- * begins music on the menu, and initializes background audio bus.
- * @function menuMusic
- * @param {none}
- */
+/// @description begins music on the menu, and initializes background audio bus.
+/// @function menuMusic
 function menuMusic(){
 	global.musicBus = audio_bus_create();
 	global.musicEmitter = audio_emitter_create();

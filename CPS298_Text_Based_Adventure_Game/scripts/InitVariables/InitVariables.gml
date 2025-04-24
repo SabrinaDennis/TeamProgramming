@@ -4,4 +4,5 @@ function InitVariables(){
 	global.soundVolume = .05;
 	global.optionMenuX = room_width * 0.65;
 	global.optionMenuY = room_height * 0.75
+	global.isPaused = false;
 }

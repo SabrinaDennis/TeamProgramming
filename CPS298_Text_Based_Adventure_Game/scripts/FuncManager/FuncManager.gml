@@ -7,6 +7,7 @@ function FuncManager(funcName, parameters){
         params = [parameters]; // Convert to array if not already
     }
 }
+
 function theEnd(_parameters){
 	//show_message_async(_parameters);
 	Menu(global.optionMenuX,global.optionMenuY,[["Exit to Main Menu...", room_goto, 0]]);
