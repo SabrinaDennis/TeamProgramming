@@ -16,6 +16,12 @@ var firstStep = true;
  }
 
 
+if(isAnchored){
+	xPosition = room_width - widthFull ;
+	yPosition = global.textBoxHeight + margin;
+}
+
+
 // Is the mouse inside the boundaries
 if (point_in_rectangle(mouse_x,mouse_y,xPosition,yPosition,xPosition+width,yPosition+height)){
 	mouseOver = true;

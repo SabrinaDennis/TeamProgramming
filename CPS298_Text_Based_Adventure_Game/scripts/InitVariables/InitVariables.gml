@@ -19,3 +19,6 @@ global.isPaused = false;
 // Used for logging system (LogManager)
 global.warnings = array_create(0);
 global.errors = [];
+
+// Used for option menu positioning
+global.textBoxHeight = 0;

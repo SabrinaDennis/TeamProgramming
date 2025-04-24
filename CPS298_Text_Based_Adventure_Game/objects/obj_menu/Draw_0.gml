@@ -4,6 +4,11 @@ if(centered != false){
 	yPosition = y - (heightFull/2);
 }
 
+if(isAnchored){
+	xPosition = room_width - widthFull ;
+	yPosition = global.textBoxHeight + margin;
+}
+
 // Draw our box sprite (nine sliced)
 draw_sprite_stretched(spr_menuBox,0,xPosition-margin,yPosition-margin,widthFull,heightFull)
 

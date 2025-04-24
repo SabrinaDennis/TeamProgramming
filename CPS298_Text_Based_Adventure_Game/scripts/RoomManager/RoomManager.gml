@@ -121,13 +121,6 @@ function populateAllObjects() {
         }
     }
     
-    // Create menu with options if we have any
-    if (array_length(options) > 0) {
-        Menu(global.optionMenuX,global.optionMenuY, options, -1, true);
-    } else {
-        log_warning("No menu options created for scene: " + sceneName);
-    }
-    
     // Create the text display
     try {
 		var xposition = room_width * .28;
@@ -141,5 +134,13 @@ function populateAllObjects() {
         log_info("Created MainText for scene: " + sceneName);
     } catch (error) {
         log_error("Failed to create MainText: " + string(error));
+    }
+	
+	    
+    // Create menu with options if we have any
+    if (array_length(options) > 0) {
+        Menu(global.optionMenuX,global.optionMenuY, options, -1, true,,,true);
+    } else {
+        log_warning("No menu options created for scene: " + sceneName);
     }
 }
