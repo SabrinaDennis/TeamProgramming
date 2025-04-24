@@ -15,7 +15,7 @@ function menuMusic(){
 	global.musicBus = audio_bus_create();
 	global.musicEmitter = audio_emitter_create();
 	audio_emitter_bus(global.musicEmitter, global.musicBus);
-	audio_play_sound_on(global.musicEmitter, snd_menuMusic1, true,10,global.musicVolume);
+	audio_play_sound_on(global.musicEmitter, snd_menuMusic1, true,10,global.volume.music);
 }
 
 // Global variables to store specific effect IDs

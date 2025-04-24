@@ -21,7 +21,7 @@ thus how we can do dialog while making the gameplay adjustable
 /// @param {real} _description Title of the menu when it opens. (-1 for no text)
 /// @param {Bool} _centered Do you want the X/Y to be the center of the menu? (True/False) 
 
-function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu = false){
+function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu = false, _hoverPosition = 0){
 	with(instance_create_depth(_x,_y,-999,obj_menu)){
 		draw_set_color(c_white);
 		draw_set_font(PressStart2P);
@@ -35,6 +35,7 @@ function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu =
 		hovermarker = "* ";
 		centered = _centered;
 		isPauseMenu = _isPauseMenu;
+		hover = _hoverPosition;
 
 		// Border Margin around text for the sprite
 		margin = 8; 
@@ -71,19 +72,42 @@ function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu =
 
 // Pause Menu Related
 
-// Function to show options menu
-function showOptions() {
+
+// This is intended for the main menu, so the back function is different than the pause menu version.
+function showSettings(_hoverPosition = 0) {
     instance_destroy();
-    
-	var musicVolumeText = "Music Volume: " + string(round(global.musicVolume * 100)) + "%";
-	var soundVolumeText = "Sound Volume: " + string(round(global.soundVolume * 100)) + "%";
+
+	var musicVolumeText = "Music Volume: " + string(round(global.volume.music * 100)) + "%";
+	var soundVolumeText = "Sound Volume: " + string(round(global.volume.sound * 100)) + "%";
 	
     Menu(
         room_width/2,
         room_height/2,
         [
-            [musicVolumeText, adjustMusicVolume, [0.1]],
-            [soundVolumeText, adjustSoundVolume, [0.1]],
+            [musicVolumeText, adjustMusicVolume, [0.01], false],
+            [soundVolumeText, adjustSoundVolume, [0.01], false],
+            ["Back", room_goto, rm_MainMenu]
+        ],
+        "Options",
+        true,
+		true,
+		_hoverPosition
+    );
+}
+
+// Function to show options menu
+function showOptions() {
+    instance_destroy();
+
+	var musicVolumeText = "Music Volume: " + string(round(global.volume.music * 100)) + "%";
+	var soundVolumeText = "Sound Volume: " + string(round(global.volume.sound * 100)) + "%";
+	
+    Menu(
+        room_width/2,
+        room_height/2,
+        [
+            [musicVolumeText, adjustMusicVolume, [0.01], false],
+            [soundVolumeText, adjustSoundVolume, [0.01], false],
             ["Back", createPauseMenu, -1]
         ],
         "Options",
@@ -93,18 +117,10 @@ function showOptions() {
 }
 
 // Function to adjust music volume
-function adjustMusicVolume(_amount) {
-	var amount = _amount[0];
-    setMusicVolume(global.musicVolume + amount);
-    showOptions();
-}
+function adjustMusicVolume() {} // Don't add to these, just using them to check for a reference
 
 // Function to adjust sound volume
-function adjustSoundVolume(_amount) {
-	var amount = _amount[0];
-    setSoundVolume(global.soundVolume + amount);
-    showOptions();
-}
+function adjustSoundVolume() {} // Don't add to these, just using them to check for a reference
 
 // Function to create pause menu
 function createPauseMenu() {

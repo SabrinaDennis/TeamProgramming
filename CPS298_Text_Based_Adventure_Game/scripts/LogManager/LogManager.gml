@@ -1,14 +1,4 @@
-
-/// @function init_logging
-/// @description Initializes the logging system
-function init_logging() {
-    global.warnings = [];
-    global.errors = [];
-    // Debug mode is set in the IDE by choosing Debug/F6 :: global.debug_mode = true; // Set to false for release builds
-    
-    log_info("Logging system initialized");
-}
-
+log_info("Logging system initialized");
 
 /// @function log_info
 /// @description Logs informational messages

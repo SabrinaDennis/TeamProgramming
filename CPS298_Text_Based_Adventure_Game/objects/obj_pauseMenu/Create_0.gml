@@ -3,8 +3,8 @@ Menu(
     room_height/2,
     [
         ["Continue", instance_destroy, -1],
-        ["Save Game", createSaveMenu, true],
-        ["Load Game", createSaveMenu, false],
+        ["Save Game", createSaveMenu, [true,true]],
+        ["Load Game", createSaveMenu, [false,true]],
         ["Options", showOptions, -1],
         ["Quit to Main Menu", quitToMainMenu, -1]
     ],
