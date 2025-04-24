@@ -21,7 +21,7 @@ thus how we can do dialog while making the gameplay adjustable
 /// @param {real} _description Title of the menu when it opens. (-1 for no text)
 /// @param {Bool} _centered Do you want the X/Y to be the center of the menu? (True/False) 
 
-function Menu(_x,_y,_options,_description = -1,_centered = false){
+function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu = false){
 	with(instance_create_depth(_x,_y,-999,obj_menu)){
 		draw_set_color(c_white);
 		draw_set_font(PressStart2P);
@@ -34,6 +34,7 @@ function Menu(_x,_y,_options,_description = -1,_centered = false){
 		optionsCount = array_length(_options);
 		hovermarker = "* ";
 		centered = _centered;
+		isPauseMenu = _isPauseMenu;
 
 		// Border Margin around text for the sprite
 		margin = 8; 
@@ -66,3 +67,53 @@ function Menu(_x,_y,_options,_description = -1,_centered = false){
 		heightFull = height + margin * 2;
 	}
 }
+
+
+// Pause Menu Related
+
+// Function to show options menu
+function showOptions() {
+    instance_destroy();
+    
+	var musicVolumeText = "Music Volume: " + string(round(global.musicVolume * 100)) + "%";
+	var soundVolumeText = "Sound Volume: " + string(round(global.soundVolume * 100)) + "%";
+	
+    Menu(
+        room_width/2,
+        room_height/2,
+        [
+            [musicVolumeText, adjustMusicVolume, [0.1]],
+            [soundVolumeText, adjustSoundVolume, [0.1]],
+            ["Back", createPauseMenu, -1]
+        ],
+        "Options",
+        true,
+		true
+    );
+}
+
+// Function to adjust music volume
+function adjustMusicVolume(_amount) {
+	var amount = _amount[0];
+    setMusicVolume(global.musicVolume + amount);
+    showOptions();
+}
+
+// Function to adjust sound volume
+function adjustSoundVolume(_amount) {
+	var amount = _amount[0];
+    setSoundVolume(global.soundVolume + amount);
+    showOptions();
+}
+
+// Function to create pause menu
+function createPauseMenu() {
+    instance_create_depth(0, 0, -9999, obj_pauseMenu);
+}
+
+// Function to quit to main menu
+function quitToMainMenu() {
+	audio_stop_all();
+    room_goto(rm_MainMenu);
+}
+

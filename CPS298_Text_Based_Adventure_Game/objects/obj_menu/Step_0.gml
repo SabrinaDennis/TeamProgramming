@@ -1,5 +1,13 @@
+if(isPauseMenu == true){
+	global.isPaused = true;
+}
+
+if(isPauseMenu == false && global.isPaused) return;
+
+
 var mouseOver = false;
 var firstStep = true;
+
 
  if(centered != false){
 	xPosition = x - (widthFull/2);
@@ -47,16 +55,17 @@ if(keyboard_check_pressed(vk_up)){
 }
 
 // Function initialize to do nothing
-var _func = function (){;};
+var _func = function (){};
 // Make the functions actually work, allow the player to activate an option
 if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(vk_enter)){
+	
 	audio_play_sound(snd_menuSelect,0,false)
 	if(array_length(options[hover]) == 3){
 		_func = options[hover][1];
 		var _params = options[hover][2]
 		
 		// check for _func
-		if(_func!=-1){
+		if(_func != -1){
 			// check for parameters. if so, pass them.
 			if(_params != -1){
 				_func(_params);
@@ -67,4 +76,9 @@ if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(
 			instance_destroy();
 		}
 	}
+	
+	if(isPauseMenu){
+		global.isPaused = false;
+	}
+	
 }
