@@ -4,10 +4,9 @@ Menu(
 	[
 		 // option        function ref     parameters
 		["New Game",    room_goto_next,  -1],
-		["Load Game", createSaveMenu, false],
-        ["Settings", showOptions, -1],
+		["Load Game", createSaveMenu, [false,false]],
+        ["Settings", showSettings, -1]
 	],
 	"Text Adventures of Argathon",
 	true // Centered or not 
 )
-
