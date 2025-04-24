@@ -21,7 +21,7 @@ thus how we can do dialog while making the gameplay adjustable
 /// @param {real} _description Title of the menu when it opens. (-1 for no text)
 /// @param {Bool} _centered Do you want the X/Y to be the center of the menu? (True/False) 
 
-function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu = false, _hoverPosition = 0){
+function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu = false, _hoverPosition = 0,_isAnchored = false){
 	with(instance_create_depth(_x,_y,-999,obj_menu)){
 		draw_set_color(c_white);
 		draw_set_font(PressStart2P);
@@ -36,9 +36,10 @@ function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu =
 		centered = _centered;
 		isPauseMenu = _isPauseMenu;
 		hover = _hoverPosition;
-
+		isAnchored = _isAnchored;
+		
 		// Border Margin around text for the sprite
-		margin = 8; 
+		margin = 20; 
 
 		width = 1;
 		

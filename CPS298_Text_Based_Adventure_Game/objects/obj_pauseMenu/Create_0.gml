@@ -1,5 +1,5 @@
 Menu(
-    room_width/5,
+    room_width/2,
     room_height/2,
     [
         ["Continue", instance_destroy, -1],
