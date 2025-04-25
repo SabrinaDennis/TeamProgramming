@@ -20,11 +20,32 @@ function playerAddGold(_amount){
 /// @description deal damage to the player
 /// @param {real} _damageTaken Amount of damage to deal to the player.
 function playerTakeDamage(_damageTaken){
-	if(!global.player.health - _damageTaken >= 0){
+	// Validate player exists
+	if (!variable_global_exists("player")) {
+		show_debug_message("Error: Cannot damage player - global.player not initialized");
+		return;
+	}
+	
+	// Validate player health exists
+	if (!variable_struct_exists(global.player, "health")) {
+		show_debug_messgae("ERROR: Player missing health property");
+		return;
+	}
+	
+	// Validate damage amount
+	if (!is_real(_damageTaken)) {
+		show_debug_message("WARNING: Player damage amount is not a number, using 1 as default");
+		_damageTaken = 1;
+	}
+	
+	// Apply damage with health bounds check
+	if(!global.player.health - _damageTaken > 0){
 		global.player.health -= _damageTaken;
-	}else{
+	} else {
 		global.player.health = 0;
 		show_debug_message("Player Died!");
+		// Trigger death event
+		playerDeath(["You have been defeated in battle!"]);
 	}
 }
 

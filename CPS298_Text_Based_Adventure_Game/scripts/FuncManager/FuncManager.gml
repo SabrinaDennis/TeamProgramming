@@ -14,37 +14,69 @@ function theEnd(_parameters){
 }
 
 function fight(_parameters){
+	// Validate parameters
+	if (_parametes == undefined) {
+		show_debug_message("ERROR: fight() called with undefined parameters");
+		return;
+	}
+	
     // Get button that was clicked
     var btn = instance_nearest(mouse_x, mouse_y, obj_button);
-    
-    if (btn!=noone && variable_instance_exists(btn, "enemyData") && array_length(btn.enemyData) > 0) {
-        // Get first enemy from the data
-        var enemyData = btn.enemyData[0];
-        var enemyKeys = variable_struct_get_names(enemyData);
-                
-        if (array_length(enemyKeys) > 0) {
-            var enemyName = enemyKeys[0];
-            var enemyChance = variable_struct_get(enemyData, enemyName);
-                    
-            // Only spawn enemy if random chance succeeds
-            if (random(1) < enemyChance) {
-                show_debug_message("Starting battle with: " + enemyName);
-                createEnemy(enemyName, spr_enemy, 100);
-                createBattleInterface();
-            } else {
-                show_debug_message("Lucky! No enemy encountered.");
-                // Continue to next scene without battle
-                destroyAllObjects();
-                populateAllObjects();
-            }
-        }
-    } else {
-        show_debug_message("Fight function called but no enemies defined.");
-        // Just continue to next scene 
-			// Actually, at this point that just causes an infinite loop.
-	    // destroyAllObjects();
-        // populateAllObjects();
-    }
+	
+	if (btn != noon && variable_instance_exists(btn, "enemyData")) {
+		if (!is_array(btn.enemyData) || array_length(btn.enemyData) == 0) {
+			show_debug_message("ERROR: Enemy data array is empty or invalid");
+			destoryAllObjects();
+			populateAllObjects();
+			return;
+		}
+		
+		// Get first enemy from the data
+		var enemyData = btn.enemyData[0];
+		
+		if (!is_struct(enemyData)) {
+			show_debug_message("ERROR: Enemy data is not a valid struct");
+			destroyAllObjects();
+			populateAllObjects();
+			return;
+		}
+		
+		var enemyKeys = variable_struct_get_names(enemyData);
+		
+		if (array_length(enemyKeys) > 0) {
+			var enemyName = enemyKeys[0];
+			
+			if (!variable_struct_exists(enemyData,  enemyName)) {
+				show_debug_message("ERROR: Enemy name not found in enemy data");
+				destroyAllObjects();
+				populateAllObjects();
+				return;
+			}
+			
+			var enemyChance = variable_struct_get(enemyData, enemyName);
+			
+			// Only spawn enemy if random chance succeeds
+			if (random(1) < enemyChance) {
+				show_debug_message("Strating battle with: " + enemyName);
+				createEnemy(enemyName, spr_enemy, 100);
+				createBattleInterface();
+			} else {
+				show_debug_message("Lucky! No enemy encountered.");
+				// Continue to next scene without battle
+				destroyAllObjects();
+				populateAllObjects();
+			}
+		} else {
+			show_debug_message("WARNING: Enemy data exists but contains no enemy definitions");
+			destroyAllObjects();
+			populateAllObjects();
+		}
+	} else {
+		show_debug_message("Fight function called but no enemies defined.");
+		// Just continue to next scence
+		destroyAllObjects();
+		populateAllObjects();
+	}
 }
             
 ///@function lose(_parameters)
@@ -240,39 +272,55 @@ function createBattleInterface() {
 
 // Battle action functions
 function attackEnemy(damageAmount) {
+	// Validate parameters
+	if (!is_array(damageAmount) || array_length(damageAmount) < 1) {
+		show_debug_message("ERROR: Invalid damage amount parameters");
+		return;
+	}
+	// Check if enemy exists before applying damage
+	if (!variable_global_exists("enemy") || !is_struct(global.enemy)) {
+		show_debug_message("ERROR: Cannot attack - no valid enemy exists");
+		return;
+	}
+	
     // Play attack sound
-    playSound(snd_menuDown, 5);
+	if (audio_exists(snd_menuDown)) {
+		audio_play_sound(snd_menuDown, 5, false);
+	}
     
     // Apply damage to enemy
     enemyTakeDamage(damageAmount[0]);
     
     // Check if enemy is defeated
-    if (global.enemy.health <= 0) {
-        // Play victory sound/music
-        playSceneMusic("victory");
-        
-        // Enemy defeated
-        instance_destroy(obj_enemy);
-        show_debug_message("Enemy defeated!");
-        
-        // Return to dialog after a short delay
-        alarm[0] = game_get_speed(gamespeed_fps) * 2; // 2 second delay
-        // Create a temporary object to handle the delay
-        with (instance_create_depth(0, 0, 0, obj_battle_controller)) {
-            alarm[0] = game_get_speed(gamespeed_fps) * 2;
-        }
-    } else {
-        // Enemy attacks back (simple version)
-        var enemyDamage = irandom_range(5, 15);
-        playerTakeDamage(enemyDamage);
-        show_debug_message("Enemy attacks for " + string(enemyDamage) + " damage!");
-        
-        // Recreate battle interface
-        createBattleInterface();
-    }
+	if (global.enemy.health <= 0) {
+		// Enemy defeated
+		if (instance_exists(obj_enemy)) {
+			instance_destroy(obj_enemy);
+		}
+		show_debug_message("Enemy defeated!");
+		
+		// Return to dialog after a short delay
+		with (instance_create_depth(0, 0, 0, obj_battle_controller)) {
+			alarm[0] = game_get_speed(gamespeed_fps) * 2;
+		}
+	} else {
+		// Enemy attacks back (simple version)
+		var enemyDamage = irandom_range(5, 15);
+		playerTakeDamage(enemyDamage);
+		show_debug_message("Enemy attakcs for " + string(enemyDamage) + " damage!");
+		
+		// Recreate battle interface
+		createBattleInterface();
+	}
 }
 
 function defendAction() {
+	// Check if enemy exists before proceeding
+	if (!variable_global_exists("enemy") || !is_struct(global.enemy)) {
+		show_debug_message("ERROR: Cannot defend - no valid enemy exists");
+		return;
+	}
+	
     // Reduce incoming damage for next turn
     show_debug_message("Defending - reduced damage next turn");
     
@@ -291,10 +339,21 @@ function openInventory() {
 }
 
 function attemptFlee() {
+	// Check if enemy exists before proceeding
+	if (!variable_global_exists("enemy") || !is_struct(global.enemy)) {
+		show_debug_message("ERROR: Cannot flee - no valid enemy exists");
+		destroyAllObjects();
+		populateAllObjects();
+		return;
+	}
+	
     // 50% chance to flee
     if (random(1) < 0.5) {
         show_debug_message("Successfully fled from battle!");
-        instance_destroy(obj_enemy);
+		// Clean up enemy instance
+		if (instance_exists(obj_enemy)) {
+			instance_destroy(obj_enemy);
+		}
         
         // Return to dialog
         destroyAllObjects();
