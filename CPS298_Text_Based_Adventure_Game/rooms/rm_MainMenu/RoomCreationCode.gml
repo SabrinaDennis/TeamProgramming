@@ -1,3 +1,3 @@
 // Set up the main menu room
-createBackground(theater_past);
-menuMusic();
+createBackground(bg_theater_past);
+mainMenuMusic();

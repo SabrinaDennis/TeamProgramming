@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_menuMusic1",
+  "%Name":"alien_smoke",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":98.28,
-  "name":"snd_menuMusic1",
+  "duration":97.20163,
+  "name":"alien_smoke",
   "parent":{
-    "name":"menu",
-    "path":"folders/Sounds/music/menu.yy",
+    "name":"Nice",
+    "path":"folders/Sounds/music/Nice.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_menuMusic1.mp3",
-  "type":0,
+  "soundFile":"alien_smoke.mp3",
+  "type":1,
   "volume":1.0,
 }

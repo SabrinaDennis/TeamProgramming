@@ -11,13 +11,13 @@ function destroyAllObjects() {
 function createBackground(_bgSprite) {
     if (!validate_not_undefined(_bgSprite, "_bgSprite")) {
         // Fallback to error sprite
-        _bgSprite = spr_BG_error;
+        _bgSprite = bg_spr_BG_error;
         log_warning("Using fallback error sprite for background");
     }
     
     if (!sprite_exists(_bgSprite)) {
         log_warning("Sprite does not exist, using fallback error sprite");
-        _bgSprite = spr_BG_error;
+        _bgSprite = bg_spr_BG_error;
     }
     
     global.backgroundLayer = layer_create(2, "bg");
@@ -70,7 +70,7 @@ function populateAllObjects() {
         _background = scene.background;
     } else {
         log_warning("No background defined for scene " + string(global.currentIndex) + ", using error sprite");
-        _background = spr_BG_error;
+        _background = bg_spr_BG_error;
     }
     
     try {

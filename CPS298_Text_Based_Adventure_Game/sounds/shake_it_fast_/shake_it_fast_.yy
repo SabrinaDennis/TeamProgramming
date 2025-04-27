@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_menuMusic1",
+  "%Name":"shake_it_fast_",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":98.28,
-  "name":"snd_menuMusic1",
+  "duration":82.27202,
+  "name":"shake_it_fast_",
   "parent":{
-    "name":"menu",
-    "path":"folders/Sounds/music/menu.yy",
+    "name":"Triumphant",
+    "path":"folders/Sounds/music/Triumphant.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_menuMusic1.mp3",
+  "soundFile":"shake_it_fast_.mp3",
   "type":0,
   "volume":1.0,
 }

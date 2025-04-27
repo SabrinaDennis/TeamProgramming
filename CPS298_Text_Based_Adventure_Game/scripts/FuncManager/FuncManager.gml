@@ -10,7 +10,12 @@ function FuncManager(funcName, parameters){
 
 function theEnd(_parameters){
 	//show_message_async(_parameters);
+	
+	textBox(_parameters[0], room_width/2.0, room_height/2.0)
+	audio_stop_all()
+	audio_play_sound_on(global.musicEmitter, _parameters[1], true,10,global.volume.music);
 	Menu(global.optionMenuX,global.optionMenuY,[["Exit to Main Menu...", room_goto, 0]]);
+	
 }
 
 function fight(_parameters){
@@ -321,8 +326,6 @@ function addFriend(_parameters){
 	} else {
 		friend="unknown friend";
 	}
-	
-
 	array_push(global.player.friendlist, friend);
 	show_debug_message(friend + " is now a friend");
 }

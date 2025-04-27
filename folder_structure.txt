@@ -223,6 +223,45 @@
 │   │       ├── ValidationUtility.gml
 │   │       └── ValidationUtility.yy
 │   ├── sounds
+│   │   ├── _8_bit_density
+│   │   │   ├── _8_bit_density.mp3
+│   │   │   └── _8_bit_density.yy
+│   │   ├── alien_smoke
+│   │   │   ├── alien_smoke.mp3
+│   │   │   └── alien_smoke.yy
+│   │   ├── blowing_up_the_town
+│   │   │   ├── blowing_up_the_town.mp3
+│   │   │   └── blowing_up_the_town.yy
+│   │   ├── call_me_when_you_need_it
+│   │   │   ├── call_me_when_you_need_it.mp3
+│   │   │   └── call_me_when_you_need_it.yy
+│   │   ├── CONGRATS
+│   │   │   ├── CONGRATS.mp3
+│   │   │   └── CONGRATS.yy
+│   │   ├── Dark_space
+│   │   │   ├── Dark_space.mp3
+│   │   │   └── Dark_space.yy
+│   │   ├── jumped_out_the_clown_house
+│   │   │   ├── jumped_out_the_clown_house.mp3
+│   │   │   └── jumped_out_the_clown_house.yy
+│   │   ├── my_love
+│   │   │   ├── my_love.mp3
+│   │   │   └── my_love.yy
+│   │   ├── rainbow_road
+│   │   │   ├── rainbow_road.mp3
+│   │   │   └── rainbow_road.yy
+│   │   ├── rock_world
+│   │   │   ├── rock_world.mp3
+│   │   │   └── rock_world.yy
+│   │   ├── shake_it_fast_
+│   │   │   ├── shake_it_fast_.mp3
+│   │   │   └── shake_it_fast_.yy
+│   │   ├── Sky_falling
+│   │   │   ├── Sky_falling.mp3
+│   │   │   └── Sky_falling.yy
+│   │   ├── snd_Future_Bikini_Bottom
+│   │   │   ├── snd_Future_Bikini_Bottom.mp3
+│   │   │   └── snd_Future_Bikini_Bottom.yy
 │   │   ├── snd_menuDown
 │   │   │   ├── snd_menuDown.mp3
 │   │   │   └── snd_menuDown.yy
@@ -232,28 +271,101 @@
 │   │   ├── snd_menuSelect
 │   │   │   ├── snd_menuSelect.mp3
 │   │   │   └── snd_menuSelect.yy
-│   │   └── snd_menuUp
-│   │       ├── snd_menuUp.mp3
-│   │       └── snd_menuUp.yy
+│   │   ├── snd_MENU_SONG__2
+│   │   │   ├── snd_MENU_SONG__2.mp3
+│   │   │   └── snd_MENU_SONG__2.yy
+│   │   ├── snd_MENU_SONG__3
+│   │   │   ├── snd_MENU_SONG__3.mp3
+│   │   │   └── snd_MENU_SONG__3.yy
+│   │   ├── snd_menuUp
+│   │   │   ├── jumped_out_the_clown_house.mp3
+│   │   │   ├── snd_menuUp.mp3
+│   │   │   └── snd_menuUp.yy
+│   │   ├── snd_where_are_you_baby
+│   │   │   ├── snd_where_are_you_baby.mp3
+│   │   │   └── snd_where_are_you_baby.yy
+│   │   ├── SPEAKING_IN_TOUNGE
+│   │   │   ├── SPEAKING_IN_TOUNGE.mp3
+│   │   │   └── SPEAKING_IN_TOUNGE.yy
+│   │   ├── Where_am_i
+│   │   │   ├── Where_am_i.mp3
+│   │   │   └── Where_am_i.yy
+│   │   └── where_she_at
+│   │       ├── where_she_at.mp3
+│   │       └── where_she_at.yy
 │   ├── sprites
-│   │   ├── elevator_present
+│   │   ├── bg_elevator_present
 │   │   │   ├── 1386aa93-225f-41fa-a3fc-df3847ac0558.png
-│   │   │   ├── elevator_present.yy
+│   │   │   ├── bg_elevator_present.yy
 │   │   │   └── layers
 │   │   │       └── 1386aa93-225f-41fa-a3fc-df3847ac0558
 │   │   │           └── 61ba35b9-bbf3-4e57-a299-1266452fc6e7.png
-│   │   ├── house_past
+│   │   ├── bg_house_past
+│   │   │   ├── bg_house_past.yy
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── house_past.yy
 │   │   │   └── layers
 │   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
 │   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   ├── house_present
+│   │   ├── bg_house_present
+│   │   │   ├── 36e0356e-c64f-4fea-acf2-fe096119bd34.png
+│   │   │   ├── bg_house_present.yy
+│   │   │   └── layers
+│   │   │       └── 36e0356e-c64f-4fea-acf2-fe096119bd34
+│   │   │           └── 8a19ea90-12f2-416c-aa32-648e6531af1e.png
+│   │   ├── bg_office_present
+│   │   │   ├── bg_office_present.yy
+│   │   │   ├── f164bea7-86a9-41fe-9a9d-15bf5acf10f9.png
+│   │   │   └── layers
+│   │   │       └── f164bea7-86a9-41fe-9a9d-15bf5acf10f9
+│   │   │           └── ab6164ae-2867-406b-aa66-b2d769bf1c75.png
+│   │   ├── bg_outside
+│   │   │   ├── bg_outside.yy
 │   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── house_present.yy
 │   │   │   └── layers
 │   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
 │   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   ├── bg_present_street
+│   │   │   ├── b8e0a9cd-86f3-4b0e-ae8b-81b073aa7cd4.png
+│   │   │   ├── bg_present_street.yy
+│   │   │   └── layers
+│   │   │       └── b8e0a9cd-86f3-4b0e-ae8b-81b073aa7cd4
+│   │   │           └── e7ed513f-5187-4fe6-a98c-3847776ac0b9.png
+│   │   ├── bg_spr_background
+│   │   │   ├── ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
+│   │   │   ├── bg_spr_background.yy
+│   │   │   └── layers
+│   │   │       └── ace3d77e-c106-47d5-ad27-2a69b0b56be6
+│   │   │           └── 458c13b6-4fb1-406c-b609-28c2aa3a6853.png
+│   │   ├── bg_spr_BG_error
+│   │   │   ├── bg_spr_BG_error.yy
+│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
+│   │   │   └── layers
+│   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
+│   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+│   │   ├── bg_spr_black
+│   │   │   ├── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9.png
+│   │   │   ├── bg_spr_black.yy
+│   │   │   └── layers
+│   │   │       └── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9
+│   │   │           └── 4610fec8-0919-4806-b68b-91b06eec5a7c.png
+│   │   ├── bg_spr_chaos
+│   │   │   ├── 12dc5ae6-8a0e-4648-af79-f33a5c9d2631.png
+│   │   │   ├── bg_spr_chaos.yy
+│   │   │   └── layers
+│   │   │       └── 12dc5ae6-8a0e-4648-af79-f33a5c9d2631
+│   │   │           └── 90750949-1c44-4f1f-84ee-cc0687c2d44d.png
+│   │   ├── bg_street_past
+│   │   │   ├── 3c942277-170d-44a9-be89-59dabae84ec5.png
+│   │   │   ├── bg_street_past.yy
+│   │   │   └── layers
+│   │   │       └── 3c942277-170d-44a9-be89-59dabae84ec5
+│   │   │           └── 5ad62bea-1454-472a-a851-bc4e8accba19.png
+│   │   ├── bg_theater_past
+│   │   │   ├── bg_theater_past.yy
+│   │   │   ├── e5d762a1-6679-4d47-afaa-d16e611efed4.png
+│   │   │   └── layers
+│   │   │       └── e5d762a1-6679-4d47-afaa-d16e611efed4
+│   │   │           └── 6c38f19e-a607-4a18-90a7-5f8f307e280c.png
 │   │   ├── MT_future_neutral
 │   │   │   ├── 359d18c8-242f-4367-98a8-678d3a53d465.png
 │   │   │   ├── layers
@@ -326,54 +438,12 @@
 │   │   │   │   └── d775aed5-d1f0-4a78-a1ea-92048ef8a7c9
 │   │   │   │       └── 95f0d14a-b588-475a-9572-e49a4a601d7d.png
 │   │   │   └── ND_present_smile.yy
-│   │   ├── office_present
-│   │   │   ├── f164bea7-86a9-41fe-9a9d-15bf5acf10f9.png
-│   │   │   ├── layers
-│   │   │   │   └── f164bea7-86a9-41fe-9a9d-15bf5acf10f9
-│   │   │   │       └── ab6164ae-2867-406b-aa66-b2d769bf1c75.png
-│   │   │   └── office_present.yy
-│   │   ├── outside
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── outside.yy
-│   │   ├── present_street
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── present_street.yy
-│   │   ├── spr_Background
-│   │   │   ├── ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
-│   │   │   ├── layers
-│   │   │   │   └── ace3d77e-c106-47d5-ad27-2a69b0b56be6
-│   │   │   │       └── 458c13b6-4fb1-406c-b609-28c2aa3a6853.png
-│   │   │   └── spr_background.yy
-│   │   ├── spr_BG_error
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── spr_BG_error.yy
-│   │   ├── spr_black
-│   │   │   ├── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9.png
-│   │   │   ├── layers
-│   │   │   │   └── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9
-│   │   │   │       └── 4610fec8-0919-4806-b68b-91b06eec5a7c.png
-│   │   │   └── spr_black.yy
 │   │   ├── spr_Button
 │   │   │   ├── 1c678b0e-d0f2-4a9b-ac53-bff98c365034.png
 │   │   │   ├── layers
 │   │   │   │   └── 1c678b0e-d0f2-4a9b-ac53-bff98c365034
 │   │   │   │       └── 5f66077f-d78e-46a0-9804-599fba16ca20.png
 │   │   │   └── spr_button.yy
-│   │   ├── spr_chaos
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── spr_chaos.yy
 │   │   ├── spr_demon_blue
 │   │   │   ├── 1f211d4b-e82d-4ee7-b5d2-0dc5748a2c74.png
 │   │   │   ├── layers
@@ -404,18 +474,6 @@
 │   │   │   │   └── 38dd2a43-c6dc-46fa-a525-374cb5f6738d
 │   │   │   │       └── efc5e6fe-027f-4dec-a199-71e9098bf7bd.png
 │   │   │   └── spr_menuBox.yy
-│   │   ├── street_past
-│   │   │   ├── 3c942277-170d-44a9-be89-59dabae84ec5.png
-│   │   │   ├── layers
-│   │   │   │   └── 3c942277-170d-44a9-be89-59dabae84ec5
-│   │   │   │       └── 5ad62bea-1454-472a-a851-bc4e8accba19.png
-│   │   │   └── street_past.yy
-│   │   ├── theater_past
-│   │   │   ├── e5d762a1-6679-4d47-afaa-d16e611efed4.png
-│   │   │   ├── layers
-│   │   │   │   └── e5d762a1-6679-4d47-afaa-d16e611efed4
-│   │   │   │       └── 6c38f19e-a607-4a18-90a7-5f8f307e280c.png
-│   │   │   └── theater_past.yy
 │   │   ├── WB_future_neutral
 │   │   │   ├── 9405df99-5b2c-474c-994c-60e28396f504.png
 │   │   │   ├── layers
@@ -556,6 +614,12 @@
 │               ├── CPS298_Text_Based_Adventure_Game.yydebug
 │               ├── options.ini
 │               └── We are using the Struct in DialogStructManager now.md
+├── diagrams
+│   ├── class-diagram_text_adventure_game.png
+│   ├── component-diagram_game_architecture.png
+│   ├── sequence-diagram_game_story_navigation.png
+│   ├── state-diagram_game-flow.png
+│   └── use-case-diagram_text_adventure_game.png
 ├── documents
 │   ├── SRS1.4.pdf
 │   └── SRS2.2.pdf
@@ -565,4 +629,4 @@
 ├── KatherineNymshack.md
 └── KhouriFountain.txt
 
-201 directories, 365 files
+221 directories, 409 files
