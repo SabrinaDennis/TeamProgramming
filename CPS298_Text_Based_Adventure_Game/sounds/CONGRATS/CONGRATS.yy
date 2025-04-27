@@ -1,6 +1,6 @@
 {
   "$GMSound":"",
-  "%Name":"snd_menuMusic1",
+  "%Name":"CONGRATS",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -9,17 +9,17 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":98.28,
-  "name":"snd_menuMusic1",
+  "duration":102.12,
+  "name":"CONGRATS",
   "parent":{
-    "name":"menu",
-    "path":"folders/Sounds/music/menu.yy",
+    "name":"Triumphant",
+    "path":"folders/Sounds/music/Triumphant.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_menuMusic1.mp3",
+  "soundFile":"CONGRATS.mp3",
   "type":0,
   "volume":1.0,
 }

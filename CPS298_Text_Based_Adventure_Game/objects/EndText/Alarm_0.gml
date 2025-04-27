@@ -1,0 +1,1 @@
+Menu(global.optionMenuX,global.optionMenuY,[["Exit to Main Menu...", room_goto, 0]]);

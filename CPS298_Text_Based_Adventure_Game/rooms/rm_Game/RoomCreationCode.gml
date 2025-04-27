@@ -2,7 +2,7 @@
 loadDialogData();
 
 global.currentIndex = 0;
-createBackground(street_past);
+createBackground(bg_spr_background);
 
 // Room Manager Script
 populateAllObjects();
