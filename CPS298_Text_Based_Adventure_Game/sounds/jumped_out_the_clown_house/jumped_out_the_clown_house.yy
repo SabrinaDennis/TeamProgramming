@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":1,
   "conversionMode":0,
-  "duration":-1.0,
+  "duration":132.96327,
   "name":"jumped_out_the_clown_house",
   "parent":{
     "name":"Nice",

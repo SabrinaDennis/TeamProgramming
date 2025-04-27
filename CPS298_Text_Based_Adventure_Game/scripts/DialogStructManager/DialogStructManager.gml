@@ -9,7 +9,7 @@ function DialogStructManager(){
 				background: bg_spr_background,
 				sceneText: "...hm?\n...\n...",
 				options: [
-					["...", goToSceneIndex, [42]],
+					["...", goToSceneIndex, [23]], // 42
 					]
 				},
 			{
@@ -17,6 +17,7 @@ function DialogStructManager(){
 				sceneName: "Daily.  You know, for the anti-oxidants.",
 				sceneText: "'You are uncooperative, I see.  Well.  I hope we have better luck soon.  Whatever soon is these days.'\nShe shows you the door.\nRun Away!",
 				background: bg_house_past,
+				character: MT_past_neutral,
 				options: [
 					["She shows you the door.", goToSceneIndex, [11]],
 					["Run Away!", goToSceneIndex, [100]],
@@ -27,6 +28,7 @@ function DialogStructManager(){
 				sceneName: "...home of a woman who knows...",
 				sceneText: "...way more than I do...",
 				background: bg_house_past,
+				character: MT_past_neutral,
 				options: [
 					["...way more than I do...", goToSceneIndex, [39]],
 					]
@@ -36,6 +38,7 @@ function DialogStructManager(){
 				sceneName: "I am ready.",
 				sceneText: "'I know.  Just remember, opening can feel like breaking.'\nREDD steps back and Drait NIKI introduces herself, terse but not unfriendly:\n'Will you take responsibility for what you have to do?'\nI will\nI... What?",
 				background: bg_house_past,
+				characters: WB_future_smile,
 				options: [
 					["I will", goToSceneIndex, [75]],
 					["I... What?", goToSceneIndex, [13]],
@@ -45,14 +48,15 @@ function DialogStructManager(){
 				sceneIndex: 4,
 				sceneName: "Take the stairs",
 				sceneText: "You... take the... stairs?  You're in an incredible hurry, so you breeze past the opening elevator doors to take... the stairs.  You make it a floor and a half before everyone (like Everyone everyone) dies in a Temporal Storm.",
-				bakcground: bg_office_present,
+				background: bg_office_present,
+				onload:{func: audio_stop_all, params: []},
 				options: [
 					["Temporal Storm", goToSceneIndex, [23]],
 					]
 				},
 			{
 				sceneIndex: 5,
-				sceneName: "here if you lose",
+				sceneName: "The long and winding spiral down",
 				sceneText: "It was never going to have been enough.  This is the direction the world was fated toward, always.\nLet that be a comfort as time sorts and arranges your molecules by size.",
 				background: bg_spr_black,
 				onLoad: {func: theEnd , params: ["There is tragedy.  There is inevitability.  There is nothing for you here.  There will be no rewards.  There is no time.", SPEAKING_IN_TOUNGE]},
@@ -74,7 +78,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 7,
 				sceneName: "Take the elevator",
-				background: bg_office_present, onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
+				background: bg_office_present,
+				onLoad:{func: applyElevatorEffectsToBus,params:(global.musicBus)},
 				sceneText: "Press B",
 				options: [
 					["Press B", goToSceneIndex, [76]],
@@ -227,7 +232,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 23,
 				sceneName: "Temporal Storm",
-				background: bg_spr_chaos, onLoad: {func: theEnd, params: ["tragic"]},
+				background: bg_spr_chaos,
+				onLoad: {func: theEnd, params: ["There's nothing left to mourn.", Sky_falling]},
 				sceneText: "Reality seems to fold in on itself around you.\nYou try to scream but no sound emerges. Your body feels simultaneously compressed and stretched, as if every cell is suddenly being pulled in every direction.\nThrough the haze of agony, you catch glimpses... London streets, your office, places you've never seen... all superimposed like multiple exposures on a single photograph.\nWith terrible clarity, you realize you're being pulled apart across time itself.",
 				options: [
 					]
@@ -822,6 +828,7 @@ function DialogStructManager(){
 				sceneName: "Ask questions",
 				character: WB_past_smile, background: bg_house_past,
 				sceneText: "You ask your ersatz host five questions at the same time, but all that surfaces is a hoarsely muttered 'gruuhhhmuhhh.' --'Here, strange being.  You look parched.' --The owner of the smirking voice hands you a glass of water and you gulp it down with as much dignity as you can muster.  It's not much.\n'Where am I?'\n'Who are you?'",
+				onLoad: {func: playSong, params: [alien_smoke, 0, true]},
 				options: [
 					["'Where am I?'", goToSceneIndex, [12]],
 					["'Who are you?'", goToSceneIndex, [44]],
@@ -830,7 +837,9 @@ function DialogStructManager(){
 			{
 				sceneIndex: 87,
 				sceneName: "offer the banana",
-				sceneText: "They laugh.  You laugh.  All in great fun and an opportunity.  You're invited to stay, and embarrass yourself hilariously filling in for one of their troupe gone missing that day.  After, you just stand back to watch the evening unfold.\nMeet the Dramatis Personea",
+				background: bg_theater_past, 
+				onLoad: {func: playSong, params: [CONGRATS, 0, true]},
+				sceneText: "They laugh.  You laugh.  All in great fun and an opportunity.  You're invited to stay, and embarrass yourself hilariously filling in for one of their troupe gone missing that day.  After, you just stand back to watch the evening unfold.",
 				options: [
 					["Meet the Dramatis Personea", goToSceneIndex, [83]],
 					]
@@ -850,7 +859,7 @@ function DialogStructManager(){
 				sceneIndex: 89,
 				sceneName: "Pass out",
 				background: bg_spr_background, find: "key",
-				sceneText: "Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you find yourself face to face with mischevious and adventurous listen for  the echo of laughter,\ncareful and curious think.  Think!  THINK., or\nearnest and wise follow intelligent eyes",
+				sceneText: "Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you",
 				options: [
 					["listen for  the echo of laughter", goToSceneIndex, [8]],
 					["think.  Think!  THINK.", goToSceneIndex, [85]],
@@ -860,7 +869,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 90,
 				sceneName: "Try to use the key to return",
-				sceneText: "You focus on the key, willing yourself to return to some recognizable reality.\nSomething goes wrong.  Very wrong.\nYour friend screams in surprised anguish as each measurement of them is pulled into the future and/or past according to unknowable vortices.\nYou brace yourself in the Temporal Storm",
+				background: bg_spr_black,
+				sceneText: "You focus on the key, willing yourself to return to some recognizable reality.\nSomething goes wrong.  Very wrong.\nYour friend screams in surprised anguish as each measurement of them is pulled into the future and/or past according to unknowable vortices.\nYou brace yourself in the...",
 				options: [
 					["Temporal Storm", goToSceneIndex, [23]],
 					]
@@ -898,7 +908,9 @@ function DialogStructManager(){
 			{
 				sceneIndex: 94,
 				sceneName: "Enter the strange door",
+				background: bg_spr_future,
 				sceneText: "You are introduced to two more souls who also seem to know much more than you do.  There's not much to do but launch into an explanation of your current situation.  Part way into your description of your morning, reality suddenly starts to sort of... fold in... toward itself.  The world seems to tilt dangerously while holding completely still.  As the clamor of eternity rises in your ears, a friend bumps you at an odd angle.  A very odd angle.  Somehow orthogonal to existence, and you feel yourself unstick and return to\nThe Beginning\nif friends with all Get back to work.",
+				character: spr_all_three,
 				options: [
 					["The Beginning", goToSceneIndex, [0]],
 					["Get back to work.", goToSceneIndex, [18]],
@@ -908,6 +920,8 @@ function DialogStructManager(){
 				sceneIndex: 95,
 				sceneName: "Think it over before answering",
 				sceneText: "She grins at your hesitation and offers you the small trinket in her hand.\n'Introspection is important.  But, you're ready.  Take our strength and stop him.'",
+				character: MT_future_smile,
+				background: bg_spr_future,
 				options: [
 					["stop him.'", goToSceneIndex, [28]],
 					]
@@ -956,6 +970,7 @@ function DialogStructManager(){
 				sceneName: "Run Away!",
 				background: bg_street_past, onLoad: {func: theEnd, params: ["sad"]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
+
 				options: [
 					]
 				},
@@ -973,6 +988,9 @@ function DialogStructManager(){
 				sceneIndex: 102,
 				sceneName: "Put on a few layers of wool and follow him to adventure",
 				sceneText: "Your new ... friend? introduces himself as Redbrook, called William.  He brings you to a theater where you are introduced with much more dignity and ettiquete to a band of actors. \nMeet the Dramatis Personea",
+				background: bg_theater_past,
+				onLoad: {func: playSong, params: [CONGRATS, 0, true]},
+				character: WB_past_smile,
 				options: [
 					["Meet the Dramatis Personea", goToSceneIndex, [83]],
 					]
@@ -980,7 +998,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 103,
 				sceneName: "Run Away from the Office!",
-				background: bg_present_street, onLoad: {func: theEnd, params: ["sad"]},
+				background: bg_present_street, 
+				onLoad: {func: theEnd, params: ["sad"]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A pickup truck attempts to avoid your sudden appearance, but swerving only serves to topple the bed's contents on top of you at speed.  You are crushed by several bicycles, a snow shovel, two cinder blocks, and a broken down washing machine.  The truck is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 				options: [
 					]

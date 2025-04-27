@@ -54,6 +54,7 @@
   "name":"CPS298_Text_Based_Adventure_Game",
   "resources":[
     {"id":{"name":"PressStart2P","path":"fonts/PressStart2P/PressStart2P.yy",},},
+    {"id":{"name":"EndText","path":"objects/EndText/EndText.yy",},},
     {"id":{"name":"ExampleMenu","path":"objects/ExampleMenu/ExampleMenu.yy",},},
     {"id":{"name":"MainText","path":"objects/MainText/MainText.yy",},},
     {"id":{"name":"obj_battle_controller","path":"objects/obj_battle_controller/obj_battle_controller.yy",},},
@@ -117,6 +118,7 @@
     {"id":{"name":"bg_spr_BG_error","path":"sprites/bg_spr_BG_error/bg_spr_BG_error.yy",},},
     {"id":{"name":"bg_spr_black","path":"sprites/bg_spr_black/bg_spr_black.yy",},},
     {"id":{"name":"bg_spr_chaos","path":"sprites/bg_spr_chaos/bg_spr_chaos.yy",},},
+    {"id":{"name":"bg_spr_future","path":"sprites/bg_spr_future/bg_spr_future.yy",},},
     {"id":{"name":"bg_street_past","path":"sprites/bg_street_past/bg_street_past.yy",},},
     {"id":{"name":"bg_theater_past","path":"sprites/bg_theater_past/bg_theater_past.yy",},},
     {"id":{"name":"MT_future_neutral","path":"sprites/MT_future_neutral/MT_future_neutral.yy",},},
@@ -131,6 +133,7 @@
     {"id":{"name":"ND_past_smile","path":"sprites/ND_past_smile/ND_past_smile.yy",},},
     {"id":{"name":"ND_present_neutral","path":"sprites/ND_present_neutral/ND_present_neutral.yy",},},
     {"id":{"name":"ND_present_smile","path":"sprites/ND_present_smile/ND_present_smile.yy",},},
+    {"id":{"name":"spr_all_three","path":"sprites/spr_all_three/spr_all_three.yy",},},
     {"id":{"name":"spr_button","path":"sprites/spr_button/spr_button.yy",},},
     {"id":{"name":"spr_demon_blue","path":"sprites/spr_demon_blue/spr_demon_blue.yy",},},
     {"id":{"name":"spr_demon_red","path":"sprites/spr_demon_red/spr_demon_red.yy",},},

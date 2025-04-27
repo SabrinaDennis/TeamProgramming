@@ -1,0 +1,1 @@
+playSong([snd_menuMusic1, 0, true]);

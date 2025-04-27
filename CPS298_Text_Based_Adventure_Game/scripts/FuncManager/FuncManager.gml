@@ -8,14 +8,14 @@ function FuncManager(funcName, parameters){
     }
 }
 
+/// @description Function to handle the end of the game
+/// @param {array} _parameters - Array containing the parameters for the end function [string, sound]
+/// @param {string} _parameters[0] - Text to display
+/// @param {string} _parameters[1] - Sound to play
 function theEnd(_parameters){
-	//show_message_async(_parameters);
-	
-	textBox(_parameters[0], room_width/2.0, room_height/2.0)
-	audio_stop_all()
+	instance_create_depth(0,0, 1, EndText, {text: _parameters[0]});
+    audio_stop_all()
 	audio_play_sound_on(global.musicEmitter, _parameters[1], true,10,global.volume.music);
-	Menu(global.optionMenuX,global.optionMenuY,[["Exit to Main Menu...", room_goto, 0]]);
-	
 }
 
 function fight(_parameters){
