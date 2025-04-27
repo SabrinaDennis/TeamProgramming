@@ -8,14 +8,15 @@ function DialogStructManager(){
 				sceneName: "The Beginning",
 				background: bg_spr_background,
 				sceneText: "...hm?\n...\n...",
+				requires: ["banana"],
 				options: [
-					["...", goToSceneIndex, [23]], // 42
+					["...", goToSceneIndex, [42]],
 					]
 				},
 			{
 				sceneIndex: 1,
 				sceneName: "Daily.  You know, for the anti-oxidants.",
-				sceneText: "'You are uncooperative, I see.  Well.  I hope we have better luck soon.  Whatever soon is these days.'\nShe shows you the door.\nRun Away!",
+				sceneText: "'You are uncooperative, I see.  Well.  I hope we have better luck soon.  Whatever soon is these days.'",
 				background: bg_house_past,
 				character: MT_past_neutral,
 				options: [
@@ -36,7 +37,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 3,
 				sceneName: "I am ready.",
-				sceneText: "'I know.  Just remember, opening can feel like breaking.'\nREDD steps back and Drait NIKI introduces herself, terse but not unfriendly:\n'Will you take responsibility for what you have to do?'\nI will\nI... What?",
+				sceneText: "'I know.  Just remember, opening can feel like breaking.'\nREDD steps back and Drait NIKI introduces herself, terse but not unfriendly:\n'Will you take responsibility for what you have to do?'",
 				background: bg_house_past,
 				characters: WB_future_smile,
 				options: [
@@ -47,7 +48,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 4,
 				sceneName: "Take the stairs",
-				sceneText: "You... take the... stairs?  You're in an incredible hurry, so you breeze past the opening elevator doors to take... the stairs.  You make it a floor and a half before everyone (like Everyone everyone) dies in a Temporal Storm.",
+				sceneText: "You... take the... stairs?  You're in an incredible hurry, so you breeze past the opening elevator doors to take... the stairs.  You make it a floor and a half before everyone (like Everyone everyone) dies in a",
 				background: bg_office_present,
 				onload:{func: audio_stop_all, params: []},
 				options: [
@@ -91,7 +92,7 @@ function DialogStructManager(){
 				background: bg_house_past, 
 				character: WB_past_smile, 
 				onLoad: {func: addFriend, params: ["William"]},
-				sceneText: "'And who are you?'\nA smirking voice opens your eyes, and you're faced with a stranger.\nThe smell of an unwashed world attacks your nostrils.\nYou look around and realize, not only is the person you're looking at a complete unknown,  but your very surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!\nAsk questions\nRun Away!",
+				sceneText: "'And who are you?'\nA smirking voice opens your eyes, and you're faced with a stranger.\nThe smell of an unwashed world attacks your nostrils.\nYou look around and realize, not only is the person you're looking at a complete unknown,  but your very surroundings are unfamiliar. Is this some kind of film set? Wooden fixtures decorate a cozy, homey, --WAIT! what the heck is going on!",
 				options: [
 					["Ask questions", goToSceneIndex, [86]],
 					["Run Away!", goToSceneIndex, [100]],
@@ -101,7 +102,7 @@ function DialogStructManager(){
 				sceneIndex: 9,
 				sceneName: "Ask about the key",
 				character: WB_past_neutral, background: bg_house_past,
-				sceneText: "'Ah, the key!' William brightens and snags it from your hand with nimble fingers before you can protest. 'One of many such objects that bend certain rules.'\nHe flips it casually, catching it while looking you dead in the eye. 'Found it, did you? Or perhaps it found you.'\nHe returns it with unexpected gentleness. 'These appear to those at crossroads. Those weary souls whose choices matter more than most.'\n\nTry to use the key to return\n'How can I help?'",
+				sceneText: "'Ah, the key!' William brightens and snags it from your hand with nimble fingers before you can protest. 'One of many such objects that bend certain rules.'\nHe flips it casually, catching it while looking you dead in the eye. 'Found it, did you? Or perhaps it found you.'\nHe returns it with unexpected gentleness. 'These appear to those at crossroads. Those weary souls whose choices matter more than most.'",
 				options: [
 					["Try to use the key to return", goToSceneIndex, [90]],
 					["'How can I help?'", goToSceneIndex, [24]],
@@ -111,7 +112,7 @@ function DialogStructManager(){
 				sceneIndex: 10,
 				sceneName: "A slight headache.",
 				character: MT_past_neutral, background: bg_house_past,
-				sceneText: "Margaret, with no pen or paper, holds herself and holds your gaze in a way that somehow reassures you she'll remember every word you tell her and more.\nShe hands you a wooden cup of water from a nearby pitcher and continues her... interview?\n'Anything else out of the ordinary.'\nha. ha.\nNo.\nRun Away!",
+				sceneText: "Margaret, with no pen or paper, holds herself and holds your gaze in a way that somehow reassures you she'll remember every word you tell her and more.\nShe hands you a wooden cup of water from a nearby pitcher and continues her... interview?\n'Anything else out of the ordinary.'",
 				options: [
 					["ha. ha.", goToSceneIndex, [66]],
 					["No.", goToSceneIndex, [41]],
@@ -121,7 +122,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 11,
 				sceneName: "She shows you the door.",
-				sceneText: "As you're moved toward the door, the primary panic of being faced with the unknown floods your system and you begin to beg wildly for another chance.  You claim that you'll tell her anything.  She merely shakes her head, tight lipped, and sends your toward the cobbled and feces strewn streets outside.\nLeave calmly\nStruggle",
+				character: MT_past_neutral, background: bg_house_past,
+				sceneText: "As you're moved toward the door, the primary panic of being faced with the unknown floods your system and you begin to beg wildly for another chance.  You claim that you'll tell her anything.  She merely shakes her head, tight lipped, and sends your toward the cobbled and feces strewn streets outside.",
 				options: [
 					["Leave calmly", goToSceneIndex, [72]],
 					["Struggle", goToSceneIndex, [63]],
@@ -131,7 +133,7 @@ function DialogStructManager(){
 				sceneIndex: 12,
 				sceneName: "'Where am I?'",
 				character: WB_past_smile, background: bg_house_past,
-				sceneText: "'You sit 'pon the floor, stranger.  The floor of a modest home in Southwark.  Southwark being a dot on a map of England.  England being a nation in the temporal world, and the temporal world being a location you must yourself interpret the nature of.  I find your accent unplaceable, and I, being a listener by virtue and trade, am implaccable when it comes to the unexpected and the new.  Of which you number both.  I am Redbrook, called William.  Enrobe thyself and I shall impose you upon my brothers, who shall upbraid me for being untimely anon.'\nRun Away! \n'Who are you?'\n'Why am I here?'\nPut on a few layers of wool and follow him to adventure",
+				sceneText: "'You sit 'pon the floor, stranger.  The floor of a modest home in Southwark.  Southwark being a dot on a map of England.  England being a nation in the temporal world, and the temporal world being a location you must yourself interpret the nature of.  I find your accent unplaceable, and I, being a listener by virtue and trade, am implaccable when it comes to the unexpected and the new.  Of which you number both.  I am Redbrook, called William.  Enrobe thyself and I shall impose you upon my brothers, who shall upbraid me for being untimely anon.'",
 				options: [
 					["Run Away!", goToSceneIndex, [100]],
 					["'Who are you?'", goToSceneIndex, [44]],
@@ -142,14 +144,15 @@ function DialogStructManager(){
 			{
 				sceneIndex: 13,
 				sceneName: "I... What?",
-				sceneText: "They shudder, and the world folds in half everywhere.  Your confusion",
+				sceneText: "They shudder, and the world folds in half everywhere.  Your confusion is no match for the winds of unwinding time.",
 				options: [
+					["Temporal Storm", goToSceneIndex, [23]],
 					]
 				},
 			{
 				sceneIndex: 14,
 				sceneName: "Welcome to the future",
-				sceneText: "A young man steps toward you, giggling slightly, and presents himself as Will REDD, an echo here at the end of your friend William Redbrook.\n'Are you ready to open what must be opened?'\nI am ready.\nI... What?",
+				sceneText: "A young man steps toward you, giggling slightly, and presents himself as Will REDD, an echo here at the end of existence to your friend William Redbrook.\n'Are you ready to open what must be opened?'",
 				options: [
 					["I am ready.", goToSceneIndex, [3]],
 					["I... What?", goToSceneIndex, [13]],
@@ -159,8 +162,7 @@ function DialogStructManager(){
 				sceneIndex: 15,
 				sceneName: "It's too early.",
 				background: bg_house_present, 
-				onLoad:{func: function test(_str){show_debug_message(_str)}, params: ["test"]},
-				sceneText: "It's too early. It's dark and it's quiet and it's warm but it's too early. Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\nToo long.\nIt's too early.\nGo back to bed\nTake advantage of the extra... ugh... hour.",
+				sceneText: "It's too early. It's dark and it's quiet and it's warm but it's too early. Your muffled thoughts slowly resolve themselves into enough clarity to question how long you have left... before your alarm.\nToo long.\nIt's too early.",
 				options: [
 					["Go back to bed", goToSceneIndex, [104]],
 					["Take advantage of the extra... ugh... hour.", goToSceneIndex, [77]],
@@ -169,7 +171,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 16,
 				sceneName: "Investigate the test location",
-				sceneText: "You scurry down to the lab, expecting to find the worst.  You hope there's time.\nTake the elevator\nTake the stairs",
+				sceneText: "You scurry down to the lab, expecting to find the worst.  You hope there's time.",
 				options: [
 					["Take the elevator", goToSceneIndex, [7]],
 					["Take the stairs", goToSceneIndex, [4]],
@@ -178,7 +180,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 17,
 				sceneName: "Put on a few layers of wool and follow William to information.",
-				sceneText: "Let fate pull you along",
+				sceneText: "",
 				options: [
 					["Let fate pull you along", goToSceneIndex, [56]],
 					]
@@ -186,7 +188,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 18,
 				sceneName: "Get back to work.",
-				sceneText: "You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.\nCheck the notification details\nFocus on getting to the days work. \nRun Away from the Office!",
+				sceneText: "You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.",
 				options: [
 					["Check the notification details", goToSceneIndex, [74]],
 					["Focus on getting to the days work.", goToSceneIndex, [57]],
@@ -197,7 +199,7 @@ function DialogStructManager(){
 				sceneIndex: 19,
 				sceneName: "Press 4",
 				background: bg_office_present,onLoad:{func: removeElevatorEffectsFromBus,params:(global.musicBus)},
-				sceneText: "You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.\nGrab a gooey cinnamon bun\nGrab a banana",
+				sceneText: "You head through the canteen on your way up to level 13 where your offices await you.  You're breakfast dulled the edge of hunger but you're still craving something.",
 				options: [
 					["Grab a gooey cinnamon bun", goToSceneIndex, [88]],
 					["Grab a banana", goToSceneIndex, [61]],
@@ -241,7 +243,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 24,
 				sceneName: "'How can I help?'",
-				sceneText: "'Oh I'm sure I have no idea!  But there are those who do.  Here.  Put these on so we don't get arrested for being uncomfortable to look at.'\nPut on a few layers of wool and follow William to information.\nRun Away!",
+				sceneText: "'Oh I'm sure I have no idea!  But there are those who do.  Here.  Put these on so we don't get arrested for being uncomfortable to look at.",
 				options: [
 					["Put on a few layers of wool and follow William to information.", goToSceneIndex, [17]],
 					["Run Away!", goToSceneIndex, [100]],
@@ -260,7 +262,7 @@ function DialogStructManager(){
 				sceneIndex: 26,
 				sceneName: "Your alarm wakes you",
 				background: bg_house_present,
-				sceneText: "You jolt into reality.  Falling asleep again was a bad idea.\nShake it off.\n'Have a day'",
+				sceneText: "You jolt into reality.  Falling asleep again was a bad idea.",
 				options: [
 					["Shake it off.", goToSceneIndex, [31]],
 					["'Have a day'", goToSceneIndex, [65]],
@@ -277,7 +279,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 28,
 				sceneName: "stop him.'",
-				sceneText: "The end of everything is swallowed up, but you see each of your friends 'turn' and feel a push from an unknown and unknowable direction.  You blink hard, fight disorientation, and face Dr. Brotin-Dawr, your old school chum.  He looks at you, and immediately drops all pretense.  Like an origami flower being undone, he unflexes in a handful of unseeable dimension, and becomes a writhing mass of tentacles and evil.\nAnd you fight the last battle anyone ever could.\nhere if you win\nhere if you lose",
+				sceneText: "The end of everything is swallowed up, but you see each of your friends 'turn' and feel a push from an unknown and unknowable direction.  You blink hard, fight disorientation, and face Dr. Brotin-Dawr, your old school chum.  He looks at you, and immediately drops all pretense.  Like an origami flower being undone, he unflexes in a handful of unseeable dimension, and becomes a writhing mass of tentacles and evil.\nAnd you fight the last battle anyone ever could.",
 				options: [
 					["here if you win", goToSceneIndex, [38]],
 					["here if you lose", goToSceneIndex, [5]],
@@ -287,7 +289,7 @@ function DialogStructManager(){
 				sceneIndex: 29,
 				sceneName: "'Wait, where am I!?'",
 				character: ND_past_neutral, background: bg_house_past,
-				sceneText: "'That's not the right question.  Don't ask extra questions.  Ask me why everything looks strange and there is no electricity, or why I'm working by candlelight.'\n'Wh..When? When are we?'\n'Wh... who are you?'\n'What is this place?'",
+				sceneText: "'That's not the right question.  Don't ask extra questions.  Ask me why everything looks strange and there is no electricity, or why I'm working by candlelight.",
 				options: [
 					["'Wh..When? When are we?'", goToSceneIndex, [54]],
 					["'Wh... who are you?'", goToSceneIndex, [46]],
@@ -297,7 +299,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 30,
 				sceneName: "I'm allergic to flowers and I take a multivitamin.",
-				sceneText: "'I see.  Anything else you think I should know?'\nAre you a doctor?\nA slight headache.\nNo.",
+				sceneText: "'I see.  Anything else you think I should know?",
+				character: MT_past_neutral, background: bg_house_past,
 				options: [
 					["Are you a doctor?", goToSceneIndex, [55]],
 					["A slight headache.", goToSceneIndex, [10]],
@@ -309,7 +312,7 @@ function DialogStructManager(){
 				sceneName: "Shake it off.",
 				background: bg_house_present, 
 				onLoad:{func: playerTakeDamage, params: [(10)]},
-				sceneText: "You shudder, focus all your mental energy, and just decide to move on.\nFinish getting ready and eat some breakfast",
+				sceneText: "You shudder, focus all your mental energy, and just decide to move on.",
 				options: [
 					["Finish getting ready and eat some breakfast", goToSceneIndex, [97]],
 					]
@@ -318,7 +321,7 @@ function DialogStructManager(){
 				sceneIndex: 32,
 				sceneName: "Take a cold shower",
 				background: bg_house_present, onLoad:{func: fight, params: "coldDemons"},
-				sceneText: "Battle the your demons\nTake a cold shower, continued",
+				sceneText: "Battle the your demons.",
 				options: [
 					["Take a cold shower, continued", goToSceneIndex, [73]],
 					]
@@ -326,7 +329,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 33,
 				sceneName: "Duck into a large building",
-				sceneText: "You pop into a larger building hoping for a place to hide, and find yourself in some sort of arena.  No, a raised platform shows you to be hiding out in a theater of some size.  Ah.  And the costumed actors have paused and are watching what you'll do next.\noffer the banana\noffer the cinnamon roll\nRun Away!",
+				sceneText: "You pop into a larger building hoping for a place to hide, and find yourself in some sort of arena.  No, a raised platform shows you to be hiding out in a theater of some size.  Ah.  And the costumed actors have paused and are watching what you'll do next.",
+				requires: ["banana", "cinnamon roll"],
 				options: [
 					["offer the banana", goToSceneIndex, [87]],
 					["offer the cinnamon roll", goToSceneIndex, [71]],
@@ -337,8 +341,9 @@ function DialogStructManager(){
 				sceneIndex: 34,
 				sceneName: "'Yes!'",
 				character: ND_past_neutral, background: bg_house_past,
-				sceneText: "'That's okay.  You can be mad.  You still have to help and hurt and live and love.  But you can be mad while you do it.  Sometimes that helps.'\nThey turn, take a small bag from the wall, open door to the stinging sunlight, and step out.\nFollow\nRun Away!",
+				sceneText: "'That's okay.  You can be mad.  You still have to help and hurt and live and love.  But you can be mad while you do it.  Sometimes that helps.'\nThey turn, take a small bag from the wall, open the door to the stinging sunlight, and step out.",
 				options: [
+				
 					["Follow", goToSceneIndex, [6]],
 					["Run Away!", goToSceneIndex, [100]],
 					]
@@ -849,7 +854,7 @@ function DialogStructManager(){
 				sceneName: "Grab a gooey cinnamon bun",
 				background: bg_office_present,  
 				find:"cinnamonBun",
-				sceneText: "This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you ... \nHead to the roof\nHead to your offices",
+				sceneText: "This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you...",
 				options: [
 					["Head to the roof", goToSceneIndex, [92]],
 					["Head to your offices", goToSceneIndex, [25]],
@@ -858,7 +863,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 89,
 				sceneName: "Pass out",
-				background: bg_spr_background, find: "key",
+				background: bg_spr_background,
+				find: "brassKey",
 				sceneText: "Your thoughts swirl half formed.  Maybe you hear shouting.  Maybe it's your mind trying to make sense of the rushing sound in your ears on the edge of intelligibility.  You think of faces half seen during your day.  The roar gets louder and you",
 				options: [
 					["listen for  the echo of laughter", goToSceneIndex, [8]],

@@ -109,8 +109,7 @@
 │   │   │   ├── Create_0.gml
 │   │   │   ├── Destroy_0.gml
 │   │   │   ├── Draw_0.gml
-│   │   │   ├── EndText.yy
-│   │   │   └── Step_1.gml
+│   │   │   └── EndText.yy
 │   │   ├── ExampleMenu
 │   │   │   ├── ExampleMenu.yy
 │   │   │   └── Mouse_54.gml
@@ -650,4 +649,4 @@
 ├── KatherineNymshack.md
 └── KhouriFountain.txt
 
-228 directories, 423 files
+228 directories, 422 files

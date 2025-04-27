@@ -24,6 +24,7 @@ function playSong(_parameters){
 /// @description begins music on the menu, and initializes background audio bus.
 /// @function mainMenuMusic
 function mainMenuMusic(){
+	audio_stop_all()
 	global.musicBus = audio_bus_create();
 	global.musicEmitter = audio_emitter_create();
 	audio_emitter_bus(global.musicEmitter, global.musicBus);

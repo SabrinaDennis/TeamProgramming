@@ -13,7 +13,7 @@ function FuncManager(funcName, parameters){
 /// @param {string} _parameters[0] - Text to display
 /// @param {string} _parameters[1] - Sound to play
 function theEnd(_parameters){
-	instance_create_depth(0,0, 1, EndText, {text: _parameters[0]});
+	instance_create_depth(room_width, room_height, -4, EndText, {text: _parameters[0]});
     audio_stop_all()
 	audio_play_sound_on(global.musicEmitter, _parameters[1], true,10,global.volume.music);
 }
@@ -92,11 +92,18 @@ function goToSceneIndex(_parameters) {
     populateAllObjects();
 }
 
+/// @description Function to handle item finding
+/// @param {array} _parameters - Array containing the parameters for the find function [string]
 function find(_parameters){
-	var foundItem = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown item";
-	//show_debug_message("You find a " + foundItem + "!");
-    
-	// Add item to inventory if it exists in global.itemList
+    var foundItem;
+    if(is_string(_parameters)){
+        foundItem = _parameters;
+    } else if(is_array(_parameters)){
+        foundItem = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown item";
+    } else {
+        foundItem = "unknown item";
+    }
+
     if (variable_struct_exists(global.itemList, foundItem)) {
 		playerAddItem(variable_struct_get(global.itemList, foundItem));
         //show_debug_message("Added " + foundItem + " to inventory");

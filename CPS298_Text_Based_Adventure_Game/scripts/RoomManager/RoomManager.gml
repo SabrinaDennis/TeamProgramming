@@ -66,6 +66,7 @@ function populateAllObjects() {
     var _background = -1;
     var _character = -1;
     
+    
     if (struct_exists(scene, "background")) {
         _background = scene.background;
     } else {
@@ -118,6 +119,21 @@ function populateAllObjects() {
             array_push(options, blocked(scene.blocked));
         } catch (error) {
             log_error("Error processing blocked options: " + string(error));
+        }
+    }
+    
+	// given an array in scene.requires, deletes the options corresponding to not having the item.
+	array_push( global.player.inventory, ("banana"));
+    if(struct_exists(scene, "requires")){
+        for(var i=0; i<array_length(scene.requires) && i<array_length(options); i++){
+            if(!array_contains(global.player.inventory, scene.requires[i])){
+                options[i] = undefined;
+            }
+        }
+        for(var i=0; i<array_length(options); i++){
+            if(options[i] == undefined){
+                array_delete(options, i--, 1);
+            }
         }
     }
     
