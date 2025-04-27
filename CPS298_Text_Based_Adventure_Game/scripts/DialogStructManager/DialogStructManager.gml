@@ -8,7 +8,7 @@ function DialogStructManager(){
 				sceneName: "The Beginning",
 				background: bg_spr_background,
 				sceneText: "...hm?\n...\n...",
-				requires: ["banana"],
+				//requires: ["banana"],
 				options: [
 					["...", goToSceneIndex, [42]],
 					]

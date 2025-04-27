@@ -123,7 +123,7 @@ function populateAllObjects() {
     }
     
 	// given an array in scene.requires, deletes the options corresponding to not having the item.
-	array_push( global.player.inventory, ("banana"));
+	//array_push( global.player.inventory, ("banana"));
     if(struct_exists(scene, "requires")){
         for(var i=0; i<array_length(scene.requires) && i<array_length(options); i++){
             if(!array_contains(global.player.inventory, scene.requires[i])){
