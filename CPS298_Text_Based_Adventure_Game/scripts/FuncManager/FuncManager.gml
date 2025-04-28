@@ -14,8 +14,7 @@ function FuncManager(funcName, parameters){
 /// @param {string} _parameters[1] - Sound to play
 function theEnd(_parameters){
 	instance_create_depth(room_width, room_height, -4, EndText, {text: _parameters[0]});
-    audio_stop_all()
-	audio_play_sound_on(global.musicEmitter, _parameters[1], true,10,global.volume.music);
+    playSong( [_parameters[1], 0, true]);
 }
 
 function fight(_parameters){
@@ -333,6 +332,7 @@ function addFriend(_parameters){
 	} else {
 		friend="unknown friend";
 	}
+    audio_play_sound(ENTER_SFX, 0, false)
 	array_push(global.player.friendlist, friend);
 	show_debug_message(friend + " is now a friend");
 }

@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"six_million_ways_to_die",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":75.55202,
+  "name":"six_million_ways_to_die",
+  "parent":{
+    "name":"new music",
+    "path":"folders/Sounds/music/misc/new music.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"six_million_ways_to_die.mp3",
+  "type":0,
+  "volume":1.0,
+}

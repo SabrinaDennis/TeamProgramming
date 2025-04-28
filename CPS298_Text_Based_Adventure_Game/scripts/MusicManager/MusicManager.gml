@@ -5,6 +5,10 @@ function playSong(_parameters){
 	var priority, song, loop;
 	// Song / Loop
 	 song = _parameters[0] // Sound file
+	 if(audio_is_playing(song)){
+		return;
+	 }
+	 
 	if(array_length(_parameters)>1){
 		priority = _parameters[1];
 	} else { // Int, default 0
@@ -16,6 +20,7 @@ function playSong(_parameters){
 	} else {
 		loop=true;
 	}
+
 	audio_stop_all();
 	audio_play_sound_on(global.musicEmitter, song, loop,priority,global.volume.music);
 }

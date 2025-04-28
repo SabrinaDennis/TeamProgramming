@@ -4,10 +4,11 @@ function DialogStructManager(){
 		[
 
 			{
-				sceneIndex: 0,
+				sceneIndex: 0, audio_play_sound_ext()
 				sceneName: "The Beginning",
 				background: bg_spr_background,
 				sceneText: "...hm?\n...\n...",
+				onLoad: {func: playSong , params: [snd_menuMusic1,0,true] },
 				//requires: ["banana"],
 				options: [
 					["...", goToSceneIndex, [42]],
@@ -37,9 +38,9 @@ function DialogStructManager(){
 			{
 				sceneIndex: 3,
 				sceneName: "I am ready.",
-				sceneText: "'I know.  Just remember, opening can feel like breaking.'\nREDD steps back and Drait NIKI introduces herself, terse but not unfriendly:\n'Will you take responsibility for what you have to do?'",
+				sceneText: "'I know.  Just remember, opening can feel like breaking.'\nREDD steps back and Drait NIKI introduces themself, terse but not unfriendly:\n'Will you take responsibility for what you have to do?'",
 				background: bg_house_past,
-				characters: WB_future_smile,
+				character: WB_future_smile,
 				options: [
 					["I will", goToSceneIndex, [75]],
 					["I... What?", goToSceneIndex, [13]],
@@ -194,6 +195,7 @@ function DialogStructManager(){
 				sceneIndex: 18,
 				sceneName: "Get back to work.",
 				background: bg_office_present,
+				onLoad:{func: playSong , params: [snd_menuMusic1,0,true] },
 				sceneText: "You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.",
 				options: [
 					["Check the notification details", goToSceneIndex, [74]],
@@ -290,7 +292,8 @@ function DialogStructManager(){
 				sceneIndex: 28,
 				sceneName: "stop him.'",
 				background: bg_spr_chaos,
-				sceneText: "The end of everything is swallowed up, but you see each of your friends 'turn' and feel a push from an unknown and unknowable direction.  You blink hard, fight disorientation, and face Dr. Brotin-Dawr, your old school chum.  He looks at you, and immediately drops all pretense.  Like an origami flower being undone, he unflexes in a handful of unseeable dimension, and becomes a writhing mass of tentacles and evil.\nAnd you fight the last battle anyone ever could.",
+				sceneText: "The end of everything is swallowed up, but you see each of your friends 'turn' and feel a push from an unknown and unknowable direction.  You blink hard, fight disorientation, and face Dr. Brotin-Dawr, your old school chum.  He looks at you, and immediately drops all deception.  Like an origami flower being undone, he unflexes in a handful of unseeable dimension, and becomes a writhing mass of tentacles and evil.\nAnd you fight the last battle anyone ever could.",
+				onLoad: {func: playSong , params: [am_i_coming_bacK ,0,true] },
 				options: [
 					["here if you win", goToSceneIndex, [38]],
 					["here if you lose", goToSceneIndex, [5]],
@@ -394,13 +397,15 @@ function DialogStructManager(){
 				sceneName: "here if you win",
 				background: bg_spr_chaos,
 				sceneText: "You float, strong, so strong now, but unable to effect anything.  With no wall to push off of, with nothing to grab on to, you have no way of pulling yourself back into reality.  And so you float.  Your body wastes away.  The small eddies and vortices of time ripple through you as they find realignment, aging and delaying you to a suffering death.  But you saved everyone else.  You saved everyone and everything else.  Right?  Defeating the monster was enough, right?  One monster?  Was enough?\nYou die, hoping, in agony.",
+				onLoad: {func: theEnd, params: [snd_MENU_SONG__3, "Hope is a special kind of pain."]},
 				options: [
 					]
 				},
 			{
 				sceneIndex: 39,
 				sceneName: "...way more than I do...",
-				character: MT_past_neutral, background: bg_house_past,
+				character: MT_past_neutral,
+				background: bg_house_past,
 				sceneText: "'Hmm.' She seems to come to a conclusion you couldn't hope to understand. 'I suppose you're right.  Come along then, we have a few people to meet, and you seem cooperative enough considering your situation.\nTrust Margaret\nRun Away!",
 				options: [
 					["Trust Margaret", goToSceneIndex, [78]],
@@ -569,7 +574,7 @@ function DialogStructManager(){
 				background: bg_street_past,
 				character: WB_past_neutral,
 				onLoad: {func: playSong , params: [where_she_at,0,true] },
-				sceneText: "Your host brings you through the labarynthine streets until you are quite confused.  It has been a long day and you are quite tired. finally, they bring you to a door that makes your eyes sting a little when you look directly at it.\nEnter the strange door",
+				sceneText: "Your host brings you through the labyrinthine streets until you are quite confused.  It has been a long day and you are quite tired. finally, they bring you to a door that makes your eyes sting a little when you look directly at it.\nEnter the strange door",
 				options: [
 					["Enter the strange door", goToSceneIndex, [94]],
 					]
@@ -757,7 +762,7 @@ function DialogStructManager(){
 				sceneName: "I will",
 				background: bg_spr_future,
 				character: spr_all_three,
-				sceneText: "NIKI steps back satisfied, and M.A.Sh.T steps forward, holding a small device.\n'And will you remember all this when the world is crumpling, loud like tin, all around you?'\nOf course\nThink it over before answering",
+				sceneText: "NIKI steps back satisfied, and M.A.Sh.T steps forward, holding a small device.\n'And will you remember all this when the world is crumpling, loud like tin, all around you?'",
 				options: [
 					["Of course", goToSceneIndex, [53]],
 					["Think it over before answering", goToSceneIndex, [95]],
@@ -864,7 +869,8 @@ function DialogStructManager(){
 				sceneName: "Ask questions",
 				character: WB_past_smile, background: bg_house_past,
 				sceneText: "You ask your ersatz host five questions at the same time, but all that surfaces is a hoarsely muttered 'gruuhhhmuhhh.' --'Here, strange being.  You look parched.' --The owner of the smirking voice hands you a glass of water and you gulp it down with as much dignity as you can muster.  It's not much.\n'Where am I?'\n'Who are you?'",
-				onLoad: {func: playSong, params: [alien_smoke, 0, true]},
+				onLoad: {func: playSong,
+				params: [alien_smoke, 0, true]},
 				options: [
 					["'Where am I?'", goToSceneIndex, [12]],
 					["'Who are you?'", goToSceneIndex, [44]],
@@ -936,7 +942,7 @@ function DialogStructManager(){
 				sceneIndex: 93,
 				sceneName: "'A table?'",
 				character: ND_past_neutral, background: bg_house_past,
-				sceneText: "'Sturdy but hard to motivate to do anything.  Understood.'\nYou stare wide eyed at your surroundings, assessing how safe you are.  This appears to be a workshop?  smithy?  Jewelry store?  Every surface has an crafting tool on it, or many in small piles stacked here or there.  There are no machines, but something whirs or hums in the background.\n\nAsk your precise host some questions\nRun Away!",
+				sceneText: "'Sturdy but hard to motivate to do anything.  Understood.'\nYou stare wide eyed at your surroundings, assessing how safe you are.  This appears to be a workshop?  smithy?  Jewelry store?  Every surface has an crafting tool on it, or many in small piles stacked here or there.  There are no machines, but something whirs or hums in the background.\n\nAsk your precise host some questions",
 				options: [
 					["Ask your precise host some questions", goToSceneIndex, [69]],
 					["Run Away!", goToSceneIndex, [100]],
@@ -957,9 +963,10 @@ function DialogStructManager(){
 			{
 				sceneIndex: 95,
 				sceneName: "Think it over before answering",
-				sceneText: "She grins at your hesitation and offers you the small trinket in her hand.\n'Introspection is important.  But, you're ready.  Take our strength and stop him.'",
+				sceneText: "She grins at your hesitation and offers you the small trinket in her hand.\n'Introspection is important.  But, you're ready.  Take our strength and'",
 				character: MT_future_smile,
 				background: bg_spr_future,
+				find: "theRestOfTheKey",
 				options: [
 					["stop him.'", goToSceneIndex, [28]],
 					]
@@ -1006,7 +1013,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 100,
 				sceneName: "Run Away!",
-				background: bg_street_past, onLoad: {func: theEnd, params: ["sad"]},
+				background: bg_street_past,
+				onLoad: {func: theEnd, params: [rainbow_road, "How sad. Oh well."]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 
 				options: [
