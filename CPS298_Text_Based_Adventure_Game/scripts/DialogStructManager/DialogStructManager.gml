@@ -199,7 +199,7 @@ function DialogStructManager(){
 				sceneText: "You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.",
 				options: [
 					["Check the notification details", goToSceneIndex, [74]],
-					["Focus on getting to the days work.", goToSceneIndex, [57]],
+					["Focus on getting to the days work.", goToSceneIndex, [23]],
 					["Run Away from the Office!", goToSceneIndex, [103]],
 					]
 				},
@@ -965,7 +965,7 @@ function DialogStructManager(){
 				sceneIndex: 95,
 				sceneName: "Think it over before answering",
 				sceneText: "She grins at your hesitation and offers you the small trinket in her hand.\n'Introspection is important.  But, you're ready.  Take our strength and",
-				character: MT_future_smile,
+				character: spr_all_three,
 				background: bg_spr_future,
 				find: "theRestOfTheKey",
 				options: [
@@ -1046,7 +1046,7 @@ function DialogStructManager(){
 				sceneIndex: 103,
 				sceneName: "Run Away from the Office!",
 				background: bg_present_street, 
-				onLoad: {func: theEnd, params: ["sad"]},
+				onLoad: {func: theEnd, params: ["sad", rainbow_road]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A pickup truck attempts to avoid your sudden appearance, but swerving only serves to topple the bed's contents on top of you at speed.  You are crushed by several bicycles, a snow shovel, two cinder blocks, and a broken down washing machine.  The truck is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 				options: [
 					]

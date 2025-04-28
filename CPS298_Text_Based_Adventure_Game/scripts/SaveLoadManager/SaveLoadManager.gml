@@ -47,6 +47,10 @@ function saveGame(slot) {
 /// @param {string} slot Save slot to load
 /// @returns {bool} Success or failure
 function loadGame(slot) {
+	//init
+	loadDialogData();
+	
+	
     var filename = "save_" + string(slot) + ".sav";
     
     // Check if file exists
