@@ -4,7 +4,7 @@ function DialogStructManager(){
 		[
 
 			{
-				sceneIndex: 0, audio_play_sound_ext()
+				sceneIndex: 0,
 				sceneName: "The Beginning",
 				background: bg_spr_background,
 				sceneText: "...hm?\n...\n...",
@@ -40,7 +40,7 @@ function DialogStructManager(){
 				sceneName: "I am ready.",
 				sceneText: "'I know.  Just remember, opening can feel like breaking.'\nREDD steps back and Drait NIKI introduces themself, terse but not unfriendly:\n'Will you take responsibility for what you have to do?'",
 				background: bg_house_past,
-				character: WB_future_smile,
+				character: ND_future_smile,
 				options: [
 					["I will", goToSceneIndex, [75]],
 					["I... What?", goToSceneIndex, [13]],
@@ -385,7 +385,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 37,
-				sceneName: "Gather your temporal allies",
+				sceneName: "Gather the strength of your your temporal allies",
 				background: bg_office_present,
 				sceneText: "You realize now what you were always meant to do.  There are things beyond our understanding that we always reach for.  A child pulling at ice cream with their mind.  A fervent prayer for the health of loved one delerious with fever.  Even a futile attempt to stretch out some mysterious muscle.  We always want to effect the world in ways we know aren't tied down to reality.\nBring the key to the roof",
 				options: [
@@ -750,18 +750,19 @@ function DialogStructManager(){
 				sceneIndex: 74,
 				sceneName: "Check the notification details",
 				background: bg_office_present, 
-				inFriends:[["William", "Nichole", "Margaret"], [37]],
-				sceneText: "The notification mentions a 'comprehensive systems diagnostic' scheduled for 3:00 PM today, focusing on the building's experimental energy management system.\nThe message is signed by the head of Research & Development, Dr. Brotin-Dawr.\nThe clock reads 2:30 PM.\nContact Dr. Brotin-Dawr immediately\nInvestigate the test location\n//inFriends should check if you're friends with everyone in the first array, and add the scene to options if they are.",
-				options: [
+				requires:["William", "Nichole", "Margaret"],
+				sceneText: "The notification mentions a 'comprehensive systems diagnostic' scheduled for 3:00 PM today, focusing on the building's experimental energy management system.\nThe message is signed by the head of Research & Development, Dr. Brotin-Dawr.\nThe clock reads 2:30 PM.",
+								options: [
 					["Contact Dr. Brotin-Dawr immediately", goToSceneIndex, [50]],
 					["Investigate the test location", goToSceneIndex, [16]],
+					["Gather the strength of your temporal allies", goToSceneIndex, [37]]
 					]
 				},
 			{
 				sceneIndex: 75,
 				sceneName: "I will",
 				background: bg_spr_future,
-				character: spr_all_three,
+				character: MT_future_neutral,
 				sceneText: "NIKI steps back satisfied, and M.A.Sh.T steps forward, holding a small device.\n'And will you remember all this when the world is crumpling, loud like tin, all around you?'",
 				options: [
 					["Of course", goToSceneIndex, [53]],
@@ -840,7 +841,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 83,
 				sceneName: "Meet the Dramatis Personea",
-				 background: bg_theater_past, onLoad: {func : theEnd, params:["neutral"]},
+				 background: bg_theater_past, onLoad: {func : theEnd, params:[ "These things go as they tend to go. No sound. No fury. No nothing.", alien_smoke]},
 				sceneText: "You find yourself put at ease, lulled by their strange accents into a relaxed state.  After their day's rehearsal for some new theatrical work of locally existential importance, your thoughts turn to returning ... somewhere?\nOver the years the past fades utterly.  You die painfully but quickly a few years after the love of your life.  A life obscured by time and forgotten by everything but decay.\nNot bad.",
 				options: [
 					]
@@ -963,12 +964,12 @@ function DialogStructManager(){
 			{
 				sceneIndex: 95,
 				sceneName: "Think it over before answering",
-				sceneText: "She grins at your hesitation and offers you the small trinket in her hand.\n'Introspection is important.  But, you're ready.  Take our strength and'",
+				sceneText: "She grins at your hesitation and offers you the small trinket in her hand.\n'Introspection is important.  But, you're ready.  Take our strength and",
 				character: MT_future_smile,
 				background: bg_spr_future,
 				find: "theRestOfTheKey",
 				options: [
-					["stop him.'", goToSceneIndex, [28]],
+					["'stop him.'", goToSceneIndex, [28]],
 					]
 				},
 			{
@@ -1003,7 +1004,7 @@ function DialogStructManager(){
 				sceneIndex: 99,
 				sceneName: "head to work.",
 				background: bg_office_present,
-				sceneText: "Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and...\nHead to your offices\nVisit the canteen or \nHead to the roof",
+				sceneText: "Your lab is abuzz with activity.  Somber Doctors and Engineers nod their heads to you in deference as you traverse the labarynth of hallways to your new office.  Which floor was it on again?  You board the elevator and...",
 				options: [
 					["Head to your offices", goToSceneIndex, [25]],
 					["Visit the canteen", goToSceneIndex, [98]],
@@ -1014,7 +1015,7 @@ function DialogStructManager(){
 				sceneIndex: 100,
 				sceneName: "Run Away!",
 				background: bg_street_past,
-				onLoad: {func: theEnd, params: [rainbow_road, "How sad. Oh well."]},
+				onLoad: {func: theEnd, params: ["How sad. Oh well.", rainbow_road]},
 				sceneText: "You dash, screaming with indignity, and find yourself in a busy street.  A horse attempts to avoid your sudden appearance, but swerving only serves to topple a carriage on top of you.  The horse is fine.  You, however...\nYou die as you lived.  Utterly accidentally.",
 
 				options: [

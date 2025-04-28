@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"WB",
-    "path":"folders/Sprites/Characters/WB.yy",
+    "name":"future",
+    "path":"folders/Sprites/Characters/WB/future.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
