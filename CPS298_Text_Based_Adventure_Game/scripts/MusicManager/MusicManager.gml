@@ -11,12 +11,11 @@ function playSong(_parameters){
 		priority=0;
 	}
 		
-	if(array_length(_parameters)>2){
+	if(array_length(_parameters)>2){// true/false
 		loop=_parameters[2];
 	} else {
 		loop=true;
 	}
-	loop = _parameters[2] // true/false
 	audio_stop_all();
 	audio_play_sound_on(global.musicEmitter, song, loop,priority,global.volume.music);
 }

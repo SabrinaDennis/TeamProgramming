@@ -126,7 +126,7 @@ function populateAllObjects() {
 	//array_push( global.player.inventory, ("banana"));
     if(struct_exists(scene, "requires")){
         for(var i=0; i<array_length(scene.requires) && i<array_length(options); i++){
-            if(!array_contains(global.player.inventory, scene.requires[i])){
+            if(scene.requires[i]!= -1 and !(array_contains(global.player.inventory, scene.requires[i]) or array_contains_ext(global.player.friendlist, scene.requires[i], true ))){
                 options[i] = undefined;
             }
         }

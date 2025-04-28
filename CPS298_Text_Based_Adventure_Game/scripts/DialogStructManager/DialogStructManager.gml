@@ -144,6 +144,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 13,
 				sceneName: "I... What?",
+				background: bg_spr_black,
 				sceneText: "They shudder, and the world folds in half everywhere.  Your confusion is no match for the winds of unwinding time.",
 				options: [
 					["Temporal Storm", goToSceneIndex, [23]],
@@ -152,6 +153,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 14,
 				sceneName: "Welcome to the future",
+				background: bg_spr_future,
+				character: WB_future_smile,
 				sceneText: "A young man steps toward you, giggling slightly, and presents himself as Will REDD, an echo here at the end of existence to your friend William Redbrook.\n'Are you ready to open what must be opened?'",
 				options: [
 					["I am ready.", goToSceneIndex, [3]],
@@ -171,6 +174,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 16,
 				sceneName: "Investigate the test location",
+				background: bg_office_present,
 				sceneText: "You scurry down to the lab, expecting to find the worst.  You hope there's time.",
 				options: [
 					["Take the elevator", goToSceneIndex, [7]],
@@ -181,6 +185,7 @@ function DialogStructManager(){
 				sceneIndex: 17,
 				sceneName: "Put on a few layers of wool and follow William to information.",
 				sceneText: "",
+				background: bg_street_past,
 				options: [
 					["Let fate pull you along", goToSceneIndex, [56]],
 					]
@@ -188,6 +193,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 18,
 				sceneName: "Get back to work.",
+				background: bg_office_present,
 				sceneText: "You shake in your chair with a start.  Time travel feels an awful lot like a dream.  But there's the key on your desk in front of you.  Slightly embedded, actually.  As though key and desk had fought for the same spacial coordinates and compromised.  It sticks slightly, but pulls free.  The desk is terribly damaged, but the key itself is only slightly discolored.  Your computer blinks with an unanswered notification.  The window shows a sunny day, cloudless day, though somehow more dim than usual.",
 				options: [
 					["Check the notification details", goToSceneIndex, [74]],
@@ -207,6 +213,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 20,
+				background: bg_house_past,
 				sceneName: "...by a magical key and sent to the ...",
 				sceneText: "...home of a woman who knows...",
 				options: [
@@ -215,6 +222,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 21,
+				background: bg_elevator_present,
 				sceneName: "Bring the key to the roof",
 				sceneText: "you press R",
 				options: [
@@ -243,6 +251,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 24,
 				sceneName: "'How can I help?'",
+				background: bg_house_past,
 				sceneText: "'Oh I'm sure I have no idea!  But there are those who do.  Here.  Put these on so we don't get arrested for being uncomfortable to look at.",
 				options: [
 					["Put on a few layers of wool and follow William to information.", goToSceneIndex, [17]],
@@ -270,6 +279,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 27,
+				background: bg_house_past,
 				sceneName: "...Well, I seem to have been captured...",
 				sceneText: "...by a magical key and sent to the ...",
 				options: [
@@ -279,6 +289,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 28,
 				sceneName: "stop him.'",
+				background: bg_spr_chaos,
 				sceneText: "The end of everything is swallowed up, but you see each of your friends 'turn' and feel a push from an unknown and unknowable direction.  You blink hard, fight disorientation, and face Dr. Brotin-Dawr, your old school chum.  He looks at you, and immediately drops all pretense.  Like an origami flower being undone, he unflexes in a handful of unseeable dimension, and becomes a writhing mass of tentacles and evil.\nAnd you fight the last battle anyone ever could.",
 				options: [
 					["here if you win", goToSceneIndex, [38]],
@@ -329,6 +340,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 33,
 				sceneName: "Duck into a large building",
+				background: bg_theater_past,
 				sceneText: "You pop into a larger building hoping for a place to hide, and find yourself in some sort of arena.  No, a raised platform shows you to be hiding out in a theater of some size.  Ah.  And the costumed actors have paused and are watching what you'll do next.",
 				requires: ["banana", "cinnamon roll"],
 				options: [
@@ -361,6 +373,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 36,
+				background: bg_theater_past,
 				sceneName: "Freeze",
 				sceneText: "Until at once they laugh and tell you how terrified you looked and roast your inability to take a joke.  They invite you to stay and rest your feet as long as you can withstand their clamorous din.\nMeet the Dramatis Personea",
 				options: [
@@ -370,6 +383,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 37,
 				sceneName: "Gather your temporal allies",
+				background: bg_office_present,
 				sceneText: "You realize now what you were always meant to do.  There are things beyond our understanding that we always reach for.  A child pulling at ice cream with their mind.  A fervent prayer for the health of loved one delerious with fever.  Even a futile attempt to stretch out some mysterious muscle.  We always want to effect the world in ways we know aren't tied down to reality.\nBring the key to the roof",
 				options: [
 					["Bring the key to the roof", goToSceneIndex, [21]],
@@ -378,6 +392,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 38,
 				sceneName: "here if you win",
+				background: bg_spr_chaos,
 				sceneText: "You float, strong, so strong now, but unable to effect anything.  With no wall to push off of, with nothing to grab on to, you have no way of pulling yourself back into reality.  And so you float.  Your body wastes away.  The small eddies and vortices of time ripple through you as they find realignment, aging and delaying you to a suffering death.  But you saved everyone else.  You saved everyone and everything else.  Right?  Defeating the monster was enough, right?  One monster?  Was enough?\nYou die, hoping, in agony.",
 				options: [
 					]
@@ -444,6 +459,8 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 45,
+				background: bg_house_past,
+				character: MT_past_neutral,
 				sceneName: "I sneeze uncontrollably when jazz music plays, and I take powdered mandrake root.",
 				sceneText: "She glares.\nDaily.  You know, for the anti-oxidants.",
 				options: [
@@ -463,6 +480,8 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 47,
+				background: bg_house_past,
+				character: MT_past_smile,
 				sceneName: "Actually, I feel better than I have in years.",
 				sceneText: "She laughs, and it only just manages to reach her eyes.  You assess this person:  She seems intelligent.  She seems self possessed.  Above all, she has an assured sense of calm confidence surrounding her.  Though not bulging with muscle or regailing you with various sesquipedalia, you perceive that she is smart, and strong, and quite dangerous.\n'Glad to hear. The net can sometimes jolt its passenger.  You seem to have a knack for travel by mystery.  Any allergies?  Do you take anything daily?\nNo.\nI'm allergic to flowers and I take a multivitamin.\nI sneeze uncontrollably when jazz music plays, and I take powdered mandrake root.",
 				options: [
@@ -490,6 +509,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 50,
+				background: bg_office_present,
 				sceneName: "Contact Dr. Brotin-Dawr immediately",
 				sceneText: "You grab the phone and call your former colleague.  It seems somehow fitting that you should be the one to stop him from making a terrible mistake once again.  In grad school you were always saving him from himself.\nThese self congratulatory thoughts ripple through existence as you enter the Temporal Storm.",
 				options: [
@@ -518,6 +538,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 53,
 				sceneName: "Of course",
+				character: ND_past_neutral,
+				background: bg_house_past,
 				sceneText: "Her eyes grow sad and she steps back.\n'Confidence unearned is a hole in the universe.'\nThe device drops from her hands as you're taken by the\nTemporal Storm",
 				options: [
 					["Temporal Storm", goToSceneIndex, [23]],
@@ -535,6 +557,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 55,
 				sceneName: "Are you a doctor?",
+				character: MT_past_neutral,
+				background: bg_house_past,
 				sceneText: "'Yes.  Among other things.  Now please join me, won't you?  We will link you with those who can help you move along your way.'",
 				options: [
 					]
@@ -542,6 +566,9 @@ function DialogStructManager(){
 			{
 				sceneIndex: 56,
 				sceneName: "Let fate pull you along",
+				background: bg_street_past,
+				character: WB_past_neutral,
+				onLoad: {func: playSong , params: [where_she_at,0,true] },
 				sceneText: "Your host brings you through the labarynthine streets until you are quite confused.  It has been a long day and you are quite tired. finally, they bring you to a door that makes your eyes sting a little when you look directly at it.\nEnter the strange door",
 				options: [
 					["Enter the strange door", goToSceneIndex, [94]],
@@ -687,6 +714,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 71,
+				background: bg_theater_past,
 				sceneName: "offer the cinnamon roll",
 				sceneText: "The gooey confection and its processed sugar are a treat so rare in this world the group audibly considers accusing you of witchcraft.  They fall silent and stare at you for a moment...\nFreeze\nRun Away!",
 				options: [
@@ -696,6 +724,7 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 72,
+				background: bg_street_past,
 				sceneName: "Leave calmly",
 				sceneText: "You gather what little dignity you have left, and exit the home of Margaret Ashford as gracefully as you can.  You are immediately arrested for, well: 'Just look at ye!' utters the constable as they grab you.\nDie alone in a cell\nRun Away!\n\noffer a cinnamon roll\noffer a banana",
 				options: [
@@ -726,6 +755,8 @@ function DialogStructManager(){
 			{
 				sceneIndex: 75,
 				sceneName: "I will",
+				background: bg_spr_future,
+				character: spr_all_three,
 				sceneText: "NIKI steps back satisfied, and M.A.Sh.T steps forward, holding a small device.\n'And will you remember all this when the world is crumpling, loud like tin, all around you?'\nOf course\nThink it over before answering",
 				options: [
 					["Of course", goToSceneIndex, [53]],
@@ -854,7 +885,7 @@ function DialogStructManager(){
 				sceneName: "Grab a gooey cinnamon bun",
 				background: bg_office_present,  
 				find:"cinnamonBun",
-				sceneText: "This treat will hserve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you...",
+				sceneText: "This treat will serve as external courage to face the day's work tasks.  You silently thank yourself for the private washroom in your new offices as you notice the small package smearing sugary deliciousness on your pinkie.  Stepping back into the empty elevator, you...",
 				options: [
 					["Head to the roof", goToSceneIndex, [92]],
 					["Head to your offices", goToSceneIndex, [25]],
@@ -915,8 +946,9 @@ function DialogStructManager(){
 				sceneIndex: 94,
 				sceneName: "Enter the strange door",
 				background: bg_spr_future,
-				sceneText: "You are introduced to two more souls who also seem to know much more than you do.  There's not much to do but launch into an explanation of your current situation.  Part way into your description of your morning, reality suddenly starts to sort of... fold in... toward itself.  The world seems to tilt dangerously while holding completely still.  As the clamor of eternity rises in your ears, a friend bumps you at an odd angle.  A very odd angle.  Somehow orthogonal to existence, and you feel yourself unstick and return to\nThe Beginning\nif friends with all Get back to work.",
+				sceneText: "You are introduced to two more souls who also seem to know much more than you do.  There's not much to do but launch into an explanation of your current situation.  Part way into your description of your morning, reality suddenly starts to sort of... fold in... toward itself.  The world seems to tilt dangerously while holding completely still.  As the clamor of eternity rises in your ears, a friend bumps you at an odd angle.  A very odd angle.  Somehow orthogonal to existence, and you feel yourself unstick and return to...",
 				character: spr_all_three,
+				requires: [ -1 ,["William", "Margaret", "Nicholas" ]],
 				options: [
 					["The Beginning", goToSceneIndex, [0]],
 					["Get back to work.", goToSceneIndex, [18]],
