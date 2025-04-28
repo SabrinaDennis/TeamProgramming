@@ -82,6 +82,7 @@
 │   │   ├── 2.ico
 │   │   ├── icon.ico
 │   │   ├── icon.png
+│   │   ├── splash2.png
 │   │   └── splash.png
 │   └── story
 │       ├── readme.md
@@ -165,7 +166,9 @@
 │   │   ├── mac
 │   │   │   └── options_mac.yy
 │   │   ├── main
-│   │   │   └── options_main.yy
+│   │   │   ├── options_main.yy
+│   │   │   ├── template_icon.png
+│   │   │   └── template_image.png
 │   │   ├── operagx
 │   │   │   └── options_operagx.yy
 │   │   ├── tvos
@@ -664,4 +667,4 @@
 ├── KatherineNymshack.md
 └── KhouriFountain.txt
 
-233 directories, 432 files
+233 directories, 435 files
