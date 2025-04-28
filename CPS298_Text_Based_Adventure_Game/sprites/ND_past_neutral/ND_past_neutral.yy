@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"ND",
-    "path":"folders/Sprites/Characters/ND.yy",
+    "name":"past",
+    "path":"folders/Sprites/Characters/ND/past.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

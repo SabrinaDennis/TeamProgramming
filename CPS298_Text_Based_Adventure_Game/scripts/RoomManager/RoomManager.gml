@@ -125,11 +125,21 @@ function populateAllObjects() {
 	// given an array in scene.requires, deletes the options corresponding to not having the item.
 	//array_push( global.player.inventory, ("banana"));
     if(struct_exists(scene, "requires")){
-        for(var i=0; i<array_length(scene.requires) && i<array_length(options); i++){
-            if(scene.requires[i]!= -1 and !(array_contains(global.player.inventory, scene.requires[i]) or array_contains_ext(global.player.friendlist, scene.requires[i], true ))){
-                options[i] = undefined;
-            }
-        }
+        for(var i=0; i<array_length(scene.requires) and i<array_length(options); i++){
+			
+            if(scene.requires[i] != -1){
+				if(array_contains(global.player.inventory, scene.requires[i])) {
+					options[i] = undefined;
+				}
+				if(is_array(scene.requires[i])){
+					for(var friendIndex=0; friendIndex< array_length(scene.requires[i]); friendIndex++){
+						if(not array_contains(global.player.friendlist, scene.requires[i][friendIndex])){
+							options[i]=undefined;
+						}
+					}
+				}
+			}
+		}
         for(var i=0; i<array_length(options); i++){
             if(options[i] == undefined){
                 array_delete(options, i--, 1);
