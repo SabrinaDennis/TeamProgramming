@@ -26,7 +26,11 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"health","filters":[],"listItems":[],"multiselect":false,"name":"health","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"100","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"sprite","filters":[],"listItems":[],"multiselect":false,"name":"sprite","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resource":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"spr_enemy","varType":5,},
+    {"$GMObjectProperty":"v1","%Name":"drops","filters":[],"listItems":[],"multiselect":false,"name":"drops","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"global.itemList.woodenShield","varType":4,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,

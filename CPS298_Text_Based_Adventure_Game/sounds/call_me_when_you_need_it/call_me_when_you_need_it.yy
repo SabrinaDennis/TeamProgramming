@@ -1,0 +1,25 @@
+{
+  "$GMSound":"",
+  "%Name":"call_me_when_you_need_it",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "bitRate":128,
+  "compression":0,
+  "conversionMode":0,
+  "duration":66.67202,
+  "name":"call_me_when_you_need_it",
+  "parent":{
+    "name":"Mysterious",
+    "path":"folders/Sounds/music/Mysterious.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"call_me_when_you_need_it.mp3",
+  "type":0,
+  "volume":1.0,
+}

@@ -47,6 +47,10 @@ function saveGame(slot) {
 /// @param {string} slot Save slot to load
 /// @returns {bool} Success or failure
 function loadGame(slot) {
+	//init
+	loadDialogData();
+	
+	
     var filename = "save_" + string(slot) + ".sav";
     
     // Check if file exists
@@ -132,11 +136,18 @@ function getSaveInfo(slot) {
 
 /// @function createSaveMenu
 /// @description Creates a menu for saving/loading games
-/// @param {bool} isSaving True for save menu, false for load menu
-function createSaveMenu(isSaving) {
+/// @param {array} _parameters [isSaving = true/false, isInGame = true/false]
+function createSaveMenu(_parameters) {
+	var isSaving = _parameters[0]
+	var isInGame;
+
+	if(!is_undefined(_parameters[1])){
+		isInGame = _parameters[1]	
+	}
+
     var options = [];
     var menuTitle = isSaving ? "Save Game" : "Load Game";
-    
+	
     // Create options for 3 save slots
     for (var i = 1; i <= 3; i++) {
         var slotInfo = getSaveInfo(i);
@@ -162,9 +173,15 @@ function createSaveMenu(isSaving) {
         }
     }
     
-    // Add a back option
-    array_push(options, ["Back", -1, -1]);
+	if(isInGame){
+	    // Add a back option
+	    array_push(options, ["Back", createPauseMenu, -1]);	
+	}else{
+	    // Add a back option
+		array_push(options, ["Back", room_goto, rm_MainMenu]);
+	}
+
     
     // Create the menu
-    Menu(room_width/2, room_height/2, options, menuTitle, true);
+    Menu(room_width/2, room_height/2, options, menuTitle, true, true);
 }

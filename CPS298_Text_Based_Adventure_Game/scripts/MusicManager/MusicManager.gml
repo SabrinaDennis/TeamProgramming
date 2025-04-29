@@ -1,25 +1,38 @@
 /// @description This function plays a song.
 /// @function playSong
-/// @param {array} _parameters Array with [Sound Reference, Priority=(0), loop=(true/false)]
+/// @param {array} _parameters Array with [Asset.GMSound, Priority=(0), loop=(true/false)]
 function playSong(_parameters){
+	var priority, song, loop;
 	// Song / Loop
-	var song = _parameters[0] // Sound file
-	var priority = _parameters[1] // Int, default 0
-	var loop = _parameters[2] // true/false
-	audio_play_sound(song,priority,loop)
+	 song = _parameters[0] // Sound file
+	 if(audio_is_playing(song)){
+		return;
+	 }
+	 
+	if(array_length(_parameters)>1){
+		priority = _parameters[1];
+	} else { // Int, default 0
+		priority=0;
+	}
+		
+	if(array_length(_parameters)>2){// true/false
+		loop=_parameters[2];
+	} else {
+		loop=true;
+	}
+
+	audio_stop_all();
+	audio_play_sound_on(global.musicEmitter, song, loop,priority,global.volume.music);
 }
 
-
- /* 
- * begins music on the menu, and initializes background audio bus.
- * @function menuMusic
- * @param {none}
- */
-function menuMusic(){
+/// @description begins music on the menu, and initializes background audio bus.
+/// @function mainMenuMusic
+function mainMenuMusic(){
+	audio_stop_all()
 	global.musicBus = audio_bus_create();
 	global.musicEmitter = audio_emitter_create();
 	audio_emitter_bus(global.musicEmitter, global.musicBus);
-	audio_play_sound_on(global.musicEmitter, snd_menuMusic1, true,10,global.musicVolume);
+	audio_play_sound_on(global.musicEmitter, snd_menuMusic1, true,10,global.volume.music);
 }
 
 // Global variables to store specific effect IDs

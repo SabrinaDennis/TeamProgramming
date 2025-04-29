@@ -1,543 +1,995 @@
-.
-├── BB-profile-1800px.jpg
-├── BenBaker.md
-├── Brainstorm_dump
-│   ├── characters
-│   │   ├── animate.css
-│   │   ├── index.html
-│   │   ├── MT.png
-│   │   ├── ND.png
-│   │   ├── style.css
-│   │   └── WR.png
-│   ├── CharacterSprites
-│   │   ├── MSprites
-│   │   │   ├── MFutureNeutral.webp
-│   │   │   ├── MFutureSmile.webp
-│   │   │   ├── MPastNeutral.webp
-│   │   │   ├── MPastSmile.webp
-│   │   │   ├── MPresentNeutral.webp
-│   │   │   └── MPresentSmile.webp
-│   │   ├── NDSprites
-│   │   │   ├── NDfutureNeutral.webp
-│   │   │   ├── NDfutureSmile.webp
-│   │   │   ├── NDpastNeutral.webp
-│   │   │   ├── NDpastSmile.webp
-│   │   │   ├── NDpresentNeutral.webp
-│   │   │   └── NDpresentSmile.webp
-│   │   └── WBSprites
-│   │       ├── WBfutureNeutral.webp
-│   │       ├── WBfutureSmile.webp
-│   │       ├── WBpastNeutral.webp
-│   │       ├── WBpastSmile.webp
-│   │       ├── WBpresentNeutral.webp
-│   │       └── WBpresentSmile.webp
-│   ├── ENTER (SFX)
-│   │   └── ENTER SFX.mp3
-│   ├── GAME BEATS
-│   │   ├── 8 bit density.mp3
-│   │   ├── blowing up the town.mp3
-│   │   ├── Calm
-│   │   │   ├── Future Bikini Bottom.mp3
-│   │   │   └── where are you baby.mp3
-│   │   ├── Dangerous
-│   │   │   ├── Dark space.mp3
-│   │   │   └── SPEAKING IN TOUNGE.mp3
-│   │   ├── my love.mp3
-│   │   ├── Mysterious
-│   │   │   ├── call me when you need it.mp3
-│   │   │   └── where she at.mp3
-│   │   ├── Nice
-│   │   │   ├── alien smoke.mp3
-│   │   │   └── jumped out the clown house.mp3
-│   │   ├── rainbow road.mp3
-│   │   ├── rock world.mp3
-│   │   ├── Sky falling.mp3
-│   │   ├── Triumphant
-│   │   │   ├── CONGRATS.mp3
-│   │   │   └── shake it fast .mp3
-│   │   └── Where am i.mp3
-│   ├── Menu Clicks ( SFX )
-│   │   ├── Menu clicks.wav
-│   │   ├── Menu_down.mp3
-│   │   └── Menu_up.mp3
-│   ├── MENU MUSIC
-│   │   ├── MENU SONG #1.mp3
-│   │   ├── MENU SONG #2.mp3
-│   │   └── MENU SONG #3.mp3
-│   ├── README.txt
-│   ├── splashscreenandicon
-│   │   ├── 2.ico
-│   │   ├── icon.ico
-│   │   ├── icon.png
-│   │   └── splash.png
-│   └── story
-│       ├── readme.md
-│       ├── story_files
-│       │   ├── Text Adventures of Argothon.html
-│       │   └── Text Adventures of Argothon.twee
-│       └── twee_file_digester.zip
-├── Class 2.5
-├── CPS298_Text_Based_Adventure_Game
-│   ├── CPS298_Text_Based_Adventure_Game.resource_order
-│   ├── CPS298_Text_Based_Adventure_Game.yyp
-│   ├── datafiles
-│   │   └── We are using the Struct in DialogStructManager now.md
-│   ├── fonts
-│   │   └── PressStart2P
-│   │       ├── PressStart2P.old.png
-│   │       ├── PressStart2P.old.yy
-│   │       ├── PressStart2P.png
-│   │       ├── PressStart2P-Regular.ttf
-│   │       └── PressStart2P.yy
-│   ├── objects
-│   │   ├── ExampleMenu
-│   │   │   ├── ExampleMenu.yy
-│   │   │   └── Mouse_54.gml
-│   │   ├── MainText
-│   │   │   ├── Draw_0.gml
-│   │   │   └── MainText.yy
-│   │   ├── obj_battle_controller
-│   │   │   ├── Alarm_0.gml
-│   │   │   └── obj_battle_controller.yy
-│   │   ├── obj_button
-│   │   │   ├── Create_0.gml
-│   │   │   ├── Draw_0.gml
-│   │   │   ├── Mouse_4.gml
-│   │   │   └── obj_button.yy
-│   │   ├── obj_enemy
-│   │   │   ├── Create_0.gml
-│   │   │   ├── Draw_0.gml
-│   │   │   └── obj_enemy.yy
-│   │   ├── obj_gameController
-│   │   │   ├── obj_gameController.yy
-│   │   │   └── Step_0.gml
-│   │   ├── obj_healthbar
-│   │   │   └── obj_healthbar.yy
-│   │   ├── obj_inventory
-│   │   │   ├── Draw_0.gml
-│   │   │   └── obj_inventory.yy
-│   │   ├── obj_mainMenu
-│   │   │   ├── Create_0.gml
-│   │   │   └── obj_mainMenu.yy
-│   │   ├── obj_menu
-│   │   │   ├── Create_0.gml
-│   │   │   ├── Draw_0.gml
-│   │   │   ├── obj_menu.yy
-│   │   │   └── Step_0.gml
-│   │   ├── obj_pauseMenu
-│   │   │   ├── Create_0.gml
-│   │   │   └── obj_pauseMenu.yy
-│   │   ├── obj_scene_character
-│   │   │   ├── Draw_0.gml
-│   │   │   └── obj_scene_character.yy
-│   │   └── obj_test
-│   │       ├── Create_0.gml
-│   │       └── obj_test.yy
-│   ├── options
-│   │   ├── android
-│   │   │   └── options_android.yy
-│   │   ├── html5
-│   │   │   └── options_html5.yy
-│   │   ├── ios
-│   │   │   └── options_ios.yy
-│   │   ├── linux
-│   │   │   └── options_linux.yy
-│   │   ├── mac
-│   │   │   └── options_mac.yy
-│   │   ├── main
-│   │   │   └── options_main.yy
-│   │   ├── operagx
-│   │   │   └── options_operagx.yy
-│   │   ├── tvos
-│   │   │   └── options_tvos.yy
-│   │   └── windows
-│   │       ├── icons
-│   │       │   └── icon.ico
-│   │       ├── options_windows.yy
-│   │       └── splash
-│   │           └── splash.png
-│   ├── rooms
-│   │   ├── rm_Game
-│   │   │   ├── rm_Game.yy
-│   │   │   └── RoomCreationCode.gml
-│   │   └── rm_MainMenu
-│   │       ├── rm_MainMenu.yy
-│   │       └── RoomCreationCode.gml
-│   ├── scripts
-│   │   ├── DataManager
-│   │   │   ├── DataManager.gml
-│   │   │   └── DataManager.yy
-│   │   ├── DialogStructManager
-│   │   │   ├── DialogStructManager.gml
-│   │   │   └── DialogStructManager.yy
-│   │   ├── EnemyManager
-│   │   │   ├── EnemyManager.gml
-│   │   │   └── EnemyManager.yy
-│   │   ├── FuncManager
-│   │   │   ├── FuncManager.gml
-│   │   │   └── FuncManager.yy
-│   │   ├── InitVariables
-│   │   │   ├── InitVariables.gml
-│   │   │   └── InitVariables.yy
-│   │   ├── InventoryManager
-│   │   │   ├── InventoryManager.gml
-│   │   │   └── InventoryManager.yy
-│   │   ├── LogManager
-│   │   │   ├── LogManager.gml
-│   │   │   └── LogManager.yy
-│   │   ├── MenuManager
-│   │   │   ├── MenuManager.gml
-│   │   │   └── MenuManager.yy
-│   │   ├── MusicManager
-│   │   │   ├── MusicManager.gml
-│   │   │   └── MusicManager.yy
-│   │   ├── PlayerManager
-│   │   │   ├── PlayerManager.gml
-│   │   │   └── PlayerManager.yy
-│   │   ├── RoomManager
-│   │   │   ├── RoomManager.gml
-│   │   │   └── RoomManager.yy
-│   │   ├── SaveLoadManager
-│   │   │   ├── SaveLoadManager.gml
-│   │   │   └── SaveLoadManager.yy
-│   │   ├── TestManager
-│   │   │   ├── TestManager.gml
-│   │   │   └── TestManager.yy
-│   │   ├── TextBoxManager
-│   │   │   ├── TextBoxManager.gml
-│   │   │   └── TextBoxManager.yy
-│   │   └── ValidationUtility
-│   │       ├── ValidationUtility.gml
-│   │       └── ValidationUtility.yy
-│   ├── sounds
-│   │   ├── snd_menuDown
-│   │   │   ├── snd_menuDown.mp3
-│   │   │   └── snd_menuDown.yy
-│   │   ├── snd_menuMusic1
-│   │   │   ├── snd_menuMusic1.mp3
-│   │   │   └── snd_menuMusic1.yy
-│   │   ├── snd_menuSelect
-│   │   │   ├── snd_menuSelect.mp3
-│   │   │   └── snd_menuSelect.yy
-│   │   └── snd_menuUp
-│   │       ├── snd_menuUp.mp3
-│   │       └── snd_menuUp.yy
-│   ├── sprites
-│   │   ├── elevator_present
-│   │   │   ├── elevator_present.yy
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   └── layers
-│   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   ├── house_past
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── house_past.yy
-│   │   │   └── layers
-│   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   ├── house_present
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── house_present.yy
-│   │   │   └── layers
-│   │   │       └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │           └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   ├── MT_future_neutral
-│   │   │   ├── 359d18c8-242f-4367-98a8-678d3a53d465.png
-│   │   │   ├── layers
-│   │   │   │   └── 359d18c8-242f-4367-98a8-678d3a53d465
-│   │   │   │       └── 8cff194b-3685-42ee-9d4a-fda4579099a4.png
-│   │   │   └── MT_future_neutral.yy
-│   │   ├── MT_future_smile
-│   │   │   ├── 06436051-7ce5-4a68-bee9-5341740ddc44.png
-│   │   │   ├── layers
-│   │   │   │   └── 06436051-7ce5-4a68-bee9-5341740ddc44
-│   │   │   │       └── 5787dddf-86b7-4655-ab73-5839e6e6bf8a.png
-│   │   │   └── MT_future_smile.yy
-│   │   ├── MT_past_neutral
-│   │   │   ├── 6e0b6054-0501-4f4e-9321-758dc2848e20.png
-│   │   │   ├── layers
-│   │   │   │   └── 6e0b6054-0501-4f4e-9321-758dc2848e20
-│   │   │   │       └── 0e8879e6-abad-431b-a41e-b9d217b5ab8b.png
-│   │   │   └── MT_past_neutral.yy
-│   │   ├── MT_past_smile
-│   │   │   ├── 7489a3be-3962-4ef1-a8f2-56f7c0f59bf6.png
-│   │   │   ├── layers
-│   │   │   │   └── 7489a3be-3962-4ef1-a8f2-56f7c0f59bf6
-│   │   │   │       └── 09b606e3-6b93-496c-a6fa-faaade48d457.png
-│   │   │   └── MT_past_smile.yy
-│   │   ├── MT_present_neutral
-│   │   │   ├── d227ad3b-b95e-4fcf-b234-ed40a72bf64e.png
-│   │   │   ├── layers
-│   │   │   │   └── d227ad3b-b95e-4fcf-b234-ed40a72bf64e
-│   │   │   │       └── 44ec06c6-c640-4e1b-8c17-a9060b3ded81.png
-│   │   │   └── MT_present_neutral.yy
-│   │   ├── MT_present_smile
-│   │   │   ├── d4d8d8bb-b5df-4a14-b465-d55d4bdb8915.png
-│   │   │   ├── layers
-│   │   │   │   └── d4d8d8bb-b5df-4a14-b465-d55d4bdb8915
-│   │   │   │       └── c335289b-38a6-4d0f-aab5-22576dd21735.png
-│   │   │   └── MT_present_smile.yy
-│   │   ├── ND_future_neutral
-│   │   │   ├── c4cc8e9f-7108-4b35-88a9-7dbd6ab00282.png
-│   │   │   ├── layers
-│   │   │   │   └── c4cc8e9f-7108-4b35-88a9-7dbd6ab00282
-│   │   │   │       └── e0607512-b2f0-461c-8791-086ef62ed177.png
-│   │   │   └── ND_future_neutral.yy
-│   │   ├── ND_future_smile
-│   │   │   ├── 1677fadd-d2e1-4965-8650-c702c6a21783.png
-│   │   │   ├── layers
-│   │   │   │   └── 1677fadd-d2e1-4965-8650-c702c6a21783
-│   │   │   │       └── 8979c1c0-9755-4e05-a420-79b167626796.png
-│   │   │   └── ND_future_smile.yy
-│   │   ├── ND_past_neutral
-│   │   │   ├── bac1c403-b49a-4435-acb6-50d76ee5687d.png
-│   │   │   ├── layers
-│   │   │   │   └── bac1c403-b49a-4435-acb6-50d76ee5687d
-│   │   │   │       └── 5390d9d8-c0e1-4f7d-999c-bfdc80d7c889.png
-│   │   │   └── ND_past_neutral.yy
-│   │   ├── ND_past_smile
-│   │   │   ├── 3d8a8ee2-1748-4072-babb-d6b1d5fd2080.png
-│   │   │   ├── layers
-│   │   │   │   └── 3d8a8ee2-1748-4072-babb-d6b1d5fd2080
-│   │   │   │       └── 9127f43d-987b-4567-bf50-fe99ad7267c1.png
-│   │   │   └── ND_past_smile.yy
-│   │   ├── ND_present_neutral
-│   │   │   ├── 036d1e6f-33ee-4655-8188-73cc3ef1b8be.png
-│   │   │   ├── layers
-│   │   │   │   └── 036d1e6f-33ee-4655-8188-73cc3ef1b8be
-│   │   │   │       └── 5a59fa36-cf4c-48da-9f4c-2669526ef597.png
-│   │   │   └── ND_present_neutral.yy
-│   │   ├── ND_present_smile
-│   │   │   ├── d775aed5-d1f0-4a78-a1ea-92048ef8a7c9.png
-│   │   │   ├── layers
-│   │   │   │   └── d775aed5-d1f0-4a78-a1ea-92048ef8a7c9
-│   │   │   │       └── 95f0d14a-b588-475a-9572-e49a4a601d7d.png
-│   │   │   └── ND_present_smile.yy
-│   │   ├── office_present
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── office_present.yy
-│   │   ├── outside
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── outside.yy
-│   │   ├── present_street
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── present_street.yy
-│   │   ├── spr_Background
-│   │   │   ├── ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
-│   │   │   ├── layers
-│   │   │   │   └── ace3d77e-c106-47d5-ad27-2a69b0b56be6
-│   │   │   │       └── 458c13b6-4fb1-406c-b609-28c2aa3a6853.png
-│   │   │   └── spr_background.yy
-│   │   ├── spr_BG_error
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── spr_BG_error.yy
-│   │   ├── spr_black
-│   │   │   ├── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9.png
-│   │   │   ├── layers
-│   │   │   │   └── a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9
-│   │   │   │       └── 4610fec8-0919-4806-b68b-91b06eec5a7c.png
-│   │   │   └── spr_black.yy
-│   │   ├── spr_Button
-│   │   │   ├── 1c678b0e-d0f2-4a9b-ac53-bff98c365034.png
-│   │   │   ├── layers
-│   │   │   │   └── 1c678b0e-d0f2-4a9b-ac53-bff98c365034
-│   │   │   │       └── 5f66077f-d78e-46a0-9804-599fba16ca20.png
-│   │   │   └── spr_button.yy
-│   │   ├── spr_chaos
-│   │   │   ├── f8a746be-7171-4526-ac7e-ab3356d44252.png
-│   │   │   ├── layers
-│   │   │   │   └── f8a746be-7171-4526-ac7e-ab3356d44252
-│   │   │   │       └── 82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
-│   │   │   └── spr_chaos.yy
-│   │   ├── spr_enemy
-│   │   │   ├── 0c44e8c4-06c7-40c8-a790-8e7284917a81.png
-│   │   │   ├── layers
-│   │   │   │   └── 0c44e8c4-06c7-40c8-a790-8e7284917a81
-│   │   │   │       └── 1694d07d-c98b-4920-9651-0860f6594778.png
-│   │   │   └── spr_enemy.yy
-│   │   ├── spr_key
-│   │   │   ├── 2db225aa-4580-4fdd-81d9-6543a58660e0.png
-│   │   │   ├── layers
-│   │   │   │   └── 2db225aa-4580-4fdd-81d9-6543a58660e0
-│   │   │   │       └── 57377398-8e52-4443-9807-3207fed457ef.png
-│   │   │   └── spr_key.yy
-│   │   ├── spr_menuBox
-│   │   │   ├── 38dd2a43-c6dc-46fa-a525-374cb5f6738d.png
-│   │   │   ├── layers
-│   │   │   │   └── 38dd2a43-c6dc-46fa-a525-374cb5f6738d
-│   │   │   │       └── efc5e6fe-027f-4dec-a199-71e9098bf7bd.png
-│   │   │   └── spr_menuBox.yy
-│   │   ├── street_past
-│   │   │   ├── 3c942277-170d-44a9-be89-59dabae84ec5.png
-│   │   │   ├── layers
-│   │   │   │   └── 3c942277-170d-44a9-be89-59dabae84ec5
-│   │   │   │       └── 5ad62bea-1454-472a-a851-bc4e8accba19.png
-│   │   │   └── street_past.yy
-│   │   ├── theater_past
-│   │   │   ├── e5d762a1-6679-4d47-afaa-d16e611efed4.png
-│   │   │   ├── layers
-│   │   │   │   └── e5d762a1-6679-4d47-afaa-d16e611efed4
-│   │   │   │       └── 6c38f19e-a607-4a18-90a7-5f8f307e280c.png
-│   │   │   └── theater_past.yy
-│   │   ├── WB_future_neutral
-│   │   │   ├── 9405df99-5b2c-474c-994c-60e28396f504.png
-│   │   │   ├── layers
-│   │   │   │   └── 9405df99-5b2c-474c-994c-60e28396f504
-│   │   │   │       └── d4b35851-f640-4ba7-b0ad-fa5a0050a058.png
-│   │   │   └── WB_future_neutral.yy
-│   │   ├── WB_future_smile
-│   │   │   ├── d9056d8b-71bf-4e11-8747-8630505d063c.png
-│   │   │   ├── layers
-│   │   │   │   └── d9056d8b-71bf-4e11-8747-8630505d063c
-│   │   │   │       └── 714030eb-4959-455a-9fe6-f820b18067e1.png
-│   │   │   └── WB_future_smile.yy
-│   │   ├── WB_past_neutral
-│   │   │   ├── 2b0882b1-c200-4810-bfe4-193d1a3875b7.png
-│   │   │   ├── layers
-│   │   │   │   └── 2b0882b1-c200-4810-bfe4-193d1a3875b7
-│   │   │   │       └── 0edb01a0-c4fd-4e44-a779-9208d51a17e2.png
-│   │   │   └── WB_past_neutral.yy
-│   │   ├── WB_past_smile
-│   │   │   ├── 0baaed1e-4265-45c7-8b93-362942fe0a77.png
-│   │   │   ├── layers
-│   │   │   │   └── 0baaed1e-4265-45c7-8b93-362942fe0a77
-│   │   │   │       └── 69a8f3ad-1d06-4ae5-bda8-457999d4fc87.png
-│   │   │   └── WB_past_smile.yy
-│   │   ├── WB_present_neutral
-│   │   │   ├── b8b09e61-91fd-4dc7-9b90-246d0bc963cf.png
-│   │   │   ├── layers
-│   │   │   │   └── b8b09e61-91fd-4dc7-9b90-246d0bc963cf
-│   │   │   │       └── 17a7209a-86db-4728-936f-eb8405ff15cc.png
-│   │   │   └── WB_present_neutral.yy
-│   │   └── WB_present_smile
-│   │       ├── a8c07506-391f-4c3b-af0d-86b1ffeaeda4.png
-│   │       ├── layers
-│   │       │   └── a8c07506-391f-4c3b-af0d-86b1ffeaeda4
-│   │       │       └── 50821304-6167-48e6-bd3b-4e35b6783e0b.png
-│   │       └── WB_present_smile.yy
-│   └── tmp
-│       └── igor
-│           ├── cache
-│           │   ├── Default
-│           │   │   ├── Audio
-│           │   │   │   ├── snd_menuDown.wav
-│           │   │   │   ├── snd_menuDown.xml
-│           │   │   │   ├── snd_menuUp.wav
-│           │   │   │   └── snd_menuUp.xml
-│           │   │   ├── Shader
-│           │   │   │   └── HLSL11
-│           │   │   │       ├── Default___yy_sdf_blur_shader_fout.shdata
-│           │   │   │       ├── Default___yy_sdf_blur_shader_vout.shdata
-│           │   │   │       ├── Default___yy_sdf_effect_shader_fout.shdata
-│           │   │   │       ├── Default___yy_sdf_effect_shader_vout.shdata
-│           │   │   │       ├── Default___yy_sdf_shader_fout.shdata
-│           │   │   │       └── Default___yy_sdf_shader_vout.shdata
-│           │   │   ├── Sprite
-│           │   │   ├── TextureGroups
-│           │   │   │   ├── _2048_0
-│           │   │   │   │   ├── __yy__0fallbacktexture.png_yyg_auto_gen_tex_group_name__0.bz2
-│           │   │   │   │   └── __YY__0fallbacktexture.png_YYG_AUTO_GEN_TEX_GROUP_NAME_.xml
-│           │   │   │   └── _2048_131
-│           │   │   │       ├── default_0.bz2
-│           │   │   │       ├── default_1.bz2
-│           │   │   │       ├── default_2.bz2
-│           │   │   │       ├── default_3.bz2
-│           │   │   │       └── Default.xml
-│           │   │   └── TexturePageEntries
-│           │   │       ├── _2048_0
-│           │   │       │   ├── res_fallbacktexture.tpe.qoi
-│           │   │       │   └── res_fallbacktexture.tpe.xml
-│           │   │       └── _2048_131
-│           │   │           ├── font_CPS298_Text_Based_Adventure_Game_font.tpe.qoi
-│           │   │           ├── font_CPS298_Text_Based_Adventure_Game_font.tpe.xml
-│           │   │           ├── font_small_CPS298_Text_Based_Adventure_Game_font_small.tpe.qoi
-│           │   │           ├── font_small_CPS298_Text_Based_Adventure_Game_font_small.tpe.xml
-│           │   │           ├── house_past_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.qoi
-│           │   │           ├── house_past_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.xml
-│           │   │           ├── MT_future_neutral_CPS298_Text_Based_Adventure_Game_359d18c8-242f-4367-98a8-678d3a53d465.tpe.qoi
-│           │   │           ├── MT_future_neutral_CPS298_Text_Based_Adventure_Game_359d18c8-242f-4367-98a8-678d3a53d465.tpe.xml
-│           │   │           ├── MT_future_smile_CPS298_Text_Based_Adventure_Game_06436051-7ce5-4a68-bee9-5341740ddc44.tpe.qoi
-│           │   │           ├── MT_future_smile_CPS298_Text_Based_Adventure_Game_06436051-7ce5-4a68-bee9-5341740ddc44.tpe.xml
-│           │   │           ├── MT_past_neutral_CPS298_Text_Based_Adventure_Game_6e0b6054-0501-4f4e-9321-758dc2848e20.tpe.qoi
-│           │   │           ├── MT_past_neutral_CPS298_Text_Based_Adventure_Game_6e0b6054-0501-4f4e-9321-758dc2848e20.tpe.xml
-│           │   │           ├── MT_past_smile_CPS298_Text_Based_Adventure_Game_7489a3be-3962-4ef1-a8f2-56f7c0f59bf6.tpe.qoi
-│           │   │           ├── MT_past_smile_CPS298_Text_Based_Adventure_Game_7489a3be-3962-4ef1-a8f2-56f7c0f59bf6.tpe.xml
-│           │   │           ├── MT_present_neutral_CPS298_Text_Based_Adventure_Game_d227ad3b-b95e-4fcf-b234-ed40a72bf64e.tpe.qoi
-│           │   │           ├── MT_present_neutral_CPS298_Text_Based_Adventure_Game_d227ad3b-b95e-4fcf-b234-ed40a72bf64e.tpe.xml
-│           │   │           ├── MT_present_smile_CPS298_Text_Based_Adventure_Game_d4d8d8bb-b5df-4a14-b465-d55d4bdb8915.tpe.qoi
-│           │   │           ├── MT_present_smile_CPS298_Text_Based_Adventure_Game_d4d8d8bb-b5df-4a14-b465-d55d4bdb8915.tpe.xml
-│           │   │           ├── ND_future_neutral_CPS298_Text_Based_Adventure_Game_c4cc8e9f-7108-4b35-88a9-7dbd6ab00282.tpe.qoi
-│           │   │           ├── ND_future_neutral_CPS298_Text_Based_Adventure_Game_c4cc8e9f-7108-4b35-88a9-7dbd6ab00282.tpe.xml
-│           │   │           ├── ND_future_smile_CPS298_Text_Based_Adventure_Game_1677fadd-d2e1-4965-8650-c702c6a21783.tpe.qoi
-│           │   │           ├── ND_future_smile_CPS298_Text_Based_Adventure_Game_1677fadd-d2e1-4965-8650-c702c6a21783.tpe.xml
-│           │   │           ├── ND_past_neutral_CPS298_Text_Based_Adventure_Game_bac1c403-b49a-4435-acb6-50d76ee5687d.tpe.qoi
-│           │   │           ├── ND_past_neutral_CPS298_Text_Based_Adventure_Game_bac1c403-b49a-4435-acb6-50d76ee5687d.tpe.xml
-│           │   │           ├── ND_past_smile_CPS298_Text_Based_Adventure_Game_3d8a8ee2-1748-4072-babb-d6b1d5fd2080.tpe.qoi
-│           │   │           ├── ND_past_smile_CPS298_Text_Based_Adventure_Game_3d8a8ee2-1748-4072-babb-d6b1d5fd2080.tpe.xml
-│           │   │           ├── ND_present_neutral_CPS298_Text_Based_Adventure_Game_036d1e6f-33ee-4655-8188-73cc3ef1b8be.tpe.qoi
-│           │   │           ├── ND_present_neutral_CPS298_Text_Based_Adventure_Game_036d1e6f-33ee-4655-8188-73cc3ef1b8be.tpe.xml
-│           │   │           ├── ND_present_smile_CPS298_Text_Based_Adventure_Game_d775aed5-d1f0-4a78-a1ea-92048ef8a7c9.tpe.qoi
-│           │   │           ├── ND_present_smile_CPS298_Text_Based_Adventure_Game_d775aed5-d1f0-4a78-a1ea-92048ef8a7c9.tpe.xml
-│           │   │           ├── PressStart2P_CPS298_Text_Based_Adventure_Game_PressStart2P.tpe.qoi
-│           │   │           ├── PressStart2P_CPS298_Text_Based_Adventure_Game_PressStart2P.tpe.xml
-│           │   │           ├── spr_background_CPS298_Text_Based_Adventure_Game_ace3d77e-c106-47d5-ad27-2a69b0b56be6.tpe.qoi
-│           │   │           ├── spr_background_CPS298_Text_Based_Adventure_Game_ace3d77e-c106-47d5-ad27-2a69b0b56be6.tpe.xml
-│           │   │           ├── spr_BG_error_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.qoi
-│           │   │           ├── spr_BG_error_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.xml
-│           │   │           ├── spr_button_CPS298_Text_Based_Adventure_Game_1c678b0e-d0f2-4a9b-ac53-bff98c365034.tpe.qoi
-│           │   │           ├── spr_button_CPS298_Text_Based_Adventure_Game_1c678b0e-d0f2-4a9b-ac53-bff98c365034.tpe.xml
-│           │   │           ├── spr_enemy_CPS298_Text_Based_Adventure_Game_0c44e8c4-06c7-40c8-a790-8e7284917a81.tpe.qoi
-│           │   │           ├── spr_enemy_CPS298_Text_Based_Adventure_Game_0c44e8c4-06c7-40c8-a790-8e7284917a81.tpe.xml
-│           │   │           ├── spr_key_CPS298_Text_Based_Adventure_Game_2db225aa-4580-4fdd-81d9-6543a58660e0.tpe.qoi
-│           │   │           ├── spr_key_CPS298_Text_Based_Adventure_Game_2db225aa-4580-4fdd-81d9-6543a58660e0.tpe.xml
-│           │   │           ├── spr_menuBox_CPS298_Text_Based_Adventure_Game_38dd2a43-c6dc-46fa-a525-374cb5f6738d.tpe.qoi
-│           │   │           ├── spr_menuBox_CPS298_Text_Based_Adventure_Game_38dd2a43-c6dc-46fa-a525-374cb5f6738d.tpe.xml
-│           │   │           ├── street_past_CPS298_Text_Based_Adventure_Game_3c942277-170d-44a9-be89-59dabae84ec5.tpe.qoi
-│           │   │           ├── street_past_CPS298_Text_Based_Adventure_Game_3c942277-170d-44a9-be89-59dabae84ec5.tpe.xml
-│           │   │           ├── theater_past_CPS298_Text_Based_Adventure_Game_e5d762a1-6679-4d47-afaa-d16e611efed4.tpe.qoi
-│           │   │           ├── theater_past_CPS298_Text_Based_Adventure_Game_e5d762a1-6679-4d47-afaa-d16e611efed4.tpe.xml
-│           │   │           ├── WB_future_neutral_CPS298_Text_Based_Adventure_Game_9405df99-5b2c-474c-994c-60e28396f504.tpe.qoi
-│           │   │           ├── WB_future_neutral_CPS298_Text_Based_Adventure_Game_9405df99-5b2c-474c-994c-60e28396f504.tpe.xml
-│           │   │           ├── WB_future_smile_CPS298_Text_Based_Adventure_Game_d9056d8b-71bf-4e11-8747-8630505d063c.tpe.qoi
-│           │   │           ├── WB_future_smile_CPS298_Text_Based_Adventure_Game_d9056d8b-71bf-4e11-8747-8630505d063c.tpe.xml
-│           │   │           ├── WB_past_neutral_CPS298_Text_Based_Adventure_Game_2b0882b1-c200-4810-bfe4-193d1a3875b7.tpe.qoi
-│           │   │           ├── WB_past_neutral_CPS298_Text_Based_Adventure_Game_2b0882b1-c200-4810-bfe4-193d1a3875b7.tpe.xml
-│           │   │           ├── WB_past_smile_CPS298_Text_Based_Adventure_Game_0baaed1e-4265-45c7-8b93-362942fe0a77.tpe.qoi
-│           │   │           ├── WB_past_smile_CPS298_Text_Based_Adventure_Game_0baaed1e-4265-45c7-8b93-362942fe0a77.tpe.xml
-│           │   │           ├── WB_present_neutral_CPS298_Text_Based_Adventure_Game_b8b09e61-91fd-4dc7-9b90-246d0bc963cf.tpe.qoi
-│           │   │           ├── WB_present_neutral_CPS298_Text_Based_Adventure_Game_b8b09e61-91fd-4dc7-9b90-246d0bc963cf.tpe.xml
-│           │   │           ├── WB_present_smile_CPS298_Text_Based_Adventure_Game_a8c07506-391f-4c3b-af0d-86b1ffeaeda4.tpe.qoi
-│           │   │           └── WB_present_smile_CPS298_Text_Based_Adventure_Game_a8c07506-391f-4c3b-af0d-86b1ffeaeda4.tpe.xml
-│           │   ├── ExtensionOptions.json
-│           │   ├── MainOptions.json
-│           │   ├── PlatformOptions.json
-│           │   ├── __yy_sdf_blur_shader.shader
-│           │   ├── __yy_sdf_effect_shader.shader
-│           │   └── __yy_sdf_shader.shader
-│           └── out
-│               ├── CPS298_Text_Based_Adventure_Game.win
-│               ├── CPS298_Text_Based_Adventure_Game.yydebug
-│               ├── options.ini
-│               └── We are using the Struct in DialogStructManager now.md
-├── documents
-│   ├── SRS1.4.pdf
-│   └── SRS2.2.pdf
-├── folder_structure.txt
-├── IjeomaOnuosa.md
-├── JamesByrnes.md
-├── KatherineNymshack.md
-└── KhouriFountain.txt
-
-192 directories, 349 files
+﻿C:\Users\benja\school\CPS298\repo\TeamProgramming\.git
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\branches
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\info
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\dev
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\feature
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\dev
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\feature
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\01
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\02
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\09
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\0a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\0d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\0f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\1a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\1c
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\1d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\22
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\24
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\25
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\27
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\2f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\31
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\33
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\34
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\36
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\37
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\3c
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\3d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\3f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\40
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\41
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\44
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\45
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\47
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\4c
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\4e
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\54
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\55
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\57
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\5a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\5d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\5e
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\66
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\68
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\69
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\6a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\73
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\77
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\7d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\7e
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\80
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\81
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\82
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\83
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\87
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\88
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8c
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\92
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\94
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\95
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\97
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\9d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\a1
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\a6
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\aa
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\ab
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b0
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b7
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\bb
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\bc
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\bf
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c5
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c7
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c8
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\ca
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\cc
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\cf
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\d0
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\dc
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\dd
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\df
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\e6
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\e9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\ef
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f5
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f6
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f8
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\fa
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\fe
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\info
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\pack
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\heads
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\heads\dev
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\heads\feature
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes\origin
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes\origin\dev
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes\origin\feature
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\tags
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\characters
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\MSprites
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\NDSprites
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\WBSprites
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\ENTER (SFX)
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Calm
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Dangerous
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Mysterious
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Nice
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Triumphant
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX\new select
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\Menu Clicks ( SFX )
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\MENU MUSIC
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\new music
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\splashscreenandicon
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\story
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\story\story_files
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\datafiles
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\fonts
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\fonts\PressStart2P
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\EndText
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\ExampleMenu
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\MainText
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_battle_controller
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_button
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_enemy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_gameController
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_healthbar
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_inventory
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_mainMenu
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_menu
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_pauseMenu
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_scene_character
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_test
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\android
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\html5
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\ios
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\linux
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\mac
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\main
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\operagx
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\tvos
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\windows
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\windows\icons
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\windows\splash
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\rooms
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\rooms\rm_Game
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\rooms\rm_MainMenu
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\DataManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\DialogStructManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\EnemyManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\FuncManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\InitVariables
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\InventoryManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\LogManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\MenuManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\MusicManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\PlayerManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\RoomManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\SaveLoadManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\TestManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\TextBoxManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\ValidationUtility
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\_8_bit_density
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\_stepping_up_the_bricks
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\alien_smoke
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\am_i_coming_bacK
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\blowing_up_the_town
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\call_me_when_you_need_it
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\CONGRATS
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Dark_space
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\ENTER_SFX
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\glitch_factory
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\jumped_out_the_clown_house
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\my_love
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\rainbow_road
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\rock_world
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\shake_it_fast_
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\six_million_ways_to_die
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Sky_falling
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_Future_Bikini_Bottom
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_MENU_SONG__2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_MENU_SONG__3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuDown
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuMusic1
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuSelect
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuUp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_where_are_you_baby
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\SPEAKING_IN_TOUNGE
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Where_am_i
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\where_she_at
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\.stitch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_elevator_present
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_elevator_present\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_elevator_present\layers\1386aa93-225f-41fa-a3fc-df3847ac0558
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_past
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_past\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_past\layers\f8a746be-7171-4526-ac7e-ab3356d44252
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_present
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_present\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_present\layers\36e0356e-c64f-4fea-acf2-fe096119bd34
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_office_present
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_office_present\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_office_present\layers\f164bea7-86a9-41fe-9a9d-15bf5acf10f9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_outside
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_outside\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_outside\layers\5af2ef13-7072-4fc9-a1e3-c33da78f48ca
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_present_street
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_present_street\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_present_street\layers\b8e0a9cd-86f3-4b0e-ae8b-81b073aa7cd4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_background
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_background\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_background\layers\ace3d77e-c106-47d5-ad27-2a69b0b56be6
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_BG_error
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_BG_error\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_BG_error\layers\f8a746be-7171-4526-ac7e-ab3356d44252
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_black
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_black\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_black\layers\a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_chaos
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_chaos\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_chaos\layers\12dc5ae6-8a0e-4648-af79-f33a5c9d2631
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_future
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_future\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_future\layers\f8a746be-7171-4526-ac7e-ab3356d44252
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_street_past
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_street_past\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_street_past\layers\3c942277-170d-44a9-be89-59dabae84ec5
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_theater_past
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_theater_past\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_theater_past\layers\e5d762a1-6679-4d47-afaa-d16e611efed4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_neutral\layers\359d18c8-242f-4367-98a8-678d3a53d465
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_smile\layers\06436051-7ce5-4a68-bee9-5341740ddc44
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_neutral\layers\6e0b6054-0501-4f4e-9321-758dc2848e20
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_smile\layers\7489a3be-3962-4ef1-a8f2-56f7c0f59bf6
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_neutral\layers\d227ad3b-b95e-4fcf-b234-ed40a72bf64e
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_smile\layers\d4d8d8bb-b5df-4a14-b465-d55d4bdb8915
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_neutral\layers\c4cc8e9f-7108-4b35-88a9-7dbd6ab00282
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_smile\layers\1677fadd-d2e1-4965-8650-c702c6a21783
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_neutral\layers\bac1c403-b49a-4435-acb6-50d76ee5687d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_smile\layers\3d8a8ee2-1748-4072-babb-d6b1d5fd2080
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_neutral\layers\036d1e6f-33ee-4655-8188-73cc3ef1b8be
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_smile\layers\d775aed5-d1f0-4a78-a1ea-92048ef8a7c9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_all_three
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_all_three\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_all_three\layers\2185f256-1f6c-43dd-9739-7a4fa1bca4bc
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_Button
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_Button\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_Button\layers\1c678b0e-d0f2-4a9b-ac53-bff98c365034
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_blue
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_blue\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_blue\layers\1f211d4b-e82d-4ee7-b5d2-0dc5748a2c74
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_red
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_red\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_red\layers\734b16a3-7a51-4c9b-a044-824e4235bd30
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_eldritch_horror
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_eldritch_horror\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_eldritch_horror\layers\994dd914-b0ea-40c6-a64b-cb14a654cba8
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_enemy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_enemy\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_enemy\layers\0c44e8c4-06c7-40c8-a790-8e7284917a81
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_key
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_key\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_key\layers\2db225aa-4580-4fdd-81d9-6543a58660e0
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_menuBox
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_menuBox\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_menuBox\layers\38dd2a43-c6dc-46fa-a525-374cb5f6738d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_neutral\layers\9405df99-5b2c-474c-994c-60e28396f504
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_smile\layers\d9056d8b-71bf-4e11-8747-8630505d063c
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_neutral\layers\2b0882b1-c200-4810-bfe4-193d1a3875b7
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_smile\layers\0baaed1e-4265-45c7-8b93-362942fe0a77
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_neutral
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_neutral\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_neutral\layers\b8b09e61-91fd-4dc7-9b90-246d0bc963cf
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_smile
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_smile\layers
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_smile\layers\a8c07506-391f-4c3b-af0d-86b1ffeaeda4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Audio
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader\HLSL11
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Sprite
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_0
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_131
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_0
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\out
+C:\Users\benja\school\CPS298\repo\TeamProgramming\diagrams
+C:\Users\benja\school\CPS298\repo\TeamProgramming\documents
+---FILES---
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.DS_Store
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\AUTO_MERGE
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\CHERRY_PICK_HEAD
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\COMMIT_EDITMSG
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\config
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\description
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\FETCH_HEAD
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\gitk.cache
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\HEAD
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\applypatch-msg.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\commit-msg.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\fsmonitor-watchman.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\post-update.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\pre-applypatch.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\pre-commit
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\pre-commit.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\pre-merge-commit.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\prepare-commit-msg.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\pre-push.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\pre-rebase.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\pre-receive.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\push-to-checkout.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\hooks\update.sample
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\index
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\info\exclude
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\info\refs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\HEAD
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\backgroundLoader
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\barebones_map_nav
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\ben_ChoiceManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\ben_function_test
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\ben_json_translations
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\BenBaker
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\ben-storywork
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\ben-story-working
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\benwork
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\characters
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\dev\io
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\develop
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\DialogStructManager
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\docs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\elevatoreffect
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\errorFixes
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\feature\combat-error-handling
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\James-TestBranch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\katysbranch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\main
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\storyDigester
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\heads\update_digester_archive
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\backgroundLoader
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\ben-cleanUp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\ben-storywork
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\ben-story-working
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\benwork
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\dev\io
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\develop
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\diagrams
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\docs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\elevatoreffect
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\errorFixes
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\error-handling-system
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\feature\combat-error-handling
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\HEAD
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\James-TestBranch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\James-Test-Branch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\katysbranch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\main
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\logs\refs\remotes\origin\storyDigester
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\MERGE_MSG
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\01\d622e90e2778bd08031523f0b178cd11ada303
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\02\2be971fd6644e967e2eeeed5d5ea9184955723
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\09\b6c3dc381308460c6fd8e18dbe87acaf8a5c50
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\0a\f108eb598f5c9e639f136c2d4c3ec008f28198
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\0d\4f0dc797d1f57ac72efa3aa1ff23a60ca830c7
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\0f\271e42ef2eb5cf410b3415dfa9e8a0dc77f74a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\1a\66acf6cb57eef8dc4935ca2e060420eef1d1e0
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\1c\7c31fa74b17c526fa55895ae608a5ac8fd51a2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\1d\82d9876657901f069fcbc7d07950cad338fee1
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\22\d22453d6a189114a67ec852a47336eaed109cf
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\24\e821d211dd85f8188d8e678052ae8d08ffda22
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\25\49c99dd44a0132ff996deece06459ac47e78bd
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\27\109fa1806971f0b54a8b8625880a708650e356
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\2f\5df2bb7d17ba77d4669e466f2903b9f5a75bae
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\31\1e3b6df3eff8413e637f3e8a024d903907b7db
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\31\67954811d976d4b51f3a9737fabd52609fee41
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\33\9f8193349ab867a59ef106316fd8b48a2d7695
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\34\ad2d88938dad1335cc1da4dbef6c832c3e2324
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\36\55896639800157538964ae395e6a78b2e96731
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\37\fd05f36ebde149368f25fdc81728a95ce22198
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\3c\bc764e13fe6e8986aa16814fb5747702450b5e
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\3d\eca6b23b01eb41fb7de0bc12596587e891e2bc
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\3f\b9b567bb36c2dddfca47dc3f43014f6c01f8ed
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\40\b05dad6f86b38ff0ba7615a0337cfec2e6f81c
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\41\e27f2af8269ff930e501ebf6f93ac8b54f01f1
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\44\ec3663e679bc38c1c85a4338db129fd3513239
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\45\5842d02b421b122e50c1566e2d7f4c6465c810
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\47\a0510bb4fc5f092563207d490b1ee0f548663f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\4c\201b0adb205aa492d903c92a41d2ace45ad176
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\4e\274ab67e66819d69f0baa7d0496abcf67ac49b
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\4e\a8578d78f7ef8655b09325f1720c59b45d94cb
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\54\d14b93c6c0ba18ac2ababf2f1e6fb10b325b92
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\55\07a828ba07e287f1715668183711534faed060
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\57\e9e6d8b1c497234237571edc80920d59d433ce
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\5a\53214cdb764a1a18a1c51ff0119a12774ed994
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\5d\0feec840ac582514bbfbf1b8707503a318e242
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\5e\6b14e95474a2e0bc466ed901c703bf28c58a6f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\5e\b65971df94d5e997e77ff4f484b627470dc17f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\66\d49ea93dc3d468260dcaebf7ce7253eeed2211
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\68\0dff0d0d202e912bc88b800b711d4bf1bdb643
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\69\2d7a825b414d8380f659d8167863106a8580ff
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\69\344b6f78cade604158c4a5730b9d9daa5f0743
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\69\56f5ec42d5bdc3e2f89a14d44e7a903ae08dc8
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\6a\7a97832857a6404f660e86c1c2482faf0a753f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\6a\eb2f65a52249306c489bbdd22114f0863d6347
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\73\01ca6d5b840f8db13d023be6ad7d5abf5f6aeb
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\73\e6fe2bc33248f26cb1541040979d6fc035da31
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\77\3b24e1ec552da35ba8dd6bb5e291c6e3220796
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\7d\7113b4fba3f70beb048509e2ebc50e830cb34a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\7e\50ab3f9fd09a9bd7c8a8a79e1c2d59501d43d4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\80\64f39795a442db07457b885e4034be4815f126
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\81\5fc75e53f55710bb5534cba650b8ad4dc1e542
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\82\af4ddff0ffa3f02eb3c198dff4c9b9667fefad
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\83\1dd120591c488296ea91be97264992945fe448
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\87\7ebde92e982efcb4cd99b09a2d61b6f4dae496
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\87\7fc57d32207b410595e44adc33d1b0757ba7af
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\88\677136fe4a72083cd685b6bc60412efe79d575
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8a\432fe87f5179470baad96f3db98f2f1576953d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8c\6ad9432e90f784fbd946fe101cada952b1c26f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8d\86d627318ef4628ac688fe6619c94eae1a21df
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8f\43a8d63793453ab2ae80d3e213cd59b727cad7
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\8f\fc437c6fcd8e926985c6caef04f8940a4af09d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\92\21120fcfc10d143421d5ad1befae82b1339a52
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\94\f12234031d863c6e37f41c5a5390535ae8585a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\95\daa8856892706f88e2b05d0d8d6563757fc9c2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\97\0cdcbeb144f05d491bccc6816a19e47dca8700
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\97\99dbc5e4f2ea4d1f8dca6ab77aa7b5086a62a1
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\9d\cca48846bdd303ee79db940329cf933180ee8b
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\9d\fab2e58e8702c6ddb9483d64899d2fbb864358
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\a1\b988fc15d6cb47da28e90ca4e8a4bafa941627
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\a6\51b112d78c1c1d34882343995b7180979da847
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\a6\733fbb319e526abec713e7a19f2f30d6fd0d96
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\a6\956c8a5e2a68643434752b52fbc43de7c237f6
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\aa\ccfc24ee020b61c6dba79c37a71a0bc5294f1b
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\ab\f20b21de275bea828204208e147d5d60b667f6
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b0\ad43a8c7ae14dd2cd699faf1da2fe0d0483105
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b2\479389ef384ffddf7dcf69281223ad1a78efba
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b4\84bd894ce51568b36bb177b28e9a6ee5be5c83
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b7\102f2dc67a42bc36065674e993470d1cff7d60
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\b9\d999b29d9f05aaaf888870a75403785353296b
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\bb\6896f07cfd29e13655f179a3e0b2707aa76ea4
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\bc\8b1ce947b60d0a64d2bfbb52eb8336f85f2721
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\bf\3dbda4c81321ff22845c7f0a2110d8aebd562c
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c3\8c9e0c95317314397dd1ac4c726c57ffa6311f
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c3\d7269420f97f61bb518c1c5ea46f0831d65def
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c4\5782e95789e9c11e334fee17dfdddc355b44b1
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c5\1bc8ed5d0f728f3b9ff949403ab8779b1b9ede
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c7\ac8cfc850517ec72ccfc1d3c8409f59fbd3f7d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c7\e4ef122bf0175d341ab5154427c8e7d7626c0a
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c8\db870b90efe00b4b08317451291ff4fc80bd20
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c8\e9cb725de9ce3de2ff89e245158a7d766e19fa
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\c9\000610e82d8e4a879cdacca8b50eac89d11bfd
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\ca\126c689f0fe7793b5d099575bdc8ef9f75f4e3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\cc\ad8d4ebe981643d2344a673f7751f693bddfe1
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\cf\2d5b4ef41282bf7070beadca1ee74358e99e77
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\cf\cd9ce4986ca965d2c7caa317554fb62d59e31b
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\d0\a1d81e530e2c14dc85e2c9e9c48fbf1c6c8c49
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\dc\a43030b702b10a6133833cb4cc765a16913615
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\dd\fd78bd1d88aa70ac7ec5756d98d8040c08d2a9
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\df\0a9c3fe85cb464f6e51a63debf4ab79f7705ce
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\df\cd49e431d42b9adbf37e2a7e96501bd82fe626
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\e6\69e9b263d4fc3e267efd70e529d15c7fe5bb7e
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\e6\ca4884d9d8141009cf8879b7a1ad998a976df3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\e9\7c9fa1b5322938e9c4bd413c998219e87292de
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\e9\eba16dbe61d605a01706863f85588c997dd83d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\ef\c4f5a97b3280334fa814b81ac67b1eae2bfa59
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f4\64286ab81b3385145a8a749a9406bff596e6de
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f4\ed125a9c88da56a22857251f2d3bff493a10d8
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f5\4d5a921cdb955ad7cca7f24f9e17dae1f4eaf2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f6\4c1e9095437fd4bfdaf7141bcfe395e89b0d95
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f8\3506c9d21b29fa21e83ca98292895e5f2915af
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\f9\98bd258d3d9a9640b1f7c0d49f563202c7856d
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\fa\b1eed4ad4f6b579988ceb50bdbc168fbbbac97
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\fe\aeb66f345cf182baf50e6d5ba59cd2af158f39
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\info\commit-graph
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\info\packs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\pack\pack-727728e42f0836d35308072be1213fa799b1780e.idx
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\objects\pack\pack-727728e42f0836d35308072be1213fa799b1780e.pack
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\ORIG_HEAD
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\packed-refs
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\heads\benwork
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\heads\katysbranch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\heads\main
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes\origin\benwork
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes\origin\HEAD
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes\origin\katysbranch
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.git\refs\remotes\origin\main
+C:\Users\benja\school\CPS298\repo\TeamProgramming\.gitignore
+C:\Users\benja\school\CPS298\repo\TeamProgramming\BB-profile-1800px.jpg
+C:\Users\benja\school\CPS298\repo\TeamProgramming\BenBaker.md
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\.DS_Store
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\characters\animate.css
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\characters\index.html
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\characters\MT.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\characters\ND.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\characters\style.css
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\characters\WR.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\MSprites\MFutureNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\MSprites\MFutureSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\MSprites\MPastNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\MSprites\MPastSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\MSprites\MPresentNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\MSprites\MPresentSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\NDSprites\NDfutureNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\NDSprites\NDfutureSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\NDSprites\NDpastNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\NDSprites\NDpastSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\NDSprites\NDpresentNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\NDSprites\NDpresentSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\WBSprites\WBfutureNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\WBSprites\WBfutureSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\WBSprites\WBpastNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\WBSprites\WBpastSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\WBSprites\WBpresentNeutral.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\CharacterSprites\WBSprites\WBpresentSmile.webp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\ENTER (SFX)\ENTER SFX.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\8 bit density.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\blowing up the town.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Calm\Future Bikini Bottom.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Calm\where are you baby.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Dangerous\Dark space.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Dangerous\SPEAKING IN TOUNGE.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\my love.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Mysterious\call me when you need it.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Mysterious\where she at.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Nice\alien smoke.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Nice\jumped out the clown house.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\rainbow road.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\rock world.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Sky falling.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Triumphant\CONGRATS.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Triumphant\shake it fast .mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\GAME BEATS\Where am i.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX\door close.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX\door open.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX\hitting.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX\new select\menu_select.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX\POWER UP.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\General SFX\walking.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\Menu Clicks ( SFX )\.DS_Store
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\Menu Clicks ( SFX )\Menu clicks.wav
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\Menu Clicks ( SFX )\Menu_down.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\Menu Clicks ( SFX )\Menu_up.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\MENU MUSIC\MENU SONG #1.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\MENU MUSIC\MENU SONG #2.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\MENU MUSIC\MENU SONG #3.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\new music\ stepping up the bricks.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\new music\am i coming bacK.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\new music\glitch factory.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\new music\six million ways to die.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\README.txt
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\splashscreenandicon\2.ico
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\splashscreenandicon\icon.ico
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\splashscreenandicon\icon.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\splashscreenandicon\splash.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\splashscreenandicon\splash2.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\story\readme.md
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\story\story_files\Text Adventures of Argothon.html
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\story\story_files\Text Adventures of Argothon.twee
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Brainstorm_dump\story\twee_file_digester.zip
+C:\Users\benja\school\CPS298\repo\TeamProgramming\Class 2.5
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\.gitattributes
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\.gitignore
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\CPS298_Text_Based_Adventure_Game.resource_order
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\CPS298_Text_Based_Adventure_Game.yyp
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\datafiles\We are using the Struct in DialogStructManager now.md
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\fonts\PressStart2P\PressStart2P.old.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\fonts\PressStart2P\PressStart2P.old.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\fonts\PressStart2P\PressStart2P.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\fonts\PressStart2P\PressStart2P.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\fonts\PressStart2P\PressStart2P-Regular.ttf
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\EndText\Alarm_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\EndText\Alarm_1.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\EndText\Create_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\EndText\Destroy_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\EndText\Draw_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\EndText\EndText.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\ExampleMenu\ExampleMenu.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\ExampleMenu\Mouse_54.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\MainText\Draw_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\MainText\MainText.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_battle_controller\Alarm_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_battle_controller\obj_battle_controller.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_button\Create_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_button\Draw_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_button\Mouse_4.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_button\obj_button.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_enemy\Create_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_enemy\Draw_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_enemy\obj_enemy.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_gameController\obj_gameController.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_gameController\Step_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_healthbar\obj_healthbar.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_inventory\Draw_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_inventory\obj_inventory.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_mainMenu\Create_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_mainMenu\obj_mainMenu.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_menu\Create_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_menu\Draw_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_menu\obj_menu.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_menu\Step_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_pauseMenu\Create_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_pauseMenu\obj_pauseMenu.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_scene_character\Draw_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_scene_character\obj_scene_character.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_test\Create_0.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\objects\obj_test\obj_test.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\android\options_android.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\html5\options_html5.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\ios\options_ios.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\linux\options_linux.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\mac\options_mac.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\main\options_main.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\main\template_icon.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\main\template_image.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\operagx\options_operagx.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\tvos\options_tvos.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\windows\icons\icon.ico
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\windows\options_windows.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\options\windows\splash\splash.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\rooms\rm_Game\rm_Game.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\rooms\rm_Game\RoomCreationCode.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\rooms\rm_MainMenu\rm_MainMenu.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\rooms\rm_MainMenu\RoomCreationCode.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\DataManager\DataManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\DataManager\DataManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\DialogStructManager\DialogStructManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\DialogStructManager\DialogStructManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\EnemyManager\EnemyManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\EnemyManager\EnemyManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\FuncManager\FuncManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\FuncManager\FuncManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\InitVariables\InitVariables.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\InitVariables\InitVariables.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\InventoryManager\InventoryManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\InventoryManager\InventoryManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\LogManager\LogManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\LogManager\LogManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\MenuManager\MenuManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\MenuManager\MenuManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\MusicManager\MusicManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\MusicManager\MusicManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\PlayerManager\PlayerManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\PlayerManager\PlayerManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\RoomManager\RoomManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\RoomManager\RoomManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\SaveLoadManager\SaveLoadManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\SaveLoadManager\SaveLoadManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\TestManager\TestManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\TestManager\TestManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\TextBoxManager\TextBoxManager.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\TextBoxManager\TextBoxManager.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\ValidationUtility\ValidationUtility.gml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\scripts\ValidationUtility\ValidationUtility.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\_8_bit_density\_8_bit_density.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\_8_bit_density\_8_bit_density.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\_stepping_up_the_bricks\_stepping_up_the_bricks.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\_stepping_up_the_bricks\_stepping_up_the_bricks.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\alien_smoke\alien_smoke.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\alien_smoke\alien_smoke.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\am_i_coming_bacK\am_i_coming_bacK.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\am_i_coming_bacK\am_i_coming_bacK.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\blowing_up_the_town\blowing_up_the_town.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\blowing_up_the_town\blowing_up_the_town.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\call_me_when_you_need_it\call_me_when_you_need_it.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\call_me_when_you_need_it\call_me_when_you_need_it.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\CONGRATS\CONGRATS.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\CONGRATS\CONGRATS.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Dark_space\Dark_space.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Dark_space\Dark_space.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\ENTER_SFX\ENTER_SFX.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\ENTER_SFX\ENTER_SFX.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\glitch_factory\glitch_factory.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\glitch_factory\glitch_factory.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\jumped_out_the_clown_house\jumped_out_the_clown_house.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\jumped_out_the_clown_house\jumped_out_the_clown_house.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\my_love\my_love.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\my_love\my_love.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\rainbow_road\rainbow_road.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\rainbow_road\rainbow_road.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\rock_world\rock_world.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\rock_world\rock_world.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\shake_it_fast_\shake_it_fast_.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\shake_it_fast_\shake_it_fast_.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\six_million_ways_to_die\six_million_ways_to_die.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\six_million_ways_to_die\six_million_ways_to_die.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Sky_falling\Sky_falling.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Sky_falling\Sky_falling.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_Future_Bikini_Bottom\snd_Future_Bikini_Bottom.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_Future_Bikini_Bottom\snd_Future_Bikini_Bottom.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_MENU_SONG__2\snd_MENU_SONG__2.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_MENU_SONG__2\snd_MENU_SONG__2.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_MENU_SONG__3\snd_MENU_SONG__3.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_MENU_SONG__3\snd_MENU_SONG__3.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuDown\snd_menuDown.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuDown\snd_menuDown.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuMusic1\snd_menuMusic1.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuMusic1\snd_menuMusic1.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuSelect\snd_menuSelect.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuSelect\snd_menuSelect.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuUp\jumped_out_the_clown_house.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuUp\snd_menuUp.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_menuUp\snd_menuUp.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_where_are_you_baby\snd_where_are_you_baby.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\snd_where_are_you_baby\snd_where_are_you_baby.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\SPEAKING_IN_TOUNGE\SPEAKING_IN_TOUNGE.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\SPEAKING_IN_TOUNGE\SPEAKING_IN_TOUNGE.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Where_am_i\Where_am_i.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\Where_am_i\Where_am_i.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\where_she_at\where_she_at.mp3
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sounds\where_she_at\where_she_at.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_elevator_present\1386aa93-225f-41fa-a3fc-df3847ac0558.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_elevator_present\bg_elevator_present.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_elevator_present\layers\1386aa93-225f-41fa-a3fc-df3847ac0558\61ba35b9-bbf3-4e57-a299-1266452fc6e7.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_past\bg_house_past.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_past\f8a746be-7171-4526-ac7e-ab3356d44252.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_past\layers\f8a746be-7171-4526-ac7e-ab3356d44252\82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_present\36e0356e-c64f-4fea-acf2-fe096119bd34.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_present\bg_house_present.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_house_present\layers\36e0356e-c64f-4fea-acf2-fe096119bd34\8a19ea90-12f2-416c-aa32-648e6531af1e.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_office_present\bg_office_present.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_office_present\f164bea7-86a9-41fe-9a9d-15bf5acf10f9.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_office_present\layers\f164bea7-86a9-41fe-9a9d-15bf5acf10f9\ab6164ae-2867-406b-aa66-b2d769bf1c75.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_outside\5af2ef13-7072-4fc9-a1e3-c33da78f48ca.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_outside\bg_outside.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_outside\f8a746be-7171-4526-ac7e-ab3356d44252.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_outside\layers\5af2ef13-7072-4fc9-a1e3-c33da78f48ca\894b0ebb-f64e-4a81-91a6-4aab732fc873.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_present_street\b8e0a9cd-86f3-4b0e-ae8b-81b073aa7cd4.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_present_street\bg_present_street.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_present_street\layers\b8e0a9cd-86f3-4b0e-ae8b-81b073aa7cd4\e7ed513f-5187-4fe6-a98c-3847776ac0b9.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_background\ace3d77e-c106-47d5-ad27-2a69b0b56be6.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_background\bg_spr_background.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_background\layers\ace3d77e-c106-47d5-ad27-2a69b0b56be6\458c13b6-4fb1-406c-b609-28c2aa3a6853.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_BG_error\bg_spr_BG_error.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_BG_error\f8a746be-7171-4526-ac7e-ab3356d44252.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_BG_error\layers\f8a746be-7171-4526-ac7e-ab3356d44252\82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_black\a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_black\bg_spr_black.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_black\layers\a63c96d5-d5bb-45a6-adaf-e0b55ca2f3a9\4610fec8-0919-4806-b68b-91b06eec5a7c.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_chaos\12dc5ae6-8a0e-4648-af79-f33a5c9d2631.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_chaos\bg_spr_chaos.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_chaos\layers\12dc5ae6-8a0e-4648-af79-f33a5c9d2631\90750949-1c44-4f1f-84ee-cc0687c2d44d.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_future\bg_spr_future.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_future\f8a746be-7171-4526-ac7e-ab3356d44252.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_spr_future\layers\f8a746be-7171-4526-ac7e-ab3356d44252\82ba75d5-b48a-42a2-8c6e-c3b77be2d810.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_street_past\3c942277-170d-44a9-be89-59dabae84ec5.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_street_past\bg_street_past.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_street_past\layers\3c942277-170d-44a9-be89-59dabae84ec5\5ad62bea-1454-472a-a851-bc4e8accba19.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_theater_past\bg_theater_past.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_theater_past\e5d762a1-6679-4d47-afaa-d16e611efed4.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\bg_theater_past\layers\e5d762a1-6679-4d47-afaa-d16e611efed4\6c38f19e-a607-4a18-90a7-5f8f307e280c.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_neutral\359d18c8-242f-4367-98a8-678d3a53d465.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_neutral\layers\359d18c8-242f-4367-98a8-678d3a53d465\8cff194b-3685-42ee-9d4a-fda4579099a4.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_neutral\MT_future_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_smile\06436051-7ce5-4a68-bee9-5341740ddc44.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_smile\layers\06436051-7ce5-4a68-bee9-5341740ddc44\5787dddf-86b7-4655-ab73-5839e6e6bf8a.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_future_smile\MT_future_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_neutral\6e0b6054-0501-4f4e-9321-758dc2848e20.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_neutral\layers\6e0b6054-0501-4f4e-9321-758dc2848e20\0e8879e6-abad-431b-a41e-b9d217b5ab8b.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_neutral\MT_past_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_smile\7489a3be-3962-4ef1-a8f2-56f7c0f59bf6.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_smile\layers\7489a3be-3962-4ef1-a8f2-56f7c0f59bf6\09b606e3-6b93-496c-a6fa-faaade48d457.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_past_smile\MT_past_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_neutral\d227ad3b-b95e-4fcf-b234-ed40a72bf64e.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_neutral\layers\d227ad3b-b95e-4fcf-b234-ed40a72bf64e\44ec06c6-c640-4e1b-8c17-a9060b3ded81.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_neutral\MT_present_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_smile\d4d8d8bb-b5df-4a14-b465-d55d4bdb8915.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_smile\layers\d4d8d8bb-b5df-4a14-b465-d55d4bdb8915\c335289b-38a6-4d0f-aab5-22576dd21735.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\MT_present_smile\MT_present_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_neutral\c4cc8e9f-7108-4b35-88a9-7dbd6ab00282.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_neutral\layers\c4cc8e9f-7108-4b35-88a9-7dbd6ab00282\e0607512-b2f0-461c-8791-086ef62ed177.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_neutral\ND_future_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_smile\1677fadd-d2e1-4965-8650-c702c6a21783.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_smile\layers\1677fadd-d2e1-4965-8650-c702c6a21783\8979c1c0-9755-4e05-a420-79b167626796.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_future_smile\ND_future_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_neutral\bac1c403-b49a-4435-acb6-50d76ee5687d.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_neutral\layers\bac1c403-b49a-4435-acb6-50d76ee5687d\5390d9d8-c0e1-4f7d-999c-bfdc80d7c889.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_neutral\ND_past_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_smile\3d8a8ee2-1748-4072-babb-d6b1d5fd2080.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_smile\layers\3d8a8ee2-1748-4072-babb-d6b1d5fd2080\9127f43d-987b-4567-bf50-fe99ad7267c1.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_past_smile\ND_past_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_neutral\036d1e6f-33ee-4655-8188-73cc3ef1b8be.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_neutral\layers\036d1e6f-33ee-4655-8188-73cc3ef1b8be\5a59fa36-cf4c-48da-9f4c-2669526ef597.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_neutral\ND_present_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_smile\d775aed5-d1f0-4a78-a1ea-92048ef8a7c9.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_smile\layers\d775aed5-d1f0-4a78-a1ea-92048ef8a7c9\95f0d14a-b588-475a-9572-e49a4a601d7d.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\ND_present_smile\ND_present_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_all_three\2185f256-1f6c-43dd-9739-7a4fa1bca4bc.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_all_three\layers\2185f256-1f6c-43dd-9739-7a4fa1bca4bc\11b6a562-45f9-413a-902f-ee9289c7a436.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_all_three\layers\2185f256-1f6c-43dd-9739-7a4fa1bca4bc\5294bc4f-948d-4b90-8b8e-41523af086a9.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_all_three\spr_all_three.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_Button\1c678b0e-d0f2-4a9b-ac53-bff98c365034.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_Button\layers\1c678b0e-d0f2-4a9b-ac53-bff98c365034\5f66077f-d78e-46a0-9804-599fba16ca20.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_Button\spr_Button.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_blue\1f211d4b-e82d-4ee7-b5d2-0dc5748a2c74.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_blue\layers\1f211d4b-e82d-4ee7-b5d2-0dc5748a2c74\d8e7f7a2-3154-46ba-a043-aa240c1d543b.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_blue\spr_demon_blue.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_red\734b16a3-7a51-4c9b-a044-824e4235bd30.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_red\layers\734b16a3-7a51-4c9b-a044-824e4235bd30\c1c36eb8-be4d-409b-8e1e-9f5fa8dbd985.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_demon_red\spr_demon_red.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_eldritch_horror\994dd914-b0ea-40c6-a64b-cb14a654cba8.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_eldritch_horror\layers\994dd914-b0ea-40c6-a64b-cb14a654cba8\22fe4582-8b24-48ab-9c50-befc33e6fda2.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_eldritch_horror\spr_eldritch_horror.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_enemy\0c44e8c4-06c7-40c8-a790-8e7284917a81.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_enemy\layers\0c44e8c4-06c7-40c8-a790-8e7284917a81\1694d07d-c98b-4920-9651-0860f6594778.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_enemy\spr_enemy.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_key\2db225aa-4580-4fdd-81d9-6543a58660e0.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_key\layers\2db225aa-4580-4fdd-81d9-6543a58660e0\57377398-8e52-4443-9807-3207fed457ef.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_key\spr_key.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_menuBox\38dd2a43-c6dc-46fa-a525-374cb5f6738d.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_menuBox\layers\38dd2a43-c6dc-46fa-a525-374cb5f6738d\efc5e6fe-027f-4dec-a199-71e9098bf7bd.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\spr_menuBox\spr_menuBox.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_neutral\9405df99-5b2c-474c-994c-60e28396f504.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_neutral\layers\9405df99-5b2c-474c-994c-60e28396f504\d4b35851-f640-4ba7-b0ad-fa5a0050a058.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_neutral\WB_future_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_smile\d9056d8b-71bf-4e11-8747-8630505d063c.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_smile\layers\d9056d8b-71bf-4e11-8747-8630505d063c\714030eb-4959-455a-9fe6-f820b18067e1.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_future_smile\WB_future_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_neutral\2b0882b1-c200-4810-bfe4-193d1a3875b7.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_neutral\layers\2b0882b1-c200-4810-bfe4-193d1a3875b7\0edb01a0-c4fd-4e44-a779-9208d51a17e2.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_neutral\WB_past_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_smile\0baaed1e-4265-45c7-8b93-362942fe0a77.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_smile\layers\0baaed1e-4265-45c7-8b93-362942fe0a77\69a8f3ad-1d06-4ae5-bda8-457999d4fc87.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_past_smile\WB_past_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_neutral\b8b09e61-91fd-4dc7-9b90-246d0bc963cf.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_neutral\layers\b8b09e61-91fd-4dc7-9b90-246d0bc963cf\17a7209a-86db-4728-936f-eb8405ff15cc.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_neutral\WB_present_neutral.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_smile\a8c07506-391f-4c3b-af0d-86b1ffeaeda4.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_smile\layers\a8c07506-391f-4c3b-af0d-86b1ffeaeda4\50821304-6167-48e6-bd3b-4e35b6783e0b.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\sprites\WB_present_smile\WB_present_smile.yy
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\__yy_sdf_blur_shader.shader
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\__yy_sdf_effect_shader.shader
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\__yy_sdf_shader.shader
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Audio\snd_menuDown.wav
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Audio\snd_menuDown.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Audio\snd_menuUp.wav
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Audio\snd_menuUp.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader\HLSL11\Default___yy_sdf_blur_shader_fout.shdata
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader\HLSL11\Default___yy_sdf_blur_shader_vout.shdata
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader\HLSL11\Default___yy_sdf_effect_shader_fout.shdata
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader\HLSL11\Default___yy_sdf_effect_shader_vout.shdata
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader\HLSL11\Default___yy_sdf_shader_fout.shdata
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\Shader\HLSL11\Default___yy_sdf_shader_vout.shdata
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_0\__YY__0fallbacktexture.png_YYG_AUTO_GEN_TEX_GROUP_NAME_.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_0\__yy__0fallbacktexture.png_yyg_auto_gen_tex_group_name__0.bz2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_131\Default.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_131\default_0.bz2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_131\default_1.bz2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_131\default_2.bz2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TextureGroups\_2048_131\default_3.bz2
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_0\res_fallbacktexture.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_0\res_fallbacktexture.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\font_CPS298_Text_Based_Adventure_Game_font.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\font_CPS298_Text_Based_Adventure_Game_font.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\font_small_CPS298_Text_Based_Adventure_Game_font_small.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\font_small_CPS298_Text_Based_Adventure_Game_font_small.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\house_past_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\house_past_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_future_neutral_CPS298_Text_Based_Adventure_Game_359d18c8-242f-4367-98a8-678d3a53d465.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_future_neutral_CPS298_Text_Based_Adventure_Game_359d18c8-242f-4367-98a8-678d3a53d465.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_future_smile_CPS298_Text_Based_Adventure_Game_06436051-7ce5-4a68-bee9-5341740ddc44.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_future_smile_CPS298_Text_Based_Adventure_Game_06436051-7ce5-4a68-bee9-5341740ddc44.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_past_neutral_CPS298_Text_Based_Adventure_Game_6e0b6054-0501-4f4e-9321-758dc2848e20.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_past_neutral_CPS298_Text_Based_Adventure_Game_6e0b6054-0501-4f4e-9321-758dc2848e20.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_past_smile_CPS298_Text_Based_Adventure_Game_7489a3be-3962-4ef1-a8f2-56f7c0f59bf6.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_past_smile_CPS298_Text_Based_Adventure_Game_7489a3be-3962-4ef1-a8f2-56f7c0f59bf6.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_present_neutral_CPS298_Text_Based_Adventure_Game_d227ad3b-b95e-4fcf-b234-ed40a72bf64e.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_present_neutral_CPS298_Text_Based_Adventure_Game_d227ad3b-b95e-4fcf-b234-ed40a72bf64e.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_present_smile_CPS298_Text_Based_Adventure_Game_d4d8d8bb-b5df-4a14-b465-d55d4bdb8915.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\MT_present_smile_CPS298_Text_Based_Adventure_Game_d4d8d8bb-b5df-4a14-b465-d55d4bdb8915.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_future_neutral_CPS298_Text_Based_Adventure_Game_c4cc8e9f-7108-4b35-88a9-7dbd6ab00282.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_future_neutral_CPS298_Text_Based_Adventure_Game_c4cc8e9f-7108-4b35-88a9-7dbd6ab00282.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_future_smile_CPS298_Text_Based_Adventure_Game_1677fadd-d2e1-4965-8650-c702c6a21783.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_future_smile_CPS298_Text_Based_Adventure_Game_1677fadd-d2e1-4965-8650-c702c6a21783.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_past_neutral_CPS298_Text_Based_Adventure_Game_bac1c403-b49a-4435-acb6-50d76ee5687d.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_past_neutral_CPS298_Text_Based_Adventure_Game_bac1c403-b49a-4435-acb6-50d76ee5687d.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_past_smile_CPS298_Text_Based_Adventure_Game_3d8a8ee2-1748-4072-babb-d6b1d5fd2080.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_past_smile_CPS298_Text_Based_Adventure_Game_3d8a8ee2-1748-4072-babb-d6b1d5fd2080.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_present_neutral_CPS298_Text_Based_Adventure_Game_036d1e6f-33ee-4655-8188-73cc3ef1b8be.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_present_neutral_CPS298_Text_Based_Adventure_Game_036d1e6f-33ee-4655-8188-73cc3ef1b8be.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_present_smile_CPS298_Text_Based_Adventure_Game_d775aed5-d1f0-4a78-a1ea-92048ef8a7c9.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\ND_present_smile_CPS298_Text_Based_Adventure_Game_d775aed5-d1f0-4a78-a1ea-92048ef8a7c9.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\PressStart2P_CPS298_Text_Based_Adventure_Game_PressStart2P.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\PressStart2P_CPS298_Text_Based_Adventure_Game_PressStart2P.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_background_CPS298_Text_Based_Adventure_Game_ace3d77e-c106-47d5-ad27-2a69b0b56be6.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_background_CPS298_Text_Based_Adventure_Game_ace3d77e-c106-47d5-ad27-2a69b0b56be6.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_BG_error_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_BG_error_CPS298_Text_Based_Adventure_Game_f8a746be-7171-4526-ac7e-ab3356d44252.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_button_CPS298_Text_Based_Adventure_Game_1c678b0e-d0f2-4a9b-ac53-bff98c365034.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_button_CPS298_Text_Based_Adventure_Game_1c678b0e-d0f2-4a9b-ac53-bff98c365034.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_enemy_CPS298_Text_Based_Adventure_Game_0c44e8c4-06c7-40c8-a790-8e7284917a81.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_enemy_CPS298_Text_Based_Adventure_Game_0c44e8c4-06c7-40c8-a790-8e7284917a81.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_key_CPS298_Text_Based_Adventure_Game_2db225aa-4580-4fdd-81d9-6543a58660e0.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_key_CPS298_Text_Based_Adventure_Game_2db225aa-4580-4fdd-81d9-6543a58660e0.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_menuBox_CPS298_Text_Based_Adventure_Game_38dd2a43-c6dc-46fa-a525-374cb5f6738d.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\spr_menuBox_CPS298_Text_Based_Adventure_Game_38dd2a43-c6dc-46fa-a525-374cb5f6738d.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\street_past_CPS298_Text_Based_Adventure_Game_3c942277-170d-44a9-be89-59dabae84ec5.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\street_past_CPS298_Text_Based_Adventure_Game_3c942277-170d-44a9-be89-59dabae84ec5.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\theater_past_CPS298_Text_Based_Adventure_Game_e5d762a1-6679-4d47-afaa-d16e611efed4.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\theater_past_CPS298_Text_Based_Adventure_Game_e5d762a1-6679-4d47-afaa-d16e611efed4.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_future_neutral_CPS298_Text_Based_Adventure_Game_9405df99-5b2c-474c-994c-60e28396f504.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_future_neutral_CPS298_Text_Based_Adventure_Game_9405df99-5b2c-474c-994c-60e28396f504.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_future_smile_CPS298_Text_Based_Adventure_Game_d9056d8b-71bf-4e11-8747-8630505d063c.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_future_smile_CPS298_Text_Based_Adventure_Game_d9056d8b-71bf-4e11-8747-8630505d063c.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_past_neutral_CPS298_Text_Based_Adventure_Game_2b0882b1-c200-4810-bfe4-193d1a3875b7.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_past_neutral_CPS298_Text_Based_Adventure_Game_2b0882b1-c200-4810-bfe4-193d1a3875b7.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_past_smile_CPS298_Text_Based_Adventure_Game_0baaed1e-4265-45c7-8b93-362942fe0a77.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_past_smile_CPS298_Text_Based_Adventure_Game_0baaed1e-4265-45c7-8b93-362942fe0a77.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_present_neutral_CPS298_Text_Based_Adventure_Game_b8b09e61-91fd-4dc7-9b90-246d0bc963cf.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_present_neutral_CPS298_Text_Based_Adventure_Game_b8b09e61-91fd-4dc7-9b90-246d0bc963cf.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_present_smile_CPS298_Text_Based_Adventure_Game_a8c07506-391f-4c3b-af0d-86b1ffeaeda4.tpe.qoi
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\Default\TexturePageEntries\_2048_131\WB_present_smile_CPS298_Text_Based_Adventure_Game_a8c07506-391f-4c3b-af0d-86b1ffeaeda4.tpe.xml
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\ExtensionOptions.json
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\MainOptions.json
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\cache\PlatformOptions.json
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\out\CPS298_Text_Based_Adventure_Game.win
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\out\CPS298_Text_Based_Adventure_Game.yydebug
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\out\options.ini
+C:\Users\benja\school\CPS298\repo\TeamProgramming\CPS298_Text_Based_Adventure_Game\tmp\igor\out\We are using the Struct in DialogStructManager now.md
+C:\Users\benja\school\CPS298\repo\TeamProgramming\diagrams\class-diagram_text_adventure_game.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\diagrams\component-diagram_game_architecture.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\diagrams\sequence-diagram_game_story_navigation.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\diagrams\state-diagram_game-flow.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\diagrams\use-case-diagram_text_adventure_game.png
+C:\Users\benja\school\CPS298\repo\TeamProgramming\documents\SRS1.4.pdf
+C:\Users\benja\school\CPS298\repo\TeamProgramming\documents\SRS2.2.pdf
+C:\Users\benja\school\CPS298\repo\TeamProgramming\folder_structure.txt
+C:\Users\benja\school\CPS298\repo\TeamProgramming\IjeomaOnuosa.md
+C:\Users\benja\school\CPS298\repo\TeamProgramming\JamesByrnes.md
+C:\Users\benja\school\CPS298\repo\TeamProgramming\KatherineNymshack.md
+C:\Users\benja\school\CPS298\repo\TeamProgramming\KhouriFountain.txt

@@ -1,4 +1,5 @@
 draw_self();
-
+if(!string_length(mainName)==0){
 textBox(mainName, 20, 20, false);
-textBox(mainText, room_width*0.65, room_height*0.4);
+}
+textBox(mainText, room_width, room_height,,,true);

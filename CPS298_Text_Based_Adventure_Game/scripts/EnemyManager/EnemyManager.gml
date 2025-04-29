@@ -17,7 +17,11 @@ function createEnemy(_name, _sprite,_health){
 	initEnemy(_name,_sprite,_health) 
 	
 	// Actual Enemy Object Instance
-	instance_create_depth(room_width/1.2,room_height/2,-1,obj_enemy,global.enemy) 
+	instance_create_depth(room_width/2,room_height/2,-1,obj_enemy,global.enemy) 
+}
+
+function createEnemyfromArray(_enemyArray){
+	createEnemy(_enemyArray[0], _enemyArray[1], _enemyArray[2]);
 }
 
 /// @function enemyTakeDamage
@@ -28,6 +32,7 @@ function enemyTakeDamage(_amount){
 		// enemy died
 		global.enemy.health = 0;
 		show_debug_message("Enemy Died")
+		
 	}else{
 		// enemy didn't die
 		global.enemy.health -= _amount

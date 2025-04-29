@@ -11,13 +11,13 @@ function destroyAllObjects() {
 function createBackground(_bgSprite) {
     if (!validate_not_undefined(_bgSprite, "_bgSprite")) {
         // Fallback to error sprite
-        _bgSprite = spr_BG_error;
+        _bgSprite = bg_spr_BG_error;
         log_warning("Using fallback error sprite for background");
     }
     
     if (!sprite_exists(_bgSprite)) {
         log_warning("Sprite does not exist, using fallback error sprite");
-        _bgSprite = spr_BG_error;
+        _bgSprite = bg_spr_BG_error;
     }
     
     global.backgroundLayer = layer_create(2, "bg");
@@ -66,11 +66,12 @@ function populateAllObjects() {
     var _background = -1;
     var _character = -1;
     
+    
     if (struct_exists(scene, "background")) {
         _background = scene.background;
     } else {
         log_warning("No background defined for scene " + string(global.currentIndex) + ", using error sprite");
-        _background = spr_BG_error;
+        _background = bg_spr_BG_error;
     }
     
     try {
@@ -121,11 +122,36 @@ function populateAllObjects() {
         }
     }
     
-    // Create menu with options if we have any
-    if (array_length(options) > 0) {
-        Menu(room_width * 0.65, room_height * 0.75, options, -1, true);
-    } else {
-        log_warning("No menu options created for scene: " + sceneName);
+	
+	if(struct_exists(scene, "enemy")){
+		createEnemyfromArray(scene.enemy);
+	}
+	
+	
+	
+	// given an array in scene.requires, deletes the options corresponding to not having the item.
+	//array_push( global.player.inventory, ("banana"));
+    if(struct_exists(scene, "requires")){
+        for(var i=0; i<array_length(scene.requires) and i<array_length(options); i++){
+			
+            if(scene.requires[i] != -1){
+				if(array_contains(global.player.inventory, scene.requires[i])) {
+					options[i] = undefined;
+				}
+				if(is_array(scene.requires[i])){
+					for(var friendIndex=0; friendIndex< array_length(scene.requires[i]); friendIndex++){
+						if(not array_contains(global.player.friendlist, scene.requires[i][friendIndex])){
+							options[i]=undefined;
+						}
+					}
+				}
+			}
+		}
+        for(var i=0; i<array_length(options); i++){
+            if(options[i] == undefined){
+                array_delete(options, i--, 1);
+            }
+        }
     }
     
     // Create the text display
@@ -141,5 +167,13 @@ function populateAllObjects() {
         log_info("Created MainText for scene: " + sceneName);
     } catch (error) {
         log_error("Failed to create MainText: " + string(error));
+    }
+	
+	    
+    // Create menu with options if we have any
+    if (array_length(options) > 0) {
+        Menu(global.optionMenuX,global.optionMenuY, options, -1, true,,,true);
+    } else {
+        log_warning("No menu options created for scene: " + sceneName);
     }
 }

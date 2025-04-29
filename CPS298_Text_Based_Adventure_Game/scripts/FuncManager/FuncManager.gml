@@ -7,8 +7,14 @@ function FuncManager(funcName, parameters){
         params = [parameters]; // Convert to array if not already
     }
 }
+
+/// @description Function to handle the end of the game
+/// @param {array} _parameters - Array containing the parameters for the end function [string, sound]
+/// @param {string} _parameters[0] - Text to display
+/// @param {string} _parameters[1] - Sound to play
 function theEnd(_parameters){
-	show_message_async(_parameters);
+	instance_create_depth(room_width, room_height, -4, EndText, {text: _parameters[0]});
+    playSong( [_parameters[1], 0, true]);
 }
 
 function fight(_parameters){
@@ -85,11 +91,18 @@ function goToSceneIndex(_parameters) {
     populateAllObjects();
 }
 
+/// @description Function to handle item finding
+/// @param {array} _parameters - Array containing the parameters for the find function [string]
 function find(_parameters){
-	var foundItem = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown item";
-	//show_debug_message("You find a " + foundItem + "!");
-    
-	// Add item to inventory if it exists in global.itemList
+    var foundItem;
+    if(is_string(_parameters)){
+        foundItem = _parameters;
+    } else if(is_array(_parameters)){
+        foundItem = (array_length(_parameters) > 0) ? string(_parameters[0]) : "unknown item";
+    } else {
+        foundItem = "unknown item";
+    }
+
     if (variable_struct_exists(global.itemList, foundItem)) {
 		playerAddItem(variable_struct_get(global.itemList, foundItem));
         //show_debug_message("Added " + foundItem + " to inventory");
@@ -319,8 +332,7 @@ function addFriend(_parameters){
 	} else {
 		friend="unknown friend";
 	}
-	
-
+    audio_play_sound(ENTER_SFX, 0, false)
 	array_push(global.player.friendlist, friend);
 	show_debug_message(friend + " is now a friend");
 }

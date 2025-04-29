@@ -1,14 +1,13 @@
 /// @function initializePlayer
 /// @description Initializes the player variables (Health,Gold,Inventory)
-function initializePlayer(){
-	global.player = {
-		health: 100,
-		maxHealth: 100,
-		gold: 0,
-		inventory: [],
-		friendlist: []
-	}
+global.player = {
+	health: 100,
+	maxHealth: 100,
+	gold: 0,
+	inventory: [],
+	friendlist: []
 }
+
 
 /// @function playerAddGold
 /// @description Add gold to the player

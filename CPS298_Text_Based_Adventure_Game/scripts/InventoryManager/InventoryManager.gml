@@ -10,11 +10,14 @@ function createNewItem(_name,_description,_sprite){
 
 // This struct makes it so we can do global.itemList.(item name).(name,description,sprite) and its easy to manage
 global.itemList = {
+	brassKey : createNewItem("Brass Key","This key is strangely wrought..", spr_key),
+	cinnamonBun : createNewItem("Cinnamon Bun","A delicious cinnamon bun, it smells so good..", undefined),
+	banana : createNewItem("Banana", "A South American Berry with a fascinating history..", undefined),
 	largeKey : createNewItem("Large Key","This comically large key looks like it would fit into a comically large keyhole..", spr_key),
 	smallKey : createNewItem("Small Key","This comically small key looks like it would fit into a comically small keyhole..", spr_key),
-	woodenShield : createNewItem("Wooden Shield","This might block a few acorns..", spr_key)
+	woodenShield : createNewItem("Wooden Shield","This might block a few acorns..", spr_key),
+	woodenSword : createNewItem("Wooden Sword", "This could do some damage if you are prone to splinters..", undefined)
 }
-
 
 
 
