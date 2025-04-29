@@ -1,39 +1,39 @@
 {
   "$GMSprite":"",
-  "%Name":"bg_outside",
+  "%Name":"spr_eldritch_horror",
   "bboxMode":0,
   "bbox_bottom":767,
   "bbox_left":0,
-  "bbox_right":1365,
-  "bbox_top":0,
+  "bbox_right":664,
+  "bbox_top":19,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"5af2ef13-7072-4fc9-a1e3-c33da78f48ca","name":"5af2ef13-7072-4fc9-a1e3-c33da78f48ca","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"994dd914-b0ea-40c6-a64b-cb14a654cba8","name":"994dd914-b0ea-40c6-a64b-cb14a654cba8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":768,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"894b0ebb-f64e-4a81-91a6-4aab732fc873","blendMode":0,"displayName":"default","isLocked":false,"name":"894b0ebb-f64e-4a81-91a6-4aab732fc873","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"22fe4582-8b24-48ab-9c50-befc33e6fda2","blendMode":0,"displayName":"default","isLocked":false,"name":"22fe4582-8b24-48ab-9c50-befc33e6fda2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
-  "name":"bg_outside",
+  "name":"spr_eldritch_horror",
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Backgrounds",
-    "path":"folders/Sprites/Backgrounds.yy",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
   "resourceVersion":"2.0",
   "sequence":{
     "$GMSequence":"v1",
-    "%Name":"bg_outside",
+    "%Name":"spr_eldritch_horror",
     "autoRecord":true,
     "backdropHeight":768,
     "backdropImageOpacity":0.5,
@@ -57,7 +57,7 @@
       "resourceType":"KeyframeStore<MomentsEventKeyframe>",
       "resourceVersion":"2.0",
     },
-    "name":"bg_outside",
+    "name":"spr_eldritch_horror",
     "playback":1,
     "playbackSpeed":30.0,
     "playbackSpeedType":0,
@@ -71,13 +71,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-<<<<<<< HEAD:CPS298_Text_Based_Adventure_Game/sprites/bg_outside/bg_outside.yy
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f8a746be-7171-4526-ac7e-ab3356d44252","path":"sprites/bg_outside/bg_outside.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"14f9b703-d800-44c7-b399-179fe0323d0e","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
-=======
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5af2ef13-7072-4fc9-a1e3-c33da78f48ca","path":"sprites/outside/outside.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3e6096c1-39a8-419a-ac7e-57c321d958de","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
->>>>>>> e669e9b (garden + monster sprite added):CPS298_Text_Based_Adventure_Game/sprites/outside/outside.yy
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"994dd914-b0ea-40c6-a64b-cb14a654cba8","path":"sprites/spr_eldritch_horror/spr_eldritch_horror.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"49cfea7a-7c89-4af1-aefc-a01b39e6dae2","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
