@@ -122,6 +122,13 @@ function populateAllObjects() {
         }
     }
     
+	
+	if(struct_exists(scene, "enemy")){
+		createEnemyfromArray(scene.enemy);
+	}
+	
+	
+	
 	// given an array in scene.requires, deletes the options corresponding to not having the item.
 	//array_push( global.player.inventory, ("banana"));
     if(struct_exists(scene, "requires")){
