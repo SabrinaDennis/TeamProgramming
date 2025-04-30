@@ -8,7 +8,8 @@ function DialogStructManager(){
 				sceneName: "The Beginning",
 				background: bg_spr_background,
 				sceneText: "...hm?\n...\n...",
-				onLoad: {func: playSong , params: [snd_menuMusic1,0,true] },
+				onLoad: {func: function() {playSong([snd_menuMusic1,0,true]) ;
+					global.player.health=global.player.maxHealth}, params: [] },
 				//requires: ["banana"],
 				options: [
 					["...", goToSceneIndex, [42]],
@@ -39,7 +40,7 @@ function DialogStructManager(){
 				sceneIndex: 3,
 				sceneName: "I am ready.",
 				sceneText: "'I know.  Just remember, opening can feel like breaking.'\nREDD steps back and Drait NIKI introduces themself, terse but not unfriendly:\n'Will you take responsibility for what you have to do?'",
-				background: bg_house_past,
+				background: bg_spr_future,
 				character: ND_future_smile,
 				options: [
 					["I will", goToSceneIndex, [75]],
@@ -294,9 +295,9 @@ function DialogStructManager(){
 				background: bg_spr_chaos,
 				sceneText: "The end of everything is swallowed up, but you see each of your friends 'turn' and feel a push from an unknown and unknowable direction.  You blink hard, fight disorientation, and face Dr. Brotin-Dawr, your old school chum.  He looks at you, and immediately drops all deception.  Like an origami flower being undone, he unflexes in a handful of unseeable dimension, and becomes a writhing mass of tentacles and evil.\nAnd you fight the last battle anyone ever could.",
 				onLoad: {func: playSong , params: [am_i_coming_bacK ,0,true] },
+				enemy: {name:"The Teacher of Broken Days", sprite: spr_eldritch_horror, enemyHealth: 10, drops: global.itemList.goldStar},
 				options: [
-					["here if you win", goToSceneIndex, [38]],
-					["here if you lose", goToSceneIndex, [5]],
+					["Putting the final in finally", goToSceneIndex, [38]]
 					]
 				},
 			{
@@ -325,7 +326,7 @@ function DialogStructManager(){
 				sceneIndex: 31,
 				sceneName: "Shake it off.",
 				background: bg_house_present, 
-				onLoad:{func: playerTakeDamage, params: [(10)]},
+				onLoad:{func: playerTakeDamage, params: [(25)]},
 				sceneText: "You shudder, focus all your mental energy, and just decide to move on.",
 				options: [
 					["Finish getting ready and eat some breakfast", goToSceneIndex, [97]],
@@ -336,7 +337,7 @@ function DialogStructManager(){
 				sceneName: "Take a cold shower",
 				background: bg_house_present,
 				sceneText: "Battle the your demons.",
-				enemy: ["A cold shower", spr_demon_blue, 10, global.itemList.banana],
+				enemy: {name: "A cold shower", sprite: spr_demon_blue, enemyHealth: 10, drops: global.itemList.banana},
 				options: [
 					["Take a cold shower, continued", goToSceneIndex, [73]],
 					]
@@ -395,10 +396,10 @@ function DialogStructManager(){
 				},
 			{
 				sceneIndex: 38,
-				sceneName: "here if you win",
+				sceneName: "relief",
 				background: bg_spr_chaos,
 				sceneText: "You float, strong, so strong now, but unable to effect anything.  With no wall to push off of, with nothing to grab on to, you have no way of pulling yourself back into reality.  And so you float.  Your body wastes away.  The small eddies and vortices of time ripple through you as they find realignment, aging and delaying you to a suffering death.  But you saved everyone else.  You saved everyone and everything else.  Right?  Defeating the monster was enough, right?  One monster?  Was enough?\nYou die, hoping, in agony.",
-				onLoad: {func: theEnd, params: [snd_MENU_SONG__3, "Hope is a special kind of pain."]},
+				onLoad: {func: theEnd, params: [ "Hope is a special kind of pain.", snd_MENU_SONG__3]},
 				options: [
 					]
 				},
@@ -662,6 +663,7 @@ function DialogStructManager(){
 				sceneName: "'Have a day'",
 				background: bg_house_present, onLoad:{func: find, params: "a day"},
 				sceneText: "Alright.  Morning: tough.  Side of the bed: Wrong.  Day:  Having a.\nFinish getting ready and eat some breakfast",
+				enemy: {name: "A day", sprite: spr_demon_red, enemyHealth: 10, drops: global.itemList.banana},
 				options: [
 					["Finish getting ready and eat some breakfast", goToSceneIndex, [97]],
 					]

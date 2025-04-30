@@ -1,5 +1,6 @@
 global.enemy = {};
 global.enemy.enemyHealth=0;
+global.currentSong=snd_menuMusic1;
 
 Menu(
 	room_width/2,

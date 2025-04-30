@@ -4,12 +4,15 @@ draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 
 // Draw enemy
+
+if(sprite!=spr_eldritch_horror){
+draw_text(x+sprite_width*.5, y-string_height(global.enemy.name), global.enemy.name);
+draw_text(x+sprite_width*.5, y, "Health: " + string(global.enemy.enemyHealth));
+} else {
+	draw_text(room_width*.5, room_height*.5-string_height(global.enemy.name), global.enemy.name);
+	draw_text(room_width*.5, room_height*.5, "Health: " + string(global.enemy.enemyHealth));
+}
 draw_self();
-var _x=x;var  _y=y;
-
-draw_text(_x, _y-sprite_get_height(sprite)-string_height(global.enemy.name), global.enemy.name);
-draw_text(_x, _y-(sprite_get_height(sprite)), "Health: " + string(global.enemy.enemyHealth));
-
 
 // Draw player health at bottom of screen - add safety check
 draw_set_halign(fa_left);

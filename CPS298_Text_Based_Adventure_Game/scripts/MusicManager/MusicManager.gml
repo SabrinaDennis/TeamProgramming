@@ -9,6 +9,8 @@ function playSong(_parameters){
 		return;
 	 }
 	 
+	 global.currentSong=_parameters[0];
+	 
 	if(array_length(_parameters)>1){
 		priority = _parameters[1];
 	} else { // Int, default 0

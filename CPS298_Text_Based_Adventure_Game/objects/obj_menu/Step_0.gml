@@ -8,7 +8,7 @@ if(isPauseMenu == true){
 }
 
 // If this isn't a pause menu, but we are paused, just return and dont do anything (so it sits idle while we're in the pause menu)
-if(isPauseMenu == false && global.isPaused) return;
+if(isPauseMenu == false && global.isPaused) {}//return;
 
 var mouseOver = false;
 var firstStep = true;
