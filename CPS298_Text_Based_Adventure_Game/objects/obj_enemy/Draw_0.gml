@@ -24,12 +24,8 @@ if (variable_global_exists("player") && variable_struct_exists(global.player, "h
     draw_text(20, room_height - 40, "Player not initialized");
 }
 
-
-draw_set_color(c_red);
-
 array_foreach(rects, function func(value, index){
-	gpu_set_blendmode(bm_subtract)
-//DRAW HERE
-	draw_rectangle(value[0]-10+x,value[1]-10+y, value[0]+10+x, value[1]+10+y, false);
-	gpu_set_blendmode(bm_normal);
-	})
+	
+draw_set_color(make_color_hsv(value[2],255,255));
+	draw_roundrect(x+value[0]-20,y+value[1]-20,x+ value[0]+20, y+value[1]+20, false);
+})
