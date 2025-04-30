@@ -1,4 +1,5 @@
-
+global.enemy = {};
+global.enemy.enemyHealth=0;
 
 Menu(
 	room_width/2,

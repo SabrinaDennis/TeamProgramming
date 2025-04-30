@@ -334,7 +334,7 @@ function DialogStructManager(){
 			{
 				sceneIndex: 32,
 				sceneName: "Take a cold shower",
-				background: bg_house_present, onLoad:{func: fight, params: "coldDemons"},
+				background: bg_house_present,
 				sceneText: "Battle the your demons.",
 				enemy: ["A cold shower", spr_demon_blue, 10, global.itemList.banana],
 				options: [

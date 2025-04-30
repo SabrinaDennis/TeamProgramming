@@ -1,3 +1,7 @@
+
+if(global.enemy.enemyHealth<=0){
+
+
 // Adjust the cordinates to make it easier to center the text box.
 if(centered != false){
 	xPosition = x - (widthFull/2);
@@ -50,4 +54,5 @@ for(var l = 0; l < (optionsCount + _desc); l++){
 	}
 	
 	
+}
 }

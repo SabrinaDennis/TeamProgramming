@@ -34,6 +34,7 @@
     {"$GMFolder":"","%Name":"Mysterious","folderPath":"folders/Sounds/music/Mysterious.yy","name":"Mysterious","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Nice","folderPath":"folders/Sounds/music/Nice.yy","name":"Nice","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Triumphant","folderPath":"folders/Sounds/music/Triumphant.yy","name":"Triumphant","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"SFX","folderPath":"folders/Sounds/SFX.yy","name":"SFX","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Backgrounds","folderPath":"folders/Sprites/Backgrounds.yy","name":"Backgrounds","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Characters","folderPath":"folders/Sprites/Characters.yy","name":"Characters","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -59,7 +60,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.13.1.193",
+    "IDEVersion":"2024.13.0.190",
   },
   "name":"CPS298_Text_Based_Adventure_Game",
   "resources":[
@@ -105,6 +106,8 @@
     {"id":{"name":"Dark_space","path":"sounds/Dark_space/Dark_space.yy",},},
     {"id":{"name":"ENTER_SFX","path":"sounds/ENTER_SFX/ENTER_SFX.yy",},},
     {"id":{"name":"glitch_factory","path":"sounds/glitch_factory/glitch_factory.yy",},},
+    {"id":{"name":"hitBack","path":"sounds/hitBack/hitBack.yy",},},
+    {"id":{"name":"hitting","path":"sounds/hitting/hitting.yy",},},
     {"id":{"name":"jumped_out_the_clown_house","path":"sounds/jumped_out_the_clown_house/jumped_out_the_clown_house.yy",},},
     {"id":{"name":"my_love","path":"sounds/my_love/my_love.yy",},},
     {"id":{"name":"rainbow_road","path":"sounds/rainbow_road/rainbow_road.yy",},},

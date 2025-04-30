@@ -20,10 +20,10 @@ function playerAddGold(_amount){
 /// @description deal damage to the player
 /// @param {real} _damageTaken Amount of damage to deal to the player.
 function playerTakeDamage(_damageTaken){
-	if(!global.player.health - _damageTaken >= 0){
+	if(global.player.health - _damageTaken >= 0){
 		global.player.health -= _damageTaken;
 	}else{
-		global.player.health = 0;
+		global.player.health =0;
 		show_debug_message("Player Died!");
 	}
 }
@@ -44,6 +44,14 @@ function playerAddHealth(_healthToAdd){
 /// @param {struct} _item This is the item to be added to the players inventory(createNewItem function or itemList.itemname)
 function playerAddItem(_item){
 	array_push(global.player.inventory , _item)
+}
+
+/// @function getFirstWeapon
+/// @description Find first weapon in inventory.  Switching weapons is accomplished by cycleWeapon, which moves the first weapon to the back.
+/// @returns {struct}
+function getFirstWeapon(){
+	array_foreach(global.player.inventory, function func(value, index){if(isWeapon(value)){ return value; }});
+	return {damage:1.0};
 }
 
 
