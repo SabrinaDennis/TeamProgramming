@@ -27,7 +27,7 @@ function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu =
 		draw_set_font(PressStart2P);
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
-	
+
 	
 		options = _options;
 		description = _description;
@@ -67,6 +67,7 @@ function Menu(_x,_y,_options,_description = -1,_centered = false, _isPauseMenu =
 		
 		widthFull  = width  + margin * 2;
 		heightFull = height + margin * 2;
+		return self;
 	}
 }
 

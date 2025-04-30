@@ -123,9 +123,6 @@ function populateAllObjects() {
     }
     
 	
-	if(struct_exists(scene, "enemy")){
-		createEnemyfromArray(scene.enemy);
-	}
 	
 	
 	
@@ -168,12 +165,17 @@ function populateAllObjects() {
     } catch (error) {
         log_error("Failed to create MainText: " + string(error));
     }
-	
 	    
     // Create menu with options if we have any
     if (array_length(options) > 0) {
-        Menu(global.optionMenuX,global.optionMenuY, options, -1, true,,,true);
+    menuInstance = Menu(global.optionMenuX,global.optionMenuY, options, -1, true,,,true);
     } else {
         log_warning("No menu options created for scene: " + sceneName);
     }
+	
+	
+	if(struct_exists(scene, "enemy")){
+		createEnemyfromArray(scene.enemy);
+	}
+	
 }

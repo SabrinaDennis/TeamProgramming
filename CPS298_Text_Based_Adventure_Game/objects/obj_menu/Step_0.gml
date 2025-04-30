@@ -1,3 +1,7 @@
+if(global.enemy.enemyHealth<=0){
+
+
+
 // If this is a pause menu, set the global variable to true
 if(isPauseMenu == true){
 	global.isPaused = true;
@@ -126,4 +130,6 @@ if((mouse_check_button_pressed(mb_left) && mouseOver) || keyboard_check_pressed(
 		global.isPaused = false;
 	}
 	
+}
+
 }
