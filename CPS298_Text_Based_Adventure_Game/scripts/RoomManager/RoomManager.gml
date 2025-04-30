@@ -47,6 +47,14 @@ function createCharacter(_character) {
 /// @function populateAllObjects
 /// @description Populates the objects in the room (bg, buttons)
 function populateAllObjects() {
+	if(!global.isPaused && instance_exists(obj_pauseMenu)){
+		with(obj_pauseMenu){
+			instance_destroy();
+			destroyAllObjects();
+			populateAllObjects();
+		}
+	}
+	
 	
 	instance_create_depth(0,0,0,obj_gameController);
 	
@@ -175,7 +183,10 @@ function populateAllObjects() {
 	
 	
 	if(struct_exists(scene, "enemy")){
-		createEnemyfromArray(scene.enemy);
+		createEnemyFromStruct(scene.enemy);
+	} else if(random(255)>32){
+		
+		// add random enemy
 	}
 	
 }

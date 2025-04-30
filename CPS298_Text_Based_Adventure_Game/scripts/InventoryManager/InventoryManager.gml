@@ -16,7 +16,8 @@ global.itemList = {
 	largeKey : createNewItem("Large Key","This comically large key looks like it would fit into a comically large keyhole..", spr_key),
 	smallKey : createNewItem("Small Key","This comically small key looks like it would fit into a comically small keyhole..", spr_key),
 	woodenShield : createNewItem("Wooden Shield","This might block a few acorns..", spr_key),
-	woodenSword : createNewItem("Wooden Sword", "This could do some damage if you are prone to splinters..", undefined)
+	woodenSword : createNewItem("Wooden Sword", "This could do some damage if you are prone to splinters..", undefined),
+	goldStar : createNewItem("A gold star sticker", "This would be a small treasure, if it were real..", undefined)
 }
 
 

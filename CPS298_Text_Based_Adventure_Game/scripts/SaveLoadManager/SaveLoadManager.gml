@@ -49,7 +49,7 @@ function saveGame(slot) {
 function loadGame(slot) {
 	//init
 	loadDialogData();
-	
+
 	
     var filename = "save_" + string(slot) + ".sav";
     
@@ -95,7 +95,7 @@ function loadGame(slot) {
     
     // Restore game state
     global.currentIndex = saveData.gameState.currentSceneIndex;
-    
+    global.isPaused = false;
     // Refresh the game display
     destroyAllObjects();
     populateAllObjects();
@@ -183,5 +183,6 @@ function createSaveMenu(_parameters) {
 
     
     // Create the menu
-    Menu(room_width/2, room_height/2, options, menuTitle, true, true);
+    Menu(room_width/2, room_height/2, options, menuTitle, true, true, false);
+	
 }
